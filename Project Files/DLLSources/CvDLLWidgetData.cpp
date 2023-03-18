@@ -3355,8 +3355,14 @@ void CvDLLWidgetData::doCityUnitAssignCitizen(const CvWidgetDataStruct& destinat
 			CvUnit* pUnit = pCity->getPopulationUnitById(sourceWidgetData.m_iData1);
 			if (pUnit != NULL)
 			{
-				CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_PROFESSION, pCity->getID(), pUnit->getID(), 0);
-				gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+				if (
+					pCity->getPopulation() > 1 && pCity->isHuman() &&
+					(pCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+				)
+				{
+					CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_PROFESSION, pCity->getID(), pUnit->getID(), 0);
+					gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+				}
 			}
 		}
 		break;
@@ -4044,8 +4050,13 @@ void CvDLLWidgetData::doDoubleClickCitizen(const CvWidgetDataStruct& widgetDataS
 		CvUnit* pUnit = pHeadSelectedCity->getPopulationUnitById(widgetDataStruct.m_iData1);
 		if (pUnit != NULL)
 		{
-			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_PROFESSION, pHeadSelectedCity->getID(), pUnit->getID());
-			gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+			if (
+				pHeadSelectedCity->getPopulation() > 1 && pHeadSelectedCity->isHuman() &&
+				(pHeadSelectedCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+			) {
+				CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_PROFESSION, pHeadSelectedCity->getID(), pUnit->getID());
+				gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+			}
 		}
 	}
 }
