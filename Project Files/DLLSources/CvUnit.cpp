@@ -923,7 +923,7 @@ void CvUnit::NotifyEntity(MissionTypes eMission)
 /**                                                                       **/
 /** float CvUnit::NBMOD_GetShipStrength() const                           **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke der Einheit.                               **/
+/** Ermittelt die Schiffstï¿½rke der Einheit.                               **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -2215,6 +2215,7 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		break;
 
 	case COMMAND_DELETE:
+		return false;
 		if (canScrap())
 		{
 			return true;
