@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Water Plane -->
+<Civ4WaterPlaneInfos xmlns="x-schema:CIV4MiscSchema.xml">
+	<WaterPlaneInfos>
+		<WaterPlaneInfo>
+			<MaterialAlpha>0.7</MaterialAlpha>
+			<TextureScaling>0.0020822511</TextureScaling>
+			<URate>0.01</URate>
+			<VRate>0.002</VRate>
+			<WaterBaseTexture>Art/Terrain/Water/water.dds</WaterBaseTexture>
+			<WaterNormalTexture>Art/Terrain/Water/RRWater/water_001.dds</WaterNormalTexture>
+			<WaterTransitionTexture>Art/Terrain/Water/CoastLandBlends.dds</WaterTransitionTexture>
+			<WaterEnvironmentTexture>Art/Terrain/Water/RRWater/water_env.dds</WaterEnvironmentTexture>
+			<WaterGridTexture>Art/Terrain/Water/WaterGrids.dds</WaterGridTexture>
+		</WaterPlaneInfo>
+	</WaterPlaneInfos>
+</Civ4WaterPlaneInfos>
