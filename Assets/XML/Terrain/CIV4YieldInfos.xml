@@ -2031,9 +2031,9 @@
 	<iBuyPriceHigh>25</iBuyPriceHigh>
 	<iBuyPriceMin>6</iBuyPriceMin>
 	<iSellPriceDifference>2</iSellPriceDifference>
-	<iPriceChangeThreshold>2000</iPriceChangeThreshold>
-	<iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-	<iEuropeVolumeAttrition>-15</iEuropeVolumeAttrition>
+	<iPriceChangeThreshold>450</iPriceChangeThreshold>
+	<iPriceCorrectionPercent>5</iPriceCorrectionPercent>
+	<iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
 	<iAfricaBuyPriceLow>15</iAfricaBuyPriceLow>
 	<iAfricaBuyPriceHigh>20</iAfricaBuyPriceHigh>
 	<iAfricaSellPriceDifference>3</iAfricaSellPriceDifference>
@@ -2041,8 +2041,8 @@
 	<iPortRoyalBuyPriceHigh>22</iPortRoyalBuyPriceHigh>
 	<iPortRoyalSellPriceDifference>4</iPortRoyalSellPriceDifference>
 	<iNativeBuyPrice>-1</iNativeBuyPrice>
-	<iNativeSellPrice>-1</iNativeSellPrice>
-	<iNativeConsumptionPercent>50</iNativeConsumptionPercent>
+	<iNativeSellPrice>10</iNativeSellPrice>
+	<iNativeConsumptionPercent>25</iNativeConsumptionPercent>
 	<iNativeHappy>0</iNativeHappy>
 	<iHillsChange>0</iHillsChange>
 	<iPeakChange>0</iPeakChange>
@@ -2061,7 +2061,7 @@
 	<Icon>,Art/colonization_atlas_resources.dds,2,15</Icon>
 	<HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,2</HighlightIcon>
 	<Button>,Art/colonization_atlas_resources.dds,2,6</Button>
-  </YieldInfo> 
+  </YieldInfo>
   <YieldInfo>
 	<Type>YIELD_FURNITURE</Type>
 	<Description>TXT_KEY_YIELD_FURNITURE</Description>
