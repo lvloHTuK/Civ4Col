@@ -425,11 +425,7 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -893,12 +889,8 @@
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_PIONEER</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
-					<FreeUnitProfession>PROFESSION_MISSIONARY</FreeUnitProfession>
+					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<FreeUnitProfession>PROFESSION_COLONIST</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -1326,20 +1318,12 @@
 			</Traits>
 			<FreeUnitClasses>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_CARAVELA_REDONDA</UnitClassType>
+					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_MOUNTED_CONQUISTADOR</UnitClassType>
+					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 					<FreeUnitProfession>NONE</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
-					<FreeUnitProfession>PROFESSION_MISSIONARY</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -1716,16 +1700,12 @@
 			</Traits>
 			<FreeUnitClasses>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_FLUYT</UnitClassType>
+					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_TRAPPER</UnitClassType>
-					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -2080,16 +2060,12 @@
 			</Traits>
 			<FreeUnitClasses>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_CARRACK</UnitClassType>
+					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
-					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -2401,12 +2377,8 @@
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -2752,12 +2724,8 @@
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_LUMBERJACK</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -3266,12 +3234,8 @@
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_HUNTER</UnitClassType>
-					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -3933,27 +3897,11 @@
 			<Traits/>
 			<FreeUnitClasses>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
-				</FreeUnitClass>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
@@ -13460,7 +13408,7 @@
 				<General>Colo-Colo</General>
 				<General>Curinancu</General>
 				<General>Didiuhet</General> 
-				<General>Illangulién</General>
+				<General>Illanguliï¿½n</General>
 				<General>Lemucaguin</General>
 				<General>Lientur</General>
 				<General>Llanganabal</General>
