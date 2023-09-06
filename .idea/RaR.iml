@@ -5,7 +5,17 @@
       <excludeFolder url="file://$MODULE_DIR$/.vs" />
       <excludeFolder url="file://$MODULE_DIR$/.vscode" />
       <excludeFolder url="file://$MODULE_DIR$/Project Files/.vs" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/Build Release" />
       <excludeFolder url="file://$MODULE_DIR$/Project Files/DLLSources/.idea/shelf" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/Debug" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/Multi core-Debug" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/Multi core-Release" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/Release" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/Single core-Debug" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/Single core-Final Release" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/Single core-Release" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/XML hardcoding-Release" />
+      <excludeFolder url="file://$MODULE_DIR$/Project Files/obj" />
       <excludeFolder url="file://$MODULE_DIR$/Project Files/temp_files/Debug" />
       <excludeFolder url="file://$MODULE_DIR$/log" />
     </content>
