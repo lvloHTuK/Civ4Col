@@ -3647,7 +3647,9 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 			if (pNode->m_data.m_eItemType == TRADE_GOLD)
 			{
 				int oldPrice = pNode->m_data.m_iData1;
-				int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceIncreaseMax, "Natives Price Change Sell");
+				/// random network fix - start - XetPy
+				int randomPriceChange = std::rand() % priceIncreaseMax;
+				// int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceDecreaseMax, "Natives Price Change Sell");
 				if (randomPriceChange < priceIncreaseMax / 3)
 				{
 					randomPriceChange = priceIncreaseMax / 3;
@@ -3679,7 +3681,9 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 			if (pNode->m_data.m_eItemType == TRADE_GOLD)
 			{
 				int oldPrice = pNode->m_data.m_iData1;
-				int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceDecreaseMax, "Natives Price Change Buy");
+				/// random network fix - start - XetPy
+				int randomPriceChange = std::rand() % priceDecreaseMax;
+				// int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceDecreaseMax, "Natives Price Change Buy");
 				if (randomPriceChange < priceDecreaseMax / 3)
 				{
 					randomPriceChange = priceDecreaseMax / 3;
@@ -4357,7 +4361,7 @@ int CvPlayerAI::AI_yieldTradeVal(YieldTypes eYield, const IDInfo& kTransport, Pl
 			CvCity* pCity = pTransport->plot()->getPlotCity();
 			if (pCity != NULL)
 			{
-				/// Ist die Stadt vom Verkäufer?
+				/// Ist die Stadt vom Verkï¿½ufer?
 				if (ePlayer == pCity->getOwnerINLINE())
 				{
 					/// Wird das angefragt Handelsgut (von der KI) zur Weiterverarbeitung gebraucht?
@@ -4367,14 +4371,14 @@ int CvPlayerAI::AI_yieldTradeVal(YieldTypes eYield, const IDInfo& kTransport, Pl
 					}
 					else
 					{
-						/// Das Gut wird zur Weiterverarbeitung gebraucht, daher überlegt sich die
+						/// Das Gut wird zur Weiterverarbeitung gebraucht, daher ï¿½berlegt sich die
 						/// KI einen angemessenen Preis
 						iValue += kTradePlayer.AI_yieldValue(eYield, true, iAmount);
 					}
 				}
 				else
 				{
-					/// Verkäufer ist nicht Besitzer der Stadt (Ich verkaufe der KI)
+					/// Verkï¿½ufer ist nicht Besitzer der Stadt (Ich verkaufe der KI)
 					iValue += kTradePlayer.AI_yieldValue(eYield, false, iAmount);
 
 					if ( AI_isYieldFinalProduct(eYield) )
@@ -4383,7 +4387,7 @@ int CvPlayerAI::AI_yieldTradeVal(YieldTypes eYield, const IDInfo& kTransport, Pl
 					}
 					else
 					{
-						/// Wenn ein kein Endprodukt ist bezahlt der Käufer höchsten 90% von dem für den Preis er es selbst verkaufen würde
+						/// Wenn ein kein Endprodukt ist bezahlt der Kï¿½ufer hï¿½chsten 90% von dem fï¿½r den Preis er es selbst verkaufen wï¿½rde
 						iValue = std::min(iValue, AI_yieldValue(eYield, true, iAmount) * 90 / 100);
 					}
 				}
@@ -7486,7 +7490,7 @@ bool CvPlayerAI::AI_doDiploDemandTribute(PlayerTypes ePlayer)
 /**                                                                       **/
 /** int CvPlayerAI::NBMOD_GetGoldAsk(int iWantedGold)                     **/
 /**                                                                       **/
-/** Diese Methode überwacht die Gold-Höchstgrenze.                        **/
+/** Diese Methode ï¿½berwacht die Gold-Hï¿½chstgrenze.                        **/
 /**                                                                       **/
 /** Parameter:                                                            **/
 /**  - ePlayer     = der Spieler                                          **/
