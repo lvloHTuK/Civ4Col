@@ -834,20 +834,20 @@ void CvPlayer::initFreeUnits()
 						int iKMW = kChild.NBMOD_REF_MakeStartValue();
 						while(kChild.NBMOD_GetEuropeMilitaryValue() < iKMW)
 						{
-							kChild.NBMOD_AddEuropeRandomUnit(false); // Einheit hinzufügen
+							kChild.NBMOD_AddEuropeRandomUnit(false); // Einheit hinzufï¿½gen
 						}
-						int iTransporting = kChild.NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazität steht dem König zur Verfügung?
-						int iNumUnits = kChild.NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der König?
+						int iTransporting = kChild.NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazitï¿½t steht dem Kï¿½nig zur Verfï¿½gung?
+						int iNumUnits = kChild.NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der Kï¿½nig?
 
 						// Errechnet wie vile Einheiten mit einer Welle zur Kolonie gelangen sollen
 						iNumUnits = iNumUnits * GC.getNBMOD_REF_NUM_UNITS_PERCENT() / 100;
 
-						// Ist die Anzahl der zu transportierenden Einheiten größer als die Transportkapazität?
+						// Ist die Anzahl der zu transportierenden Einheiten grï¿½ï¿½er als die Transportkapazitï¿½t?
 						while(iNumUnits > iTransporting)
 						{
-							// Dann ein Schiff aufrüsten
+							// Dann ein Schiff aufrï¿½sten
 							kChild.NBMOD_AddEuropeShipUnit(false);
-							iTransporting = kChild.NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazität steht dem König zur Verfügung?
+							iTransporting = kChild.NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazitï¿½t steht dem Kï¿½nig zur Verfï¿½gung?
 						}
 
 					}
@@ -2547,7 +2547,7 @@ void CvPlayer::NBMOD_DecreaseMaxTaxRate()
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetNewTaxRate(int iWantedTax)                     **/
 /**                                                                       **/
-/** Diese Methode ermittelt die tatsächlich neue Steuer.                  **/
+/** Diese Methode ermittelt die tatsï¿½chlich neue Steuer.                  **/
 /**                                                                       **/
 /** Parameter:                                                            **/
 /**  - iWantedTax = gewollte Steuer                                       **/
@@ -2568,7 +2568,7 @@ int CvPlayer::NBMOD_GetNewTaxRate(int iWantedTax) const
 	// Ist die aktuelle Steuerrate schon oberhalb der Grenze
 	if (getTaxRate() > m_iMaxTaxRate)
 	{
-		// Steuerrate unverändert lassen
+		// Steuerrate unverï¿½ndert lassen
 		iTaxRate = getTaxRate();
 	}
 
@@ -10352,7 +10352,7 @@ void CvPlayer::doGold()
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetEuropeMilitaryValue() const                    **/
 /**                                                                       **/
-/** Ermittelt den Militärwert der Europäischen Armee.                     **/
+/** Ermittelt den Militï¿½rwert der Europï¿½ischen Armee.                     **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10364,22 +10364,22 @@ int CvPlayer::NBMOD_GetEuropeMilitaryValue() const
 	int iSize = m_aEuropeRevolutionUnits.size();
 	for (int iI = 0; iI < iSize; iI++)
 	{
-	    // Prüfen ob das überhaupt eine Einheit ist
+	    // Prï¿½fen ob das ï¿½berhaupt eine Einheit ist
 		if (getRevolutionEuropeUnit(iI) != NO_UNIT)
 		{
             // es darf sich um kein Schiff handeln
             if (GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getDomainType() != DOMAIN_SEA)
             {
-                // Die Stärke der Einheit ermitteln
+                // Die Stï¿½rke der Einheit ermitteln
                 fThisStrength = (float)GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getCombat();
 
-                // Prüfen, ob die Einheit überhaupt einen Beruf hat
+                // Prï¿½fen, ob die Einheit ï¿½berhaupt einen Beruf hat
                 if (getRevolutionEuropeProfession(iI) != NO_PROFESSION)
                 {
                     fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getCombatChange();
                 }
 
-                // Die Stärke mit einem Gewicht versehen
+                // Die Stï¿½rke mit einem Gewicht versehen
                 fThisStrength = fThisStrength * GC.getUnitInfo(getRevolutionEuropeUnit(iI)).NBMOD_GetStrengthWeight();
 
                 fEMW += fThisStrength;
@@ -10396,7 +10396,7 @@ int CvPlayer::NBMOD_GetEuropeMilitaryValue() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_REF_GetStartValue() const                         **/
 /**                                                                       **/
-/** Gibt den Start-Miltärwert des Spieles zurück.                         **/
+/** Gibt den Start-Miltï¿½rwert des Spieles zurï¿½ck.                         **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10409,7 +10409,7 @@ int CvPlayer::NBMOD_REF_GetStartValue() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_REF_MakeStartValue()                              **/
 /**                                                                       **/
-/** Ermittelt den Militärwert beim Start des Spieles.                     **/
+/** Ermittelt den Militï¿½rwert beim Start des Spieles.                     **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10433,7 +10433,7 @@ int CvPlayer::NBMOD_REF_MakeStartValue()
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetColonialMilitaryValue() const                  **/
 /**                                                                       **/
-/** Ermittelt den Militärwert der Kolonialarmee.                          **/
+/** Ermittelt den Militï¿½rwert der Kolonialarmee.                          **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10455,10 +10455,10 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 
 	int iLoop;
 
-    // Die Gesamtbevölkerung: Kolonisten * Gewicht
+    // Die Gesamtbevï¿½lkerung: Kolonisten * Gewicht
     fKMW += getTotalPopulation() * GC.getNBMOD_REF_POPULATION_WEIGHT();
 
-	// Die Einheitenstärke: Soldaten/Kanonen/Dragoner
+	// Die Einheitenstï¿½rke: Soldaten/Kanonen/Dragoner
 	for(pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 	{
         if (GC.getNBMOD_REF_REAL_WEAPONS() == 1)
@@ -10527,11 +10527,11 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
         fKMW += iStoredHorses * GC.getNBMOD_REF_HORSES_WEIGHT();
     }
 
-    // Den Bonus dazuzählen
+    // Den Bonus dazuzï¿½hlen
 
     fKMW = fKMW * (1.0 + (double)iBonusPercent/(double)100);
 
-    // Der Unabhängigkeitswille
+    // Der Unabhï¿½ngigkeitswille
 
     if (GC.getNBMOD_REF_REVOLUTION_PERCENT_ENABLE() == 1)
     {
@@ -10545,7 +10545,7 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
         fKMW = fKMW * NBMOD_GetMaxTaxRate() / 100;
     }
 
-    // Der Aufschlag des Königs
+    // Der Aufschlag des Kï¿½nigs
     fKMW = fKMW * GC.getNBMOD_REF_KING_PANIC_WEIGHT();
 
     // Der Schwierigkeitsgrad
@@ -10569,7 +10569,7 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 /**                                                                       **/
 /** void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)               **/
 /**                                                                       **/
-/** Erweitert die königliche Armee um eine zufällige Einheit.             **/
+/** Erweitert die kï¿½nigliche Armee um eine zufï¿½llige Einheit.             **/
 /** Parameter:                                                            **/
 /**  - bDisplay = gibt an, ob eine Nachricht angezeigt werden soll        **/
 /**                                                                       **/
@@ -10596,7 +10596,7 @@ void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)
 			else
 			{
 
-                // Fragt ab ob es ein Schiff ist und ob das zufällige Aufrüsten von Schiffen verboten ist
+                // Fragt ab ob es ein Schiff ist und ob das zufï¿½llige Aufrï¿½sten von Schiffen verboten ist
 				if ((GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA) && (GC.getNBMOD_REF_RANDOM_SHIPS() != 1))
 				{
 					aiUnitWeights[i] = 0; // Es sollen keine Schiffe gebaut werden
@@ -10642,7 +10642,7 @@ void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)
 /**                                                                       **/
 /** void CvPlayer::NBMOD_AddEuropeShipUnit(bool bDisplay)                 **/
 /**                                                                       **/
-/** Erweitert die königliche Armee um eine zufällige Seeeinheit.          **/
+/** Erweitert die kï¿½nigliche Armee um eine zufï¿½llige Seeeinheit.          **/
 /** Parameter:                                                            **/
 /**  - bDisplay = gibt an, ob eine Nachricht angezeigt werden soll        **/
 /**                                                                       **/
@@ -10711,7 +10711,7 @@ void CvPlayer::NBMOD_AddEuropeShipUnit(bool bDisplay)
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetNumEuropeUnits() const                         **/
 /**                                                                       **/
-/** Ermittelt die Anzahl der Landeinheiten des Königs.                    **/
+/** Ermittelt die Anzahl der Landeinheiten des Kï¿½nigs.                    **/
 /**                                                                       **/
 /***************************************************************************/
 int CvPlayer::NBMOD_GetNumEuropeUnits() const
@@ -10732,7 +10732,7 @@ int CvPlayer::NBMOD_GetNumEuropeUnits() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetNumEuropeTransporting() const                  **/
 /**                                                                       **/
-/** Ermittelt die Transportkapazität des Königs.                          **/
+/** Ermittelt die Transportkapazitï¿½t des Kï¿½nigs.                          **/
 /**                                                                       **/
 /***************************************************************************/
 int CvPlayer::NBMOD_GetNumEuropeTransporting() const
@@ -10756,7 +10756,7 @@ int CvPlayer::NBMOD_GetNumEuropeTransporting() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetEuropeShipStrength() const                     **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke des Königs.                                **/
+/** Ermittelt die Schiffstï¿½rke des Kï¿½nigs.                                **/
 /**                                                                       **/
 /***************************************************************************/
 int CvPlayer::NBMOD_GetEuropeShipStrength() const
@@ -10767,22 +10767,22 @@ int CvPlayer::NBMOD_GetEuropeShipStrength() const
 	int iSize = m_aEuropeRevolutionUnits.size();
 	for (int iI = 0; iI < iSize; iI++)
 	{
-	    // Prüfen ob das überhaupt eine Einheit ist
+	    // Prï¿½fen ob das ï¿½berhaupt eine Einheit ist
 		if (getRevolutionEuropeUnit(iI) != NO_UNIT)
 		{
 
             if (GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getDomainType() == DOMAIN_SEA)
             {
-                // Die Stärke des Schiffes ermitteln
+                // Die Stï¿½rke des Schiffes ermitteln
                 fThisStrength = (float)GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getCombat();
 
-                // Prüfen, ob die Einheit überhaupt einen Beruf hat
+                // Prï¿½fen, ob die Einheit ï¿½berhaupt einen Beruf hat
                 if (getRevolutionEuropeProfession(iI) != NO_PROFESSION)
                 {
                     fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getCombatChange();
                 }
 
-                // Die Stärke mit einem Gewicht versehen
+                // Die Stï¿½rke mit einem Gewicht versehen
                 fThisStrength = fThisStrength * GC.getUnitInfo(getRevolutionEuropeUnit(iI)).NBMOD_GetStrengthWeight();
 
                 fStrength += fThisStrength;
@@ -10799,7 +10799,7 @@ int CvPlayer::NBMOD_GetEuropeShipStrength() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetColonialShipStrength() const                   **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke der Kolonie.                               **/
+/** Ermittelt die Schiffstï¿½rke der Kolonie.                               **/
 /**                                                                       **/
 /***************************************************************************/
 int CvPlayer::NBMOD_GetColonialShipStrength() const
@@ -10859,7 +10859,7 @@ void CvPlayer::doBells()
 	if (!GC.getEraInfo(getCurrentEra()).isRevolution())
 	{
 		changeBellsStored(iBellsRate);
-		// Soll die Änderung des NBMODs benutzt werden
+		// Soll die ï¿½nderung des NBMODs benutzt werden
 		if (GC.getNBMOD_REF_ENABLE() != 1)
 		{
 			if (getBellsStored() >= revolutionEuropeUnitThreshold() && iBellsRate > GC.getCivilizationInfo(getCivilizationType()).getFreeYields(YIELD_BELLS))
@@ -10921,15 +10921,15 @@ void CvPlayer::doBells()
                 // DEBUG
                 gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"(EMW) %d vs. (KMW) %d",NBMOD_GetEuropeMilitaryValue(), NBMOD_GetColonialMilitaryValue()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
                 gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Start-MW: %d",NBMOD_REF_GetStartValue()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
-//            gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Einheiten/Kapazität: %d/%d",NBMOD_GetNumEuropeUnits(),NBMOD_GetNumEuropeTransporting()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
+//            gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Einheiten/Kapazitï¿½t: %d/%d",NBMOD_GetNumEuropeUnits(),NBMOD_GetNumEuropeTransporting()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
             }
 
-            // Zuerst überlegt sich der König, ob er seine Schlachtschiffe aufrüsten möchte
-            // Ist die Kolonialflotte stärker als die köbigliche Flotte?
+            // Zuerst ï¿½berlegt sich der Kï¿½nig, ob er seine Schlachtschiffe aufrï¿½sten mï¿½chte
+            // Ist die Kolonialflotte stï¿½rker als die kï¿½bigliche Flotte?
             if (NBMOD_GetColonialShipStrength() > NBMOD_GetEuropeShipStrength())
             {
 
-                // Dann ein Schiff aufrüsten
+                // Dann ein Schiff aufrï¿½sten
                 NBMOD_AddEuropeShipUnit(true);
                 bUnitGot = true;
             }
@@ -10937,16 +10937,16 @@ void CvPlayer::doBells()
 			/*
 			else
 				{
-					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazität steht dem König zur Verfügung?
-					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der König?
+					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazitï¿½t steht dem Kï¿½nig zur Verfï¿½gung?
+					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der Kï¿½nig?
 
 					// Errechnet wie vile Einheiten mit einer Welle zur Kolonie gelangen sollen
 					iNumUnits = iNumUnits * GC.getDefineINT("NBMOD_REF_NUM_UNITS_PERCENT") / 100;
 
-					// Ist die Anzahl der zu transportierenden Einheiten größer als die Transportkapazität?
+					// Ist die Anzahl der zu transportierenden Einheiten grï¿½ï¿½er als die Transportkapazitï¿½t?
 					if (iNumUnits > iTransporting)
 					{
-						// Dann ein Schiff aufrüsten
+						// Dann ein Schiff aufrï¿½sten
 						NBMOD_AddEuropeShipUnit(true);
 						bUnitGot = true;
 					}
@@ -10954,7 +10954,7 @@ void CvPlayer::doBells()
 			*/
 			// TAC - AI Revolution - koma13 - END
 
-            // Wenn noch kein Schiff aufgerüstet wurde, dann überlegt sich der König, ob er seine Landeinheiten rüstet
+            // Wenn noch kein Schiff aufgerï¿½stet wurde, dann ï¿½berlegt sich der Kï¿½nig, ob er seine Landeinheiten rï¿½stet
             if (!(bUnitGot))
             {
                 int iKMW = NBMOD_GetColonialMilitaryValue();
@@ -10962,7 +10962,7 @@ void CvPlayer::doBells()
 
                 float n = (float)iKMW/(float)iEMW;
 
-                while (n > 1.1) // die Kolonie ist viel stärker als der König
+                while (n > 1.1) // die Kolonie ist viel stï¿½rker als der Kï¿½nig
                 {
 
                     NBMOD_AddEuropeRandomUnit(true);
@@ -10976,7 +10976,7 @@ void CvPlayer::doBells()
 
                 }
 
-                // Die Kolonie ist stärker als der König, aber es wurden noch keine Waffen hinzugefügt
+                // Die Kolonie ist stï¿½rker als der Kï¿½nig, aber es wurden noch keine Waffen hinzugefï¿½gt
                 if (n > 1 && bUnitGot == false)
                 {
                     NBMOD_AddEuropeRandomUnit(true);
@@ -10987,16 +10987,16 @@ void CvPlayer::doBells()
 				// TAC - AI Revolution - koma13 - START
 				if (bUnitGot)
 				{
-					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazität steht dem König zur Verfügung?
-					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der König?
+					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazitï¿½t steht dem Kï¿½nig zur Verfï¿½gung?
+					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der Kï¿½nig?
 
 					// Errechnet wie vile Einheiten mit einer Welle zur Kolonie gelangen sollen
 					iNumUnits = iNumUnits * GC.getNBMOD_REF_NUM_UNITS_PERCENT() / 100;
 
-					// Ist die Anzahl der zu transportierenden Einheiten größer als die Transportkapazität?
+					// Ist die Anzahl der zu transportierenden Einheiten grï¿½ï¿½er als die Transportkapazitï¿½t?
 					while(iNumUnits > iTransporting)
 					{
-						// Dann ein Schiff aufrüsten
+						// Dann ein Schiff aufrï¿½sten
 						NBMOD_AddEuropeShipUnit(true);
 						iTransporting = NBMOD_GetNumEuropeTransporting();
 					}
@@ -21814,7 +21814,8 @@ bool CvPlayer::tryGetNewBargainPriceSell()
 	//case bargaining fails
 	if (randomValue < chanceToFail)
 	{
-		int randomAngry = GC.getGameINLINE().getSorenRandNum(timeNativesAngryMax, "Natives Angry Buy");
+		// int randomAngry = GC.getGameINLINE().getSorenRandNum(timeNativesAngryMax, "Natives Angry Buy");
+		int randomAngry = std::rand() % timeNativesAngryMax;
 		GET_PLAYER(bargainPartner).setTimeNoTrade(randomAngry*gamespeedMod/100);
 		GET_PLAYER(bargainPartner).AI_changeAttitudeExtra(getID(), -1);
 		GET_PLAYER(bargainPartner).setWillingToBargain(false);
@@ -21849,7 +21850,8 @@ bool CvPlayer::tryGetNewBargainPriceBuy()
 	//case bargaining fails
 	if (randomValue < chanceToFail)
 	{
-		int randomAngry = GC.getGameINLINE().getSorenRandNum(timeNativesAngryMax*gamespeedMod/100, "Natives Angry Buy");
+		// int randomAngry = GC.getGameINLINE().getSorenRandNum(timeNativesAngryMax*gamespeedMod/100, "Natives Angry Buy");
+		int randomAngry = std::rand() % timeNativesAngryMax*gamespeedMod/100;
 		GET_PLAYER(bargainPartner).setTimeNoTrade(randomAngry);
 		GET_PLAYER(bargainPartner).AI_changeAttitudeExtra(getID(), -1);
 		GET_PLAYER(bargainPartner).setWillingToBargain(false);
