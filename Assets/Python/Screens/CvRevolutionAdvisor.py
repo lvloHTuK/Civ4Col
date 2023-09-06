@@ -104,7 +104,7 @@ class CvRevolutionAdvisor:
 	def drawBar(self):
 		screen = self.getScreen()	
 
-		if not self.player.isInRevolution() and gc.getGame().getGameState() == GameStateTypes.GAMESTATE_EXTENDED:
+		if not self.player.isInRevolution() and gc.getGame().getGameState() == GameStateTypes.GAMESTATE_ON:
 			screen.setImageButton("RevolutionButton", ArtFileMgr.getInterfaceArtInfo("SCREEN_DATE_BOX").getPath(), (self.XResolution - self.W_REVOLUTION) / 2, self.Y_REVOLUTION, self.W_REVOLUTION, self.BAR_END_ICON_SIZE * 3 / 2, WidgetTypes.WIDGET_GENERAL, self.REVOLUTION_BUTTON, -1)
 			screen.setTextAt( "RevolutionButtonText", "RevolutionButton", "<font=4>" + localText.getText("INTERFACE_REVOLUTION", ()) + "</font>", CvUtil.FONT_CENTER_JUSTIFY, self.W_REVOLUTION / 2, self.BAR_END_ICON_SIZE * 3 / 4, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.REVOLUTION_BUTTON, -1 )
 		
