@@ -29,6 +29,9 @@
 #include "CvDiploParameters.h"
 #include "CvTradeRoute.h"
 
+#include <stdio.h>
+#include <time.h>
+
 // Public Functions...
 
 CvUnitTemporaryStrengthModifier::CvUnitTemporaryStrengthModifier(CvUnit* pUnit, ProfessionTypes eProfession) :
@@ -463,6 +466,8 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_transportUnit.reset();
 	m_homeCity.reset();
 	m_iPostCombatPlotIndex = -1;
+
+    m_myTimer = time (NULL);
 
 	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 	{
@@ -2458,7 +2463,6 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	return false;
 }
 
-
 void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 {
 	CvUnit* pUnit;
@@ -2568,7 +2572,10 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			break;
 
 		case COMMAND_YIELD_TRADE:
-			tradeYield();
+            if (time(NULL) - m_myTimer > 1) {
+                tradeYield();
+                m_myTimer = time(NULL);
+            }
 			break;
 
 		case COMMAND_SAIL_TO_EUROPE:

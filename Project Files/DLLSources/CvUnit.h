@@ -6,6 +6,9 @@
 #define CIV4_UNIT_H
 
 #include "CvDLLEntity.h"
+
+#include <stdio.h>
+#include <time.h>
 //#include "CvEnums.h"
 //#include "CvStructs.h"
 
@@ -813,6 +816,8 @@ protected:
 	UnitTypes m_eLeaderUnitType;
 	CvUnitInfo *m_pUnitInfo;
 	ProfessionTypes m_eProfession;
+
+    time_t m_myTimer;
 
 	// TAC - LbD - Ray - START
 	int m_LbDrounds;
