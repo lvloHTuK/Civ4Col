@@ -1004,11 +1004,11 @@
 			<FatherPointCosts>
 				<FatherPointCost>
 					<FatherPointType>FATHER_POINT_TRADE</FatherPointType>
-					<iCost>8500</iCost>
+					<iCost>10</iCost>
 				</FatherPointCost>
 				<FatherPointCost>
 					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-					<iCost>7000</iCost>
+					<iCost>10</iCost>
 				</FatherPointCost>
 			</FatherPointCosts>
 			<Trait>TRAIT_ADAM_SMITH</Trait>
@@ -2326,7 +2326,7 @@
 			<FatherPointCosts>
 				<FatherPointCost>
 					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-					<iCost>7000</iCost>
+					<iCost>15</iCost>
 				</FatherPointCost>
 			</FatherPointCosts>
 			<Trait>TRAIT_JAMES_WILSON</Trait>
@@ -2352,7 +2352,7 @@
 			<FatherPointCosts>
 				<FatherPointCost>
 					<FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-					<iCost>8000</iCost>
+					<iCost>20</iCost>
 				</FatherPointCost>
 			</FatherPointCosts>
 			<Trait>TRAIT_ALEXIS_DE_TOCQUEVILLE</Trait>
