@@ -1535,8 +1535,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DOUBLE_SPEED_V2</Tag>
-		<English>[ICON_BULLET]Double Production V2 Speed of[SPACE]</English>
-		<French>[ICON_BULLET]&#211;&#228;&#226;&#224;&#232;&#226;&#224;&#229;&#242; &#241;&#234;&#238;&#240;&#238;&#241;&#242;&#252; &#239;&#240;&#238;&#232;&#231;&#226;&#238;&#228;&#241;&#242;&#226;&#224;[SPACE]</French>
+		<English>[ICON_BULLET]Double Production Speed of[SPACE]</English>
+		<French>[ICON_BULLET]&#211;&#228;&#226;&#224;&#232;&#226;&#224;&#229;&#242; &#241;&#234;&#238;&#240;&#238;&#241;&#242;&#252; &#239;&#238;&#241;&#242;&#240;&#238;&#233;&#234;&#232; &#231;&#228;&#224;&#237;&#232;&#233;[SPACE]</French>
 		<German>[ICON_BULLET]Doppelt soviele erzeugte H&#228;mmer w&#228;hrend des Baus von:[SPACE]</German>
 		<Italian>[ICON_BULLET]Raddoppia la velocit&#224; di produzione di[SPACE]</Italian>
 		<Spanish>[ICON_BULLET]Dobla la velocidad de producci&#243;n de[SPACE]</Spanish>
