@@ -4150,6 +4150,10 @@ bool CvUnit::canTradeYield(const CvPlot* pPlot) const
 
 void CvUnit::tradeYield()
 {
+    if (gDLL -> isDiplomacy() == true)
+    {
+        return;
+    }
 	if(!canTradeYield(plot()))
 	{
 		return;
