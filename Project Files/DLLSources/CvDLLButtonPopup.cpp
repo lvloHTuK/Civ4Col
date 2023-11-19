@@ -3688,6 +3688,12 @@ bool CvDLLButtonPopup::launchChooseCityPlotYieldPopup(CvPopup* pPopup, CvPopupIn
 		return false;
 	}
 
+    PlayerTypes cityPlayerType = pCity->getOwner();
+
+    if (cityPlayerType != ePlayer) {
+        return false;
+    }
+
 	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 
 	info.setData1(pCity->getID());
