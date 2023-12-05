@@ -2160,6 +2160,10 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 								}
 							}
 						}
+                        if (pPlot->getIsGathered()) {
+                            szBuffer.append(NEWLINE);
+                            szBuffer.append(gDLL->getText("TXT_KEY_ACTION_WAS_FISHING"));
+                        }
 					}
 					else
 					{

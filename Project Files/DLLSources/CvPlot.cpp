@@ -62,6 +62,8 @@ CvPlot::CvPlot()
 
 	m_szScriptData = NULL;
 
+    m_isGathered = NULL;
+
 	reset(0, 0, true);
 }
 
@@ -206,7 +208,9 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 		m_aiDangerMap[iI] = 0;
 	}
 	// TAC - AI Improved Naval AI - koma13 - END
-	
+
+    m_isGathered = false;
+
 	updateImpassable();
 }
 
@@ -361,6 +365,8 @@ void CvPlot::doTurn()
 	doFort();
 	doMonastery();
 	// R&R, ray, Monasteries and Forts - END
+
+    setIsGathered(false);
 
 	// XXX
 #ifdef _DEBUG
@@ -8239,6 +8245,8 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_bBombarded);
 	// Super Forts end
 
+    pStream->Read(&m_isGathered);
+
 	pStream->Read(&bVal);
 	m_bStartingPlot = bVal;
 	pStream->Read(&bVal);
@@ -8459,6 +8467,8 @@ void CvPlot::write(FDataStreamBase* pStream)
 	pStream->Write(m_iDefenseDamage);
 	pStream->Write(m_bBombarded);
 	// Super Forts end
+
+    pStream->Write(m_isGathered);
 
 	pStream->Write(m_bStartingPlot);
 	pStream->Write(m_bHills);
@@ -10006,4 +10016,13 @@ void CvPlot::writeDesyncLog(FILE *f)
 			}
 		}
 	}
+}
+
+
+void CvPlot::setIsGathered(bool newValue) {
+    m_isGathered = newValue;
+}
+
+bool CvPlot::getIsGathered() {
+    return m_isGathered;
 }

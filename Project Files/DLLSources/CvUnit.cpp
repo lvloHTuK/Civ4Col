@@ -14506,6 +14506,10 @@ bool CvUnit::canGatherResource(const CvPlot* ePlot, bool bTestVisible) const
 					}
 				}
 			}
+            if (pPlot->getIsGathered())
+            {
+                return false;
+            }
 		}
 		// R&R, ray, High Sea Fishing- END
 		else
@@ -14599,6 +14603,7 @@ bool CvUnit::gatherResource()
 
 		if (pPlot != NULL)
 		{
+            pPlot->setIsGathered(true);
 			for (int i = 0; i < pPlot->getNumUnits(); i++)
 			{
 				CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);

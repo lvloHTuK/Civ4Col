@@ -5918,6 +5918,14 @@
 		<Spanish>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_ACTION_WAS_FISHING</Tag>
+		<English>[COLOR_PLAYER_RED]Have you fished on this cage before[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_RED]&#194;&#251; &#243;&#230;&#229; &#235;&#238;&#226;&#232;&#235;&#232; &#240;&#251;&#225;&#243; &#237;&#224; &#253;&#242;&#238;&#233; &#234;&#235;&#229;&#242;&#234;&#229;[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_RED]Hier geht bereits ein anderes Schiff auf die Fang![COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_FISHER_FULL</Tag>
 		<English>Your %s1_unit is filled to the brim with food from the sea.</English>
 		<French>Your %s1_unit is filled to the brim with food from the sea.</French>
