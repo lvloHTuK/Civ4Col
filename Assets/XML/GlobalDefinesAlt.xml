@@ -651,7 +651,7 @@
 	</Define>
 	<Define>
 		<DefineName>COLONIAL_FORCED_PEACE_TURNS</DefineName>
-		<iDefineIntVal>60</iDefineIntVal>
+		<iDefineIntVal>90</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>SETTLEMENT_TREASURE_YIELD</DefineName>
