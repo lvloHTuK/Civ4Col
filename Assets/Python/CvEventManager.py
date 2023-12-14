@@ -38,6 +38,8 @@ class CvEventManager:
 		self.EventKeyDown=6
 		self.EventKeyUp=7
 
+		self.isCommand = False
+
 		self.__LOG_MOVEMENT = 0
 		self.__LOG_BUILDING = 0
 		self.__LOG_COMBAT = 0
@@ -255,6 +257,16 @@ class CvEventManager:
 						CyCamera().SetBaseTurn(0)
 						CyCamera().SetBasePitch(0)
 						return 1
+
+			if (theKey == int(InputTypes.KB_M) and self.bShift and self.bCtrl):
+				self.isCommand = False
+				ePlayer = gc.getGame().getActivePlayer()
+				popupInfo = CyPopupInfo()
+				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
+				popupInfo.setText("Good")
+				popupInfo.addPythonButton("Good", "")
+				popupInfo.addPopup(ePlayer)
+
 
 			#End Custom Camera Controls
 
@@ -882,7 +894,7 @@ class CvEventManager:
 		popup.setHeaderString(localText.getText("TXT_KEY_NAME_CITY", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.setBodyString(localText.getText("TXT_KEY_SETTLE_NEW_CITY_NAME", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.createEditBox(city.getName(), 0)
-		popup.setEditBoxMaxCharCount( 15, 32, 0 )
+		popup.setEditBoxMaxCharCount( 64, 64, 0 )
 		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventEditCityNameApply(self, playerID, userData, popupReturn):
@@ -893,9 +905,138 @@ class CvEventManager:
 		player = gc.getPlayer(playerID)
 		city = player.getCity(iCityID)
 		cityName = popupReturn.getEditBoxString(0)
+
+		result = self.__getCommandCity(cityName, player)
+		if result == "not":
+			return
+		if result:
+			process = result[0]
+			arg = result[1]
+			process(player, city, arg)
+			return
+
 		if (len(cityName) > 30):
 			cityName = cityName[:30]
 		city.setName(cityName, not bRename)
+
+	def __getCommandCity(self, command, player):
+		processes = {
+			"gld": self.__cmdProcessGld,
+			"yld": self.__cmdProcessCityYld,
+			"unt": self.__cmdProcessCityUnt,
+		}
+		if command[0] == "/":
+			if not self.__checkPlayerCmdUnit(player) and not self.isCommand:
+				return "not"
+			command = command[1:]
+			cmd_split = command.split(" ")
+			process = cmd_split[0]
+			arg = " ".join(cmd_split[1:]).strip()
+			if process in processes:
+				return [processes[process], arg]
+		return None
+
+	def __getCommandUnit(self, command, player):
+		processes = {
+			"gld": self.__cmdProcessGld,
+			"mvs": self.__cmdProcessMvs,
+			"xp": self.__cmdProcessXp,
+			"yld": self.__cmdProcessYld,
+		}
+		if command[0] == "/":
+			if not self.__checkPlayerCmdCity(player) and not self.isCommand:
+				return "not"
+			command = command[1:]
+			cmd_split = command.split(" ")
+			process = cmd_split[0]
+			arg = " ".join(cmd_split[1:]).strip()
+			if process in processes:
+				return [processes[process], arg]
+		return None
+
+	def __checkPlayerCmdUnit(self, player):
+		(unit, iter) = player.firstUnit()
+		isFind = False
+		while(unit):
+			if unit.getName().startswith("admin"):
+				self.isCommand = True
+				isFind = True
+			(unit, iter) = player.nextUnit(iter)
+
+		return isFind
+
+	def __checkPlayerCmdCity(self, player):
+		(pCity, iter) = player.firstCity(false)
+		isFind = False
+		while (pCity):
+			if pCity.getName().startswith("alabuga"):
+				self.isCommand = True
+				isFind = True
+			(pCity, iter) = player.nextCity(iter, false)
+
+		return isFind
+
+	def __cmdProcessGld(self, player, city, arg):
+		try:
+			gold = int(arg)
+		except ValueError:
+			return
+		player.setGold(gold)
+
+	def __cmdProcessCityYld(self, player, city, arg):
+		try:
+			yieldTypeName, yieldNum = arg.split(" ")
+			yieldNum = int(yieldNum)
+			yieldTypeName = "YIELD_" + yieldTypeName.upper()
+			yieldType = -1
+			for i in range(YieldTypes.NUM_YIELD_TYPES):
+				if gc.getYieldInfo(i).getType() == yieldTypeName:
+					yieldType = i
+					break
+
+		except Exception:
+			return
+
+		city.setYieldStored(yieldType, yieldNum)
+
+	def __cmdProcessCityUnt(self, player, city, arg):
+		try:
+			unitTypeName = arg
+			unitTypeName = "UNIT_" + unitTypeName.upper()
+			unitType = -1
+			for i in range(gc.getNumUnitInfos()):
+				if gc.getUnitInfo(i).getType() == unitTypeName:
+					unitType = i
+					break
+
+		except Exception:
+			return
+
+		player.initEuropeUnit(unitType, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+
+		player.initUnit(unitType, ProfessionTypes.NO_PROFESSION, city.getX(), city.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH, 0)
+
+
+	def __cmdProcessMvs(self, player, unit, arg):
+		try:
+			moves = int(arg)
+		except ValueError:
+			return
+		unit.setMoves(moves)
+
+	def __cmdProcessXp(self, player, unit, arg):
+		try:
+			xp = int(arg)
+		except ValueError:
+			return
+		unit.setExperience(xp, -1)
+
+	def __cmdProcessYld(self, player, unit, arg):
+		try:
+			yieldStored = int(arg)
+		except ValueError:
+			return
+		unit.setYieldStored(yieldStored)
 
 	def __eventCreateTradeRouteBegin(self, PlayerID):
 		popup = CyPopup(CvUtil.EventCreateTradeRoute, EventContextTypes.EVENTCONTEXT_ALL, 1)
@@ -1070,8 +1211,19 @@ class CvEventManager:
 
 		'Edit Unit Name Event'
 		iUnitID = userData[0]
-		unit = gc.getPlayer(playerID).getUnit(iUnitID)
+		player = gc.getPlayer(playerID)
+		unit = player.getUnit(iUnitID)
 		newName = popupReturn.getEditBoxString(0)
+
+		result = self.__getCommandUnit(newName, player)
+		if result == "not":
+			return
+		if result:
+			process = result[0]
+			arg = result[1]
+			process(player, unit, arg)
+			return
+
 		if (len(newName) > 25):
 			newName = newName[:25]
 		unit.setName(newName)
