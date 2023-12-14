@@ -2501,7 +2501,7 @@ int CvPlayer::NBMOD_GetMaxTaxRate() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_IncreaseMaxTaxRate()                              **/
 /**                                                                       **/
-/** Diese Methode hebt die Steuergrenze.                                  **/
+/** Этот метод повышает налоговый порог.                                  **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10364,22 +10364,22 @@ int CvPlayer::NBMOD_GetEuropeMilitaryValue() const
 	int iSize = m_aEuropeRevolutionUnits.size();
 	for (int iI = 0; iI < iSize; iI++)
 	{
-	    // Pr�fen ob das �berhaupt eine Einheit ist
+	    // Проверьте, является ли это вообще юнитом
 		if (getRevolutionEuropeUnit(iI) != NO_UNIT)
 		{
-            // es darf sich um kein Schiff handeln
+            // Это не должно быть кораблем.
             if (GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getDomainType() != DOMAIN_SEA)
             {
-                // Die St�rke der Einheit ermitteln
+                // Определите прочность устройства
                 fThisStrength = (float)GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getCombat();
 
-                // Pr�fen, ob die Einheit �berhaupt einen Beruf hat
+                // Проверьте, есть ли в устройстве профессия вообще
                 if (getRevolutionEuropeProfession(iI) != NO_PROFESSION)
                 {
                     fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getCombatChange();
                 }
 
-                // Die St�rke mit einem Gewicht versehen
+                // Добавьте к крахмалу груз
                 fThisStrength = fThisStrength * GC.getUnitInfo(getRevolutionEuropeUnit(iI)).NBMOD_GetStrengthWeight();
 
                 fEMW += fThisStrength;
@@ -10387,7 +10387,7 @@ int CvPlayer::NBMOD_GetEuropeMilitaryValue() const
 	    }
 	}
 
-    fEMW += 0.5; // mathematisch korrekt Runden
+    fEMW += 0.5; // математически корректное округление
 
     return (int)fEMW;
 }
@@ -10409,7 +10409,7 @@ int CvPlayer::NBMOD_REF_GetStartValue() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_REF_MakeStartValue()                              **/
 /**                                                                       **/
-/** Ermittelt den Milit�rwert beim Start des Spieles.                     **/
+/** Определяет военное значение в начале игры.                            **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10433,7 +10433,7 @@ int CvPlayer::NBMOD_REF_MakeStartValue()
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetColonialMilitaryValue() const                  **/
 /**                                                                       **/
-/** Ermittelt den Milit�rwert der Kolonialarmee.                          **/
+/** Определяет военную ценность колониальной армии.                       **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10455,15 +10455,15 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 
 	int iLoop;
 
-    // Die Gesamtbev�lkerung: Kolonisten * Gewicht
+    // Общая численность населения: Колонисты * Вес
     fKMW += getTotalPopulation() * GC.getNBMOD_REF_POPULATION_WEIGHT();
 
-	// Die Einheitenst�rke: Soldaten/Kanonen/Dragoner
+	// Численность подразделения: солдаты/пушки/драгуны
 	for(pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 	{
         if (GC.getNBMOD_REF_REAL_WEAPONS() == 1)
         {
-            // Falls die Einheit Waffen/Pferde transportiert
+            // Если подразделение перевозит оружие/лошадей
             if (pLoopUnit->getYield() == YIELD_BLADES || pLoopUnit->getYield() == YIELD_MUSKETS || pLoopUnit->getYield() == YIELD_CANNONS)
             {
                 iStoredWeapons += pLoopUnit->getYieldStored();
@@ -10483,14 +10483,14 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 		}
 	}
 
-	// Die aktuelle Rundenzahl
+	// Текущее количество ходов
 	fStrength = (double)GC.getGameINLINE().getGameTurn();
-	  // Den Spielmodusmodifizierer dazurechnen
+	  // Добавьте модификатор режима игры
     fStrength = fStrength * 100.0/(double)(GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent());
-      // Das Rundengewicht beachten (jede Runde wiegt X Punkte)
+      // Обратите внимание на вес раунда (каждый раунд весит X очков)
     fKMW += fStrength * GC.getNBMOD_REF_TURN_WEIGHT();
 
-    // Die Anzahl der gelagerten Waffen
+    // Количество хранящегося оружия
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 	    iCities++;
@@ -10506,7 +10506,7 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 		return 0;
 	}
 
-      // Den Spielmodusmodifizierer hinzurechnen
+      // Добавьте модификатор режима игры
     iStoredWeapons = iStoredWeapons * 100/GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
     iStoredHorses = iStoredHorses * 100/GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 
@@ -10527,11 +10527,11 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
         fKMW += iStoredHorses * GC.getNBMOD_REF_HORSES_WEIGHT();
     }
 
-    // Den Bonus dazuz�hlen
+    // Добавьте бонус
 
     fKMW = fKMW * (1.0 + (double)iBonusPercent/(double)100);
 
-    // Der Unabh�ngigkeitswille
+    // Воля к независимости
 
     if (GC.getNBMOD_REF_REVOLUTION_PERCENT_ENABLE() == 1)
     {
@@ -10545,10 +10545,10 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
         fKMW = fKMW * NBMOD_GetMaxTaxRate() / 100;
     }
 
-    // Der Aufschlag des K�nigs
+    // Влияние короля
     fKMW = fKMW * GC.getNBMOD_REF_KING_PANIC_WEIGHT();
 
-    // Der Schwierigkeitsgrad
+    // Уровень сложности
     fKMW = fKMW * GC.getHandicapInfo(getHandicapType()).NBMOD_GetREFWeight() / 100;
 
 	// TAC - Reduced REF Option - koma13 - START
@@ -10557,10 +10557,10 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 		fKMW = fKMW * GC.getREDUCED_REF_PERCENT() / 100;
 	}
 	// TAC - Reduced REF Option - koma13 - END
-    // Der Startwert zu Beginn des Spieles
-    fKMW += NBMOD_REF_GetStartValue() * GC.getNBMOD_REF_START_VALUE_PERCENT() / 100;
+    // Начальное значение в начале игры
+    fKMW += NBMOD_REF_GetStartValue() * GC.getNBMOD_REF_START_VALUE_PERCENT() / 100; // NBMOD_REF_START_VALUE_PERCENT-5
 
-    fKMW += 0.5; // mathematisch korrekt Runden
+    fKMW += 0.5; // математически корректное округление
 
     return (int)fKMW;
 }
@@ -10569,9 +10569,9 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 /**                                                                       **/
 /** void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)               **/
 /**                                                                       **/
-/** Erweitert die k�nigliche Armee um eine zuf�llige Einheit.             **/
-/** Parameter:                                                            **/
-/**  - bDisplay = gibt an, ob eine Nachricht angezeigt werden soll        **/
+/** Добавляет случайный юнит в королевскую армию.                         **/
+/** Параметры:                                                            **/
+/**  - bDisplay = указывает, должно ли отображаться сообщение             **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10642,9 +10642,9 @@ void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)
 /**                                                                       **/
 /** void CvPlayer::NBMOD_AddEuropeShipUnit(bool bDisplay)                 **/
 /**                                                                       **/
-/** Erweitert die k�nigliche Armee um eine zuf�llige Seeeinheit.          **/
-/** Parameter:                                                            **/
-/**  - bDisplay = gibt an, ob eine Nachricht angezeigt werden soll        **/
+/** Добавляет случайное военно-морское подразделение в королевскую армию. **/
+/** Параметры:                                                            **/
+/**  bDisplay = указывает, должно ли отображаться сообщение               **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10919,17 +10919,38 @@ void CvPlayer::doBells()
             if (GC.getNBMOD_REF_DEBUG() == 1)
             {
                 // DEBUG
-                gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"(EMW) %d vs. (KMW) %d",NBMOD_GetEuropeMilitaryValue(), NBMOD_GetColonialMilitaryValue()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
-                gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Start-MW: %d",NBMOD_REF_GetStartValue()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
-//            gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Einheiten/Kapazit�t: %d/%d",NBMOD_GetNumEuropeUnits(),NBMOD_GetNumEuropeTransporting()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
+                gDLL->getInterfaceIFace()->addMessage(
+                        getID() , true, GC.getEVENT_MESSAGE_TIME(),
+                        CvWString::format(
+                                L"(CMS) %d vs. (EMS) %d",
+                                          NBMOD_GetColonialMilitaryValue(),
+                                          NBMOD_GetEuropeMilitaryValue(),
+                                          NULL, MESSAGE_TYPE_MINOR_EVENT,
+                                          NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED")));
+
+                gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(),
+                                                      CvWString::format(L"Start-MW: %d",
+                                                                        NBMOD_REF_GetStartValue()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
+
+
+
+                // DEBUG
+                gDLL->getInterfaceIFace()->addMessage(
+                        getID() , true, GC.getEVENT_MESSAGE_TIME(),
+                        CvWString::format(L"(CSS) %d vs. (EES) %d",
+                                          NBMOD_GetColonialShipStrength(),
+                                          NBMOD_GetEuropeShipStrength()),
+                        NULL, MESSAGE_TYPE_MINOR_EVENT,
+                        NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
+
+                //            gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Einheiten/Kapazit�t: %d/%d",NBMOD_GetNumEuropeUnits(),NBMOD_GetNumEuropeTransporting()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
             }
 
-            // Zuerst �berlegt sich der K�nig, ob er seine Schlachtschiffe aufr�sten m�chte
-            // Ist die Kolonialflotte st�rker als die k�bigliche Flotte?
+            // Сначала король решает, хочет ли он модернизировать свои линкоры.
+            // Является ли колониальный флот сильнее королевского?
             if (NBMOD_GetColonialShipStrength() > NBMOD_GetEuropeShipStrength())
             {
-
-                // Dann ein Schiff aufr�sten
+                // Тогда снарядите корабль.
                 NBMOD_AddEuropeShipUnit(true);
                 bUnitGot = true;
             }
@@ -10962,7 +10983,7 @@ void CvPlayer::doBells()
 
                 float n = (float)iKMW/(float)iEMW;
 
-                while (n > 1.1) // die Kolonie ist viel st�rker als der K�nig
+                while (n > 1.1) // Колония намного сильнее короля
                 {
 
                     NBMOD_AddEuropeRandomUnit(true);
@@ -10976,7 +10997,7 @@ void CvPlayer::doBells()
 
                 }
 
-                // Die Kolonie ist st�rker als der K�nig, aber es wurden noch keine Waffen hinzugef�gt
+                // Колония сильнее короля, но юниты еще не добавлены.
                 if (n > 1 && bUnitGot == false)
                 {
                     NBMOD_AddEuropeRandomUnit(true);
@@ -10987,16 +11008,16 @@ void CvPlayer::doBells()
 				// TAC - AI Revolution - koma13 - START
 				if (bUnitGot)
 				{
-					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazit�t steht dem K�nig zur Verf�gung?
-					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der K�nig?
+					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Сколько транспортных мощностей доступно королю?
+					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Сколько земельных единиц есть у короля?
 
-					// Errechnet wie vile Einheiten mit einer Welle zur Kolonie gelangen sollen
+					// Рассчитывает, сколько юнитов должно достичь колонии одной волной
 					iNumUnits = iNumUnits * GC.getNBMOD_REF_NUM_UNITS_PERCENT() / 100;
 
-					// Ist die Anzahl der zu transportierenden Einheiten gr��er als die Transportkapazit�t?
+					// Количество транспортируемых единиц превышает грузоподъемность?
 					while(iNumUnits > iTransporting)
 					{
-						// Dann ein Schiff aufr�sten
+						// Тогда снарядите корабль.
 						NBMOD_AddEuropeShipUnit(true);
 						iTransporting = NBMOD_GetNumEuropeTransporting();
 					}
