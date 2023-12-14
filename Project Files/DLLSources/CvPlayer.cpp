@@ -21108,6 +21108,13 @@ void CvPlayer::checkForEuropeanWars()
 		return;
 	}
 
+    int forcedPeaceTurns = GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS");
+    forcedPeaceTurns = forcedPeaceTurns * gamespeedMod /100;
+    if (GC.getGameINLINE().getElapsedGameTurns() < forcedPeaceTurns )
+    {
+        return;
+    }
+
 	if(m_iTimerEuropeanWars > 0)
 	{
 		m_iTimerEuropeanWars = (m_iTimerEuropeanWars - 1);
