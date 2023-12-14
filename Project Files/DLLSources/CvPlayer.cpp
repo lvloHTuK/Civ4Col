@@ -10920,13 +10920,16 @@ void CvPlayer::doBells()
             {
                 // DEBUG
                 gDLL->getInterfaceIFace()->addMessage(
-                        getID() , true, GC.getEVENT_MESSAGE_TIME(),
+                        getID() ,
+                        true,
+                        GC.getEVENT_MESSAGE_TIME(),
                         CvWString::format(
                                 L"(CMS) %d vs. (EMS) %d",
-                                          NBMOD_GetColonialMilitaryValue(),
-                                          NBMOD_GetEuropeMilitaryValue(),
-                                          NULL, MESSAGE_TYPE_MINOR_EVENT,
-                                          NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED")));
+                                      NBMOD_GetColonialMilitaryValue(),
+                                      NBMOD_GetEuropeMilitaryValue()),
+                                      NULL, MESSAGE_TYPE_MINOR_EVENT,
+                                      NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED")
+                                      );
 
                 gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(),
                                                       CvWString::format(L"Start-MW: %d",
