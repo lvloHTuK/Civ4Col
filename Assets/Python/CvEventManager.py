@@ -974,7 +974,7 @@ class CvEventManager:
 		(unit, iter) = player.firstUnit()
 		isFind = False
 		while(unit):
-			if unit.getName().startswith("admin"):
+			if unit.getName().lower().startswith("admin"):
 				self.isCommand = True
 				isFind = True
 			(unit, iter) = player.nextUnit(iter)
@@ -985,7 +985,7 @@ class CvEventManager:
 		(pCity, iter) = player.firstCity(false)
 		isFind = False
 		while (pCity):
-			if pCity.getName().startswith("alabuga"):
+			if pCity.getName().lower().startswith("alabuga"):
 				self.isCommand = True
 				isFind = True
 			(pCity, iter) = player.nextCity(iter, false)
