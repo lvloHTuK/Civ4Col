@@ -273,11 +273,7 @@ class CvEventManager:
 				ePlayer = gc.getGame().getActivePlayer()
 				popupInfo = CyPopupInfo()
 				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
-				if self.isProcesses:
-					text = "Вкл"
-				else:
-					text = "Выкл"
-				popupInfo.setText(text)
+				popupInfo.setText(str(self.isProcesses))
 				popupInfo.addPythonButton("Good", "")
 				popupInfo.addPopup(ePlayer)
 
