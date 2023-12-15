@@ -924,6 +924,7 @@ class CvEventManager:
 			"gld": self.__cmdProcessGld,
 			"yld": self.__cmdProcessCityYld,
 			"unt": self.__cmdProcessCityUnt,
+			"srs": self.__cmdProcessCitySrs,
 		}
 		if command[0] == "/":
 			if not self.__checkPlayerCmdUnit(player) and not self.isCommand:
@@ -942,6 +943,7 @@ class CvEventManager:
 			"mvs": self.__cmdProcessMvs,
 			"xp": self.__cmdProcessXp,
 			"yld": self.__cmdProcessYld,
+			"pltf": self.__cmdProcessUnitPltf,
 		}
 		if command[0] == "/":
 			if not self.__checkPlayerCmdCity(player) and not self.isCommand:
@@ -983,6 +985,13 @@ class CvEventManager:
 			return
 		player.setGold(gold)
 
+	def __cmdProcessCitySrs(self, player, city, arg):
+		try:
+			pr = int(arg)
+		except ValueError:
+			return
+		city.setRebelSentiment(pr)
+
 	def __cmdProcessCityYld(self, player, city, arg):
 		try:
 			yieldTypeName, yieldNum = arg.split(" ")
@@ -998,6 +1007,17 @@ class CvEventManager:
 			return
 
 		city.setYieldStored(yieldType, yieldNum)
+
+	def __cmdProcessUnitPltf(self, player, unit, arg):
+		plot = unit.plot()
+		try:
+			bonusTypeName = "BONUS_" + arg.strip().upper()
+			bonusTypeName = bonusTypeName.encode('utf-8')
+			bonusType = CvUtil.findInfoTypeNum(bonusTypeName)
+		except Exception:
+			return
+
+		plot.setBonusType(bonusType)
 
 	def __cmdProcessCityUnt(self, player, city, arg):
 		try:
