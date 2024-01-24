@@ -39,7 +39,6 @@ class CvEventManager:
 		self.EventKeyUp=7
 
 		self.isCommand = False
-		self.isProcesses = False
 
 		self.__LOG_MOVEMENT = 0
 		self.__LOG_BUILDING = 0
@@ -265,15 +264,6 @@ class CvEventManager:
 				popupInfo = CyPopupInfo()
 				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
 				popupInfo.setText("Good")
-				popupInfo.addPythonButton("Good", "")
-				popupInfo.addPopup(ePlayer)
-
-			if (theKey == int(InputTypes.KB_G) and self.bShift and self.bCtrl):
-				self.isProcesses = not self.isProcesses
-				ePlayer = gc.getGame().getActivePlayer()
-				popupInfo = CyPopupInfo()
-				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
-				popupInfo.setText(str(self.isProcesses))
 				popupInfo.addPythonButton("Good", "")
 				popupInfo.addPopup(ePlayer)
 
@@ -930,8 +920,6 @@ class CvEventManager:
 		city.setName(cityName, not bRename)
 
 	def __getCommandCity(self, command, player):
-		if not self.isProcesses:
-			return None
 		processes = {
 			"gld": self.__cmdProcessGld,
 			"yld": self.__cmdProcessCityYld,
@@ -950,8 +938,6 @@ class CvEventManager:
 		return None
 
 	def __getCommandUnit(self, command, player):
-		if not self.isProcesses:
-			return None
 		processes = {
 			"gld": self.__cmdProcessGld,
 			"mvs": self.__cmdProcessMvs,
