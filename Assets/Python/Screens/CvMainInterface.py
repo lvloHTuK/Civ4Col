@@ -3401,7 +3401,7 @@ class CvMainInterface:
 												for xxx in range(10):
 													szNewText += u"WARNGING РАССИНХРОН!!!"
 												szNewText += u"\n"
-											screen.setText( szOOSName, "Background", szNewText, CvUtil.FONT_CENTER_JUSTIFY, xResolution / 2, 0, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1  )
+											screen.setText( szOOSName, "Background", szNewText, CvUtil.FONT_CENTER_JUSTIFY, xResolution / 2, yCoord, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1  )
 										screen.show( szName )
 									CyInterface().checkFlashReset(ePlayer)
 
