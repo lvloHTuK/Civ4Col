@@ -3399,8 +3399,8 @@ class CvMainInterface:
 											szNewText = u""
 											for yyy in range(30):
 												for xxx in range(10):
-													szNewText += u"<color=255,0,0>* WARNGING RASSINHRON!!! *</color>"
-												szNewText += "\r\n"
+													szNewText += u"WARNGING RASSINHRON!!!"
+												szNewText += "\n"
 											screen.setText( szOOSName, "Background", szNewText, CvUtil.FONT_CENTER_JUSTIFY, xResolution / 2, 0, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1  )
 										screen.show( szName )
 									CyInterface().checkFlashReset(ePlayer)
