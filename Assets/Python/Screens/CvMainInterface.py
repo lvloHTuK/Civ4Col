@@ -3287,7 +3287,6 @@ class CvMainInterface:
 		iCount = 0
 		iBtnHeight = 22
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
-		szOOSBuffer = None
 
 		if ((CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY)):
 			if (CyInterface().isScoresVisible() and not CyInterface().isCityScreenUp() and not CyEngine().isGlobeviewUp() ):
@@ -3377,9 +3376,8 @@ class CvMainInterface:
 										szBuffer = szBuffer + CyGameTextMgr().getNetStats(ePlayer)
 
 									if (gc.getPlayer(ePlayer).isHuman() and CyInterface().isOOSVisible()):
-										# szTempBuffer = u" <color=255,0,0>* %s *</color>" %(CyGameTextMgr().getOOSSeeds(ePlayer))
-										# szBuffer = szBuffer + szTempBuffer
-										szOOSBuffer = u" <color=255,0,0>* %s *</color>" %(CyGameTextMgr().getOOSSeeds(ePlayer))
+										szTempBuffer = u" <color=255,0,0>* %s *</color>" %(CyGameTextMgr().getOOSSeeds(ePlayer))
+										szBuffer = szBuffer + szTempBuffer
 
 									szBuffer = szBuffer + "</font>"
 
@@ -3394,9 +3392,6 @@ class CvMainInterface:
 
 									if not pHeadSelectedCity:
 										screen.setText( szName, "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution - 12, yCoord - (iCount * iBtnHeight) - 31, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1 )
-										if szOOSBuffer != None:
-											szOOSName = "ScoreText" + str(ePlayer)
-											screen.setText( szOOSName, szOOSBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution / 2, yCoord / 2, 0, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1  )
 										screen.show( szName )
 									CyInterface().checkFlashReset(ePlayer)
 
