@@ -2463,6 +2463,11 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	return false;
 }
 
+time_t CvUnit::getLastUpdateMyTimer() const
+{
+    return m_myTimer;
+}
+
 void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 {
 	CvUnit* pUnit;
@@ -2572,7 +2577,20 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			break;
 
 		case COMMAND_YIELD_TRADE:
-            if (time(NULL) - m_myTimer > 1) {
+            time_t timeNow = time(NULL);
+            bool isCanTrade = false;
+            CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+            int iLoop;
+
+            for (CvUnit* pLoopUnit = kOwner.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kOwner.nextUnit(&iLoop))
+            {
+                if (pLoopUnit != this && timeNow - pLoopUnit->getLastUpdateMyTimer() > 1)
+                {
+                    isCanTrade = true;
+                }
+            }
+
+            if (isCanTrade) {
                 tradeYield();
                 m_myTimer = time(NULL);
             }
