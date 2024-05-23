@@ -95,6 +95,8 @@ void CvGame::init(HandicapTypes eHandicap)
 	//--------------------------------
 	// Init other game data
 
+    m_saveVersion = GC.getDefineSTRING("SAVE_MVERSION");
+
 	// Turn off all MP options if it's a single player game
 	if (GC.getInitCore().getType() == GAME_SP_NEW ||
 		GC.getInitCore().getType() == GAME_SP_SCENARIO)
@@ -508,6 +510,8 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	//--------------------------------
 	// Uninit class
 	uninit();
+
+    m_saveVersion = "";
 
 	m_iEndTurnMessagesSent = 0;
 	m_iElapsedGameTurns = 0;
@@ -6800,6 +6804,21 @@ void CvGame::read(FDataStreamBase* pStream)
 	}
 	// city radius end
 
+    if (GC.getDefineINT("LOAD_SAVE_VERSION") == 1)
+    {
+        pStream->ReadString(m_saveVersion);
+
+		if (GC.getDefineINT("CHECK_SAVE_VERSION") == 1)
+		{
+            if (m_saveVersion != GC.getDefineSTRING("SAVE_MVERSION"))
+            {
+                FAssertMsg(false, "Incorrect version save");
+                gDLL->MessageBox("Invalid check save", "XML Load Error");
+                pStream->ReadString(m_saveVersion);
+            }
+		}
+    }
+
 	pStream->Read(&m_iEndTurnMessagesSent);
 	pStream->Read(&m_iElapsedGameTurns);
 	pStream->Read(&m_iStartTurn);
@@ -6993,6 +7012,11 @@ void CvGame::write(FDataStreamBase* pStream)
 	/// one/two city plot radiu
 	pStream->Write(getDefineFlagsForDLL());
 	// city radius end
+
+    if (GC.getDefineINT("WRITE_SAVE_VERSION") == 1)
+    {
+        pStream->WriteString(m_saveVersion);
+    }
 
 	pStream->Write(m_iEndTurnMessagesSent);
 	pStream->Write(m_iElapsedGameTurns);

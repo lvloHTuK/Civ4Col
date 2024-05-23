@@ -6,6 +6,22 @@
 <!-- Global Defines -->
 <Civ4Defines xmlns="x-schema:CIV4GlobalDefinesSchema.xml">
 	<Define>
+		<DefineName>SAVE_MVERSION</DefineName>
+		<DefineTextVal>CUSTOM10</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>WRITE_SAVE_VERSION</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>LOAD_SAVE_VERSION</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>CHECK_SAVE_VERSION</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>MODS_SHOULD_OVERRIDE_GLOBAL_DEFINES_HERE</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>

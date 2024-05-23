@@ -392,6 +392,7 @@ public:
 	void writeDesyncLog();
 
 protected:
+    CvString m_saveVersion;
 
 	int m_iEndTurnMessagesSent;
 	int m_iElapsedGameTurns;

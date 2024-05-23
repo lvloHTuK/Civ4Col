@@ -231,7 +231,8 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			self.setPediaCommonWidgets()
 
 		# Header...
-		szHeader = u"<font=4b>" +localText.getText("TXT_KEY_WIDGET_HELP", ()).upper() + u"</font>"
+		gameVersion = gc.getDefineSTRING("SAVE_MVERSION")
+		szHeader = u"<font=4b>" +localText.getText("TXT_KEY_WIDGET_HELP", ()).upper() + u"</font> V:" + gameVersion
 		szHeaderId = self.getNextWidgetName()
 		screen.setLabel(szHeaderId, "Background", szHeader, CvUtil.FONT_CENTER_JUSTIFY, self.W_SCREEN / 2, self.Y_TITLE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, -1, -1)
 
