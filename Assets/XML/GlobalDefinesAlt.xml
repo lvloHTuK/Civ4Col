@@ -7,7 +7,7 @@
 <Civ4Defines xmlns="x-schema:CIV4GlobalDefinesSchema.xml">
 	<Define>
 		<DefineName>SAVE_MVERSION</DefineName>
-		<DefineTextVal>CUSTOM10</DefineTextVal>
+		<DefineTextVal>TURNIR10</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>WRITE_SAVE_VERSION</DefineName>
