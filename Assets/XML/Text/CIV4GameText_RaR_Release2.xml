@@ -16,7 +16,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_HEALTH</Tag>
 		<English>Health</English>
-		<French>Health</French>
+		<French>&#199;&#228;&#238;&#240;&#238;&#226;&#252;&#229;</French>
 		<German>Gesundheit</German>
 		<Italian>Health</Italian>
 		<Spanish>Health</Spanish>
@@ -24,7 +24,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HEALER</Tag>
 		<English>Healer</English>
-		<French>Healer</French>
+		<French>Лекарь</French>
 		<German>Heiler</German>
 		<Italian>Healer</Italian>
 		<Spanish>Healer</Spanish>
@@ -32,7 +32,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DOCTOR</Tag>
 		<English>Renowned Medic</English>
-		<French>Renowned Medic</French>
+		<French>Известный медик</French>
 		<German>Ausgebildeter Arzt</German>
 		<Italian>Renowned Medic</Italian>
 		<Spanish>Renowned Medic</Spanish>
@@ -40,7 +40,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MEDICAL_OFFICE</Tag>
 		<English>Medical Office</English>
-		<French>Medical Office</French>
+		<French>Медицинский офис</French>
 		<German>Arztpraxis</German>
 		<Italian>Medical Office</Italian>
 		<Spanish>Medical Office</Spanish>
@@ -48,7 +48,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOWN_HOSPITAL</Tag>
 		<English>Town Hospital</English>
-		<French>Town Hospital</French>
+		<French>Городская больница</French>
 		<German>Stadtkrankenhaus</German>
 		<Italian>Town Hospital</Italian>
 		<Spanish>Town Hospital</Spanish>
@@ -56,7 +56,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CITY_HOSPITAL</Tag>
 		<English>City Hospital</English>
-		<French>City Hospital</French>
+		<French>Деревенская больница</French>
 		<German>Bezirkskrankenhaus</German>
 		<Italian>City Hospital</Italian>
 		<Spanish>City Hospital</Spanish>
@@ -72,7 +72,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VILLAGE_WELL</Tag>
 		<English>Village Well</English>
-		<French>Village Well</French>
+		<French>Деревенский колодец</French>
 		<German>Dorfbrunnen</German>
 		<Italian>Village Well</Italian>
 		<Spanish>Village Well</Spanish>
@@ -480,7 +480,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_GREAT_ADMIRAL</Tag>
 		<English>Led by Great Admiral</English>
-		<French>Led by Great Admiral</French>
+		<French>Под руководством Великого Адмирала</French>
 		<German>Angef&#252;hrt von Gro&#223;em Admiral</German>
 		<Italian>Condotto da un Grande Admirale</Italian>
 		<Spanish>Al mando de un Gran Admiral</Spanish>
@@ -489,7 +489,7 @@
 		<Tag>TXT_KEY_UNIT_GREAT_ADMIRAL</Tag>
 		<English>Great Admiral</English>
 		<French>
-			<Text>Great Admiral</Text>
+			<Text>Великий адмирал</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -592,7 +592,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SHIP_CARPENTER1</Tag>
 		<English>Ship Carpenter I</English>
-		<French>Ship Carpenter I</French>
+		<French>Судовой плотник I</French>
 		<German>Schiffszimmermann I</German>
 		<Italian>Ship Carpenter I</Italian>
 		<Spanish>Ship Carpenter I</Spanish>
@@ -600,7 +600,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SHIP_CARPENTER2</Tag>
 		<English>Ship Carpenter II</English>
-		<French>Ship Carpenter II</French>
+		<French>Судовой плотник II</French>
 		<German>Schiffszimmermann II</German>
 		<Italian>Ship Carpenter II</Italian>
 		<Spanish>Ship Carpenter II</Spanish>

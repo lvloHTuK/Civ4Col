@@ -293,7 +293,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Cotton Weaver:Cotton Weavers</Text>
+			<Text>Ткач хлопка:Ткач хлопка</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -405,7 +405,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Toolsmith:Toolsmiths</Text>
+			<Text>Кузнец:Кузнец</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -685,7 +685,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Royal Dragoon:Royal Dragoons</Text>
+			<Text>Королевский драгун:Королевский драгун</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1141,7 +1141,7 @@
 		<Tag>TXT_KEY_CIV_DUTCH_DESC</Tag>
 		<English>Dutch Colonies</English>
 		<French>
-			<Text>&#195;&#238;&#235;&#235;&#224;&#237;&#228;&#241;&#234;&#232;&#229; &#234;&#238;&#235;&#238;&#237;&#232;&#232;</Text>
+			<Text>Нидерланды</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1261,7 +1261,7 @@
 		<Tag>TXT_KEY_CIV_NEZ_PERCE_DESC</Tag>
 		<English>Nez Perce</English>
 		<French>
-			<Text>Nez Perce</Text>
+			<Text>Не-Персе</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1301,7 +1301,7 @@
 		<Tag>TXT_KEY_CIV_DUTCH_SHORT_DESC</Tag>
 		<English>New Netherlands</English>
 		<French>
-			<Text>&#205;&#238;&#226;&#251;&#229; &#205;&#232;&#228;&#229;&#240;&#235;&#224;&#237;&#228;&#251;</Text>
+			<Text>Нидерланды</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1421,7 +1421,7 @@
 		<Tag>TXT_KEY_CIV_NEZ_PERCE_SHORT_DESC</Tag>
 		<English>Nez Perce</English>
 		<French>
-			<Text>Nez Perce</Text>
+			<Text>Нес Перс</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1541,7 +1541,7 @@
 		<Tag>TXT_KEY_UNIT_MINER</Tag>
 		<English>Expert Miner:Expert Miners</English>
 		<French>
-			<Text>Expert Miner:Expert Miners</Text>
+			<Text>Опытный шахтер:Опытный шахтер</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1561,7 +1561,7 @@
 		<Tag>TXT_KEY_UNIT_RANCHER</Tag>
 		<English>Expert Rancher:Expert Ranchers</English>
 		<French>
-			<Text>Expert Rancher:Expert Ranchers</Text>
+			<Text>Эксперт ранчо:Эксперт ранчо</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1921,7 +1921,7 @@
 		<Tag>TXT_KEY_UNIT_VETERAN_INFANTRY</Tag>
 		<English>Veteran Infantry Soldier:Veteran Infantry Soldiers</English>
 		<French>
-			<Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
+			<Text>Ветеран пехоты:Ветеран пехоты</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1945,7 +1945,7 @@
 		<Tag>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY</Tag>
 		<English>European Line Infantry:European Line Infantry</English>
 		<French>
-			<Text>European Line Infantry:European Line Infantry</Text>
+			<Text>Европейская линейная пехота:Европейская линейная пехота</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1969,7 +1969,7 @@
 		<Tag>TXT_KEY_UNIT_VETERAN_DRAGOON</Tag>
 		<English>Veteran Dragoon:Veteran Dragoons</English>
 		<French>
-			<Text>Veteran Dragoon:Veteran Dragoons</Text>
+			<Text>Ветеран-драгун:Ветеран-драгун</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1993,7 +1993,7 @@
 		<Tag>TXT_KEY_UNIT_VETERAN_CAVALRY</Tag>
 		<English>Veteran Cavalryman:Veteran Cavalrymen</English>
 		<French>
-			<Text>Veteran Cavalryman:Veteran Cavalrymen</Text>
+			<Text>Ветеран-кавалерист:Ветеран-кавалерист</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2017,7 +2017,7 @@
 		<Tag>TXT_KEY_UNIT_ROYAL_DRAGOON</Tag>
 		<English>Royal Dragoon:Royal Dragoons</English>
 		<French>
-			<Text>Royal Dragoon:Royal Dragoons</Text>
+			<Text>Королевский драгун:Королевский драгун</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2041,7 +2041,7 @@
 		<Tag>TXT_KEY_UNIT_ROYAL_CAVALRY</Tag>
 		<English>Royal Cavalryman:Royal Cavalrymen</English>
 		<French>
-			<Text>Royal Cavalryman:Royal Cavalrymen</Text>
+			<Text>Королевский кавалерист:Королевский кавалерист</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2161,7 +2161,7 @@
 		<Tag>TXT_KEY_UNIT_EMIGRANT</Tag>
 		<English>Political Refugee:Political Refugees</English>
 		<French>
-			<Text>Political Refugee:Political Refugees</Text>
+			<Text>Политический беженец:Политический беженец</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2185,7 +2185,7 @@
 		<Tag>TXT_KEY_UNIT_GOVERNOR</Tag>
 		<English>Governor:Governors</English>
 		<French>
-			<Text>Governor:Governors</Text>
+			<Text>Губернатор:Губернатор</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2401,7 +2401,7 @@
 		<Tag>TXT_KEY_UNIT_CARRACK</Tag>
 		<English>Carrack:Carracks</English>
 		<French>
-			<Text>Carrack:Carracks</Text>
+			<Text>Каракка:Каракки</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2417,7 +2417,7 @@
 		<Tag>TXT_KEY_UNIT_FLUYT</Tag>
 		<English>Fluyt:Fluyts</English>
 		<French>
-			<Text>Fluyt:Fluyts</Text>
+			<Text>Флюит:Флюит</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2456,7 +2456,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY</Tag>
 		<English>Light Artillery:Light Artillery</English>
-		<French>Light Artillery:Light Artillery</French>
+		<French>Легкая артиллерия:Легкая артиллерия</French>
 		<German>Leichte Artillerie:Leichte Artillerien</German>
 		<Italian>Light Artillery:Light Artillery</Italian>
 		<Spanish>Light Artillery:Light Artillery</Spanish>
@@ -2481,7 +2481,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Heavy Artillery:Heavy Artilleries</Text>
+			<Text>Тяжелая артиллерия:Тяжелая артиллерия</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2505,7 +2505,7 @@
 		<Tag>TXT_KEY_UNIT_ROYAL_ARTILLERY</Tag>
 		<English>Royal Artillery:Royal Artilleries</English>
 		<French>
-			<Text>Royal Artillery:Royal Artilleries</Text>
+			<Text>Королевская артиллерия:Королевская артиллерия</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2577,7 +2577,7 @@
 		<Tag>TXT_KEY_UNIT_TREK</Tag>
 		<English>Trek:Treks</English>
 		<French>
-			<Text>Trek:Treks</Text>
+			<Text>Походная карета:Походная карета</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2593,7 +2593,7 @@
 		<Tag>TXT_KEY_UNIT_STAGECOACH</Tag>
 		<English>Stagecoach:Stagecoaches</English>
 		<French>
-			<Text>Stagecoach:Stagecoaches</Text>
+			<Text>Дилижанс:Дилижанс</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2609,7 +2609,7 @@
 		<Tag>TXT_KEY_UNIT_CARRIER</Tag>
 		<English>Conestoga:Conestogas</English>
 		<French>
-			<Text>Conestoga:Conestogas</Text>
+			<Text>Конестога:Конестоги</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2945,7 +2945,7 @@
 		<Tag>TXT_KEY_BUILDING_BASECAMP</Tag>
 		<English>Basecamp</English>
 		<French>
-			<Text>Basecamp</Text>
+			<Text>База</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2957,7 +2957,7 @@
 		<Tag>TXT_KEY_BUILDING_VILLAGEHALL</Tag>
 		<English>Village Hall</English>
 		<French>
-			<Text>Village Hall</Text>
+			<Text>Деревенский дом</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2989,7 +2989,7 @@
 		<Tag>TXT_KEY_BUILDING_CITYHALL</Tag>
 		<English>City Hall</English>
 		<French>
-			<Text>City Hall</Text>
+			<Text>Мэрия</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3001,7 +3001,7 @@
 		<Tag>TXT_KEY_BUILDING_PALACE</Tag>
 		<English>Government Palace</English>
 		<French>
-			<Text>Government Palace</Text>
+			<Text>Дворец правительства</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3073,7 +3073,7 @@
 		<Tag>TXT_KEY_BUILDING_GREAT_UNIVERSITY</Tag>
 		<English>Great University</English>
 		<French>
-			<Text>Great University</Text>
+			<Text>Великий университет</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3153,7 +3153,7 @@
 		<Tag>TXT_KEY_BUILDING_TOOL_FACTORY</Tag>
 		<English>Tool Factory</English>
 		<French>
-			<Text>Tool Factory</Text>
+			<Text>Завод инструментов</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3165,7 +3165,7 @@
 		<Tag>TXT_KEY_BUILDING_GREAT_TOOL_FACTORY</Tag>
 		<English>Great Tool Factory</English>
 		<French>
-			<Text>Great Tool Factory</Text>
+			<Text>Большой завод инструментов</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3177,7 +3177,7 @@
 		<Tag>TXT_KEY_BUILDING_STOCKADE</Tag>
 		<English>Chevaux de Frise</English>
 		<French>
-			<Text>Chevaux de Frise</Text>
+			<Text>Заграждение рогатка</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3189,7 +3189,7 @@
 		<Tag>TXT_KEY_BUILDING_FORT</Tag>
 		<English>Stockade</English>
 		<French>
-			<Text>Stockade</Text>
+			<Text>Частокол</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3209,7 +3209,7 @@
 		<Tag>TXT_KEY_BUILDING_FORTRESS</Tag>
 		<English>Fort</English>
 		<French>
-			<Text>Fort</Text>
+			<Text>Форт</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3229,7 +3229,7 @@
 		<Tag>TXT_KEY_BUILDING_STRONGHOLD</Tag>
 		<English>Fortress</English>
 		<French>
-			<Text>Fortress</Text>
+			<Text>Крепость</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3249,7 +3249,7 @@
 		<Tag>TXT_KEY_BUILDING_CITADEL</Tag>
 		<English>Citadel</English>
 		<French>
-			<Text>Citadel</Text>
+			<Text>Цитадель</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3261,7 +3261,7 @@
 		<Tag>TXT_KEY_BUILDING_NATIVE_WALL</Tag>
 		<English>Native Wall</English>
 		<French>
-			<Text>Native Wall</Text>
+			<Text>Родные стены</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3333,7 +3333,7 @@
 		<Tag>TXT_KEY_BUILDING_GREAT_ARSENAL</Tag>
 		<English>Great Arsenal</English>
 		<French>
-			<Text>Great Arsenal</Text>
+			<Text>Великий Арсенал</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3345,7 +3345,7 @@
 		<Tag>TXT_KEY_BUILDING_LANDING_STAGE</Tag>
 		<English>Pier</English>
 		<French>
-			<Text>Pier</Text>
+			<Text>Пирс</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3417,7 +3417,7 @@
 		<Tag>TXT_KEY_BUILDING_GREAT_SHIPYARD</Tag>
 		<English>Naval Port</English>
 		<French>
-			<Text>Naval Port</Text>
+			<Text>Военно-морской порт</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3633,7 +3633,7 @@
 		<Tag>TXT_KEY_BUILDING_WHEELWRIGHTS_WORKSHOP</Tag>
 		<English>Wheelwrights Workshop</English>
 		<French>
-			<Text>Wheelwrights Workshop</Text>
+			<Text>Мастерская колесников</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3645,7 +3645,7 @@
 		<Tag>TXT_KEY_BUILDING_GREAT_WHEELWRIGHTS_WORKSHOP</Tag>
 		<English>Great Wheelwrights Workshop</English>
 		<French>
-			<Text>Great Wheelwrights Workshop</Text>
+			<Text>Большая мастерская колесников</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3657,7 +3657,7 @@
 		<Tag>TXT_KEY_BUILDING_WHALE_OIL_HOUSE</Tag>
 		<English>Train Oil Manufactory</English>
 		<French>
-			<Text>Train Oil Manufactory</Text>
+			<Text>Завод Китового масла</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3669,7 +3669,7 @@
 		<Tag>TXT_KEY_BUILDING_WHALE_OIL_FACTORY</Tag>
 		<English>Train Oil Rendering Plant</English>
 		<French>
-			<Text>Train Oil Rendering Plant</Text>
+			<Text>Фабрика Китового масла</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3681,7 +3681,7 @@
 		<Tag>TXT_KEY_BUILDING_STATUE_GOVERNOR</Tag>
 		<English>Statue of Governor</English>
 		<French>
-			<Text>Statue of Governor</Text>
+			<Text>Статуя губернатора</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3693,7 +3693,7 @@
 		<Tag>TXT_KEY_BUILDING_WAREHOUSE</Tag>
 		<English>Storage House</English>
 		<French>
-			<Text>Storage House</Text>
+			<Text>Дом для хранения</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3713,7 +3713,7 @@
 		<Tag>TXT_KEY_BUILDING_CHICKEE</Tag>
 		<English>Chickee</English>
 		<French>
-			<Text>Chickee</Text>
+			<Text>Чики</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3925,7 +3925,7 @@
 		<Tag>TXT_KEY_BUILDING_WAREHOUSE_EXPANSION</Tag>
 		<English>Warehouse</English>
 		<French>
-			<Text>Warehouse</Text>
+			<Text>Склад</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3945,7 +3945,7 @@
 		<Tag>TXT_KEY_BUILDING_CUSTOM_HOUSE</Tag>
 		<English>Custom House</English>
 		<French>
-			<Text>Custom House</Text>
+			<Text>Индивидуальный дом</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -3989,7 +3989,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Ren&#233;-Robert Cavelier de La Salle</Text>
+			<Text>Рене-Роберт Кавелье де Ла Салль</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4017,7 +4017,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Francis Drake</Text>
+			<Text>Фрэнсис Дрейк</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4045,7 +4045,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Fran&#231;ois Joseph Paul de Grasse</Text>
+			<Text>Франсуа Жозеф Поль де Грасс</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4073,7 +4073,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Henry Shrapnel</Text>
+			<Text>Генри Шрапнель</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4129,7 +4129,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Benjamin Franklin</Text>
+			<Text>Бенджамин Франклин</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4521,7 +4521,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Malinche</Text>
+			<Text>Малинче</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4549,7 +4549,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>John Adams</Text>
+			<Text>Джон Адамс</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -5557,7 +5557,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>William Penn</Text>
+			<Text>Виллиам Пенн</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -5613,7 +5613,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Hernan Cortes</Text>
+			<Text>Эрнан Кортес</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -5748,7 +5748,7 @@
 <TEXT>
   <Tag>TXT_KEY_LEADER_DE_SA</Tag>
   <English>Mem de S&#225;</English>
-		<French>Mem de S&#225;</French>
+		<French>Мем ди Са</French>
   <German>Mem de S&#225;</German>
   <Italian>Mem de S&#225;</Italian>
   <Spanish>Mem de S&#225;</Spanish>
@@ -5756,7 +5756,7 @@
  <TEXT>
   <Tag>TXT_KEY_LEADER_PORTUGUESE_KING</Tag>
   <English>King of Portugal</English>
-		<French>King of Portugal</French>
+		<French>Король Португалии</French>
   <German>K&#246;nig von Portugal</German>
   <Italian>Re di Portogallo</Italian>
   <Spanish>King of Portugal</Spanish>
@@ -5764,7 +5764,7 @@
  <TEXT>
   <Tag>TXT_KEY_LEADER_SOUSA</Tag>
   <English>Martim Afonso de Sousa</English>
-		<French>Martim Afonso de Sousa</French>
+		<French>Мартин Афонсу де Соуза</French>
   <German>Martim Afonso de Sousa</German>
   <Italian>MMartim Afonso de Sousa</Italian>
   <Spanish>Martim Afonso de Sousa</Spanish>
@@ -5773,7 +5773,7 @@
   <Tag>TXT_KEY_LEADER_PACAL</Tag>
   <English>Tecun Uman</English>
   <French>
-			<Text>Tecun Uman</Text>
+			<Text>Тэкун Уман</Text>
    <Gender>Male</Gender>
    <Plural>0</Plural>
   </French>
@@ -5797,7 +5797,7 @@
   <Tag>TXT_KEY_LEADER_ORKEKE</Tag>
   <English>Orkeke</English>
   <French>
-			<Text>Orkeke</Text>
+			<Text>Оркеке</Text>
    <Gender>Male</Gender>
    <Plural>0</Plural>
   </French>
@@ -6049,7 +6049,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Stadtholder of the Netherlands</Text>
+			<Text>Штатгальтер Нидерландов</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -6333,7 +6333,7 @@
 		<Tag>TXT_KEY_CIV_ENGLAND_EUROPE_SHORT_DESC</Tag>
 		<English>England</English>
 		<French>
-			<Text>&#192;&#237;&#227;&#235;&#232;&#255;</Text>
+			<Text>Англия</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -8729,7 +8729,7 @@
 		<Tag>TXT_KEY_CITY_NAME_NEW_HOLLAND</Tag>
 		<English>New Holland</English>
 		<French>
-			<Text>&#205;&#238;&#226;&#224;&#255; &#195;&#238;&#235;&#235;&#224;&#237;&#228;&#232;&#255;</Text>
+			<Text>Голландия</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -11089,7 +11089,7 @@
 		<Tag>TXT_KEY_CIV_ENGLAND_SHORT_DESC</Tag>
 		<English>New England</English>
 		<French>
-			<Text>&#205;&#238;&#226;&#224;&#255; &#192;&#237;&#227;&#235;&#232;&#255;</Text>
+			<Text>Англия</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -11109,7 +11109,7 @@
 		<Tag>TXT_KEY_CIV_FRANCE_DESC</Tag>
 		<English>French Colonies</English>
 		<French>
-			<Text>&#212;&#240;&#224;&#237;&#246;&#243;&#231;&#241;&#234;&#232;&#229; &#234;&#238;&#235;&#238;&#237;&#232;&#232;</Text>
+			<Text>Французские колонии</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -11129,7 +11129,7 @@
 		<Tag>TXT_KEY_CIV_FRANCE_SHORT_DESC</Tag>
 		<English>New France</English>
 		<French>
-			<Text>&#205;&#238;&#226;&#224;&#255; &#212;&#240;&#224;&#237;&#246;&#232;&#255;</Text>
+			<Text>Франция</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -11149,7 +11149,7 @@
 		<Tag>TXT_KEY_CIV_SPAIN_DESC</Tag>
 		<English>Spanish Colonies</English>
 		<French>
-			<Text>&#200;&#241;&#239;&#224;&#237;&#241;&#234;&#232;&#229; &#234;&#238;&#235;&#238;&#237;&#232;&#232;</Text>
+			<Text>Испанские колонии</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -11169,7 +11169,7 @@
 		<Tag>TXT_KEY_CIV_SPAIN_SHORT_DESC</Tag>
 		<English>New Spain</English>
 		<French>
-			<Text>&#205;&#238;&#226;&#224;&#255; &#200;&#241;&#239;&#224;&#237;&#232;&#255;</Text>
+			<Text>Испания</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -11729,7 +11729,7 @@
 		<Tag>TXT_KEY_TRAIT_CITYBUILDER</Tag>
 		<English>Prosperous</English>
 		<French>
-			<Text>Prosperous</Text>
+			<Text>Зажиточный</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11749,7 +11749,7 @@
 		<Tag>TXT_KEY_TRAIT_PUPIL</Tag>
 		<English>Pupil</English>
 		<French>
-			<Text>Pupil</Text>
+			<Text>Ученик</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11769,7 +11769,7 @@
 		<Tag>TXT_KEY_TRAIT_TRADER</Tag>
 		<English>Trader</English>
 		<French>
-			<Text>Trader</Text>
+			<Text>Торговец</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11789,7 +11789,7 @@
 		<Tag>TXT_KEY_TRAIT_CLIMBER</Tag>
 		<English>Climber</English>
 		<French>
-			<Text>Climber</Text>
+			<Text>Альпинист</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11829,7 +11829,7 @@
 		<Tag>TXT_KEY_TRAIT_FORESTWARRIORS</Tag>
 		<English>Forestwarriors</English>
 		<French>
-			<Text>Forestwarriors</Text>
+			<Text>Лесные войны</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11849,7 +11849,7 @@
 		<Tag>TXT_KEY_TRAIT_FARMERS</Tag>
 		<English>Farmers</English>
 		<French>
-			<Text>Farmers</Text>
+			<Text>Фермеры</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11869,7 +11869,7 @@
 		<Tag>TXT_KEY_TRAIT_NOMADS</Tag>
 		<English>Nomads</English>
 		<French>
-			<Text>Nomads</Text>
+			<Text>Кочевники</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11889,7 +11889,7 @@
 		<Tag>TXT_KEY_TRAIT_HUNTERS</Tag>
 		<English>Hunters</English>
 		<French>
-			<Text>Hunters</Text>
+			<Text>Охотники</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11909,7 +11909,7 @@
 		<Tag>TXT_KEY_TRAIT_RAIDERS</Tag>
 		<English>Raiders</English>
 		<French>
-			<Text>Raiders</Text>
+			<Text>Рейдеры</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -11929,7 +11929,7 @@
 		<Tag>TXT_KEY_TRAIT_COASTALWARRIORS</Tag>
 		<English>Coastal Warriors</English>
 		<French>
-			<Text>Coastal Warriors</Text>
+			<Text>Прибрежные войны</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -12645,7 +12645,7 @@
 		<Tag>TXT_KEY_BONUS_COTTON</Tag>
 		<English>Cotton Plants</English>
 		<French>
-			<Text>Cotton Plants</Text>
+			<Text>Хлопковые растения</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -12665,7 +12665,7 @@
 		<Tag>TXT_KEY_BONUS_TOBACCO</Tag>
 		<English>Tobacco Plants</English>
 		<French>
-			<Text>Tobacco Plants</Text>
+			<Text>Табачные растения</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14176,7 +14176,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural></English>
 		<French>
-			<Text>Royal Light Infantryman:Royal Light Infantrymen</Text>
+			<Text>Королевский легкий пехотинец:Королевский легкий пехотинец</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -14199,7 +14199,7 @@
 		<Tag>TXT_KEY_UNIT_ROYAL_LINE_INFANTRY</Tag>
 		<English>Royal Line Infantryman</English>
 		<French>
-			<Text>Royal Line Infantryman</Text>
+			<Text>Королевский линейный пехотинец</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -14218,7 +14218,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HESSIAN</Tag>
 		<English>Hessian:Hessians</English>
-		<French>Hessian:Hessians</French>
+		<French>Гессен:Гессен</French>
 		<German>Hessischer S&#246;ldner:Hessische S&#246;ldner</German>
 		<Italian>Hessian:Hessians</Italian>
 		<Spanish>Hessian:Hessians</Spanish>
@@ -14547,7 +14547,7 @@
 		<Tag>TXT_KEY_PROMOTION_GRENADIER1</Tag>
 		<English>Close Combat I</English>
 		<French>
-			<Text>Close Combat I</Text>
+			<Text>Ближний бой I</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14567,7 +14567,7 @@
 		<Tag>TXT_KEY_PROMOTION_GRENADIER2</Tag>
 		<English>Close Combat II</English>
 		<French>
-			<Text>Close Combat II</Text>
+			<Text>Ближний бой II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14587,7 +14587,7 @@
 		<Tag>TXT_KEY_PROMOTION_GRENADIER3</Tag>
 		<English>Close Combat III</English>
 		<French>
-			<Text>Close Combat III</Text>
+			<Text>Ближний бой III</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14606,7 +14606,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_RELIEF_BATTALION</Tag>
 		<English>Relief Battalion</English>
-		<French>Relief Battalion</French>
+		<French>Батальон помощи</French>
 		<German>Reservebataillon</German>
 		<Italian>Relief Battalion</Italian>
 		<Spanish>Relief Battalion</Spanish>
@@ -14615,7 +14615,7 @@
 		<Tag>TXT_KEY_PROMOTION_STORM_ATTACK1</Tag>
 		<English>Storm Attack I</English>
 		<French>
-			<Text>Storm Attack I</Text>
+			<Text>Штурм I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14635,7 +14635,7 @@
 		<Tag>TXT_KEY_PROMOTION_STORM_ATTACK2</Tag>
 		<English>Storm Attack II</English>
 		<French>
-			<Text>Storm Attack II</Text>
+			<Text>Штурм II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14655,7 +14655,7 @@
 		<Tag>TXT_KEY_PROMOTION_STORM_ATTACK3</Tag>
 		<English>Storm Attack III</English>
 		<French>
-			<Text>Storm Attack III</Text>
+			<Text>Штурм III</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14935,7 +14935,7 @@
 		<Tag>TXT_KEY_PROMOTION_BOMBI</Tag>
 		<English>Explosives I</English>
 		<French>
-			<Text>Explosives I</Text>
+			<Text>Взрывы I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14955,7 +14955,7 @@
 		<Tag>TXT_KEY_PROMOTION_BOMBII</Tag>
 		<English>Explosives II</English>
 		<French>
-			<Text>Explosives II</Text>
+			<Text>Взрывы II</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -14975,7 +14975,7 @@
 		<Tag>TXT_KEY_PROMOTION_BOMBIII</Tag>
 		<English>Explosives III</English>
 		<French>
-			<Text>Explosives III</Text>
+			<Text>Взрывы III</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -15115,7 +15115,7 @@
 		<Tag>TXT_KEY_PROMOTION_BAYONET</Tag>
 		<English>Bayonet</English>
 		<French>
-			<Text>Bayonet</Text>
+			<Text>Штык</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -15127,7 +15127,7 @@
 		<Tag>TXT_KEY_PROMOTION_BROADSIDE</Tag>
 		<English>Broadside</English>
 		<French>
-			<Text>Broadside</Text>
+			<Text>Борт</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -15138,7 +15138,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING1</Tag>
 		<English>Naval Warfare I</English>
-		<French>Naval Warfare I</French>
+		<French>Морская война I</French>
 		<German>Seekrieg I</German>
 		<Italian>Guerra Marittima I</Italian>
 		<Spanish>Guerra Naval I</Spanish>
@@ -15146,7 +15146,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING2</Tag>
 		<English>Naval Warfare II</English>
-		<French>Naval Warfare II</French>
+		<French>Морская война II</French>
 		<German>Seekrieg II</German>
 		<Italian>Guerra Marittima II</Italian>
 		<Spanish>Guerra Naval II</Spanish>
@@ -15154,7 +15154,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING3</Tag>
 		<English>Naval Warfare III</English>
-		<French>Naval Warfare III</French>
+		<French>Морская война III</French>
 		<German>Seekrieg III</German>
 		<Italian>Guerra Marittima III</Italian>
 		<Spanish>Guerra Naval III</Spanish>
@@ -15162,7 +15162,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING4</Tag>
 		<English>Naval Warfare IV</English>
-		<French>Naval Warfare IV</French>
+		<French>Морская война IV</French>
 		<German>Seekrieg IV</German>
 		<Italian>Guerra Marittima IV</Italian>
 		<Spanish>Guerra Naval IV</Spanish>
@@ -15170,7 +15170,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING5</Tag>
 		<English>Naval Warfare V</English>
-		<French>Naval Warfare V</French>
+		<French>Морская война V</French>
 		<German>Seekrieg V</German>
 		<Italian>Guerra Marittima V</Italian>
 		<Spanish>Guerra Naval V</Spanish>
@@ -15178,7 +15178,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING6</Tag>
 		<English>Naval Warfare VI</English>
-		<French>Naval Warfare VI</French>
+		<French>Морская война VI</French>
 		<German>Seekrieg VI</German>
 		<Italian>Guerra Marittima VI</Italian>
 		<Spanish>Guerra Naval VI</Spanish>
@@ -15186,7 +15186,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DISCOVERER</Tag>
 		<English>Great Discoverer</English>
-		<French>Great Discoverer</French>
+		<French>Великий первооткрыватель</French>
 		<German>Gro&#223;er Entdecker</German>
 		<Italian>Great Discoverer</Italian>
 		<Spanish>Great Discoverer</Spanish>
@@ -15194,7 +15194,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NAVAL_TRADE1</Tag>
 		<English>Merchant Vessel I</English>
-		<French>Merchant Vessel I</French>
+		<French>Торговое судно I</French>
 		<German>Handelsschiff I</German>
 		<Italian>Nave mercantile I</Italian>
 		<Spanish>Buque mercante I</Spanish>
@@ -15202,7 +15202,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NAVAL_TRADE2</Tag>
 		<English>Merchant Vessel II</English>
-		<French>Merchant Vessel II</French>
+		<French>Торговое судно II</French>
 		<German>Handelsschiff II</German>
 		<Italian>Nave mercantile II</Italian>
 		<Spanish>Buque mercante II</Spanish>
@@ -15211,7 +15211,7 @@
 		<Tag>TXT_KEY_PROMOTION_FORCED_MARCH1</Tag>
 		<English>Forced March I</English>
 		<French>
-			<Text>Forced March I</Text>
+			<Text>Вынужденный марш I</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -15231,7 +15231,7 @@
 		<Tag>TXT_KEY_PROMOTION_FORCED_MARCH2</Tag>
 		<English>Forced March II</English>
 		<French>
-			<Text>Forced March II</Text>
+			<Text>Вынужденный марш II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>

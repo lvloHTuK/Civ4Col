@@ -9,7 +9,7 @@
 		<Tag>TXT_KEY_CIV_INUIT_DESC</Tag>
 		<English>Inuit</English>
 		<French>
-			<Text>&#232;&#237;&#243;&#232;&#242;&#251;</Text>
+			<Text>Инуиты</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -29,7 +29,7 @@
 		<Tag>TXT_KEY_CIV_INUIT_SHORT_DESC</Tag>
 		<English>Inuit</English>
 		<French>
-			<Text>&#232;&#237;&#243;&#232;&#242;&#251;</Text>
+			<Text>Инуиты</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -57,7 +57,7 @@
 		<Tag>TXT_KEY_CIV_INUIT_ADJECTIVE</Tag>
 		<English>Inuit</English>
 		<French>
-			<Text>Inuit</Text>
+			<Text>Инуиты</Text>
 			<Gender>Male:Female:Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</French>
@@ -165,7 +165,7 @@
 		<Tag>TXT_KEY_CIV_HURON_DESC</Tag>
 		<English>Huron</English>
 		<French>
-			<Text>&#227;&#243;&#240;&#238;&#237;&#251;</Text>
+			<Text>Гуроны</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -185,7 +185,7 @@
 		<Tag>TXT_KEY_CIV_HURON_SHORT_DESC</Tag>
 		<English>Huron</English>
 		<French>
-			<Text>&#227;&#243;&#240;&#238;&#237;&#251;</Text>
+			<Text>Гуроны</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -213,7 +213,7 @@
 		<Tag>TXT_KEY_CIV_HURON_ADJECTIVE</Tag>
 		<English>Huron</English>
 		<French>
-			<Text>&#227;&#243;&#240;&#238;&#237;&#241;&#234;&#232;&#233;:&#227;&#243;&#240;&#238;&#237;&#241;&#234;&#224;&#255;:&#227;&#243;&#240;&#238;&#237;&#241;&#234;&#232;&#229;:&#227;&#243;&#240;&#238;&#237;&#241;&#234;&#232;&#229;</Text>
+			<Text>Гуронский :&#227;&#243;&#240;&#238;&#237;&#241;&#234;&#224;&#255;:&#227;&#243;&#240;&#238;&#237;&#241;&#234;&#232;&#229;:&#227;&#243;&#240;&#238;&#237;&#241;&#234;&#232;&#229;</Text>
 			<Gender>Male:Female:Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</French>
@@ -233,7 +233,7 @@
 		<Tag>TXT_KEY_LEADER_KONDIARONK</Tag>
 		<English>Kondiaronk</English>
 		<French>
-			<Text>Kondiaronk</Text>
+			<Text>Кондиаронк</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -389,7 +389,7 @@
 		<Tag>TXT_KEY_LEADER_COCIJOEZA</Tag>
 		<English>Cocijoeza</English>
 		<French>
-			<Text>Cocijoeza</Text>
+			<Text>Косиоэза</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -484,7 +484,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GUARANI_DESC</Tag>
 		<English>Guarani</English>
-		<French>Guarani</French>
+		<French>Гуарани</French>
 		<German>Guarani</German>
 		<Italian>
 			<Text>Guarani</Text>
@@ -501,7 +501,7 @@
 		<Tag>TXT_KEY_CIV_GUARANI_SHORT_DESC</Tag>
 		<English>Guarani</English>
 		<French>
-			<Text>Guarani</Text>
+			<Text>Гуарани</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -644,7 +644,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MUNK</Tag>
 		<English>Jens Munk</English>
-		<French>Jens Munk</French>
+		<French>Йенс Мунк</French>
 		<German>Jens Munk</German>
 		<Italian>Jens Munk</Italian>
 		<Spanish>Jens Munk</Spanish>
@@ -652,7 +652,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_EGEDE</Tag>
 		<English>Hans Egede</English>
-		<French>Hans Egede</French>
+		<French>Ханс Эдеге</French>
 		<German>Hans Egede</German>
 		<Italian>Hans Egede</Italian>
 		<Spanish>Hans Egede</Spanish>
@@ -660,7 +660,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_DANISH_KING</Tag>
 		<English>King of Denmark</English>
-		<French>King of Denmark</French>
+		<French>Король Дании</French>
 		<German>K&#246;nig von D&#228;nemark</German>
 		<Italian>King of Denmark</Italian>
 		<Spanish>King of Denmark</Spanish>
@@ -668,7 +668,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DENMARK_DESC</Tag>
 		<English>Danish Colonies</English>
-		<French>Danish Colonies</French>
+		<French>Датские колонии</French>
 		<German>D&#228;nische Kolonien</German>
 		<Italian>Danish Colonies</Italian>
 		<Spanish>Danish Colonies</Spanish>
@@ -676,7 +676,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DENMARK_SHORT_DESC</Tag>
 		<English>New Denmark</English>
-		<French>New Denmark</French>
+		<French>Дания</French>
 		<German>Neu D&#228;nemark</German>
 		<Italian>New Denmark</Italian>
 		<Spanish>New Denmark</Spanish>
@@ -704,7 +704,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DENMARK_EUROPE_SHORT_DESC</Tag>
 		<English>Denmark</English>
-		<French>Denmark</French>
+		<French>Дания</French>
 		<German>D&#228;nemark</German>
 		<Italian>Denmark</Italian>
 		<Spanish>Denmark</Spanish>
@@ -892,7 +892,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_RISING</Tag>
 		<English>Johan Risingh</English>
-		<French>Johan Risingh</French>
+		<French>Йохан Рисинг </French>
 		<German>Johan Risingh</German>
 		<Italian>Johan Risingh</Italian>
 		<Spanish>Johan Risingh</Spanish>
@@ -900,7 +900,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_PRINTZ</Tag>
 		<English>Johan Printz</English>
-		<French>Johan Printz</French>
+		<French>Йохан Принц</French>
 		<German>Johan Printz</German>
 		<Italian>Johan Printz</Italian>
 		<Spanish>Johan Printz</Spanish>
@@ -908,7 +908,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SWEDISH_KING</Tag>
 		<English>King of Sweden</English>
-		<French>King of Sweden</French>
+		<French>Король Швеции</French>
 		<German>K&#246;nig von Schweden</German>
 		<Italian>King of Sweden</Italian>
 		<Spanish>King of Sweden</Spanish>
@@ -916,7 +916,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SWEDEN_DESC</Tag>
 		<English>Swedish Colonies</English>
-		<French>Swedish Colonies</French>
+		<French>Шведские колонии</French>
 		<German>Schwedische Kolonien</German>
 		<Italian>Swedish Colonies</Italian>
 		<Spanish>Swedish Colonies</Spanish>
@@ -924,7 +924,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SWEDEN_SHORT_DESC</Tag>
 		<English>New Sweden</English>
-		<French>New Sweden</French>
+		<French>Швеция</French>
 		<German>Neu Schweden</German>
 		<Italian>New Sweden</Italian>
 		<Spanish>New Sweden</Spanish>
@@ -944,7 +944,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SWEDEN_EUROPE_DESC</Tag>
 		<English>Kingdom of Sweden</English>
-		<French>Kingdom of Sweden</French>
+		<French>Королевство Швеции</French>
 		<German>K&#246;nigreich von Schwden</German>
 		<Italian>Kingdom of Sweden</Italian>
 		<Spanish>Kingdom of Sweden</Spanish>
@@ -952,7 +952,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SWEDEN_EUROPE_SHORT_DESC</Tag>
 		<English>Sweden</English>
-		<French>Sweden</French>
+		<French>Швеция</French>
 		<German>Schweden</German>
 		<Italian>Sweden</Italian>
 		<Spanish>Sweden</Spanish>
@@ -1140,7 +1140,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ERMAK</Tag>
 		<English>Ermak Timofeyevich</English>
-		<French>Ermak Timofeyevich</French>
+		<French>Ермак Тимофеевич</French>
 		<German>Ermak Timofeyevich</German>
 		<Italian>Ermak Timofeyevich</Italian>
 		<Spanish>Ermak Timofeyevich</Spanish>
@@ -1148,7 +1148,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BARANOV</Tag>
 		<English>Aleksandr Baranov</English>
-		<French>Aleksandr Baranov</French>
+		<French>Александр Баранов</French>
 		<German>Aleksandr Baranov</German>
 		<Italian>Aleksandr Baranov</Italian>
 		<Spanish>Aleksandr Baranov</Spanish>
@@ -1156,7 +1156,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_RUSSIAN_KING</Tag>
 		<English>Czar of Russia</English>
-		<French>Czar of Russia</French>
+		<French>Царь России</French>
 		<German>K&#246;nig von Russland</German>
 		<Italian>King of Russia</Italian>
 		<Spanish>King of Russia</Spanish>
@@ -1164,7 +1164,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_DESC</Tag>
 		<English>Russian Colonies</English>
-		<French>Russian Colonies</French>
+		<French>Российские колонии</French>
 		<German>Russische Kolonien</German>
 		<Italian>Russian Colonies</Italian>
 		<Spanish>Russian Colonies</Spanish>
@@ -1172,7 +1172,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_SHORT_DESC</Tag>
 		<English>New Russia</English>
-		<French>New Russia</French>
+		<French>Россия</French>
 		<German>Neu Russland</German>
 		<Italian>New Russia</Italian>
 		<Spanish>New Russia</Spanish>
@@ -1200,7 +1200,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_EUROPE_SHORT_DESC</Tag>
 		<English>Russia</English>
-		<French>Russia</French>
+		<French>Россия</French>
 		<German>Russland</German>
 		<Italian>Russia</Italian>
 		<Spanish>Russia</Spanish>
@@ -1545,7 +1545,7 @@
 		<Tag>TXT_KEY_CIV_NAVAJO_DESC</Tag>
 		<English>Navajo</English>
 		<French>
-			<Text>Navajo</Text>
+			<Text>Навахо</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1565,7 +1565,7 @@
 		<Tag>TXT_KEY_CIV_NAVAJO_SHORT_DESC</Tag>
 		<English>Navajo</English>
 		<French>
-			<Text>Navajo</Text>
+			<Text>Навахо</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1605,7 +1605,7 @@
 		<Tag>TXT_KEY_LEADER_NARBONA</Tag>
 		<English>Narbona</English>
 		<French>
-			<Text>Narbona</Text>
+			<Text>Нарбона</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1701,7 +1701,7 @@
 		<Tag>TXT_KEY_CIV_ALGONQUIAN_DESC</Tag>
 		<English>Algonquian</English>
 		<French>
-			<Text>Algonquian</Text>
+			<Text>Алгонкины</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1721,7 +1721,7 @@
 		<Tag>TXT_KEY_CIV_ALGONQUIAN_SHORT_DESC</Tag>
 		<English>Algonquian</English>
 		<French>
-			<Text>Algonquian</Text>
+			<Text>Алгонкины</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1749,7 +1749,7 @@
 		<Tag>TXT_KEY_CIV_ALGONQUIAN_ADJECTIVE</Tag>
 		<English>Algonquian</English>
 		<French>
-			<Text>Algonquian</Text>
+			<Text>Алгонкинские</Text>
 			<Gender>Male:Female:Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</French>
@@ -1761,7 +1761,7 @@
 		<Tag>TXT_KEY_LEADER_OPPUSSOQUIONUSKE</Tag>
 		<English>Oppussoquionuske</English>
 		<French>
-			<Text>Oppussoquionuske</Text>
+			<Text>Оппуссокуионуске</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1784,7 +1784,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_OPPUSSOQUIONUSKE_PEDIA</Tag>
 		<English>[H1]Oppussoquionuske[\H1][NEWLINE][BOLD]Weroansqua of the Appomattoc[NEWLINE]Lived: [\BOLD]c. 1580 - 1611[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Oppussoquionuske, with her brother Coquonasum, co-led the Appomattoc Indians, one of the many tribes that were governed under the larger Powhatan Confederacy during the time the English first landed in Virginia. The Appomattoc first encountered the English in May 1607, and despite initially welcoming the Europeans, they soon along with other neighboring tribes were making sporadic raids against the English until Chief Powhatan ordered a ceasefire. [PARAGRAPH:1] By 1609, relations between the English and the Powhatan had greatly deteriorated, resulting in the First Anglo-Powhatan War, 1610-1611. Ever short of food, and unable to grow it for themselves, the English sent out parties to either trade for or raid food from the local Indian tribes. In the fall of 1610, Oppussoquionuske took advantage of this weakness and invited an English trading party to her village, killing all but one of the party in an ambush. In reprisal for the attack, the English under Sir Thomas Dale, raided the Appomattoc around Christmas 1611. Oppussoquionuske's village was seized and burnt to the ground, and Oppussoquinuske who was mortally wounded in the attack died shortly afterwards. Dale renamed the site of the former Appomattoc village New Bermuda, and the settlement of Bermuda Hundred was incorporated there in 1614.</English>
-		<French>[H1]Oppussoquionuske[\H1][NEWLINE][BOLD]Weroansqua of the Appomattoc[NEWLINE]Lived: [\BOLD]c. 1580 - 1611[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Oppussoquionuske, with her brother Coquonasum, co-led the Appomattoc Indians, one of the many tribes that were governed under the larger Powhatan Confederacy during the time the English first landed in Virginia. The Appomattoc first encountered the English in May 1607, and despite initially welcoming the Europeans, they soon along with other neighboring tribes were making sporadic raids against the English until Chief Powhatan ordered a ceasefire. [PARAGRAPH:1] By 1609, relations between the English and the Powhatan had greatly deteriorated, resulting in the First Anglo-Powhatan War, 1610-1611. Ever short of food, and unable to grow it for themselves, the English sent out parties to either trade for or raid food from the local Indian tribes. In the fall of 1610, Oppussoquionuske took advantage of this weakness and invited an English trading party to her village, killing all but one of the party in an ambush. In reprisal for the attack, the English under Sir Thomas Dale, raided the Appomattoc around Christmas 1611. Oppussoquionuske's village was seized and burnt to the ground, and Oppussoquinuske who was mortally wounded in the attack died shortly afterwards. Dale renamed the site of the former Appomattoc village New Bermuda, and the settlement of Bermuda Hundred was incorporated there in 1614.</French>
+		<French>[H1]Оппуссокуионуске[\H1][NEWLINE][BOLD]Weroansqua of the Appomattoc[NEWLINE]Lived: [\BOLD]c. 1580 - 1611[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Oppussoquionuske, with her brother Coquonasum, co-led the Appomattoc Indians, one of the many tribes that were governed under the larger Powhatan Confederacy during the time the English first landed in Virginia. The Appomattoc first encountered the English in May 1607, and despite initially welcoming the Europeans, they soon along with other neighboring tribes were making sporadic raids against the English until Chief Powhatan ordered a ceasefire. [PARAGRAPH:1] By 1609, relations between the English and the Powhatan had greatly deteriorated, resulting in the First Anglo-Powhatan War, 1610-1611. Ever short of food, and unable to grow it for themselves, the English sent out parties to either trade for or raid food from the local Indian tribes. In the fall of 1610, Oppussoquionuske took advantage of this weakness and invited an English trading party to her village, killing all but one of the party in an ambush. In reprisal for the attack, the English under Sir Thomas Dale, raided the Appomattoc around Christmas 1611. Oppussoquionuske's village was seized and burnt to the ground, and Oppussoquinuske who was mortally wounded in the attack died shortly afterwards. Dale renamed the site of the former Appomattoc village New Bermuda, and the settlement of Bermuda Hundred was incorporated there in 1614.</French>
 		<German>[H1]Oppussoquionuske[\H1][NEWLINE][BOLD]Weroansqua der Appomattoc[NEWLINE]Lebte: [\BOLD]ca. 1580 - 1611[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Oppussoquionuske f&#252;hrte zusammen mit ihrem Bruder Coquonasum die Appomattoc, einer von vielen St&#228;mmen, die in der grossen Powhatan Konf&#246;deration vereinigt waren, als die Engl&#228;nder in Virginia landeten. Die Appomattoc trafen zum ersten Mal im Mai 1607 auf die Engl&#228;nder und obwohl sie diese anfangs Willkommen hiessen, begannen sie bald zusammen mit anderen benachbarten St&#228;mmen mit sporadischen &#252;berf&#228;llen auf die Engl&#228;nder, bis H&#228;uptling Powhatan eine Waffenruhe befahl. [PARAGRAPH:1] Bis 1609, hatten die Beziehungen zwischen den Engl&#228;ndern und der Powathan Konf&#246;deration starken Schaden genommen, was 1610-1611 zum ersten Anglo-Powhatan Krieg f&#252;hrte. Knapp an Essen und unf&#228;hig Nahrung selber ausreichend anzubauen, entsandten die Engl&#228;nder Gruppen um entweder um Nahrung zu handeln oder dies von den lokalen St&#228;mmen zu rauben. Im Herbst 1610 nutzte Oppussoquionuske diese Schw&#228;che aus und lud eine englische Handelsgesandschaft in ihr Dorf ein und t&#246;tete in einem Hinterhalt alle bis auf einen einzigen Mann. Als Rache f&#252;r diesen Angriff &#252;berfielen wiederum die Engl&#228;nder unter Sir Thomas Dale die Appomattoc im Winter 1611. Oppussoquionuskes Dorf wurde vollst&#228;ndig niedergebrannt und Oppussoquinuske selbst w&#228;hrend des Angriffs t&#246;dlich verwundet, wodurch sie kurz danach auch starb. Dale benannte die St&#228;tte der fr&#252;heren Appomattoc Siedlung in New Bermuda um und 1614 wurde dort die Siedlung Bermuda Hundred gegr&#252;ndet.</German>
 		<Italian>[H1]Oppussoquionuske[\H1][NEWLINE][BOLD]Weroansqua of the Appomattoc[NEWLINE]Lived: [\BOLD]c. 1580 - 1611[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Oppussoquionuske, with her brother Coquonasum, co-led the Appomattoc Indians, one of the many tribes that were governed under the larger Powhatan Confederacy during the time the English first landed in Virginia. The Appomattoc first encountered the English in May 1607, and despite initially welcoming the Europeans, they soon along with other neighboring tribes were making sporadic raids against the English until Chief Powhatan ordered a ceasefire. [PARAGRAPH:1] By 1609, relations between the English and the Powhatan had greatly deteriorated, resulting in the First Anglo-Powhatan War, 1610-1611. Ever short of food, and unable to grow it for themselves, the English sent out parties to either trade for or raid food from the local Indian tribes. In the fall of 1610, Oppussoquionuske took advantage of this  weakness and invited an English trading party to her village, killing all but one of the party in an ambush. In reprisal for the attack, the English under Sir Thomas Dale, raided the Appomattoc around Christmas 1611. Oppussoquionuske's village was seized and burnt to the ground, and Oppussoquinuske who was mortally wounded in the attack died shortly afterwards. Dale renamed the site of the former Appomattoc village New Bermuda, and the settlement of Bermuda Hundred was incorporated there in 1614.</Italian>
 		<Spanish>[H1]Oppussoquionuske[\H1][NEWLINE][BOLD]Weroansqua of the Appomattoc[NEWLINE]Lived: [\BOLD]c. 1580 - 1611[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Oppussoquionuske, with her brother Coquonasum, co-led the Appomattoc Indians, one of the many tribes that were governed under the larger Powhatan Confederacy during the time the English first landed in Virginia. The Appomattoc first encountered the English in May 1607, and despite initially welcoming the Europeans, they soon along with other neighboring tribes were making sporadic raids against the English until Chief Powhatan ordered a ceasefire. [PARAGRAPH:1] By 1609, relations between the English and the Powhatan had greatly deteriorated, resulting in the First Anglo-Powhatan War, 1610-1611. Ever short of food, and unable to grow it for themselves, the English sent out parties to either trade for or raid food from the local Indian tribes. In the fall of 1610, Oppussoquionuske took advantage of this  weakness and invited an English trading party to her village, killing all but one of the party in an ambush. In reprisal for the attack, the English under Sir Thomas Dale, raided the Appomattoc around Christmas 1611. Oppussoquionuske's village was seized and burnt to the ground, and Oppussoquinuske who was mortally wounded in the attack died shortly afterwards. Dale renamed the site of the former Appomattoc village New Bermuda, and the settlement of Bermuda Hundred was incorporated there in 1614.</Spanish>
@@ -1857,7 +1857,7 @@
 		<Tag>TXT_KEY_CIV_MACHIPARO_DESC</Tag>
 		<English>Machiparo</English>
 		<French>
-			<Text>Machiparo</Text>
+			<Text>Мачипаро</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1877,7 +1877,7 @@
 		<Tag>TXT_KEY_CIV_MACHIPARO_SHORT_DESC</Tag>
 		<English>Machiparo</English>
 		<French>
-			<Text>Machiparo</Text>
+			<Text>Мачипаро</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1917,7 +1917,7 @@
 		<Tag>TXT_KEY_LEADER_MACHIPARA</Tag>
 		<English>Machipara</English>
 		<French>
-			<Text>Machipara</Text>
+			<Text>Мачипара</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2013,7 +2013,7 @@
 		<Tag>TXT_KEY_CIV_MIXTEC_DESC</Tag>
 		<English>Mixtec</English>
 		<French>
-			<Text>Mixtec</Text>
+			<Text>Миштек</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2033,7 +2033,7 @@
 		<Tag>TXT_KEY_CIV_MIXTEC_SHORT_DESC</Tag>
 		<English>Mixtec</English>
 		<French>
-			<Text>Mixtec</Text>
+			<Text>Миштек</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2073,7 +2073,7 @@
 		<Tag>TXT_KEY_LEADER_SERPENT_QUECHQUEMITL</Tag>
 		<English>Serpent Quechquemitl</English>
 		<French>
-			<Text>Serpent Quechquemitl</Text>
+			<Text>Змея Кечквемитль</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2096,7 +2096,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SERPENT_QUECHQUEMITL_PEDIA</Tag>
 		<English>[H1]Serpent Quechquemitl[\H1][NEWLINE][BOLD]Queen of the Xaltepec Mixtec[NEWLINE]Lived: [\BOLD]c. 1073-1101[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Serpent Quechquemitl is one of the last Mixtec warrior queens documented in the Mixtec codices that escaped destruction by the Spanish. She was also known as Lady Six Monkey, which refers to her day of birth within the 260-day Aztec calendar, which cycled through 13 numbers and 20 various signs. Lady Six Monkey became heir of Xaltepec after a dynastic struggle for power, which resulted in the deaths of several elder siblings. The crisis impelled her to seek guidance from the priestess of the Death Cave (Huahi Cahi) in Chalcatongo. The priestess, Lady Nine Grass, instructed her to marry Lord Eleven Wind, heir to the Xipe Bundle, a marriage which would secure both of their monarchial claims. On the way to her husband's town, her party passed through the settlements of Mountain of the Moon and Mountain of the Insect (probably Yucu Yoo-Tiyuqh). There her ambassadors were insulted with the words "knife, knife," which in Mixtec usually meant a curse or threat. Lady Six Monkey used these words as a pretext for declaring war and launched an attack, leaving both settlements in flames. She captured the offending princes and sacrificed them. Following her military victory, her name was changed from "Serpent Quechquemitl" to "War Quechquemitl." She had two children, Lord Four Wind, who became the ruler of Town of Flints (&#209;uu Yuchi), and Lord One Lizard, who was her successor in Xaltepec. In 1101 her archrival, the great Mixtec warchief,  Lord Eight Deer, attacked the town of Xipe Bundle and killed both Lady Six Monkey and her husband. Lord Eight Deer himself was eventually captured and sacrificed in 1115 by Lady Six Monkey's son, Lord Four Wind. </English>
-		<French>[H1]Serpent Quechquemitl[\H1][NEWLINE][BOLD]Queen of the Xaltepec Mixtec[NEWLINE]Lived: [\BOLD]c. 1073-1101[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Serpent Quechquemitl is one of the last Mixtec warrior queens documented in the Mixtec codices that escaped destruction by the Spanish. She was also known as Lady Six Monkey, which refers to her day of birth within the 260-day Aztec calendar, which cycled through 13 numbers and 20 various signs. Lady Six Monkey became heir of Xaltepec after a dynastic struggle for power, which resulted in the deaths of several elder siblings. The crisis impelled her to seek guidance from the priestess of the Death Cave (Huahi Cahi) in Chalcatongo. The priestess, Lady Nine Grass, instructed her to marry Lord Eleven Wind, heir to the Xipe Bundle, a marriage which would secure both of their monarchial claims. On the way to her husband's town, her party passed through the settlements of Mountain of the Moon and Mountain of the Insect (probably Yucu Yoo-Tiyuqh). There her ambassadors were insulted with the words "knife, knife," which in Mixtec usually meant a curse or threat. Lady Six Monkey used these words as a pretext for declaring war and launched an attack, leaving both settlements in flames. She captured the offending princes and sacrificed them. Following her military victory, her name was changed from "Serpent Quechquemitl" to "War Quechquemitl." She had two children, Lord Four Wind, who became the ruler of Town of Flints (&#209;uu Yuchi), and Lord One Lizard, who was her successor in Xaltepec. In 1101 her archrival, the great Mixtec warchief,  Lord Eight Deer, attacked the town of Xipe Bundle and killed both Lady Six Monkey and her husband. Lord Eight Deer himself was eventually captured and sacrificed in 1115 by Lady Six Monkey's son, Lord Four Wind. </French>
+		<French>[H1]Змея Кечквемитль[\H1][NEWLINE][BOLD]Queen of the Xaltepec Mixtec[NEWLINE]Lived: [\BOLD]c. 1073-1101[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Serpent Quechquemitl is one of the last Mixtec warrior queens documented in the Mixtec codices that escaped destruction by the Spanish. She was also known as Lady Six Monkey, which refers to her day of birth within the 260-day Aztec calendar, which cycled through 13 numbers and 20 various signs. Lady Six Monkey became heir of Xaltepec after a dynastic struggle for power, which resulted in the deaths of several elder siblings. The crisis impelled her to seek guidance from the priestess of the Death Cave (Huahi Cahi) in Chalcatongo. The priestess, Lady Nine Grass, instructed her to marry Lord Eleven Wind, heir to the Xipe Bundle, a marriage which would secure both of their monarchial claims. On the way to her husband's town, her party passed through the settlements of Mountain of the Moon and Mountain of the Insect (probably Yucu Yoo-Tiyuqh). There her ambassadors were insulted with the words "knife, knife," which in Mixtec usually meant a curse or threat. Lady Six Monkey used these words as a pretext for declaring war and launched an attack, leaving both settlements in flames. She captured the offending princes and sacrificed them. Following her military victory, her name was changed from "Serpent Quechquemitl" to "War Quechquemitl." She had two children, Lord Four Wind, who became the ruler of Town of Flints (&#209;uu Yuchi), and Lord One Lizard, who was her successor in Xaltepec. In 1101 her archrival, the great Mixtec warchief,  Lord Eight Deer, attacked the town of Xipe Bundle and killed both Lady Six Monkey and her husband. Lord Eight Deer himself was eventually captured and sacrificed in 1115 by Lady Six Monkey's son, Lord Four Wind. </French>
 		<German>[H1]Serpent Quechquemitl[\H1][NEWLINE][BOLD]K&#246;nigin der Xaltepec Mixtec[NEWLINE]Lebte: [\BOLD]ca. 1073-1101[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Serpent Quechquemitl ist eine der letzten Mixtec Kriegerk&#246;niginnen, die in den Kodizes der Mixctec aufgezeichnet wurden, die der Vernichtung durch die Spanier entgingen. Sie war auch unter dem Namen 'Herrin Sechs Affen' bekannt, was sich auf den Tag ihrer Geburt im 260-Tage-Kalender der Azteken bezieht. Sie wurde F&#252;hrerin der Xaltepec nachdem sie in einem Dynastiekonflikt um die Macht als Siegerin hervorging, der den Tod mehrere &#228;lterer Geschwister zur Folge hatte. Die Krise zwang sie bei einer Priesterin der Todesh&#246;hlen (Huahi Cahi) in Chalcatongo um Rat zu suchen. Die Priesterin, 'Herrin Neun Gr&#228;ser' instruierte sie den 'Herrn Elf Winde" zu heiraten, der Erbe von Xipe Bundle war, um die Herrschaftsanspr&#252;che beider Parteien zu sichern. Auf dem Weg in die Stadt ihres Ehemannes, passierte ihre Gruppe die D&#246;rfer 'Berg des Mondes' und 'Berg des Insekts' (wahrscheinlich Yucu Yoo-Tiyuqh). Dort wurden sie mit den Worten 'Messer, Messer' empfangen, was in der Sprache der Mixtec eine Verw&#252;nschung darstellte. 'Herrin Sechs Affen' griff daraufhin die Siedlungen an und lies sie brennend zur&#252;ck. Die verantwortliche Prinzessin wurde gefangen und den G&#246;ttern geopfert. Nach diesem milit&#228;rischen Sieg &#228;nderte sie ihren Namen von "Serpent Quechquemitl" in "War Quechquemitl." Sie hatte zwei Kinder, 'Herr Vier Winde', der Herrscher &#252;ber die Stadt Nuu Yuchi wurde, und 'Herr Eine Eidechse', der ihr Nachfolger als Herrscher &#252;ber die Xaltepec wurde. 1101 griff ihr Erzfeind, der Mixtec Kriegsh&#228;uptling 'Herr Acht Rehe' die Stadt Xipe Bundle und t&#246;tete sie und ihren Ehemann. 'Herr Acht Rehe' selbst wurde sp&#228;ter durch ihren Sohn 'Herr Vier Winde' gefangen und 1115 den G&#246;ttern geopfert.</German>
 		<Italian>[H1]Serpent Quechquemitl[\H1][NEWLINE][BOLD]Queen of the Xaltepec Mixtec[NEWLINE]Lived: [\BOLD]c. 1073-1101[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Serpent Quechquemitl is one of the last Mixtec warrior queens documented in the Mixtec codices that escaped destruction by the Spanish. She was also known as Lady Six Monkey, which refers to her day of birth within the 260-day Aztec calendar, which cycled through 13 numbers and 20 various signs. Lady Six Monkey became heir of Xaltepec after a dynastic struggle for power, which resulted in the deaths of several elder siblings. The crisis impelled her to seek guidance from the priestess of the Death Cave (Huahi Cahi) in Chalcatongo. The priestess, Lady Nine Grass, instructed her to marry Lord Eleven Wind, heir to the Xipe Bundle, a marriage which would secure both of their monarchial claims. On the way to her husband's town, her party passed through the settlements of Mountain of the Moon and Mountain of the Insect (probably Yucu Yoo-Tiyuqh). There her ambassadors were insulted with the words "knife, knife," which in Mixtec usually meant a curse or threat. Lady Six Monkey used these words as a pretext for declaring war and launched an attack, leaving both settlements in flames. She captured the offending princes and sacrificed them. Following her military victory, her name was changed from "Serpent Quechquemitl" to "War Quechquemitl." She had two children, Lord Four Wind, who became the ruler of Town of Flints (&#209;uu Yuchi), and Lord One Lizard, who was her successor in Xaltepec. In 1101 her archrival, the great Mixtec warchief,  Lord Eight Deer, attacked the town of Xipe Bundle and killed both Lady Six Monkey and her husband. Lord Eight Deer himself was eventually captured and sacrificed in 1115 by Lady Six Monkey's son, Lord Four Wind.</Italian>
 		<Spanish>[H1]Serpent Quechquemitl[\H1][NEWLINE][BOLD]Queen of the Xaltepec Mixtec[NEWLINE]Lived: [\BOLD]c. 1073-1101[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Serpent Quechquemitl is one of the last Mixtec warrior queens documented in the Mixtec codices that escaped destruction by the Spanish. She was also known as Lady Six Monkey, which refers to her day of birth within the 260-day Aztec calendar, which cycled through 13 numbers and 20 various signs. Lady Six Monkey became heir of Xaltepec after a dynastic struggle for power, which resulted in the deaths of several elder siblings. The crisis impelled her to seek guidance from the priestess of the Death Cave (Huahi Cahi) in Chalcatongo. The priestess, Lady Nine Grass, instructed her to marry Lord Eleven Wind, heir to the Xipe Bundle, a marriage which would secure both of their monarchial claims. On the way to her husband's town, her party passed through the settlements of Mountain of the Moon and Mountain of the Insect (probably Yucu Yoo-Tiyuqh). There her ambassadors were insulted with the words "knife, knife," which in Mixtec usually meant a curse or threat. Lady Six Monkey used these words as a pretext for declaring war and launched an attack, leaving both settlements in flames. She captured the offending princes and sacrificed them. Following her military victory, her name was changed from "Serpent Quechquemitl" to "War Quechquemitl." She had two children, Lord Four Wind, who became the ruler of Town of Flints (&#209;uu Yuchi), and Lord One Lizard, who was her successor in Xaltepec. In 1101 her archrival, the great Mixtec warchief,  Lord Eight Deer, attacked the town of Xipe Bundle and killed both Lady Six Monkey and her husband. Lord Eight Deer himself was eventually captured and sacrificed in 1115 by Lady Six Monkey's son, Lord Four Wind.</Spanish>
@@ -2169,7 +2169,7 @@
 		<Tag>TXT_KEY_CIV_MUISCA_DESC</Tag>
 		<English>Muisca</English>
 		<French>
-			<Text>Muisca</Text>
+			<Text>Чибча</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2189,7 +2189,7 @@
 		<Tag>TXT_KEY_CIV_MUISCA_SHORT_DESC</Tag>
 		<English>Muisca</English>
 		<French>
-			<Text>Muisca</Text>
+			<Text>Чибча</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2229,7 +2229,7 @@
 		<Tag>TXT_KEY_LEADER_QUEMUENCHATOCHA</Tag>
 		<English>Quemuenchatocha</English>
 		<French>
-			<Text>Quemuenchatocha</Text>
+			<Text>Кимуинчатека</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2252,7 +2252,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_QUEMUENCHATOCHA_PEDIA</Tag>
 		<English>[H1]Quemuenchatocha[\H1][NEWLINE][BOLD]Zaque of the Hunza Confederation[NEWLINE]Lived: [\BOLD]c. 1468-1538[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Quemuenchatocha became Zaque of the Hunza in 1490, after a battle between the Hunza and the Bacat&#225;, resulted in the death of both sovereigns. Quemuenchatocha ceased hostilities and managed to forge an uneasy truce with the Zipa of the Bacat&#225;, Nemequene, which lasted until 1514. Aware of Nemequene attempts to build alliances amongst neighboring tribes, Quemuenchatocha declared war on the Bacat&#225;. Both armies met in at the Stream of the Laps in 1514, where Quemuenchatocha allegedly suggested he and Nemequene fight hand to hand so to avoid bloodshed. Nemequene rejected the offer and his army won the battle, yet Nemequene was mortally wounded, and his army retreated. [PARAGRAPH:1] Learning of the Spanish in his lands, Quemuenchatocha, withdrew to his palace, and maintained a repressive policy with his town, which increased its incapacity to govern. He sent gifts and envoys of peace to the Spanish, seeking to slow them down so he could hide his wealth. Finally in August 1537, the Spanish arrived finding Quemuenchatocha in his throne room, decorated in fine fabrics and gold, though alone, his advisors and guards having fled before the Spanish advance. The Spanish took him to the nearby city of Suesca hoping to find where he had hidden the rest of his treasure, but were unsuccessful. Quemuenchatocha was forced to abdicate in favor of his nephew Aquiminzaque, and died soon after in 1538.</English>
-		<French>[H1]Quemuenchatocha[\H1][NEWLINE][BOLD]Zaque of the Hunza Confederation[NEWLINE]Lived: [\BOLD]c. 1468-1538[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Quemuenchatocha became Zaque of the Hunza in 1490, after a battle between the Hunza and the Bacat&#225;, resulted in the death of both sovereigns. Quemuenchatocha ceased hostilities and managed to forge an uneasy truce with the Zipa of the Bacat&#225;, Nemequene, which lasted until 1514. Aware of Nemequene attempts to build alliances amongst neighboring tribes, Quemuenchatocha declared war on the Bacat&#225;. Both armies met in at the Stream of the Laps in 1514, where Quemuenchatocha allegedly suggested he and Nemequene fight hand to hand so to avoid bloodshed. Nemequene rejected the offer and his army won the battle, yet Nemequene was mortally wounded, and his army retreated. [PARAGRAPH:1] Learning of the Spanish in his lands, Quemuenchatocha, withdrew to his palace, and maintained a repressive policy with his town, which increased its incapacity to govern. He sent gifts and envoys of peace to the Spanish, seeking to slow them down so he could hide his wealth. Finally in August 1537, the Spanish arrived finding Quemuenchatocha in his throne room, decorated in fine fabrics and gold, though alone, his advisors and guards having fled before the Spanish advance. The Spanish took him to the nearby city of Suesca hoping to find where he had hidden the rest of his treasure, but were unsuccessful. Quemuenchatocha was forced to abdicate in favor of his nephew Aquiminzaque, and died soon after in 1538.</French>
+		<French>[H1]Кимуинчатека[\H1][NEWLINE][BOLD]Zaque of the Hunza Confederation[NEWLINE]Lived: [\BOLD]c. 1468-1538[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Quemuenchatocha became Zaque of the Hunza in 1490, after a battle between the Hunza and the Bacat&#225;, resulted in the death of both sovereigns. Quemuenchatocha ceased hostilities and managed to forge an uneasy truce with the Zipa of the Bacat&#225;, Nemequene, which lasted until 1514. Aware of Nemequene attempts to build alliances amongst neighboring tribes, Quemuenchatocha declared war on the Bacat&#225;. Both armies met in at the Stream of the Laps in 1514, where Quemuenchatocha allegedly suggested he and Nemequene fight hand to hand so to avoid bloodshed. Nemequene rejected the offer and his army won the battle, yet Nemequene was mortally wounded, and his army retreated. [PARAGRAPH:1] Learning of the Spanish in his lands, Quemuenchatocha, withdrew to his palace, and maintained a repressive policy with his town, which increased its incapacity to govern. He sent gifts and envoys of peace to the Spanish, seeking to slow them down so he could hide his wealth. Finally in August 1537, the Spanish arrived finding Quemuenchatocha in his throne room, decorated in fine fabrics and gold, though alone, his advisors and guards having fled before the Spanish advance. The Spanish took him to the nearby city of Suesca hoping to find where he had hidden the rest of his treasure, but were unsuccessful. Quemuenchatocha was forced to abdicate in favor of his nephew Aquiminzaque, and died soon after in 1538.</French>
 		<German>[H1]Quemuenchatocha[\H1][NEWLINE][BOLD]Zaque der Hunza Konf&#246;deration[NEWLINE]Lebte: [\BOLD]ca. 1468-1538[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Quemuenchatocha wurde 1490 Zaque der Hunza, als in einem Kampf zwischen Hunza und Bacata beide Herrscher starben. Quemuenchatocha beendete die Gewalt und schuff ein br&#252;chiges Abkommen mit dem Zipa der Bacata, Nemequene, welches bis 1514 hielt. Der Anstrengungen Nemequene bewusst, mit anderen benachbarten St&#228;mmen B&#252;ndnisse einzugehen, erkl&#228;rte Quemuenchatocha den Bacata erneut den Krieg. Beide Armeen trafen sich 1514 und Quemuenchatocha schlug angeblich vor dass er und Nemequene Mann gegen Mann k&#228;mpfen sollten um ein Blutbad zu verhindern. Nemequene lehnte dies jedoch ab und seine Armee gewann den folgenden Kampf. Alledings wurde Nemequene t&#246;dlich verwundet, woraufhin sich seine Armee zur&#252;ckzog. [PARAGRAPH:1] Als Quemuenchatocha vom Eintreffen der Spanier erfuhr, zog er sich in seinen Palast zur&#252;ck und etablierte eine repressive Politik in seiner Stadt, was zu wachsender Unf&#228;higkeit der Regierung f&#252;hrte das Land zu f&#252;hren. Er schickte Geschenke und Abgesandte zu den Spaniern um deren Voranschreiten zu verlangsamen und w&#228;hrend dessen seine Reicht&#252;mer zu verstecken. August 1537 trafen die Spanier ein und fanden Quemuenchatocha alleine in seinem Thronsaal vor, der mit feinsten Stoffen und Gold dekoriert war. Seine Berater und Wachen waren geflohen. Die Spanier brachten ihn in die nahegelegene Stadt Suesca um herauszufinden, wo er den Rest seines Reichtums versteckt hatte, waren dabei aber unerfolgreich. Quemuenchatocha wurde gezwungen zu Gunsten seines Neffen Aquiminzaque abzutreten und starb kurze Zeit sp&#228;ter im Jahre 1538.</German>
 		<Italian>[H1]Quemuenchatocha[\H1][NEWLINE][BOLD]Zaque of the Hunza Confederation[NEWLINE]Lived: [\BOLD]c. 1468-1538[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Quemuenchatocha became Zaque of the Hunza in 1490, after a battle between the Hunza and the Bacat&#225;, resulted in the death of both sovereigns. Quemuenchatocha ceased hostilities and managed to forge an uneasy truce with the Zipa of the Bacat&#225;, Nemequene, which lasted until 1514. Aware of Nemequene attempts to build alliances amongst neighboring tribes, Quemuenchatocha declared war on the Bacat&#225;. Both armies met in at the Stream of the Laps in 1514, where Quemuenchatocha allegedly suggested he and Nemequene fight hand to hand so to avoid bloodshed. Nemequene rejected the offer and his army won the battle, yet Nemequene was mortally wounded, and his army retreated. [PARAGRAPH:1] Learning of the Spanish in his lands, Quemuenchatocha, withdrew to his palace, and maintained a repressive policy with his town, which increased its incapacity to govern. He sent gifts and envoys of peace to the Spanish, seeking to slow them down so he could hide his wealth. Finally in August 1537, the Spanish arrived finding Quemuenchatocha in his throne room, decorated in fine fabrics and gold, though alone, his advisors and guards having fled before the Spanish advance. The Spanish took him to the nearby city of Suesca hoping to find where he had hidden the rest of his treasure, but were unsuccessful. Quemuenchatocha was forced to abdicate in favor of his nephew Aquiminzaque, and died soon after in 1538.</Italian>
 		<Spanish>[H1]Quemuenchatocha[\H1][NEWLINE][BOLD]Zaque of the Hunza Confederation[NEWLINE]Lived: [\BOLD]c. 1468-1538[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Quemuenchatocha became Zaque of the Hunza in 1490, after a battle between the Hunza and the Bacat&#225;, resulted in the death of both sovereigns. Quemuenchatocha ceased hostilities and managed to forge an uneasy truce with the Zipa of the Bacat&#225;, Nemequene, which lasted until 1514. Aware of Nemequene attempts to build alliances amongst neighboring tribes, Quemuenchatocha declared war on the Bacat&#225;. Both armies met in at the Stream of the Laps in 1514, where Quemuenchatocha allegedly suggested he and Nemequene fight hand to hand so to avoid bloodshed. Nemequene rejected the offer and his army won the battle, yet Nemequene was mortally wounded, and his army retreated. [PARAGRAPH:1] Learning of the Spanish in his lands, Quemuenchatocha, withdrew to his palace, and maintained a repressive policy with his town, which increased its incapacity to govern. He sent gifts and envoys of peace to the Spanish, seeking to slow them down so he could hide his wealth. Finally in August 1537, the Spanish arrived finding Quemuenchatocha in his throne room, decorated in fine fabrics and gold, though alone, his advisors and guards having fled before the Spanish advance. The Spanish took him to the nearby city of Suesca hoping to find where he had hidden the rest of his treasure, but were unsuccessful. Quemuenchatocha was forced to abdicate in favor of his nephew Aquiminzaque, and died soon after in 1538.</Spanish>
@@ -2325,7 +2325,7 @@
 		<Tag>TXT_KEY_CIV_COMANCHE_DESC</Tag>
 		<English>Comanche</English>
 		<French>
-			<Text>Comanche</Text>
+			<Text>Команчи</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2345,7 +2345,7 @@
 		<Tag>TXT_KEY_CIV_COMANCHE_SHORT_DESC</Tag>
 		<English>Comanche</English>
 		<French>
-			<Text>Comanche</Text>
+			<Text>Команчи</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2385,7 +2385,7 @@
 		<Tag>TXT_KEY_LEADER_IRON_JACKET</Tag>
 		<English>Iron Jacket</English>
 		<French>
-			<Text>Iron Jacket</Text>
+			<Text>Вождь "Железная Куртка"</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2408,7 +2408,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_IRON_JACKET_PEDIA</Tag>
 		<English>[H1]Iron Jacket[\H1][NEWLINE][BOLD]Chief of the Noconi Comanche[NEWLINE]Lived: [\BOLD]c. 1780 - 1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Po-hebitsquash was a war chief and medicine man who believed he possessed the power to defend against bullets. He wore a Spanish coat of mail into battle, which protected him from small arms fire and most likely gave him the name Iron Jacket. Little is known of Iron Jacket's early life, other than he was chief of the Noconi Comanche tribe, and that he was a hereditary chief. From the 1820s to the 1850s he led dozens of raids in Texas and Mexico, being considered a supernatural being by many of his victims due to his ability to appear seeming invulnerable to gunfire. [PARAGRAPH:1] Frustrated by increasingly bloody raids by the Comanche on the Texas Frontier, the Texas militia and their Tonkawa Indian allies forces attacked several Comanche villages along the South Canadian River, at the Battle of Little Robe Creek, on May 12, 1858. During the battle Iron Jacket repeatedly rode down the firing line of his enemy taunting them. However, his jacket failed to protect him from the Buffalo gun of the Tonkawa Indian Jim Pockmark, who shot and killed the Comanche chief. Discouraged by their chief's death, Iron Jacket's forces began to waver and was only saved by the timely arrival of his son Peta Nocona, and his warriors, allowing the members of his father's village to retreat. Iron Jacket's body could not be recovered, and was eventually scalped, and partially eaten by the cannibalistic Tonkawas.</English>
-		<French>[H1]Iron Jacket[\H1][NEWLINE][BOLD]Chief of the Noconi Comanche[NEWLINE]Lived: [\BOLD]c. 1780 - 1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Po-hebitsquash was a war chief and medicine man who believed he possessed the power to defend against bullets. He wore a Spanish coat of mail into battle, which protected him from small arms fire and most likely gave him the name Iron Jacket. Little is known of Iron Jacket's early life, other than he was chief of the Noconi Comanche tribe, and that he was a hereditary chief. From the 1820s to the 1850s he led dozens of raids in Texas and Mexico, being considered a supernatural being by many of his victims due to his ability to appear seeming invulnerable to gunfire. [PARAGRAPH:1] Frustrated by increasingly bloody raids by the Comanche on the Texas Frontier, the Texas militia and their Tonkawa Indian allies forces attacked several Comanche villages along the South Canadian River, at the Battle of Little Robe Creek, on May 12, 1858. During the battle Iron Jacket repeatedly rode down the firing line of his enemy taunting them. However, his jacket failed to protect him from the Buffalo gun of the Tonkawa Indian Jim Pockmark, who shot and killed the Comanche chief. Discouraged by their chief's death, Iron Jacket's forces began to waver and was only saved by the timely arrival of his son Peta Nocona, and his warriors, allowing the members of his father's village to retreat. Iron Jacket's body could not be recovered, and was eventually scalped, and partially eaten by the cannibalistic Tonkawas.</French>
+		<French>[H1]Вождь "Железная Куртка"[\H1][NEWLINE][BOLD]Chief of the Noconi Comanche[NEWLINE]Lived: [\BOLD]c. 1780 - 1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Po-hebitsquash was a war chief and medicine man who believed he possessed the power to defend against bullets. He wore a Spanish coat of mail into battle, which protected him from small arms fire and most likely gave him the name Iron Jacket. Little is known of Iron Jacket's early life, other than he was chief of the Noconi Comanche tribe, and that he was a hereditary chief. From the 1820s to the 1850s he led dozens of raids in Texas and Mexico, being considered a supernatural being by many of his victims due to his ability to appear seeming invulnerable to gunfire. [PARAGRAPH:1] Frustrated by increasingly bloody raids by the Comanche on the Texas Frontier, the Texas militia and their Tonkawa Indian allies forces attacked several Comanche villages along the South Canadian River, at the Battle of Little Robe Creek, on May 12, 1858. During the battle Iron Jacket repeatedly rode down the firing line of his enemy taunting them. However, his jacket failed to protect him from the Buffalo gun of the Tonkawa Indian Jim Pockmark, who shot and killed the Comanche chief. Discouraged by their chief's death, Iron Jacket's forces began to waver and was only saved by the timely arrival of his son Peta Nocona, and his warriors, allowing the members of his father's village to retreat. Iron Jacket's body could not be recovered, and was eventually scalped, and partially eaten by the cannibalistic Tonkawas.</French>
 		<German>[H1]Iron Jacket[\H1][NEWLINE][BOLD]H&#228;uptling der Noconi Comanchen[NEWLINE]Lebte: [\BOLD]1780 - 1858[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Po-hebitsquash war ein Kriegsh&#228;uptling und Medizinman, der glaubte die Macht zu besitzen Kugeln abwehren zu k&#246;nnen. Er trug einen spanischen Plattenpanzer im Kampf, der ihn vor kleinere Geschossen sch&#252;tzte und ihm wahrscheinlich den Namen Iron Jacket gab. Wenig ist &#252;ber das fr&#252;he Leben von Iron Jacket bekannt. Nur dass er Kriegsh&#228;uptling der Noconi Comanchen war und dass er dieses amt geerbt hatte. Zwischen 1820 und 1850 f&#252;hrte er dutzende Raubz&#252;ge in Texas und Mexiko an und wurde von manchen seinen Opfern als &#252;bernat&#252;rliches Wesen gef&#252;rchtet, da er die F&#228;higkeit zu haben schien gegen Feuerwaffen gefeit zu sein.[PARAGRAPH:1] Durch die zunehmend blutigen &#252;berf&#228;lle der Comanchen an der Grenze von Texas frustriert, unernahm die Miliz von Texas mit ihren Alliierten, den Tonkawa Indianern, mehrere Angriffe gegen D&#246;rfer der Comanchen entlang des South Canadian River, darunter auch die Schlacht von Little Robe Creek am 12. Mai 1858. W&#228;hrend dieser Schlacht ritt Iron Jacket wiederholt entlang der feindlichen Linien und verh&#246;hnte den Gegner. Jedoch versagte dieses mal sein Panzer gegen das B&#252;ffelgewehr des Tonkawa Jim Pockmark, der den Comanchen H&#228;uptling traf und t&#246;tete. Durch den Tod ihres H&#228;uptlings entmutig begannen die Truppen von Iron Jacket zu wanken und wurden nur durch die rechtzeitige Ankunft seines Sohnes Peta Nocona und dessen Krieger gerettet, dies es ihnen erlaubte zu fliehen. Iron Jackets K&#246;rper konnte nicht geborgen werden. Er wurde skaplpiert und sogar teilweise von den kanibalischen Tonkawa Indianern gegessen.</German>
 		<Italian>[H1]Iron Jacket[\H1][NEWLINE][BOLD]Chief of the Noconi Comanche[NEWLINE]Lived: [\BOLD]c. 1780 - 1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Po-hebitsquash was a war chief and medicine man who believed he possessed the power to defend against bullets. He wore a Spanish coat of mail into battle, which protected him from small arms fire and most likely gave him the name Iron Jacket. Little is known of Iron Jacket's early life, other than he was chief of the Noconi Comanche tribe, and that he was a hereditary chief. From the 1820s to the 1850s he led dozens of raids in Texas and Mexico, being considered a supernatural being by many of his victims due to his ability to appear seeming invulnerable to gunfire. [PARAGRAPH:1] Frustrated by increasingly bloody raids by the Comanche on the Texas Frontier, the Texas militia and their Tonkawa Indian allies forces attacked several Comanche villages along the South Canadian River, at the Battle of Little Robe Creek, on May 12, 1858. During the battle Iron Jacket repeatedly rode down the firing line of his enemy taunting them. However, his jacket failed to protect him from the Buffalo gun of the Tonkawa Indian Jim Pockmark, who shot and killed the Comanche chief. Discouraged by their chief's death, Iron Jacket's forces began to waver and was only saved by the timely arrival of his son Peta Nocona, and his warriors, allowing the members of his father's village to retreat. Iron Jacket's body could not be recovered, and was eventually scalped, and partially eaten by the cannibalistic Tonkawas.</Italian>
 		<Spanish>[H1]Iron Jacket[\H1][NEWLINE][BOLD]Chief of the Noconi Comanche[NEWLINE]Lived: [\BOLD]c. 1780 - 1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Po-hebitsquash was a war chief and medicine man who believed he possessed the power to defend against bullets. He wore a Spanish coat of mail into battle, which protected him from small arms fire and most likely gave him the name Iron Jacket. Little is known of Iron Jacket's early life, other than he was chief of the Noconi Comanche tribe, and that he was a hereditary chief. From the 1820s to the 1850s he led dozens of raids in Texas and Mexico, being considered a supernatural being by many of his victims due to his ability to appear seeming invulnerable to gunfire. [PARAGRAPH:1] Frustrated by increasingly bloody raids by the Comanche on the Texas Frontier, the Texas militia and their Tonkawa Indian allies forces attacked several Comanche villages along the South Canadian River, at the Battle of Little Robe Creek, on May 12, 1858. During the battle Iron Jacket repeatedly rode down the firing line of his enemy taunting them. However, his jacket failed to protect him from the Buffalo gun of the Tonkawa Indian Jim Pockmark, who shot and killed the Comanche chief. Discouraged by their chief's death, Iron Jacket's forces began to waver and was only saved by the timely arrival of his son Peta Nocona, and his warriors, allowing the members of his father's village to retreat. Iron Jacket's body could not be recovered, and was eventually scalped, and partially eaten by the cannibalistic Tonkawas.</Spanish>
@@ -2481,7 +2481,7 @@
 		<Tag>TXT_KEY_CIV_SHOSHONE_DESC</Tag>
 		<English>Shoshone</English>
 		<French>
-			<Text>Shoshone</Text>
+			<Text>Шошоны</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2501,7 +2501,7 @@
 		<Tag>TXT_KEY_CIV_SHOSHONE_SHORT_DESC</Tag>
 		<English>Shoshone</English>
 		<French>
-			<Text>Shoshone</Text>
+			<Text>Шошоны</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2541,7 +2541,7 @@
 		<Tag>TXT_KEY_LEADER_WASHAKIE</Tag>
 		<English>Washakie</English>
 		<French>
-			<Text>Washakie</Text>
+			<Text>Уошеки</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2564,7 +2564,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_WASHAKIE_PEDIA</Tag>
 		<English>[H1]Washakie[\H1][NEWLINE][BOLD]Chief of the Eastern Shoshone[NEWLINE]Lived: [\BOLD]c 1798 - 1900[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little of Washakie's early life is known. His father was from the Salish tribe and his mother was a Lemhi Shoshone. In 1851 at the urging of the trapper Jim Bridger, whom had married one of his daughters, Washakie represented the Shoshone at the Treaty of Fort Laramie in 1851, and the Treaties of Fort Bridger, in 1863 and 1868 respectively. The treaties established the Shoshone and Bannock Indian Agency, along with reservation of about three million acres in Wyoming's Wind River country for Washakie's people. In 1872 land cession reduced the size of the reservation by 800,000 acres, yet the land that remained in Shoshone possession continues to be the home of the Eastern Shoshones to this day. [PARAGRAPH:1] Eager for his people to be educated, Washakie gave land for a boarding school to be established where Shoshone girls could learn traditional languages and crafts. Washakie's prowess in battle, his efforts to work with the white settlers and his commitment to his people's interests led him be considered by the United States government as the head of the Eastern Shoshone until his death, and one of the most respected leaders in Native American history.</English>
-		<French>[H1]Washakie[\H1][NEWLINE][BOLD]Chief of the Eastern Shoshone[NEWLINE]Lived: [\BOLD]c 1798 - 1900[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little of Washakie's early life is known. His father was from the Salish tribe and his mother was a Lemhi Shoshone. In 1851 at the urging of the trapper Jim Bridger, whom had married one of his daughters, Washakie represented the Shoshone at the Treaty of Fort Laramie in 1851, and the Treaties of Fort Bridger, in 1863 and 1868 respectively. The treaties established the Shoshone and Bannock Indian Agency, along with reservation of about three million acres in Wyoming's Wind River country for Washakie's people. In 1872 land cession reduced the size of the reservation by 800,000 acres, yet the land that remained in Shoshone possession continues to be the home of the Eastern Shoshones to this day. [PARAGRAPH:1] Eager for his people to be educated, Washakie gave land for a boarding school to be established where Shoshone girls could learn traditional languages and crafts. Washakie's prowess in battle, his efforts to work with the white settlers and his commitment to his people's interests led him be considered by the United States government as the head of the Eastern Shoshone until his death, and one of the most respected leaders in Native American history.</French>
+		<French>[H1]Уошеки[\H1][NEWLINE][BOLD]Chief of the Eastern Shoshone[NEWLINE]Lived: [\BOLD]c 1798 - 1900[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little of Washakie's early life is known. His father was from the Salish tribe and his mother was a Lemhi Shoshone. In 1851 at the urging of the trapper Jim Bridger, whom had married one of his daughters, Washakie represented the Shoshone at the Treaty of Fort Laramie in 1851, and the Treaties of Fort Bridger, in 1863 and 1868 respectively. The treaties established the Shoshone and Bannock Indian Agency, along with reservation of about three million acres in Wyoming's Wind River country for Washakie's people. In 1872 land cession reduced the size of the reservation by 800,000 acres, yet the land that remained in Shoshone possession continues to be the home of the Eastern Shoshones to this day. [PARAGRAPH:1] Eager for his people to be educated, Washakie gave land for a boarding school to be established where Shoshone girls could learn traditional languages and crafts. Washakie's prowess in battle, his efforts to work with the white settlers and his commitment to his people's interests led him be considered by the United States government as the head of the Eastern Shoshone until his death, and one of the most respected leaders in Native American history.</French>
 		<German>[H1]Washakie[\H1][NEWLINE][BOLD]H&#228;uptling der Ost-Shoshonen[NEWLINE]Lebte: [\BOLD]ca. 1798 - 1900[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Wenig ist &#252;ber Washakies fr&#252;hes Leben bekannt. Sein Vater war vom Stamm der Salish und seine Mutter eine Lemhi Shoshonin. 1851 den Bitten des Trappers Jim Bridger nachgebend, der mit einer seiner T&#246;chter verheiratet war, repr&#228;sentierte Washakie die Shoshonen beim Vertrag von Fort Laramie und sp&#228;ter dann auch bein den Vertr&#228;gen von Fort Bridger, in den Jahren 1863 und 1868. Die Vertr&#228;ge etablierten die Shoshone und Bannock Indianer Agentur und 3 Millionen Acres Land als Reservat in Wyoming. 1872 wurde dieses Reservat jedoch auf ein Drittel der urspr&#252;nglichen Gr&#246;sse reduziert blieb jedoch bis heute die Heimat der Ost-Shoshonen. [PARAGRAPH:1] Washakies Erfolgen im Kampf, sein Einsatz um friedliche mit den weissen Siedlern zu leben und seine Hingabe an die Interessen seines Volkes liesen ihn bis zu seinem Tode der F&#252;hrer der Ost-Shoshonen bleiben und zu einem der am meisten respektierten Personen in der Geschichte der amerikanischen Ureinwohner werden.</German>
 		<Italian>[H1]Washakie[\H1][NEWLINE][BOLD]Chief of the Eastern Shoshone[NEWLINE]Lived: [\BOLD]c 1798 - 1900[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little of Washakie's early life is known. His father was from the Salish tribe and his mother was a Lemhi Shoshone. In 1851 at the urging of the trapper Jim Bridger, whom had married one of his daughters, Washakie represented the Shoshone at the Treaty of Fort Laramie in 1851, and the Treaties of Fort Bridger, in 1863 and 1868 respectively. The treaties established the Shoshone and Bannock Indian Agency, along with reservation of about three million acres in Wyoming's Wind River country for Washakie's people. In 1872 land cession reduced the size of the reservation by 800,000 acres, yet the land that remained in Shoshone possession continues to be the home of the Eastern Shoshones to this day. [PARAGRAPH:1] Eager for his people to be educated, Washakie gave land for a boarding school to be established where Shoshone girls could learn traditional languages and crafts. Washakie's prowess in battle, his efforts to work with the white settlers and his commitment to his people's interests led him be considered by the United States government as the head of the Eastern Shoshone until his death, and one of the most respected leaders in Native American history.</Italian>
 		<Spanish>[H1]Washakie[\H1][NEWLINE][BOLD]Chief of the Eastern Shoshone[NEWLINE]Lived: [\BOLD]c 1798 - 1900[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little of Washakie's early life is known. His father was from the Salish tribe and his mother was a Lemhi Shoshone. In 1851 at the urging of the trapper Jim Bridger, whom had married one of his daughters, Washakie represented the Shoshone at the Treaty of Fort Laramie in 1851, and the Treaties of Fort Bridger, in 1863 and 1868 respectively. The treaties established the Shoshone and Bannock Indian Agency, along with reservation of about three million acres in Wyoming's Wind River country for Washakie's people. In 1872 land cession reduced the size of the reservation by 800,000 acres, yet the land that remained in Shoshone possession continues to be the home of the Eastern Shoshones to this day. [PARAGRAPH:1] Eager for his people to be educated, Washakie gave land for a boarding school to be established where Shoshone girls could learn traditional languages and crafts. Washakie's prowess in battle, his efforts to work with the white settlers and his commitment to his people's interests led him be considered by the United States government as the head of the Eastern Shoshone until his death, and one of the most respected leaders in Native American history.</Spanish>
@@ -2637,7 +2637,7 @@
 		<Tag>TXT_KEY_CIV_TOROMONA_DESC</Tag>
 		<English>Toromona</English>
 		<French>
-			<Text>Toromona</Text>
+			<Text>Торомоно</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2657,7 +2657,7 @@
 		<Tag>TXT_KEY_CIV_TOROMONA_SHORT_DESC</Tag>
 		<English>Toromona</English>
 		<French>
-			<Text>Toromona</Text>
+			<Text>Торомоно</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2697,7 +2697,7 @@
 		<Tag>TXT_KEY_LEADER_TARANO</Tag>
 		<English>Tarano</English>
 		<French>
-			<Text>Tarano</Text>
+			<Text>Тарано</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2720,7 +2720,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TARANO_PEDIA</Tag>
 		<English>[H1]Tarano[\H1][NEWLINE][BOLD]Chief of the Toromona[NEWLINE]Lived: [\BOLD]Early-mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of this Toromona leader. Legend states that it was Tarano who guided the last of the Inca and their treasure through the forests to the mythical city of Paititi. Tarano was renowned as a great war chieftain, whose ferocity and skill in battle against the conquistadores in the 1560's was enough for him to be recorded by the Spanish as notable opponent.</English>
-		<French>[H1]Tarano[\H1][NEWLINE][BOLD]Chief of the Toromona[NEWLINE]Lived: [\BOLD]Early-mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of this Toromona leader. Legend states that it was Tarano who guided the last of the Inca and their treasure through the forests to the mythical city of Paititi. Tarano was renowned as a great war chieftain, whose ferocity and skill in battle against the conquistadores in the 1560's was enough for him to be recorded by the Spanish as notable opponent.</French>
+		<French>[H1]Тарано[\H1][NEWLINE][BOLD]Chief of the Toromona[NEWLINE]Lived: [\BOLD]Early-mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of this Toromona leader. Legend states that it was Tarano who guided the last of the Inca and their treasure through the forests to the mythical city of Paititi. Tarano was renowned as a great war chieftain, whose ferocity and skill in battle against the conquistadores in the 1560's was enough for him to be recorded by the Spanish as notable opponent.</French>
 		<German>[H1]Tarano[\H1][NEWLINE][BOLD]H&#228;uptling der Toromona[NEWLINE]Lebte: [\BOLD]Anfang bis Mitte des 16ten Jahrhunderts[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] &#252;ber diesen Anf&#252;hrer der Toromana ist fast nichts belegt. Die Legenden berichten, dass es Tarano war, der die letzten Inka durch die Regenw&#228;lder zu der mystischen Stadt Paititi f&#252;hrte. Tarano soll ein m&#228;chtiger Kriegsh&#228;uptling gewesen sein, dessen Wildheit und F&#228;higkeiten im Kampf gegen die Conquistadores in den 1560ern ausreichend waren um als w&#252;rdiger Gegner in die Geschichtsschreibung der Spanier einzugehen.</German>
 		<Italian>[H1]Tarano[\H1][NEWLINE][BOLD]Chief of the Toromona[NEWLINE]Lived: [\BOLD]Early-mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of this Toromona leader. Legend states that it was Tarano who guided the last of the Inca and their treasure through the forests to the mythical city of Paititi. Tarano was renowned as a great war chieftain, whose ferocity and skill in battle against the conquistadores in the 1560's was enough for him to be recorded by the Spanish as notable opponent.</Italian>
 		<Spanish>[H1]Tarano[\H1][NEWLINE][BOLD]Chief of the Toromona[NEWLINE]Lived: [\BOLD]Early-mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of this Toromona leader. Legend states that it was Tarano who guided the last of the Inca and their treasure through the forests to the mythical city of Paititi. Tarano was renowned as a great war chieftain, whose ferocity and skill in battle against the conquistadores in the 1560's was enough for him to be recorded by the Spanish as notable opponent.</Spanish>
@@ -2793,7 +2793,7 @@
 		<Tag>TXT_KEY_CIV_CROW_DESC</Tag>
 		<English>Crow</English>
 		<French>
-			<Text>Crow</Text>
+			<Text>Кроу</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2813,7 +2813,7 @@
 		<Tag>TXT_KEY_CIV_CROW_SHORT_DESC</Tag>
 		<English>Crow</English>
 		<French>
-			<Text>Crow</Text>
+			<Text>Кроу</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2853,7 +2853,7 @@
 		<Tag>TXT_KEY_LEADER_PINE_LEAF</Tag>
 		<English>Pine Leaf</English>
 		<French>
-			<Text>Pine Leaf</Text>
+			<Text>Биавачичиш</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2876,7 +2876,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_PINE_LEAF_PEDIA</Tag>
 		<English>[H1]Pine Leaf[\H1][NEWLINE][BOLD]War chief of the Crow[NEWLINE]Lived: [\BOLD]1806 -1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Pine Leaf was born a member of the Gros Ventres tribe, but at the age of 10 she was captured and taken prisoner by a Crow raiding party. Although she was very feminine in her dress and appearance, Pine Leaf demonstrated a strong partiality towards masculine habits, often besting her male counterparts in shooting, hunting and horse riding. Accounts state that as a child her twin brother had been killed by the Blackfoot and subsequently she vowed to take no husband until she had killed 100 enemy warriors with her own hands. She achieved the status of a warrior when she single handedly turned back a Blackfoot attack upon a fort that was sheltering Crow and white families. Pine Leaf continued to increase her standing within her village often raiding Blackfoot villages, and adding to her collection of scalps and horses.[PARAGRAPH:1] Made part of the Council of Chiefs, there she became known as Woman Chief, earning a strong voice in the tribes council, ranking the third most prominent person in the whole tribe of 160 lodges. She gave up her position as Chief at age forty-five after over two decades of brave leadership into battle. In 1858, visiting the Gros Ventre tribe, Pine Leaf was ambushed and killed by Gros Ventre warriors.</English>
-		<French>[H1]Pine Leaf[\H1][NEWLINE][BOLD]War chief of the Crow[NEWLINE]Lived: [\BOLD]1806 -1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Pine Leaf was born a member of the Gros Ventres tribe, but at the age of 10 she was captured and taken prisoner by a Crow raiding party. Although she was very feminine in her dress and appearance, Pine Leaf demonstrated a strong partiality towards masculine habits, often besting her male counterparts in shooting, hunting and horse riding. Accounts state that as a child her twin brother had been killed by the Blackfoot and subsequently she vowed to take no husband until she had killed 100 enemy warriors with her own hands. She achieved the status of a warrior when she single handedly turned back a Blackfoot attack upon a fort that was sheltering Crow and white families. Pine Leaf continued to increase her standing within her village often raiding Blackfoot villages, and adding to her collection of scalps and horses.[PARAGRAPH:1] Made part of the Council of Chiefs, there she became known as Woman Chief, earning a strong voice in the tribes council, ranking the third most prominent person in the whole tribe of 160 lodges. She gave up her position as Chief at age forty-five after over two decades of brave leadership into battle. In 1858, visiting the Gros Ventre tribe, Pine Leaf was ambushed and killed by Gros Ventre warriors.</French>
+		<French>[H1]Биавачичиш[\H1][NEWLINE][BOLD]War chief of the Crow[NEWLINE]Lived: [\BOLD]1806 -1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Pine Leaf was born a member of the Gros Ventres tribe, but at the age of 10 she was captured and taken prisoner by a Crow raiding party. Although she was very feminine in her dress and appearance, Pine Leaf demonstrated a strong partiality towards masculine habits, often besting her male counterparts in shooting, hunting and horse riding. Accounts state that as a child her twin brother had been killed by the Blackfoot and subsequently she vowed to take no husband until she had killed 100 enemy warriors with her own hands. She achieved the status of a warrior when she single handedly turned back a Blackfoot attack upon a fort that was sheltering Crow and white families. Pine Leaf continued to increase her standing within her village often raiding Blackfoot villages, and adding to her collection of scalps and horses.[PARAGRAPH:1] Made part of the Council of Chiefs, there she became known as Woman Chief, earning a strong voice in the tribes council, ranking the third most prominent person in the whole tribe of 160 lodges. She gave up her position as Chief at age forty-five after over two decades of brave leadership into battle. In 1858, visiting the Gros Ventre tribe, Pine Leaf was ambushed and killed by Gros Ventre warriors.</French>
 		<German>[H1]Pine Leaf[\H1][NEWLINE][BOLD]Kriegsh&#228;uptling der Crow[NEWLINE]Lebte: [\BOLD]1806 -1858[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Pine Leaf wurde als Mitglied des Gros Ventres Stammes geboren aber im Alter von 10 Jahren von einer Crow &#252;berfallsgruppe gefangen genommen. Obwohl sie in ihrer Erscheinung sehr weiblich war, demonstrierte Pine Leaf eine starke Neigung f&#252;r m&#228;nnliche T&#228;tigkeiten und &#252;berfl&#252;gelte oft gleichaltrige Jungen und M&#228;nner beim Bogenschiessen, Jagen oder Reiten. Berichte bezeugen, dass ihr Zwillingsbruder als Kind von Blackfoot Indianern get&#246;tet wurde, worauf sie schwor keinen Ehemann zu nehmen bis sie 100 feindliche Krieger mit ihren eigenen H&#228;nden get&#246;tet h&#228;tte. Sie erreichte den Status eines Krieger als sie einen Angriff der Blackfoot auf ein Fort abwehrte, welches Crow und weisse Familien beherbergte. Pine Leaf fuhr fort ihren Stand als Krieger auszubauen, indem sie Blackfoot D&#246;rfer angriff und ihrer Sammlung weitere Skalps und Pferde hinzuf&#252;gte.[PARAGRAPH:1] Als sie Teil des Rates der H&#228;uptlinge wurde, erlangte sie eine starke Stimme im und hielt den dritt h&#246;chsten Rang innerhalb des Stammes. Im Alter von 45 Jahren gab sie die Position des H&#228;uptlings, nach &#252;ber zwei Dekaden mutiger F&#252;hrung im Kampf, auf. 1858 bei einem Besuch des Gros Ventre Stammes geriet Pine Leaf in eine Hinterhalt durch deren Krieger und wurde get&#246;tet.</German>
 		<Italian>[H1]Pine Leaf[\H1][NEWLINE][BOLD]War chief of the Crow[NEWLINE]Lived: [\BOLD]1806 -1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Pine Leaf was born a member of the Gros Ventres tribe, but at the age of 10 she was captured and taken prisoner by a Crow raiding party. Although she was very feminine in her dress and appearance, Pine Leaf demonstrated a strong partiality towards masculine habits, often besting her male counterparts in shooting, hunting and horse riding. Accounts state that as a child her twin brother had been killed by the Blackfoot and subsequently she vowed to take no husband until she had killed 100 enemy warriors with her own hands. She achieved the status of a warrior when she single handedly turned back a Blackfoot attack upon a fort that was sheltering Crow and white families. Pine Leaf continued to increase her standing within her village often raiding Blackfoot villages, and adding to her collection of scalps and horses.[PARAGRAPH:1] Made part of the Council of Chiefs, there she became known as Woman Chief, earning a strong voice in the tribes council, ranking the third most prominent person in the whole tribe of 160 lodges. She gave up her position as Chief at age forty-five after over two decades of brave leadership into battle. In 1858, visiting the Gros Ventre tribe, Pine Leaf was ambushed and killed by Gros Ventre warriors.</Italian>
 		<Spanish>[H1]Pine Leaf[\H1][NEWLINE][BOLD]War chief of the Crow[NEWLINE]Lived: [\BOLD]1806 -1858[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Pine Leaf was born a member of the Gros Ventres tribe, but at the age of 10 she was captured and taken prisoner by a Crow raiding party. Although she was very feminine in her dress and appearance, Pine Leaf demonstrated a strong partiality towards masculine habits, often besting her male counterparts in shooting, hunting and horse riding. Accounts state that as a child her twin brother had been killed by the Blackfoot and subsequently she vowed to take no husband until she had killed 100 enemy warriors with her own hands. She achieved the status of a warrior when she single handedly turned back a Blackfoot attack upon a fort that was sheltering Crow and white families. Pine Leaf continued to increase her standing within her village often raiding Blackfoot villages, and adding to her collection of scalps and horses.[PARAGRAPH:1] Made part of the Council of Chiefs, there she became known as Woman Chief, earning a strong voice in the tribes council, ranking the third most prominent person in the whole tribe of 160 lodges. She gave up her position as Chief at age forty-five after over two decades of brave leadership into battle. In 1858, visiting the Gros Ventre tribe, Pine Leaf was ambushed and killed by Gros Ventre warriors.</Spanish>
@@ -2949,7 +2949,7 @@
 		<Tag>TXT_KEY_CIV_BLACKFOOT_DESC</Tag>
 		<English>Blackfoot</English>
 		<French>
-			<Text>Blackfoot</Text>
+			<Text>Племя Черноногие</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2969,7 +2969,7 @@
 		<Tag>TXT_KEY_CIV_BLACKFOOT_SHORT_DESC</Tag>
 		<English>Blackfoot</English>
 		<French>
-			<Text>Blackfoot</Text>
+			<Text>Черноногие</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3009,7 +3009,7 @@
 		<Tag>TXT_KEY_LEADER_RUNNING_EAGLE</Tag>
 		<English>Running Eagle</English>
 		<French>
-			<Text>Running Eagle</Text>
+			<Text>Пи'тамака</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3032,7 +3032,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_RUNNING_EAGLE_PEDIA</Tag>
 		<English>[H1]Running Eagle[\H1][NEWLINE][BOLD]War Chief of the Blackfoot[NEWLINE]Lived: [\BOLD]1815?-1850?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of Running Eagle's life. Even the year of her death is unknown, ranging from 1836-1850. Originally known as Brown Weasel Woman, Running Eagle showed a strong talent for hunting and riding from an early age. When she was 15, she accompanied her father on a hunting party, and rescued him from capture after his horse had been shot by an enemy tribe. Her first war experience was against the Crow, whom had stolen several horses from her village. Running Eagle followed the Crow raiding party back to their camp and attacked two enemy of riders, killing one and reclaiming 11 of the stolen horses.[PARAGRAPH:1] Undergoing a vision quest to learn her destiny, Running Eagle received a vision that she was to be a powerful warrior within her tribe. She subsequently took part in and led many war parties, her bravery earning her the name Running Eagle and a place in the warrior society as a war chief. She and five of her warriors were eventually ambushed and clubbed to death by members of the Flathead tribe while trying to steal their horses during a battle.</English>
-		<French>[H1]Running Eagle[\H1][NEWLINE][BOLD]War Chief of the Blackfoot[NEWLINE]Lived: [\BOLD]1815?-1850?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of Running Eagle's life. Even the year of her death is unknown, ranging from 1836-1850. Originally known as Brown Weasel Woman, Running Eagle showed a strong talent for hunting and riding from an early age. When she was 15, she accompanied her father on a hunting party, and rescued him from capture after his horse had been shot by an enemy tribe. Her first war experience was against the Crow, whom had stolen several horses from her village. Running Eagle followed the Crow raiding party back to their camp and attacked two enemy of riders, killing one and reclaiming 11 of the stolen horses.[PARAGRAPH:1] Undergoing a vision quest to learn her destiny, Running Eagle received a vision that she was to be a powerful warrior within her tribe. She subsequently took part in and led many war parties, her bravery earning her the name Running Eagle and a place in the warrior society as a war chief. She and five of her warriors were eventually ambushed and clubbed to death by members of the Flathead tribe while trying to steal their horses during a battle.</French>
+		<French>[H1]Пи'тамака[\H1][NEWLINE][BOLD]War Chief of the Blackfoot[NEWLINE]Lived: [\BOLD]1815?-1850?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of Running Eagle's life. Even the year of her death is unknown, ranging from 1836-1850. Originally known as Brown Weasel Woman, Running Eagle showed a strong talent for hunting and riding from an early age. When she was 15, she accompanied her father on a hunting party, and rescued him from capture after his horse had been shot by an enemy tribe. Her first war experience was against the Crow, whom had stolen several horses from her village. Running Eagle followed the Crow raiding party back to their camp and attacked two enemy of riders, killing one and reclaiming 11 of the stolen horses.[PARAGRAPH:1] Undergoing a vision quest to learn her destiny, Running Eagle received a vision that she was to be a powerful warrior within her tribe. She subsequently took part in and led many war parties, her bravery earning her the name Running Eagle and a place in the warrior society as a war chief. She and five of her warriors were eventually ambushed and clubbed to death by members of the Flathead tribe while trying to steal their horses during a battle.</French>
 		<German>[H1]Running Eagle[\H1][NEWLINE][BOLD]Kriegsh&#228;uptling der Blackfoot[NEWLINE]Lebte: [\BOLD]ca. 1815-1850[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Wenig ist &#252;ber das Leben von Running Eagle bekannt. Sogar das Jahr ihres Todes kann lediglich zwischen 1836 und 1850 gesch&#228;tzt werden. Urspr&#252;nglich als Brown Weasel Woman bekannt, zeigte Running Eagle bereits in jungen Jahren ein herausragendes Talent f&#252;r die Jagd und die Reiterei. Mit 15 begleitete sie ihren Vater bereits auf Jagdausfl&#252;gen und rettete ihn eines Tages sogar vor der Gefangennahme als sein Pferd von einem feindlichen Stamm erschossen wurde. Ihre ersten Kriegserfahrungen sammelte sie gegen die Crow, als diese mehrere Pferde ihres Stammes gestohlen hatten. Running Eagle verfolgte die Gruppe der Crow bis zu ihrem Lager und griff zweig zwei berittene Feinde gleichzeitig an, von denen sie dann einen t&#246;tete. 11 Pferde konnten wiedererlangt werden.[PARAGRAPH:1] Bei einer Visionspr&#252;fung um mehr &#252;ber ihre Zukunft zu erfahren, erhielt Running Eagle eine Vision, dass sie einst der m&#228;chtigste Krieger ihres Stamems werden sollte. Sie beteiligte sich an vielen Kriegsgruppen und erlangte so ihren Namen Running Eagle und eines Platz in der Kriergergesellschaft und letztlich sogar den Titel des Kriegsh&#228;uptlings. Sie und 5 weitere ihrer Krieger wurden aber in einen Hinterhalt gelockt und zu Tode gekn&#252;ppelt, als sie die Pferde eines der Flachlandst&#228;mme stehlen wollten.</German>
 		<Italian>[H1]Running Eagle[\H1][NEWLINE][BOLD]War Chief of the Blackfoot[NEWLINE]Lived: [\BOLD]1815?-1850?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of Running Eagle's life. Even the year of her death is unknown, ranging from 1836-1850. Originally known as Brown Weasel Woman, Running Eagle showed a strong talent for hunting and riding from an early age. When she was 15, she accompanied her father on a hunting party, and rescued him from capture after his horse had been shot by an enemy tribe. Her first war experience was against the Crow, whom had stolen several horses from her village. Running Eagle followed the Crow raiding party back to their camp and attacked two enemy of riders, killing one and reclaiming 11 of the stolen horses.[PARAGRAPH:1] Undergoing a vision quest to learn her destiny, Running Eagle received a vision that she was to be a powerful warrior within her tribe. She subsequently took part in and led many war parties, her bravery earning her the name Running Eagle and a place in the warrior society as a war chief. She and five of her warriors were eventually ambushed and clubbed to death by members of the Flathead tribe while trying to steal their horses during a battle.</Italian>
 		<Spanish>[H1]Running Eagle[\H1][NEWLINE][BOLD]War Chief of the Blackfoot[NEWLINE]Lived: [\BOLD]1815?-1850?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of Running Eagle's life. Even the year of her death is unknown, ranging from 1836-1850. Originally known as Brown Weasel Woman, Running Eagle showed a strong talent for hunting and riding from an early age. When she was 15, she accompanied her father on a hunting party, and rescued him from capture after his horse had been shot by an enemy tribe. Her first war experience was against the Crow, whom had stolen several horses from her village. Running Eagle followed the Crow raiding party back to their camp and attacked two enemy of riders, killing one and reclaiming 11 of the stolen horses.[PARAGRAPH:1] Undergoing a vision quest to learn her destiny, Running Eagle received a vision that she was to be a powerful warrior within her tribe. She subsequently took part in and led many war parties, her bravery earning her the name Running Eagle and a place in the warrior society as a war chief. She and five of her warriors were eventually ambushed and clubbed to death by members of the Flathead tribe while trying to steal their horses during a battle.</Spanish>
@@ -3105,7 +3105,7 @@
 		<Tag>TXT_KEY_CIV_GUAYMI_DESC</Tag>
 		<English>Guaymi</English>
 		<French>
-			<Text>Guaymi</Text>
+			<Text>Гуайми</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3125,7 +3125,7 @@
 		<Tag>TXT_KEY_CIV_GUAYMI_SHORT_DESC</Tag>
 		<English>Guaymi</English>
 		<French>
-			<Text>Guaymi</Text>
+			<Text>Гуайми</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3165,7 +3165,7 @@
 		<Tag>TXT_KEY_LEADER_URRACA</Tag>
 		<English>Uracca</English>
 		<French>
-			<Text>Uracca</Text>
+			<Text>Уракка</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3188,7 +3188,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_URRACA_PEDIA</Tag>
 		<English>[H1]Uracca[\H1][NEWLINE][BOLD]Cacique of the Guaymi[NEWLINE]Lived: [\BOLD]Late 1400's -1531[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Urraca was the most famous of three chieftains, the other two being Nata and Parita, all of whom fought against the Spanish conquistadors. He defeated the Spanish several times and in 1522, he achieved the distinction of being the only Indian leader ever force a captain of the Spanish Empire, Diego de Albitez, to sign a peace treaty. [PARAGRAPH:1] After this stunning success, Urraca was subsequently captured by the conquistadors, but he managed to escape, rejoining his people and continuing the fight against the Spanish until his death in 1531.</English>
-		<French>[H1]Uracca[\H1][NEWLINE][BOLD]Cacique of the Guaymi[NEWLINE]Lived: [\BOLD]Late 1400's -1531[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Urraca was the most famous of three chieftains, the other two being Nata and Parita, all of whom fought against the Spanish conquistadors. He defeated the Spanish several times and in 1522, he achieved the distinction of being the only Indian leader ever force a captain of the Spanish Empire, Diego de Albitez, to sign a peace treaty. [PARAGRAPH:1] After this stunning success, Urraca was subsequently captured by the conquistadors, but he managed to escape, rejoining his people and continuing the fight against the Spanish until his death in 1531.</French>
+		<French>[H1]Уракка[\H1][NEWLINE][BOLD]Cacique of the Guaymi[NEWLINE]Lived: [\BOLD]Late 1400's -1531[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Urraca was the most famous of three chieftains, the other two being Nata and Parita, all of whom fought against the Spanish conquistadors. He defeated the Spanish several times and in 1522, he achieved the distinction of being the only Indian leader ever force a captain of the Spanish Empire, Diego de Albitez, to sign a peace treaty. [PARAGRAPH:1] After this stunning success, Urraca was subsequently captured by the conquistadors, but he managed to escape, rejoining his people and continuing the fight against the Spanish until his death in 1531.</French>
 		<German>[H1]Uracca[\H1][NEWLINE][BOLD]Cacique der Guaymi[NEWLINE]Lebte: [\BOLD]ca. 1490-1531[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Urraca war der bekannteste von drei H&#228;uptlingen, die anderen beiden ware Nata and Parita, die zusammen gegen die spanischen Conquistadores k&#228;mpften. Er besiegte die Spanier mehrfach und 1522 schaffte er was noch kein Ureinwohner je zuvor geschafft hatte, er zwang einen Captain des Spanischen Empire, Diego de Albitez, ein Friedensabkommen zu unterzeichnen. [PARAGRAPH:1] Nach diesem erstaunlichen Erfolg wurde Urraca jedoch von den Conquistadores gefanngen genommen, konnte aber entkommen und nahm mit seinem Volk den Kampf gegen die Spanier wieder auf, den er bis zu seinem Tod 1531 fortf&#252;hrte.</German>
 		<Italian>[H1]Uracca[\H1][NEWLINE][BOLD]Cacique of the Guaymi[NEWLINE]Lived: [\BOLD]Late 1400's -1531[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Urraca was the most famous of three chieftains, the other two being Nata and Parita, all of whom fought against the Spanish conquistadors. He defeated the Spanish several times and in 1522, he achieved the distinction of being the only Indian leader ever force a captain of the Spanish Empire, Diego de Albitez, to sign a peace treaty. [PARAGRAPH:1] After this stunning success, Urraca was subsequently captured by the conquistadors, but he managed to escape, rejoining his people and continuing the fight against the Spanish until his death in 1531.</Italian>
 		<Spanish>[H1]Uracca[\H1][NEWLINE][BOLD]Cacique of the Guaymi[NEWLINE]Lived: [\BOLD]Late 1400's -1531[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Urraca was the most famous of three chieftains, the other two being Nata and Parita, all of whom fought against the Spanish conquistadors. He defeated the Spanish several times and in 1522, he achieved the distinction of being the only Indian leader ever force a captain of the Spanish Empire, Diego de Albitez, to sign a peace treaty. [PARAGRAPH:1] After this stunning success, Urraca was subsequently captured by the conquistadors, but he managed to escape, rejoining his people and continuing the fight against the Spanish until his death in 1531.</Spanish>
@@ -3261,7 +3261,7 @@
 		<Tag>TXT_KEY_CIV_TARASCANS_DESC</Tag>
 		<English>Tarascans</English>
 		<French>
-			<Text>Tarascans</Text>
+			<Text>Тараски</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3281,7 +3281,7 @@
 		<Tag>TXT_KEY_CIV_TARASCANS_SHORT_DESC</Tag>
 		<English>Tarascans</English>
 		<French>
-			<Text>Tarascans</Text>
+			<Text>Тараски</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3321,7 +3321,7 @@
 		<Tag>TXT_KEY_LEADER_ERENDIRA</Tag>
 		<English>Erendira</English>
 		<French>
-			<Text>Erendira</Text>
+			<Text>Эрендира</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3344,7 +3344,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ERENDIRA_PEDIA</Tag>
 		<English>[H1]Erendira[\H1][NEWLINE][BOLD]Princess of the Tarascans[NEWLINE]Lived: [\BOLD]1503-1530?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Erendira was a princess of the Tarascan people. She was 16 or 17 years old when the Spanish came to Mexico. After the downfall of their enemies the Aztecs, her uncle Tangaxuan II surrendered full autonomy of his kingdom, opting to rule with the Spanish, but was eventually executed by Spanish Conquistadores in 1530.[PARAGRAPH:1] Little is known of Erendira’'s role during this period, some legends and oral traditions claim that she rallied and led a military force that attacked the Spaniards, and that she personally killed a Conquistador and took his horse, later using the animal to teach her people how to ride, though there is no historical evidence to support this. As in life, Erendira’'s fate is also shrouded in mystery. Several stories claimed she committed suicide, others that she retreated to the mountains to train her people to fight, and a further story states that she was kidnapped by her own people and put into a temple so that the Spaniards would never find her. The only certainty historians and scholars have is that soon after the fall of the Tarascan empire, Erendira’s name disappeared from historical records.</English>
-		<French>[H1]Erendira[\H1][NEWLINE][BOLD]Princess of the Tarascans[NEWLINE]Lived: [\BOLD]1503-1530?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Erendira was a princess of the Tarascan people. She was 16 or 17 years old when the Spanish came to Mexico. After the downfall of their enemies the Aztecs, her uncle Tangaxuan II surrendered full autonomy of his kingdom, opting to rule with the Spanish, but was eventually executed by Spanish Conquistadores in 1530.[PARAGRAPH:1] Little is known of Erendira’'s role during this period, some legends and oral traditions claim that she rallied and led a military force that attacked the Spaniards, and that she personally killed a Conquistador and took his horse, later using the animal to teach her people how to ride, though there is no historical evidence to support this. As in life, Erendira’'s fate is also shrouded in mystery. Several stories claimed she committed suicide, others that she retreated to the mountains to train her people to fight, and a further story states that she was kidnapped by her own people and put into a temple so that the Spaniards would never find her. The only certainty historians and scholars have is that soon after the fall of the Tarascan empire, Erendira’s name disappeared from historical records.</French>
+		<French>[H1]Эрендира[\H1][NEWLINE][BOLD]Princess of the Tarascans[NEWLINE]Lived: [\BOLD]1503-1530?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Erendira was a princess of the Tarascan people. She was 16 or 17 years old when the Spanish came to Mexico. After the downfall of their enemies the Aztecs, her uncle Tangaxuan II surrendered full autonomy of his kingdom, opting to rule with the Spanish, but was eventually executed by Spanish Conquistadores in 1530.[PARAGRAPH:1] Little is known of Erendira’'s role during this period, some legends and oral traditions claim that she rallied and led a military force that attacked the Spaniards, and that she personally killed a Conquistador and took his horse, later using the animal to teach her people how to ride, though there is no historical evidence to support this. As in life, Erendira’'s fate is also shrouded in mystery. Several stories claimed she committed suicide, others that she retreated to the mountains to train her people to fight, and a further story states that she was kidnapped by her own people and put into a temple so that the Spaniards would never find her. The only certainty historians and scholars have is that soon after the fall of the Tarascan empire, Erendira’s name disappeared from historical records.</French>
 		<German>[H1]Erendira[\H1][NEWLINE][BOLD]Prinzessin der Tarascans[NEWLINE]Lebte: [\BOLD]1503-1530?[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Erendira war eine Prinzessin des Tarascan Volkes. Sie war 16 oder 17 als die Spanier nach Mexiko kamen. Nach dem Fall ihrer Feinde der Azteken, unterwarf ihr Onkel Tangaxuan II die volle Autonomie des K&#246;nigreiches an die Spanier in der Hoffnung noch ein wenig Macht zu erhalten. Letztlich wurde er aber durch spanische Conquistadores 1530 hingerichtet.[PARAGRAPH:1] Wenig ist &#252;ber Erendiras Rolle w&#228;hrend dieser Periode bekannt. Einige Legenden und m&#252;nldiche &#252;berlieferungen behaupten aber, dass sie eine Streitmacht versammelte und gegen die Spanier f&#252;hrte. Es wird sogar erz&#228;hlt, dass sie pers&#246;nlich eine Conquistador t&#246;tete und sein Pferd nahm, um damit sp&#228;ter ihrem Volk das Reiten beizubringen. Es gibt jedoch f&#252;r diese Geschichten keinerlei historische Beweise. Ihr letztes Schicksal ist ebenfalls von Mythen vernebelt. Einige Geschichten erz&#228;hlen, dass sie Selbstmord beging, andere dass sie in die Berge floh um dort ihr Volk im Kampft auszubilden und wieder andere, dass sie von ihrem Volk in einem Tempel versteckt wurde, damit die Spanier sie niemals finden sollten. Die einzige Gewissheit die Historiker haben ist die, dass kurz nach dem Fall des Tarascan Imperiums auch der Name Erendira in keiner historischen Aufzeichnung mehr auftauchte.</German>
 		<Italian>[H1]Erendira[\H1][NEWLINE][BOLD]Princess of the Tarascans[NEWLINE]Lived: [\BOLD]1503-1530?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Erendira was a princess of the Tarascan people. She was 16 or 17 years old when the Spanish came to Mexico. After the downfall of their enemies the Aztecs, her uncle Tangaxuan II surrendered full autonomy of his kingdom, opting to rule with the Spanish, but was eventually executed by Spanish Conquistadores in 1530.[PARAGRAPH:1] Little is known of Erendira’'s role during this period, some legends and oral traditions claim that she rallied and led a military force that attacked the Spaniards, and that she personally killed a Conquistador and took his horse, later using the animal to teach her people how to ride, though there is no historical evidence to support this. As in life, Erendira’'s fate is also shrouded in mystery. Several stories claimed she committed suicide, others that she retreated to the mountains to train her people to fight, and a further story states that she was kidnapped by her own people and put into a temple so that the Spaniards would never find her. The only certainty historians and scholars have is that soon after the fall of the Tarascan empire, Erendira’s name disappeared from historical records.</Italian>
 		<Spanish>[H1]Erendira[\H1][NEWLINE][BOLD]Princess of the Tarascans[NEWLINE]Lived: [\BOLD]1503-1530?[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Erendira was a princess of the Tarascan people. She was 16 or 17 years old when the Spanish came to Mexico. After the downfall of their enemies the Aztecs, her uncle Tangaxuan II surrendered full autonomy of his kingdom, opting to rule with the Spanish, but was eventually executed by Spanish Conquistadores in 1530.[PARAGRAPH:1] Little is known of Erendira’'s role during this period, some legends and oral traditions claim that she rallied and led a military force that attacked the Spaniards, and that she personally killed a Conquistador and took his horse, later using the animal to teach her people how to ride, though there is no historical evidence to support this. As in life, Erendira’'s fate is also shrouded in mystery. Several stories claimed she committed suicide, others that she retreated to the mountains to train her people to fight, and a further story states that she was kidnapped by her own people and put into a temple so that the Spaniards would never find her. The only certainty historians and scholars have is that soon after the fall of the Tarascan empire, Erendira’s name disappeared from historical records.</Spanish>
@@ -3417,7 +3417,7 @@
 		<Tag>TXT_KEY_CIV_OMAGUA_DESC</Tag>
 		<English>Omagua</English>
 		<French>
-			<Text>Omagua</Text>
+			<Text>Омагуа</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3437,7 +3437,7 @@
 		<Tag>TXT_KEY_CIV_OMAGUA_SHORT_DESC</Tag>
 		<English>Omagua</English>
 		<French>
-			<Text>Omagua</Text>
+			<Text>Омагуа</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3477,7 +3477,7 @@
 		<Tag>TXT_KEY_LEADER_AOMAGUA</Tag>
 		<English>Aomagua</English>
 		<French>
-			<Text>Aomagua</Text>
+			<Text>Аомагуа</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3500,7 +3500,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AOMAGUA_PEDIA</Tag>
 		<English>[H1]Aomagua[\H1][NEWLINE][BOLD]Cacique of the Omagua[NEWLINE]Lived: [\BOLD]Early to mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of any individual Omagua cacique. The expeditions of Orellana and Ursua, rarely mentioned the names of native individuals, and when they did they often confused the name of the tribe with that of the village and its leader. Thus the leader of the Omagua is often referred to as Aomagua. [PARAGRAPH:1] Aomagua ordered several waves of attacks against the Spanish under Orellana in an attempt to wear the Spanish down and defeat them. His attempts were not successful but the incessant hostility the Omagua dealt the Spanish, was enough to convince Orellana to move swiftly through their territory. It was probably warriors from one of the Omagua tribes who displaying long hair and bone earrings, were likely mistaken as women warriors, fueling the story that would eventually give the region its name, Amazon, after the Greek legend.</English>
-		<French>[H1]Aomagua[\H1][NEWLINE][BOLD]Cacique of the Omagua[NEWLINE]Lived: [\BOLD]Early to mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of any individual Omagua cacique. The expeditions of Orellana and Ursua, rarely mentioned the names of native individuals, and when they did they often confused the name of the tribe with that of the village and its leader. Thus the leader of the Omagua is often referred to as Aomagua. [PARAGRAPH:1] Aomagua ordered several waves of attacks against the Spanish under Orellana in an attempt to wear the Spanish down and defeat them. His attempts were not successful but the incessant hostility the Omagua dealt the Spanish, was enough to convince Orellana to move swiftly through their territory. It was probably warriors from one of the Omagua tribes who displaying long hair and bone earrings, were likely mistaken as women warriors, fueling the story that would eventually give the region its name, Amazon, after the Greek legend.</French>
+		<French>[H1]Аомагуа[\H1][NEWLINE][BOLD]Cacique of the Omagua[NEWLINE]Lived: [\BOLD]Early to mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of any individual Omagua cacique. The expeditions of Orellana and Ursua, rarely mentioned the names of native individuals, and when they did they often confused the name of the tribe with that of the village and its leader. Thus the leader of the Omagua is often referred to as Aomagua. [PARAGRAPH:1] Aomagua ordered several waves of attacks against the Spanish under Orellana in an attempt to wear the Spanish down and defeat them. His attempts were not successful but the incessant hostility the Omagua dealt the Spanish, was enough to convince Orellana to move swiftly through their territory. It was probably warriors from one of the Omagua tribes who displaying long hair and bone earrings, were likely mistaken as women warriors, fueling the story that would eventually give the region its name, Amazon, after the Greek legend.</French>
 		<German>[H1]Aomagua[\H1][NEWLINE][BOLD]Cacique der Omagua[NEWLINE]Lebte: [\BOLD]Mitte des 16ten Jahrhunderts[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Wenig ist &#252;ber einzelne Cacique der Omagua bekannt. Die Expeditionen von Orellana und Ursua, nannten kaum Namen einzelner Individuen, und falls doch wurden oft Namen von St&#228;mmen mit Ortschaften oder deren Anf&#252;hrern durcheinander gebracht. Daher wird der Anf&#252;hrer der Omagua oft als Aomagua bezeichnet. [PARAGRAPH:1] Es ist jedoch bekannt, dass der Aomagua mehrere Angriffswellen gegen die Spanier unter Orellana befahl, um die Spanier aufzureiben und letztlich zu besiegen. Seine Anstrengungen waren nicht erfolgreich aber die fortw&#228;hrende Aggression war genug, um die Orellana zu &#252;berzeugen schnellstm&#246;glich das Territorium zu durchqueren. Es waren vermutlich die Omagua, die mit ihrem langen Haar und den Knochenohrringen leicht f&#252;r Frauenkriegerinnen gehalten werden konnten, die den Amazonas aufgrund der griechischen Legende weiblicher Kriegerinnen den Namen gaben.</German>
 		<Italian>[H1]Aomagua[\H1][NEWLINE][BOLD]Cacique of the Omagua[NEWLINE]Lived: [\BOLD]Early to mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of any individual Omagua cacique. The expeditions of Orellana and Ursua, rarely mentioned the names of native individuals, and when they did they often confused the name of the tribe with that of the village and its leader. Thus the leader of the Omagua is often referred to as Aomagua. [PARAGRAPH:1] Aomagua ordered several waves of attacks against the Spanish under Orellana in an attempt to wear the Spanish down and defeat them. His attempts were not successful but the incessant hostility the Omagua dealt the Spanish, was enough to convince Orellana to move swiftly through their territory. It was probably warriors from one of the Omagua tribes who displaying long hair and bone earrings, were likely mistaken as women warriors, fueling the story that would eventually give the region its name, Amazon, after the Greek legend.</Italian>
 		<Spanish>[H1]Aomagua[\H1][NEWLINE][BOLD]Cacique of the Omagua[NEWLINE]Lived: [\BOLD]Early to mid 16th century[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Little is known of any individual Omagua cacique. The expeditions of Orellana and Ursua, rarely mentioned the names of native individuals, and when they did they often confused the name of the tribe with that of the village and its leader. Thus the leader of the Omagua is often referred to as Aomagua. [PARAGRAPH:1] Aomagua ordered several waves of attacks against the Spanish under Orellana in an attempt to wear the Spanish down and defeat them. His attempts were not successful but the incessant hostility the Omagua dealt the Spanish, was enough to convince Orellana to move swiftly through their territory. It was probably warriors from one of the Omagua tribes who displaying long hair and bone earrings, were likely mistaken as women warriors, fueling the story that would eventually give the region its name, Amazon, after the Greek legend.</Spanish>
@@ -3573,7 +3573,7 @@
 		<Tag>TXT_KEY_CIV_MAPUCHE_DESC</Tag>
 		<English>Mapuche</English>
 		<French>
-			<Text>Mapuche</Text>
+			<Text>Мапуче</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3593,7 +3593,7 @@
 		<Tag>TXT_KEY_CIV_MAPUCHE_SHORT_DESC</Tag>
 		<English>Mapuche</English>
 		<French>
-			<Text>Mapuche</Text>
+			<Text>Мапуче</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3633,7 +3633,7 @@
 		<Tag>TXT_KEY_LEADER_LAUTARO</Tag>
 		<English>Lautaro</English>
 		<French>
-			<Text>Lautaro</Text>
+			<Text>Лаутаро</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3656,7 +3656,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_LAUTARO_PEDIA</Tag>
 		<English>[H1]Lautaro[\H1][NEWLINE][BOLD]Toqui of the Mapuche[NEWLINE]Lived: [\BOLD]1534-1557[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Lautaro was a young military commander of the Mapuche who fought in the Arauco War against the Spanish. Captured as a boy in 1546, Lautaro, became the personal servant of Don Pedro de Valdivia, Spanish conqueror of Chile. While in captivity Lautaro learned the military practice and tactics of the Spanish army. Escaping the Spanish in 1552, Lautaro returned to his people just as they had decided to make war and expel the Spanish invaders from their lands. Leading 6,000 men he attacked the Spanish garrison of Fort Tucapel, forcing the Spanish to retreat and then defeating a smaller Spanish army sent to retake the fort. During this battle his former master Pedro de Valdivia who led the Spanish forces was captured and killed. [PARAGRAPH:1] Given the Mapuche tradition that dictated a lengthy victory celebration, Lautaro was unable to immediately follow up on his success at Tucapel. However, the following year saw further success against the Spanish at the Battle of Marihuenu, and the burning of the city of Concepcion. Despite famine and a smallpox epidemic that reduced his army's size, Lautaro again attacked Concepcion in 1555, and then fought the Spanish at the Battle of Peteroa, although this time he was forced to retreat in order to save his army. In the spring of 1557, Lautaro decided to attack Santiago. Yet his plans were forestalled at the Battle of Mataquito, where a surprise Spanish attack on his encampment saw Lautaro killed and his forces decisively beaten. After the battle, Lautaro's head was cut off displayed in Santiago's plaza.</English>
-		<French>[H1]Lautaro[\H1][NEWLINE][BOLD]Toqui of the Mapuche[NEWLINE]Lived: [\BOLD]1534-1557[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Lautaro was a young military commander of the Mapuche who fought in the Arauco War against the Spanish. Captured as a boy in 1546, Lautaro, became the personal servant of Don Pedro de Valdivia, Spanish conqueror of Chile. While in captivity Lautaro learned the military practice and tactics of the Spanish army. Escaping the Spanish in 1552, Lautaro returned to his people just as they had decided to make war and expel the Spanish invaders from their lands. Leading 6,000 men he attacked the Spanish garrison of Fort Tucapel, forcing the Spanish to retreat and then defeating a smaller Spanish army sent to retake the fort. During this battle his former master Pedro de Valdivia who led the Spanish forces was captured and killed. [PARAGRAPH:1] Given the Mapuche tradition that dictated a lengthy victory celebration, Lautaro was unable to immediately follow up on his success at Tucapel. However, the following year saw further success against the Spanish at the Battle of Marihuenu, and the burning of the city of Concepcion. Despite famine and a smallpox epidemic that reduced his army's size, Lautaro again attacked Concepcion in 1555, and then fought the Spanish at the Battle of Peteroa, although this time he was forced to retreat in order to save his army. In the spring of 1557, Lautaro decided to attack Santiago. Yet his plans were forestalled at the Battle of Mataquito, where a surprise Spanish attack on his encampment saw Lautaro killed and his forces decisively beaten. After the battle, Lautaro's head was cut off displayed in Santiago's plaza.</French>
+		<French>[H1]Лаутаро[\H1][NEWLINE][BOLD]Toqui of the Mapuche[NEWLINE]Lived: [\BOLD]1534-1557[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Lautaro was a young military commander of the Mapuche who fought in the Arauco War against the Spanish. Captured as a boy in 1546, Lautaro, became the personal servant of Don Pedro de Valdivia, Spanish conqueror of Chile. While in captivity Lautaro learned the military practice and tactics of the Spanish army. Escaping the Spanish in 1552, Lautaro returned to his people just as they had decided to make war and expel the Spanish invaders from their lands. Leading 6,000 men he attacked the Spanish garrison of Fort Tucapel, forcing the Spanish to retreat and then defeating a smaller Spanish army sent to retake the fort. During this battle his former master Pedro de Valdivia who led the Spanish forces was captured and killed. [PARAGRAPH:1] Given the Mapuche tradition that dictated a lengthy victory celebration, Lautaro was unable to immediately follow up on his success at Tucapel. However, the following year saw further success against the Spanish at the Battle of Marihuenu, and the burning of the city of Concepcion. Despite famine and a smallpox epidemic that reduced his army's size, Lautaro again attacked Concepcion in 1555, and then fought the Spanish at the Battle of Peteroa, although this time he was forced to retreat in order to save his army. In the spring of 1557, Lautaro decided to attack Santiago. Yet his plans were forestalled at the Battle of Mataquito, where a surprise Spanish attack on his encampment saw Lautaro killed and his forces decisively beaten. After the battle, Lautaro's head was cut off displayed in Santiago's plaza.</French>
 		<German>[H1]Lautaro[\H1][NEWLINE][BOLD]Toqui der Mapuche[NEWLINE]Lebte: [\BOLD]1534-1557[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Lautaro war ein junger Milit&#228;rbefehlshaber der Mapuche, der im Arauco Kriege gegen die Spanier k&#228;mpfte. 1546 als Junge gefangen genommen, wurde Lautaro der pers&#246;nliche Diener von Don Pedro de Valdivia, spanischer Eroberer von Chile. W&#228;hrend seiner Gefangenschaft lernte er die milit&#228;rischen Praktiken und Taktiken der spanischen Armee. Nach seiner Flucht vor den Spaniern 1552, kehrte Lautaro zu seinem Volk zur&#252;ck als diese gerade beschlossen hatten gegen die Spanier Krieg zu f&#252;hren um sie von ihrem Land zu vertreiben. Mit 6000 Mann griff er die Garnison Fort Tucapel an, zwang die Spanier zum R&#252;ckzug und besiegte eine kleinere Armee, die das Fort wieder einnehmen sollte. W&#228;hrend dieser Schlacht wurde sein fr&#252;herer Herr Pedro de Valdivia, der die spanischen Truppen f&#252;hrte, gefangen und sp&#228;ter get&#246;tet. [PARAGRAPH:1] Aufgrund der Mapuche Tradition, die auf diesen Sieg eine lange Siegesfeier forderte, konnten Lautaro seinen Sieg jedoch nicht gleich weiter ausnutzen. Jedoch erlangte er im folgenden Jahre weitere Erfolge gegen die Spanier bei der Schlacht von Marihuenu und bei der Niederbrennung der Stadt Concepcion. Trotz Hunger und einer Pockenepidemie, die seine Armee stark reduzierten, griff Lautaro 1555 Concepcion erneut an und k&#228;mpfte dann gegen die Spanier in der Schlacht von Peteroa, war jedoch dieses Mal gezwungen selbst den R&#252;ckzug anzutreten.Im Fr&#252;hjahr 1557 entschied Lautaro Santiago anzugreifen. Sein Plan wurde jedoch durch die Schlacht von Mataquito verhindert, als ein spanischer &#252;beraschungsangriff zu einer entscheidenden Niederlage seiner Truppen und dem Tod von Lautaro selbst f&#252;hrte. Nach der Schlacht wurde der abgetrennte Kopf von Lautaro auf dem Plaza in Santiago aufgestellt.</German>
 		<Italian>[H1]Lautaro[\H1][NEWLINE][BOLD]Toqui of the Mapuche[NEWLINE]Lived: [\BOLD]1534-1557[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Lautaro was a young military commander of the Mapuche who fought in the Arauco War against the Spanish. Captured as a boy in 1546, Lautaro, became the personal servant of Don Pedro de Valdivia, Spanish conqueror of Chile. While in captivity Lautaro learned the military practice and tactics of the Spanish army. Escaping the Spanish in 1552, Lautaro returned to his people just as they had decided to make war and expel the Spanish invaders from their lands. Leading 6,000 men he attacked the Spanish garrison of Fort Tucapel, forcing the Spanish to retreat and then defeating a smaller Spanish army sent to retake the fort. During this battle his former master Pedro de Valdivia who led the Spanish forces was captured and killed. [PARAGRAPH:1] Given the Mapuche tradition that dictated a lengthy victory celebration, Lautaro was unable to immediately follow up on his success at Tucapel. However, the following year saw further success against the Spanish at the Battle of Marihuenu, and the burning of the city of Concepcion. Despite famine and a smallpox epidemic that reduced his army's size, Lautaro again attacked Concepcion in 1555, and then fought the Spanish at the Battle of Peteroa, although this time he was forced to retreat in order to save his army. In the spring of 1557, Lautaro decided to attack Santiago. Yet his plans were forestalled at the Battle of Mataquito, where a surprise Spanish attack on his encampment saw Lautaro killed and his forces decisively beaten. After the battle, Lautaro's head was cut off displayed in Santiago's plaza.</Italian>
 		<Spanish>[H1]Lautaro[\H1][NEWLINE][BOLD]Toqui of the Mapuche[NEWLINE]Lived: [\BOLD]1534-1557[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Lautaro was a young military commander of the Mapuche who fought in the Arauco War against the Spanish. Captured as a boy in 1546, Lautaro, became the personal servant of Don Pedro de Valdivia, Spanish conqueror of Chile. While in captivity Lautaro learned the military practice and tactics of the Spanish army. Escaping the Spanish in 1552, Lautaro returned to his people just as they had decided to make war and expel the Spanish invaders from their lands. Leading 6,000 men he attacked the Spanish garrison of Fort Tucapel, forcing the Spanish to retreat and then defeating a smaller Spanish army sent to retake the fort. During this battle his former master Pedro de Valdivia who led the Spanish forces was captured and killed. [PARAGRAPH:1] Given the Mapuche tradition that dictated a lengthy victory celebration, Lautaro was unable to immediately follow up on his success at Tucapel. However, the following year saw further success against the Spanish at the Battle of Marihuenu, and the burning of the city of Concepcion. Despite famine and a smallpox epidemic that reduced his army's size, Lautaro again attacked Concepcion in 1555, and then fought the Spanish at the Battle of Peteroa, although this time he was forced to retreat in order to save his army. In the spring of 1557, Lautaro decided to attack Santiago. Yet his plans were forestalled at the Battle of Mataquito, where a surprise Spanish attack on his encampment saw Lautaro killed and his forces decisively beaten. After the battle, Lautaro's head was cut off displayed in Santiago's plaza.</Spanish>
@@ -3665,7 +3665,7 @@
 		<Tag>TXT_KEY_LEADER_CHIEF_JOSEPH</Tag>
 		<English>Chief Joseph</English>
 		<French>
-			<Text>Chief Joseph</Text>
+			<Text>Вождь Джозеф</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3761,7 +3761,7 @@
 		<Tag>TXT_KEY_CIV_CHURCH_DESC</Tag>
 		<English>The Church</English>
 		<French>
-			<Text>The Church</Text>
+			<Text>Церковь</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3785,7 +3785,7 @@
 		<Tag>TXT_KEY_CIV_CHURCH_SHORT_DESC</Tag>
 		<English>Church</English>
 		<French>
-			<Text>Church</Text>
+			<Text>Церковь</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -3825,7 +3825,7 @@
 		<Tag>TXT_KEY_LEADER_CHURCH</Tag>
 		<English>The Archbishop</English>
 		<French>
-			<Text>The Archbishop</Text>
+			<Text>Архиепископ</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
