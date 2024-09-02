@@ -441,7 +441,7 @@
 		<Tag>TXT_KEY_CIV_MAYA_DESC</Tag>
 		<English>Maya Empire</English>
 		<French>
-			<Text>Maya Empire</Text>
+			<Text>Империя Майя</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -461,7 +461,7 @@
 		<Tag>TXT_KEY_CIV_MAYA_SHORT_DESC</Tag>
 		<English>Maya</English>
 		<French>
-			<Text>Maya</Text>
+			<Text>Майя</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -480,7 +480,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
 		<English>Portuguese Colonies</English>
-		<French>Portuguese Colonies</French>
+		<French>Колонии Португалии</French>
 		<German>Col&#243;nias Portuguesas</German>
 		<Italian>Colonie portoghesi</Italian>
 		<Spanish>Portuguese Colonies</Spanish>
@@ -488,7 +488,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_SHORT_DESC</Tag>
 		<English>New Portugal</English>
-		<French>New Portugal</French>
+		<French>Португалия</French>
 		<German>Col&#243;nias Portuguesas</German>
 		<Italian>Nuovo Portogallo</Italian>
 		<Spanish>New Portugal</Spanish>
@@ -496,7 +496,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_DESC</Tag>
 		<English>Portuguese Empire</English>
-		<French>Portuguese Empire</French>
+		<French>Империя Португалии</French>
 		<German>K&#246;nigreich Portugal</German>
 		<Italian>Impero Portoghese</Italian>
 		<Spanish>Portuguese Empire</Spanish>
@@ -504,7 +504,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_SHORT_DESC</Tag>
 		<English>Portugal</English>
-		<French>Portugal</French>
+		<French>Португалия</French>
 		<German>Portugal</German>
 		<Italian>Portogallo</Italian>
 		<Spanish>Portugal</Spanish>
@@ -512,7 +512,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_PEDIA</Tag>
 		<English>Portugal</English>
-		<French>Portugal</French>
+		<French>Португалия</French>
 		<German>Portugal</German>
 		<Italian>Portogallo</Italian>
 		<Spanish>Portugal</Spanish>
@@ -541,7 +541,7 @@
 		<Tag>TXT_KEY_TRAIT_EXPLORERS</Tag>
 		<English>Explorers</English>
 		<French>
-			<Text>Explorers</Text>
+			<Text>Исследователи</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -552,7 +552,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXPLORERS_SHORT</Tag>
 		<English>Exp</English>
-		<French>Exp</French>
+		<French>Ислледов.</French>
 		<German>For</German>
 		<Italian>Exp</Italian>
 		<Spanish>Exp</Spanish>
@@ -716,7 +716,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DOMINATION</Tag>
 		<English>Domination</English>
-		<French>Domination</French>
+		<French>Доминация</French>
 		<German>Vorherrschaft</German>
 		<Italian>Domination</Italian>
 		<Spanish>Domination</Spanish>
@@ -797,7 +797,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Ren&#233;-Robert Cavelier de La Salle</Text>
+			<Text>Рене-Роберт Кавелье де Ла Салль</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -964,7 +964,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_WORLD_MAP_STRING</Tag>
 		<English>New World Map</English>
-		<French>New World Map</French>
+		<French>Карта Нового Света</French>
 		<German>Karte der Neuen Welt</German>
 		<Italian>New World Map</Italian>
 		<Spanish>New World Map</Spanish>
@@ -988,7 +988,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TRADE</Tag>
 		<English>Economic</English>
-		<French>Economic</French>
+		<French>Экономика</French>
 		<German>Handel</German>
 		<Italian>Economic</Italian>
 		<Spanish>Economic</Spanish>
@@ -996,7 +996,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_PRODUCTION</Tag>
 		<English>Industrialisation</English>
-		<French>Industrialisation</French>
+		<French>Индустриализация</French>
 		<German>Industrialisierung</German>
 		<Italian>Industrialisation</Italian>
 		<Spanish>Industrialisation</Spanish>
@@ -1004,7 +1004,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_PRODUCTION_PEDIA</Tag>
 		<English>Start the Industrial Revolution (production rate per turn)</English>
-		<French>Start the Industrial Revolution (production rate per turn)</French>
+		<French>Начата индустриалиная революция (скорость производства за ход)</French>
 		<German>Industrielle Revolution (Produktionsrate pro Runde)</German>
 		<Italian>Start the Industrial Revolution (production rate per turn)</Italian>
 		<Spanish>Start the Industrial Revolution (production rate per turn)</Spanish>
@@ -1049,7 +1049,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Colonial Militia:Colonial Militias</Text>
+			<Text>Колониальный ополченец:Колониальный ополченец</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1073,7 +1073,7 @@
 		<Tag>TXT_KEY_UNIT_PROFESSION_LINE_INFANTRY</Tag>
 		<English>Line Infantry</English>
 		<French>
-			<Text>Line Infantry</Text>
+			<Text>Линейная пехота</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1097,7 +1097,7 @@
 		<Tag>TXT_KEY_UNIT_PROFESSION_ROYAL_LIGHT_INFANTRY</Tag>
 		<English>Royal Light Infantry</English>
 		<French>
-			<Text>Royal Light Infantry</Text>
+			<Text>Королевская легкая пехота</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1121,7 +1121,7 @@
 		<Tag>TXT_KEY_UNIT_PROFESSION_ROYAL_LINE_INFANTRY</Tag>
 		<English>Royal Line Infantry</English>
 		<French>
-			<Text>Royal Line Infantry</Text>
+			<Text>Королевская линейная пехота</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1149,7 +1149,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Cavalry:Cavalry</Text>
+			<Text>Кавалерия:Кавалерия</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1173,7 +1173,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Royal Cavalry:Royal Cavalry</Text>
+			<Text>Королевская кавалерия:Королевская кавалерия</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1221,7 +1221,7 @@
 		<Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PROT</Tag>
 		<English>Evangelist:Evangelists</English>
 		<French>
-			<Text>Evangelist:Evangelists</Text>
+			<Text>Евангелист:Евангелист</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1260,7 +1260,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_VOLCANO</Tag>
 		<English>Volcano</English>
-		<French>Volcano</French>
+		<French>Вулкан</French>
 		<German>Vulkan</German>
 		<Italian>Volcano</Italian>
 		<Spanish>Volcano</Spanish>
@@ -1301,7 +1301,7 @@
 		<Tag>TXT_KEY_TERRAIN_PRAIRIE</Tag>
 		<English>Prairie</English>
 		<French>
-			<Text>Prairie</Text>
+			<Text>Степь</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -1353,7 +1353,7 @@
 		<Tag>TXT_KEY_BONUS_OASIS</Tag>
 		<English>Oasis</English>
 		<French>
-			<Text>Oasis</Text>
+			<Text>Оазис</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1384,7 +1384,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TIMBER</Tag>
 		<English>Timber</English>
-		<French>Timber</French>
+		<French>Древесина</French>
 		<German>Bauholz</German>
 		<Italian>Legname</Italian>
 		<Spanish>Madera</Spanish>
@@ -1392,7 +1392,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MINERALS</Tag>
 		<English>Mineral Resources</English>
-		<French>Mineral Resources</French>
+		<French>Минеральные ресурсы</French>
 		<German>
 			<Text>Erzgestein:Erzgestein</Text>
 			<Gender>Male</Gender>
@@ -1421,7 +1421,7 @@
 		<Tag>TXT_KEY_BONUS_PEARLS</Tag>
 		<English>Shellfish</English>
 		<French>
-			<Text>Shellfish</Text>
+			<Text>Моллюски</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1453,7 +1453,7 @@
 		<Tag>TXT_KEY_BONUS_BISON</Tag>
 		<English>Bisons</English>
 		<French>
-			<Text>Bisons</Text>
+			<Text>Бизоны</Text>
 			<Gender>male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1517,7 +1517,7 @@
 		<Tag>TXT_KEY_BONUS_POTATO</Tag>
 		<English>Potatoes</English>
 		<French>
-			<Text>Potatoes</Text>
+			<Text>Картофель</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1772,7 +1772,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMPETITIOR_INDEPENDENCE_WAR</Tag>
 		<English>The %s1_civ_adjective colonies have declared war on their king. They will fight for their rights and their freedom.</English>
-		<French>The %s1_civ_adjective colonies have declared war on their king. They will fight for their rights and their freedom.</French>
+		<French>The %s1_civ_adjective Колонии объявили войну своему королю. Они будут бороться за свои права и свободу.</French>
 		<German>Die Gemeinschaft der V&#246;lker dieser Welt h&#228;lt den Atem an: Die %s1:2_civ_adjective Kolonien haben sich gegen ihren K&#246;nig erhoben. Sie wollen sich nicht l&#228;nger der Knute eines Tyrannen beugen.</German>
 		<Italian>The %s1_civ_adjective colonies have declared war on their king. They will fight for their rights and their freedom.</Italian>
 		<Spanish>The %s1_civ_adjective colonies have declared war on their king. They will fight for their rights and their freedom.</Spanish>
@@ -1889,7 +1889,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Cocoa Planter:Cocoa Planters</Text>
+			<Text>Какао:Cocoa Planters</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1912,7 +1912,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCOA_PLANTER</Tag>
 		<English>Expert Cocoa Planter:Expert Cocoa Planters</English>
-		<French>Expert Cocoa Planter:Expert Cocoa Planters</French>
+		<French>Опытный сеятель какао:Опытный сеятель какао</French>
 		<German>Erfahrener Kakaopfl&#252;cker:Erfahrene Kakaopfl&#252;cker</German>
 		<Italian>Expert Cocoa Planter:Expert Cocoa Planters</Italian>
 		<Spanish>Expert Cocoa Planter:Expert Cocoa Planters</Spanish>
@@ -1920,7 +1920,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_TORNADO</Tag>
 		<English>Tornado</English>
-		<French>Tornado</French>
+		<French>Торнадо</French>
 		<German>Tornado</German>
 		<Italian>Tornado</Italian>
 		<Spanish>Tornado</Spanish>
@@ -1984,7 +1984,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_MERC</Tag>
 		<English>Native Mercenary:Native Mercenaries</English>
-		<French>Native Mercenary:Native Mercenaries</French>
+		<French>Коренной наемник:Коренной наемник</French>
 		<German>Indianischer S&#246;ldner:Indianische S&#246;ldner</German>
 		<Italian>Native Mercenary:Native Mercenaries</Italian>
 		<Spanish>Native Mercenary:Native Mercenaries</Spanish>
@@ -2041,7 +2041,7 @@
 		<Tag>TXT_KEY_BONUS_WHALE</Tag>
 		<English>Sperm Whales</English>
 		<French>
-			<Text>Sperm Whales</Text>
+			<Text>Кашалоты</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2065,7 +2065,7 @@
 		<Tag>TXT_KEY_UNIT_WHALING_BOAT</Tag>
 		<English>Whaling Boat:Whaling Boats</English>
 		<French>
-			<Text>Whaling Boat:Whaling Boats</Text>
+			<Text>Китобойная лодка:Китобойная лодка</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2093,7 +2093,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Train Oil Cooker:Train Oil Cookers</Text>
+			<Text>Изготовитель китового масла:Изготовитель китового масла</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2253,7 +2253,7 @@
 		<Tag>TXT_KEY_YIELD_WHALE_OIL</Tag>
 		<English>Train Oil</English>
 		<French>
-			<Text>Train Oil</Text>
+			<Text>&#198;&#229;&#235;&#229;&#231;&#237;&#238;&#228;&#238;&#240;&#238;&#230;&#237;&#238;&#229; &#236;&#224;&#241;&#235;&#238;</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2273,7 +2273,7 @@
 		<Tag>TXT_KEY_YIELD_WHALE_BLUBBER</Tag>
 		<English>Whale Fat</English>
 		<French>
-			<Text>Whale Fat</Text>
+			<Text>&#202;&#232;&#242;&#238;&#226;&#251;&#233; &#230;&#232;&#240;</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2313,7 +2313,7 @@
 		<Tag>TXT_KEY_UNIT_WHALE_BLUBBER</Tag>
 		<English>Whale Fat</English>
 		<French>
-			<Text>Whale Fat</Text>
+			<Text>&#202;&#232;&#242;&#238;&#226;&#251;&#233; &#230;&#232;&#240;</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2332,7 +2332,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WHALE_OIL_COOKER</Tag>
 		<English>Master Train Oil Cooker:Master Train Oil Cookers</English>
-		<French>Master Train Oil Cooker:Master Train Oil Cookers</French>
+		<French>Мастер производства китового масла:Мастер производства китового масла</French>
 		<German>Meistertrankocher:Meistertrankocher</German>
 		<Italian>Master Train Oil Cooker:Master Train Oil Cookers</Italian>
 		<Spanish>Master Train Oil Cooker:Master Train Oil Cookers</Spanish>
@@ -2369,7 +2369,7 @@
 		<Tag>TXT_KEY_CIV_TEHUELCHE_DESC</Tag>
 		<English>Tehuelche</English>
 		<French>
-			<Text>Tehuelche</Text>
+			<Text>Теуэльче</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2389,7 +2389,7 @@
 		<Tag>TXT_KEY_CIV_TEHUELCHE_SHORT_DESC</Tag>
 		<English>Tehuelche</English>
 		<French>
-			<Text>Tehuelche</Text>
+			<Text>Теуэльче</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2416,7 +2416,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_REDUCED_REF</Tag>
 		<English>Reduced Royal Expeditionary Force</English>
-		<French>Reduced Royal Expeditionary Force</French>
+		<French>Сокращенный королевский корпус</French>
 		<German>Kleinere K&#246;nigsarmee</German>
 		<Italian>Reduced Royal Expeditionary Force</Italian>
 		<Spanish>Reduced Royal Expeditionary Force</Spanish>
@@ -2424,7 +2424,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_REDUCED_REF_HELP</Tag>
 		<English>Reduced REF for King of Player</English>
-		<French>Reduced REF for King of Player</French>
+		<French>Сокращенный королевский корпус для короля игрока</French>
 		<German>Halbiert beim Spieler die Expeditionsstreitmacht des K&#246;nigs</German>
 		<Italian>Reduced REF for King of Player</Italian>
 		<Spanish>Reduced REF for King of Player</Spanish>
@@ -2589,7 +2589,7 @@
 		<Tag>TXT_KEY_CIV_SHUAR_DESC</Tag>
 		<English>Shuar</English>
 		<French>
-			<Text>Shuar</Text>
+			<Text>Шуар</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2609,7 +2609,7 @@
 		<Tag>TXT_KEY_CIV_SHUAR_SHORT_DESC</Tag>
 		<English>Shuar</English>
 		<French>
-			<Text>Shuar</Text>
+			<Text>Шуар</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -2629,7 +2629,7 @@
 		<Tag>TXT_KEY_LEADER_SHUAR</Tag>
 		<English>Nunkui</English>
 		<French>
-			<Text>Nunkui</Text>
+			<Text>Нункуи</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2652,7 +2652,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_RANDOM_SETTLEMENT_AREAS</Tag>
 		<English>Random settlement areas</English>
-		<French>Random settlement areas</French>
+		<French>Cлучайные районы расселения</French>
 		<German>Beliebige Siedlungsgebiete der Ureinwohner</German>
 		<Italian>Random settlement areas</Italian>
 		<Spanish>Random settlement areas</Spanish>
@@ -2660,7 +2660,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_RANDOM_SETTLEMENT_AREAS_HELP</Tag>
 		<English>Random settlement areas</English>
-		<French>Random settlement areas</French>
+		<French>Cлучайные районы расселения</French>
 		<German>Ureinwohnerv&#246;lker werden auf der Nord-S&#252;d-Achse zuf&#228;llig und nicht historisch korrekt platziert</German>
 		<Italian>Random settlement areas</Italian>
 		<Spanish>Random settlement areas</Spanish>
@@ -2669,7 +2669,7 @@
 		<Tag>TXT_KEY_UNIT_GREAT_CHIEF</Tag>
 		<English>Great Warrior</English>
 		<French>
-			<Text>Great Warrior</Text>
+			<Text>Великий воин</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2852,7 +2852,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CTRL_SHIFT</Tag>
 		<English>Shift units by one row</English>
-		<French>Shift units by one row</French>
+		<French>Передвинуть юнитов на одну строку</French>
 		<German>Einheiten um eine Reihe verschieben</German>
 		<Italian>Shift units by one row</Italian>
 		<Spanish>Shift units by one row</Spanish>
@@ -2860,7 +2860,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GOTO_MENU</Tag>
 		<English>Go To Mode (City Selection)</English>
-		<French>Go To Mode (City Selection)</French>
+		<French>Перейти в режим (Выбор Города)</French>
 		<German>Gehe-zu-Modus (Stadtliste)</German>
 		<Italian>Go To Mode (City Selection)</Italian>
 		<Spanish>Go To Mode (City Selection)</Spanish>
@@ -2868,7 +2868,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GOTO_MENU_HELP</Tag>
 		<English>Order the selected unit to a city choosen from a menu</English>
-		<French>Order the selected unit to a city choosen from a menu</French>
+		<French>Прикажите выбранному юниту плыть в город на выбор</French>
 		<German>&#214;ffnet ein Men&#252;, mit dem man die gew&#228;hlte Einheit zu einer bestimmten Stadt schicken kann</German>
 		<English>Order the selected unit to a city choosen from a menu</English>
 		<English>Order the selected unit to a city choosen from a menu</English>

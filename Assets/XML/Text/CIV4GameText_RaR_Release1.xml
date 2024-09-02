@@ -684,7 +684,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SEAFARERS_SHORT</Tag>
 		<English>Sea</English>
-		<French>&lt;$#&quot;&#204;&#238;&#240;&#255;&#234;&quot;@&amp;&gt;</French>
+		<French>Моряк</French>
 		<German>See</German>
 		<Italian>Sea</Italian>
 		<Spanish>Sea</Spanish>
@@ -692,7 +692,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_UNDEMANDING</Tag>
 		<English>Undemanding</English>
-		<French>&#221;&#234;&#238;&#237;&#238;&#236;&#237;&#251;&#233;</French>
+		<French>Экономный</French>
 		<German>Gen&#252;gsam</German>
 		<Italian>Undemanding</Italian>
 		<Spanish>Undemanding</Spanish>
@@ -700,7 +700,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_UNDEMANDING_SHORT</Tag>
 		<English>Und</English>
-		<French>&lt;$#&quot;&#221;&#234;&#238;&#237;&#238;&#236;&quot;@&amp;&gt;</French>
+		<French>Эконом.</French>
 		<German>Gen</German>
 		<Italian>Und</Italian>
 		<Spanish>Und</Spanish>
@@ -708,7 +708,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ADMINISTRATIVE</Tag>
 		<English>Administrative</English>
-		<French>&#192;&#228;&#236;&#232;&#237;&#232;&#241;&#242;&#240;&#224;&#242;&#232;&#226;&#237;&#251;&#233;</French>
+		<French>Административный</French>
 		<German>Administrativ</German>
 		<Italian>Amministrativo</Italian>
 		<Spanish>Administrativo</Spanish>
@@ -716,7 +716,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ADMINISTRATIVE_SHORT</Tag>
 		<English>Adm</English>
-		<French>&lt;$#&quot;&#192;&#228;&#236;&#232;&#237;&#232;&#241;&#242;&#240;&quot;@&amp;&gt;</French>
+		<French>Админ.</French>
 		<German>Adm</German>
 		<Italian>Amm</Italian>
 		<Spanish>Adm</Spanish>
@@ -744,7 +744,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PIONEER_SHORT</Tag>
 		<English>Pio</English>
-		<French>&lt;$#&quot;&#207;&#232;&#238;&#237;&#229;&#240;&quot;@&amp;&gt;</French>
+		<French>Пионер</French>
 		<German>Pio</German>
 		<Italian>Pio</Italian>
 		<Spanish>Pio</Spanish>
@@ -753,7 +753,7 @@
 		<Tag>TXT_KEY_TRAIT_CAPITALIST</Tag>
 		<English>Capitalist</English>
 		<French>
-			<Text>&#202;&#224;&#239;&#232;&#242;&#224;&#235;&#232;&#241;&#242;</Text>
+			<Text>Капиталист</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -772,7 +772,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CAPITALIST_SHORT</Tag>
 		<English>Cap</English>
-		<French>&lt;$#&quot;&#202;&#224;&#239;&#232;&#242;&#224;&#235;&quot;@&amp;&gt;</French>
+		<French>Капитал.</French>
 		<German>Kap</German>
 		<Italian>Cap</Italian>
 		<Spanish>Cap</Spanish>
@@ -781,7 +781,7 @@
 		<Tag>TXT_KEY_TRAIT_SOPHISTICATED</Tag>
 		<English>Sophisticated</English>
 		<French>
-			<Text>&#211;&#242;&#238;&#237;&#247;&#229;&#237;&#237;&#251;&#233;</Text>
+			<Text>Утонченный</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</French>
@@ -800,7 +800,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SOPHISTICATED_SHORT</Tag>
 		<English>Sop</English>
-		<French>&lt;$#&quot;&#211;&#242;&#238;&#237;&#247;&#229;&#237;&#237;&#251;&#233;&quot;@&amp;&gt;</French>
+		<French>Утонч.</French>
 		<German>Kult</German>
 		<Italian>Sop</Italian>
 		<Spanish>Sop</Spanish>
@@ -808,7 +808,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXPANSIVE</Tag>
 		<English>Expansive</English>
-		<French>&#221;&#234;&#241;&#239;&#224;&#237;&#241;&#232;&#226;&#237;&#251;&#233;</French>
+		<French>Экспансивный</French>
 		<German>Expansiv</German>
 		<Italian>Espansivo</Italian>
 		<Spanish>Expansivo</Spanish>
@@ -816,7 +816,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXPANSIVE_SHORT</Tag>
 		<English>Exp</English>
-		<French>&lt;$#&quot;&#221;&#234;&#241;&#239;&#224;&#237;&#241;&quot;@&amp;&gt;</French>
+		<French>Экспан.</French>
 		<German>Exp</German>
 		<Italian>Esp</Italian>
 		<Spanish>Exp</Spanish>
@@ -832,7 +832,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ADMIRAL_SHORT</Tag>
 		<English>ExA</English>
-		<French>&lt;$#&quot;&#206;&#239;&#251;&#242;.&#224;&#228;&#236;&#232;&#240;&#224;&#235;&quot;@&amp;&gt;</French>
+		<French>Опытн. адм.</French>
 		<German>ErfA</German>
 		<Italian>ExA</Italian>
 		<Spanish>ExA</Spanish>
@@ -841,7 +841,7 @@
 		<Tag>TXT_KEY_TRAIT_GENERAL</Tag>
 		<English>Experienced General</English>
 		<French>
-			<Text>&#206;&#239;&#251;&#242;&#237;&#251;&#233; &#227;&#229;&#237;&#229;&#240;&#224;&#235;</Text>
+			<Text>Опытный генерал</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -852,7 +852,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GENERAL_SHORT</Tag>
 		<English>ExG</English>
-		<French>&lt;$#&quot;&#206;&#239;&#251;&#242;.&#227;&#229;&#237;&#229;&#240;&#224;&#235;&quot;@&amp;&gt;</French>
+		<French>Опытн. ген</French>
 		<German>ErfG</German>
 		<Italian>EsG</Italian>
 		<Spanish>ExG</Spanish>
@@ -868,7 +868,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_AGRICULTURAL_SHORT</Tag>
 		<English>Agr</English>
-		<French>&lt;$#&quot;&#209;&#229;&#235;&#252;&#241;&#234;.&#245;&#238;&#231;&quot;@&amp;&gt;</French>
+		<French>Сельск. хоз</French>
 		<German>Landw</German>
 		<Italian>Agr</Italian>
 		<Spanish>Agr</Spanish>
@@ -884,7 +884,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_IMPERIALIST_SHORT</Tag>
 		<English>Imp</English>
-		<French>&lt;$#&quot;&#200;&#236;&#239;&#229;&#240;&#232;&#224;&#235;&#232;&#241;&#242;.&quot;@&amp;&gt;</French>
+		<French>Импер.</French>
 		<German>Imp</German>
 		<Italian>Imp</Italian>
 		<Spanish>Imp</Spanish>
@@ -892,7 +892,7 @@
    	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PATRIARCH</Tag>
 		<English>Patriarch</English>
-		<French>&#209;&#242;&#224;&#240;&#251;&#233; &#226;&#238;&#230;&#228;&#252; &#239;&#235;&#229;&#236;&#229;&#237;&#232;</French>
+		<French>Патриарх</French>
 		<German>Stammesh&#228;uptling</German>
 		<Italian>Patriarch</Italian>
 		<Spanish>Patriarch</Spanish>
@@ -900,7 +900,7 @@
      <TEXT>
 		<Tag>TXT_KEY_TRAIT_PATRIARCH_SHORT</Tag>
 		<English>Pat</English>
-		<French>&lt;$#&quot;&#209;&#242;&#224;&#240;. &#226;&#238;&#230;&#228;&#252; &#239;&#235;&#229;&#236;.&quot;@&amp;&gt;</French>
+		<French>Патриарх</French>
 		<German>Pat</German>
 		<Italian>Pat</Italian>
 		<Spanish>Pat</Spanish>
@@ -908,7 +908,7 @@
 	   	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GATHERER</Tag>
 		<English>Gatherer</English>
-		<French>&#209;&#225;&#238;&#240;&#249;&#232;&#234;</French>
+		<French>Сборщик</French>
 		<German>Sammler</German>
 		<Italian>Gatherer</Italian>
 		<Spanish>Gatherer</Spanish>
@@ -916,7 +916,7 @@
      <TEXT>
 		<Tag>TXT_KEY_TRAIT_GATHERER_SHORT</Tag>
 		<English>Gat</English>
-		<French>&lt;$#&quot;&#209;&#225;&#238;&#240;.&quot;@&amp;&gt;</French>
+		<French>Сборщ.</French>
 		<German>Sam</German>
 		<Italian>Gat</Italian>
 		<Spanish>Gat</Spanish>
@@ -1117,7 +1117,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Sloop:Sloops</Text>
+			<Text>Шлюп:Шлюп</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -1712,7 +1712,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Small Coastal Ship:Small Coastal Ships</Text>
+			<Text>Малое прибрежное судно:Малое прибрежное судно</Text>
 			<Plural>0:1</Plural>
 		</French>
 		<German>
@@ -1735,7 +1735,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Big Coastal Ship:Big Coastal Ships</Text>
+			<Text>Большой прибрежный корабль:Большие прибрежные корабли</Text>
 			<Plural>0:1</Plural>
 		</French>
 		<German>
@@ -1754,7 +1754,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples, the bigger one has three slots.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples, the bigger one has three slots.</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Прибрежные корабли [COLOR_REVERT]могут использоваться для перевозки товаров и людей вблизи побережья. Они небольшие, но быстрые и действительно быстрее и вместительнее, чем повозки. Их можно использовать только вблизи побережья, но они не могут использовать океанские поля, так что они не могут плыть в Европу. Маленький прибрежный корабль имеет два слота для товаров и людей, а большой - три.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]K&#252;stensegler[COLOR_REVERT] sind eigens fьr den k&#252;stennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, daf&#252;r aber sehr wendig und au&#223;erdem deutlich ger&#228;umiger und schneller als ein Planwagen. Sie k&#246;nnen nur in [COLOR_HIGHLIGHT_TEXT]K&#252;stennдhe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln k&#246;nnen. Der Kleine K&#252;stensegler hat zwei Frachtpl&#228;tze, der gro&#223;e K&#252;stensegler drei. Beide k&#246;nnen sich nur geringf&#252;gig verteidigen.</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples.</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples.</Spanish>
@@ -1762,7 +1762,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Прибрежное судоходство [COLOR_REVERT]осуществляется, конечно же, вблизи побережья. Небольшие и удобные, а также вместительные парусные суда подходят для перевозки товаров и людей между колониями уже вскоре после высадки в Новом Свете. Из-за своих небольших размеров эти прибрежные суда не могут ходить в Европу или Африку.</French>
 		<German>[COLOR_UNIT_TEXT]K&#252;stenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der K&#252;ste betrieben. Kleine und wendige - daf&#252;r aber recht ger&#228;umige Segler eignen sich bestens dazu, bereits sehr fr&#252;h nach der Landung in der neuen Welt Schiffe zu bauen, mit denen Waren schnell zwischen den Kolonien hin- und hertransportiert werden k&#246;nnen, bis ein StraЯennetz errichtet werden kann. Aufgrund ihrer geringen Gr&#246;&#223;e kцnnen die K&#252;stensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln. </German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</Spanish>
@@ -1854,7 +1854,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODS_DOMESTIC_SOLD</Tag>
 		<English>Goods worth %d2[ICON_GOLD] have been sold on the domestic market of %s1_city.</English>
-		<French>Goods worth %d2[ICON_GOLD] have been sold on the domestic market of %s1_city.</French>
+		<French>Товары стоимостью %d2[ICON_GOLD] были проданы на внутреннем рынке в %s1_city.</French>
 		<German>Auf dem Markt von %s1_city wurden G&#252;ter f&#252;r %d2[ICON_GOLD] verkauft.</German>
 		<Italian>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</Italian>
 		<Spanish>On the domestic market of %s1_city goods for %d2[ICON_GOLD] have been sold.</Spanish>
@@ -2096,7 +2096,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_NO_MORE_VARIABLES_HIDDEN</Tag>
 		<English>No variables hidden</English>
-		<French>No variables hidden</French>
+		<French>Нет скрытых переменн</French>
 		<German>Keine versteckten Variablen mehr</German>
 		<Italian>No more variables hidden</Italian>
 		<Spanish>No more variables hidden</Spanish>
@@ -2104,7 +2104,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>GAMEOPTION_NO_MORE_VARIABLES_HIDDEN_HELP</Tag>
 		<English>The game displays extra infos on attitudes, taxes, Natives etc...</English>
-		<French>The game displays extra infos on attitudes, taxes, Natives etc...</French>
+		<French>В игре отображается доп. информация об отношениях, налогах, туземцах и т.д.</French>
 		<German>Im spiel werden zus&#228;tzliche Informationen angzeigt. Zur Attitude, zu den Steuern, zu den Ureinwohnern ...</German>
 		<Italian>The game displays extra infos on attitudes, taxes, Natives etc...</Italian>
 		<Spanish>The game displays extra infos on attitudes, taxes, Natives etc...</Spanish>
@@ -2249,7 +2249,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_FEATURE_VD</Tag>
 		<English>Unfavourable wind</English>
 		<French>
-			<Text>Unfavourable wind</Text>
+			<Text>Неблагоприятный ветер</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2273,7 +2273,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_FEATURE_VF</Tag>
 		<English>Favourable wind</English>
 		<French>
-			<Text>Favourable wind</Text>
+			<Text>Попутный ветер</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2297,7 +2297,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_FEATURE_STORM</Tag>
 		<English>Storm</English>
 		<French>
-			<Text>Storm</Text>
+			<Text>Шторм</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2337,7 +2337,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_MOBILITY1</Tag>
 		<English>Mobility I</English>
 		<French>
-			<Text>Mobility I</Text>
+			<Text>Мобильность I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2361,7 +2361,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_MOBILITY2</Tag>
 		<English>Mobility II</English>
 		<French>
-			<Text>Mobility II</Text>
+			<Text>Мобильность II</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2384,7 +2384,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SEA_EXPLORER</Tag>
 		<English>Sea Explorer</English>
-		<French>Sea Explorer</French>
+		<French>Морской исследователь</French>
 		<German>Entdecker der Meere</German>
 		<Italian>Sea Explorer</Italian>
 		<Spanish>Sea Explorer</Spanish>
@@ -2393,7 +2393,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_NATIVE_AMERICA_TOTEM</Tag>
 		<English>Totem Pole</English>
 		<French>
-			<Text>Totem Pole</Text>
+			<Text>Тотемный столб</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2432,7 +2432,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_AZTEC_SACRIFICIAL_ALTAR</Tag>
 		<English>Sacrificial Altar</English>
-		<French>Sacrificial Altar</French>
+		<French>Жертвенный алтарь</French>
 		<German>Opferaltar</German>
 		<Italian>Altare sacrificale</Italian>
 		<Spanish>Altar de sacrificios:Altares de sacrificios</Spanish>
@@ -2489,7 +2489,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_PRIEST</Tag>
 		<English>Devout Priest:Devout Priests</English>
 		<French>
-			<Text>Devout Priest:Devout Priests</Text>
+			<Text>Набожный священник:Набожный священник</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2557,7 +2557,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Windmill:Windmills</Text>
+			<Text>Ветряная мельница:Ветряная мельница</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2585,7 +2585,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Watermill:Watermills</Text>
+			<Text>Водяная мельница:Водяная мельница</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2649,7 +2649,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_YIELD_CULTURE</Tag>
 		<English>Culture</English>
 		<French>
-			<Text>Culture</Text>
+			<Text>&#202;&#243;&#235;&#252;&#242;&#243;&#240;&#224;</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2685,7 +2685,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Oxcart:Oxcarts</Text>
+			<Text>Воловья повозка:Воловья повозка</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2724,7 +2724,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAIN</Tag>
 		<English>Carriage:Carriages</English>
-		<French>Carriage:Carriages</French>
+		<French>Карета:Кареты</French>
 		<German>
 			<Text>Fuhrwerk:Fuhrwerke</Text>
 			<Gender>Male</Gender>
@@ -2736,7 +2736,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAIN_STRATEGY</Tag>
 		<English>Carriages are more expensive and need a plastered country road. However they are a lot faster than other vehicles and able to load more goods. So they are useful on big and gigantic maps in particular.</English>
-		<French>Carriages are more expensive and need a plastered country road. However they are a lot faster than other vehicles and able to load more goods. So they are useful on big and gigantic maps in particular.</French>
+		<French>Кареты стоят дороже и требуют Оштукатуренной проселочной дороги. Однако они намного быстрее других транспортных средств и могут загрузить больше товаров. Поэтому они особенно полезны на больших и гигантских картах.</French>
 		<German>Fuhrwerke sind zwar schwieriger und teurer zu bauen als Wagenz&#252;ge oder Trecks und ben&#246;tigen dazu auch noch eine befestigte Landstra&#223;e um darauf zu fahren, aber sie sind viel schneller und k&#246;nnen viel mehr transportieren.</German>
 		<Italian>Carriages are more expensive and need a plastered country road. However they are a lot faster than other vehicles and able to load more goods. So they are useful on big and gigantic maps in particular.</Italian>
 		<Spanish>Carriages are more expensive and need a plastered country road. However they are a lot faster than other vehicles and able to load more goods. So they are useful on big and gigantic maps in particular.</Spanish>
@@ -2744,7 +2744,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAIN_PEDIA</Tag>
 		<English>Carriages reflect the development and strengthening of a road system in the new world. Carriages are very useful for a strong and powerful economy. </English>
-		<French>Carriages reflect the development and strengthening of a road system in the new world. Carriages are very useful for a strong and powerful economy. </French>
+		<French>Кареты отражают развитие и укрепление дорожной системы в Новом Свете. Кареты очень полезны для сильной и мощной экономики. </French>
 		<German>[TAB]Erst nach und nach entstand in der neuen Welt ein mehr oder weniger gut ausgebautes Stra&#223;ennetz. Auf dem Land kam man meist &#252;ber Feldwege, die als "Stra&#223;en" bezeichnet wurde nicht hinaus. Erst mit der beginnenden industriellen Entwicklung folgte auch der Ausbau der Infrastruktur und dies besonders in den gr&#246;&#223;eren Ortschaften oder St&#228;dten.</German>
 		<Italian>Carriages reflect the development and strengthening of a road system in the new world. Carriages are very useful for a strong and powerful economy.</Italian>
 		<Spanish>Carriages reflect the development and strengthening of a road system in the new world. Carriages are very useful for a strong and powerful economy.</Spanish>
@@ -2752,7 +2752,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TRAIN_STATION</Tag>
 		<English>Waystation</English>
-		<French>Waystation</French>
+		<French>Путевая станция</French>
 		<German>Postreiter- und Pferdewechselstation</German>
 		<Italian>Waystation</Italian>
 		<Spanish>Waystation</Spanish>
@@ -2760,7 +2760,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TRAIN_STATION_STRATEGY</Tag>
 		<English>Waystations are required for the construction of carriages. Furthermore they give a production bonus with regard to the constructon of building since building materials can be carried much better.</English>
-		<French>Waystations are required for the construction of carriages. Furthermore they give a production bonus with regard to the constructon of building since building materials can be carried much better.</French>
+		<French>Путевые станции необходимы для строительства карет. Кроме того, они дают производственный бонус при строительстве зданий, так как строительные материалы можно перевозить гораздо лучше.</French>
 		<German>F&#252;r den Bau von Fuhrwerken werden Postreiter- und Pferdewechselstationen ben&#246;tigt. Des weiteren erwirken sie einen Produktionsbonus (Geb&#228;udebau), da Baumaterialien von anderen Orten einfacher herantransportiert werden k&#246;nnen.</German>
 		<Italian>Waystations are required for the construction of carriages. Furthermore they give a procudtion bonus with regard to the constructon of building since building materials can be carried much better.</Italian>
 		<Spanish>Waystations are required for the construction of carriages. Furthermore they give a procudtion bonus with regard to the constructon of building since building materials can be carried much better.</Spanish>
@@ -2768,7 +2768,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TRAIN_STATION_PEDIA</Tag>
 		<English>[TAB]Waystations are taverns or hotels near the main roads. Passender, postal horsemen and driver of carriages can rest and recover here and can change their horses.</English>
-		<French>[TAB]Waystations are taverns or hotels near the main roads. Passender, postal horsemen and driver of carriages can rest and recover here and can change their horses.</French>
+		<French>[TAB]Путевые станции - это таверны или гостиницы у главных дорог. Пассажиры, почтовые всадники и водители карет могут здесь отдохнуть и восстановить силы, а также сменить лошадей.</French>
 		<German>[TAB]Postreiter- und Pferdewechselstationen waren in der Regel an den Verkehrswegen gelegene Tavernen und Wirtschaften, bei denen nicht nur Reisende, sondern insbesondere Postreiter oder Postkutschen ihre Pferde wechseln konnten, um ohne Verz&#246;gerung weiterzureiten bzw. zu fahren.</German>
 		<Italian>[TAB]Waystations are taverns or hotels near the main roads. Passender, postal horsemen and driver of carriages can rest and recover here and can change their horses.</Italian>
 		<Spanish>[TAB]Waystations are taverns or hotels near the main roads. Passender, postal horsemen and driver of carriages can rest and recover here and can change their horses.</Spanish>
@@ -2776,7 +2776,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TRAIN_STATION</Tag>
 		<English>Waystation</English>
-		<French>Waystation</French>
+		<French>Путевая станция</French>
 		<German>Postreiter- und Pferdewechselstation</German>
 		<Italian>Waystation</Italian>
 		<Spanish>Waystation</Spanish>
@@ -2792,7 +2792,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_RAILROAD</Tag>
 		<English>Build Plastered Country Roads</English>
-		<French>Build Plastered Country Roads</French>
+		<French>Строить Оштукатуренные проселочные дороги</French>
 		<German>gepflasterte Landstra&#223;e bauen</German>
 		<Italian>Build Plastered Country Roads</Italian>
 		<Spanish>Build Plastered Country Roads</Spanish>
@@ -2816,7 +2816,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAVEL_RAILROAD_ONLY</Tag>
 		<English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires Plastered Country Roads[COLOR_REVERT] to travel.</English>
-		<French>[ICON_BULLET][COLOR_WARNING_TEXT]Requires Plastered Country Roads[COLOR_REVERT] to travel.</French>
+		<French>[ICON_BULLET][COLOR_WARNING_TEXT]Для путешествия требуются Оштукатуренные проселочные дороги[COLOR_REVERT].</French>
 		<German>[ICON_BULLET][COLOR_WARNING_TEXT]Erfordert gepflasterte Landstra&#223;e[COLOR_REVERT]  um fahren zu k&#246;nnen.</German>
 		<Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Requires Plastered Country Roads[COLOR_REVERT] to travel.</Italian>
 		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requires Plastered Country Roads[COLOR_REVERT] to travel.</Spanish>
@@ -2897,7 +2897,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_GOODY_SHIPWRECKAGE</Tag>
 		<English>Ship Wreckage</English>
 		<French>
-			<Text>Ship Wreckage</Text>
+			<Text>Обломки корабля</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -2917,7 +2917,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_WAREHOUSE_EXPANSION_2</Tag>
 		<English>Warehouse Expansion</English>
 		<French>
-			<Text>Warehouse Expansion</Text>
+			<Text>Расширенный склад</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -2936,7 +2936,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE</Tag>
 		<English>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</English>
-		<French>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</French>
+		<French>Индивидуальный дом в %s1_city пополнил казну на %d2[ICON_GOLD].</French>
 		<German>Das Zollhaus von %s1_city hat Waren im Wert von %d2[ICON_GOLD] verkauft.</German>
 		<Italian>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</Italian>
 		<Spanish>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</Spanish>
@@ -2944,7 +2944,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>
 		<English>[ICON_BULLET]Native to %s1_Desc Terrain</English>
-		<French>[ICON_BULLET]Native to %s1_Desc Terrain</French>
+		<French>[ICON_BULLET]Родом из местности %s1_Desc</French>
 		<German>[ICON_BULLET]Native to %s1_Desc Terrain</German>
 		<Italian>[ICON_BULLET]Native to %s1_Desc Terrain</Italian>
 		<Spanish>[ICON_BULLET]Native to %s1_Desc Terrain</Spanish>
@@ -2952,7 +2952,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_LAND_ANIMALS</Tag>
 		<English>No Wild Land Animals</English>
-		<French>No Wild Land Animals</French>
+		<French>Нет диких наземных житовных </French>
 		<German>Keine Wilden Tiere an Land</German>
 		<Italian>No Wild Land Animals</Italian>
 		<Spanish>No Wild Land Animals</Spanish>
@@ -2960,7 +2960,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_LAND_ANIMALS_HELP</Tag>
 		<English>Wild Land Animals will not be spawned</English>
-		<French>Wild Land Animals will not be spawned</French>
+		<French>Дикие наземные животные не будут появляться</French>
 		<German>Es werden keine Wilden Tiere an Land erzeugt</German>
 		<Italian>Wild Land Animals will not be spawned</Italian>
 		<Spanish>Wild Land Animals will not be spawned</Spanish>
@@ -2968,7 +2968,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_SEA_ANIMALS</Tag>
 		<English>No Wild Sea Animals</English>
-		<French>No Wild Sea Animals</French>
+		<French>Нет диких морских житовных</French>
 		<German>Keine Wilden Tiere im Wasser</German>
 		<Italian>No Wild Sea Animals</Italian>
 		<Spanish>No Wild Sea Animals</Spanish>
@@ -2976,7 +2976,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_WILD_SEA_ANIMALS_HELP</Tag>
 		<English>Wild Sea Animals will not be spawned</English>
-		<French>Wild Sea Animals will not be spawned</French>
+		<French>Дикие морские животные не будут появляться</French>
 		<German>Es werden keine Wilden Tiere im Wasser erzeugt</German>
 		<Italian>Wild Sea Animals will not be spawned</Italian>
 		<Spanish>Wild Sea Animals will not be spawned</Spanish>
@@ -2984,7 +2984,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANIMAL</Tag>
 		<English>[ICON_BULLET]Wild Animal</English>
-		<French>[ICON_BULLET]Wild Animal</French>
+		<French>[ICON_BULLET]Дикое животное</French>
 		<German>[ICON_BULLET]Wildes Tier</German>
 		<Italian>[ICON_BULLET]Wild Animal</Italian>
 		<Spanish>[ICON_BULLET]Wild Animal</Spanish>
@@ -2992,7 +2992,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANIMAL_CANNOT_ENTER_PLAYER_TERRITORY</Tag>
 		<English>[ICON_BULLET]Cannot enter Player territories</English>
-		<French>[ICON_BULLET]Cannot enter Player territories</French>
+		<French>[ICON_BULLET]Не может попасть на территорию игрока</French>
 		<German>[ICON_BULLET]Kann das Gebiet des Spielers nicht betreten</German>
 		<Italian>[ICON_BULLET]Cannot enter Player territories</Italian>
 		<Spanish>[ICON_BULLET]Cannot enter Player territories</Spanish>
@@ -3000,7 +3000,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANIMAL_KILLING_REWARD</Tag>
 		<English>[ICON_BULLET]Small reward when killed</English>
-		<French>[ICON_BULLET]Small reward when killed</French>
+		<French>[ICON_BULLET]Небольшая награда за убийство</French>
 		<German>[ICON_BULLET]Kleine Belohung durch T&#246;tung</German>
 		<Italian>[ICON_BULLET]Small reward when killed</Italian>
 		<Spanish>[ICON_BULLET]Small reward when killed</Spanish>
@@ -3008,7 +3008,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>
 		<English>[ICON_BULLET]Native to %s1_Desc Terrain</English>
-		<French>[ICON_BULLET]Native to %s1_Desc Terrain</French>
+		<French>[ICON_BULLET]Родом из местности %s1_Desc</French>
 		<German>[ICON_BULLET]Beheimatet auf %s1_Desc Terrain</German>
 		<Italian>[ICON_BULLET]Native to %s1_Desc Terrain</Italian>
 		<Spanish>[ICON_BULLET]Native to %s1_Desc Terrain</Spanish>
@@ -3016,7 +3016,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANIMAL_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Animals[COLOR_REVERT] hunt unprotected settlers! Beware!!</English>
-		<French>[COLOR_UNIT_TEXT]Animals[COLOR_REVERT] hunt unprotected settlers! Beware!!</French>
+		<French>[COLOR_UNIT_TEXT]Животные[COLOR_REVERT] охотятся на незащищенных поселенцев! Будьте внимательны!!!</French>
 		<German>[COLOR_UNIT_TEXT]Tiere[COLOR_REVERT] jagen ungesch&#252;tzte Siedler! Vorsicht!</German>
 		<Italian>Gli [COLOR_UNIT_TEXT]animali[COLOR_REVERT] attaccano i coloni senza scorta! Fai attenzione!</Italian>
 		<Spanish>&#161;Los [COLOR_UNIT_TEXT]Animales[COLOR_REVERT] dan caza a los colonos desprotegidos! &#161;Tened cuidado!</Spanish>
@@ -3040,7 +3040,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BARBARIAN</Tag>
 		<English>Wild Animals</English>
-		<French>Wild Animals</French>
+		<French>Дикие Животные</French>
 		<German>Wilde Tiere</German>
 		<Italian>Wild Animals</Italian>
 		<Spanish>Wild Animals</Spanish>
@@ -3049,7 +3049,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_HUMPBACK_WHALE</Tag>
 		<English>Humpback Whale</English>
 		<French>
-			<Text>Humpback Whale</Text>
+			<Text>Горбатый кит</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3073,7 +3073,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_ORCA</Tag>
 		<English>Orca</English>
 		<French>
-			<Text>Orca</Text>
+			<Text>Косатка</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3097,7 +3097,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_KRAKEN</Tag>
 		<English>Kraken</English>
 		<French>
-			<Text>Kraken</Text>
+			<Text>Кракен</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3121,7 +3121,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_GREATWHITE</Tag>
 		<English>Great White Shark</English>
 		<French>
-			<Text>Great White Shark</Text>
+			<Text>Большая белая акула</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3169,7 +3169,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_ALLIGATOR</Tag>
 		<English>Alligator</English>
 		<French>
-			<Text>Alligator</Text>
+			<Text>Аллигатор</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3193,7 +3193,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_JAGUAR</Tag>
 		<English>Jaguar</English>
 		<French>
-			<Text>Jaguar</Text>
+			<Text>Ягуар</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3217,7 +3217,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_LYNX</Tag>
 		<English>Lynx</English>
 		<French>
-			<Text>Lynx</Text>
+			<Text>Рысь</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3241,7 +3241,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_COUGAR</Tag>
 		<English>Cougar</English>
 		<French>
-			<Text>Cougar</Text>
+			<Text>Пума</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3265,7 +3265,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_WOLF</Tag>
 		<English>Wolf</English>
 		<French>
-			<Text>Wolf</Text>
+			<Text>Волк</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3289,7 +3289,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_GRIZZLY</Tag>
 		<English>Grizzly</English>
 		<French>
-			<Text>Grizzly</Text>
+			<Text>Гризли</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3313,7 +3313,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_BEAR_POLAR</Tag>
 		<English>Polar Bear</English>
 		<French>
-			<Text>Polar Bear</Text>
+			<Text>Полярный медведь</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3337,7 +3337,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_UNIT_BEAR_BLACK</Tag>
 		<English>Black Bear</English>
 		<French>
-			<Text>Black Bear</Text>
+			<Text>Черный Медведь</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3368,7 +3368,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BLACKBEAR_PEDIA</Tag>
 		<English>[TAB]The American black bear or North American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution and a large global population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behavior common to many species of bears.</English>
-		<French>[TAB]The American black bear or North American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution and a large global population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behavior common to many species of bears.</French>
+		<French>[TAB]Американский черный медведь или североамериканский черный медведь (Ursus americanus) - медведь среднего размера, обитающий в Северной Америке. Это самый маленький и самый распространенный вид медведей на континенте. Черные медведи всеядны, их рацион сильно варьируется в зависимости от сезона и места обитания. Как правило, они живут в лесных массивах, но в поисках пищи выходят из лесов. Иногда их привлекают человеческие поселения из-за непосредственной доступности пищи. Американский черный медведь включен в список наименьшей опасности МСОП из-за широкого распространения вида и большой глобальной популяции, которая, по оценкам, вдвое превышает численность всех других видов медведей вместе взятых. Американские черные медведи часто метят деревья, используя зубы и когти в качестве формы общения с другими медведями, что характерно для многих видов медведей.</French>
 		<German>[TAB]Der Amerikanische Schwarzb&#228;r (Ursus americanus), auch Baribal genannt, ist eine in Nordamerika lebende Raubtierart aus der Familie der B&#228;ren (Ursidae). In seiner Heimat wird er meistens als black bear bezeichnet oder als Baribal. Im Vergleich zum eher gef&#252;rchteten Grizzlyb&#228;r gilt der Schwarzb&#228;r als weniger gef&#228;hrlich. Amerikanische Schwarzb&#228;ren haben den typischen K&#246;rperbau der B&#228;ren. Der Rumpf ist massiv, die Gliedma&#223;en kr&#228;ftig. Die Pfoten haben je f&#252;nf starke Krallen, welche die B&#228;ren zum Rei&#223;en, Graben und Klettern einsetzen. Der Schwanz ist wie bei allen B&#228;ren nur ein kurzer Stummel. Der gro&#223;e Kopf ist durch die eher lange, unbehaarte Schnauze, die kleinen Augen und die runden, aufgerichteten Ohren charakterisiert. Trotz ihres Namens sind nicht alle Amerikanischen Schwarzb&#228;ren schwarz gef&#228;rbt. Es gibt auch silbergraue und r&#246;tlichbraune Varianten, und manche Baribals haben eine mit Grizzlies nahezu identische Fellfarbe. Die F&#228;rbung des Fells h&#228;ngt mit dem Lebensraum zusammen: w&#228;hrend Tiere, die in dichten W&#228;ldern mit k&#252;hlerem Klima (im Norden und Osten des Verbreitungsgebietes) leben, eher schwarz sind, haben die Schwarzb&#228;ren im s&#252;dlichen und westlichen Teil des Verbreitungsgebietes, die in offenem, trockenerem Terrain wohnen, eine eher br&#228;unliche F&#228;rbung. Das Verbreitungsgebiet der Amerikanischen Schwarzb&#228;ren umfasst gro&#223;e Teile Nordamerikas. Sie leben in nahezu ganz Alaska und Kanada mit Ausnahme des &#228;u&#223;ersten Nordens, im Kerngebiet der Vereinigten Staaten (den 48 zusammenh&#228;ngenden Staaten) sind sie ebenfalls weit verbreitet und fehlten urspr&#252;nglich nur im s&#252;dwestlichen, trockenen Landesteil. In Mexiko kommen sie vor allem im Bereich der Gebirgsz&#252;ge Sierra Madre Oriental und Sierra Madre Occidental vor. Amerikanische Schwarzb&#228;ren wurden und werden vom Menschen aus verschiedensten Gr&#252;nden gejagt. Dazu z&#228;hlen die potenzielle Gef&#228;hrdung des Menschen, die Angst vor gerissenen Weidetieren und zerst&#246;rten Agrarfl&#228;chen und Bienenst&#246;cken, der Bedarf an Fell und Fleisch sowie die Sportjagd. Untersuchungen haben gezeigt, dass der Schaden bei Weidetieren vernachl&#228;ssigbar ist, dass sie aber wohl auf landwirtschaftlich genutzten Feldern Sch&#228;den anrichten k&#246;nnen. Die Sportjagd ist weit verbreitet, nach einer Sch&#228;tzung aus dem Jahr 1995 werden jedes Jahr rund 40.000 Tiere erlegt. Die Verwendung des B&#228;renfells und des Fleisches ist heute weitgehend zur&#252;ckgegangen; bei den Indianern war dies der wichtigste Grund f&#252;r die Bejagung. Die B&#228;renfellm&#252;tzen, die zur Paradeuniform verschiedener britischer Regimenter geh&#246;ren, werden aber bis heute aus dem Fell kanadischer Schwarzb&#228;ren hergestellt. </German>
 		<Italian>[TAB]The American black bear or North American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution and a large global population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behavior common to many species of bears.</Italian>
 		<Spanish>[TAB]The American black bear or North American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution and a large global population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behavior common to many species of bears.</Spanish>
@@ -3376,7 +3376,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ALLIGATOR_PEDIA</Tag>
 		<English>[TAB]An alligator is a crocodilian in the genus Alligator of the family Alligatoridae. There are two living alligator species: the American alligator and the Chinese alligator. In addition, several extinct species of alligator are known from fossil remains. Alligators first appeared during the Oligocene epoch about 37 million years ago.[PARAGRAPH:2]The name alligator is an anglicized form of 'el lagarto', the Spanish term for "lizard", which early Spanish explorers and settlers in Florida called the alligator.</English>
-		<French>[TAB]An alligator is a crocodilian in the genus Alligator of the family Alligatoridae. There are two living alligator species: the American alligator and the Chinese alligator. In addition, several extinct species of alligator are known from fossil remains. Alligators first appeared during the Oligocene epoch about 37 million years ago.[PARAGRAPH:2]The name alligator is an anglicized form of 'el lagarto', the Spanish term for "lizard", which early Spanish explorers and settlers in Florida called the alligator.</French>
+		<French>[TAB]Аллигатор - это крокодил из рода крокодилов семейства крокодиловых (Alligatoridae). Существует два ныне живущих вида аллигаторов: американский аллигатор и китайский аллигатор. Кроме того, по ископаемым останкам известно несколько вымерших видов аллигаторов. Аллигаторы впервые появились в эпоху олигоцена около 37 миллионов лет назад.[PARAGRAPH:2]Название "аллигатор" - это англизированная форма испанского термина "el lagarto", означающего "ящерица", которой первые испанские исследователи и поселенцы во Флориде называли аллигатора.</French>
 		<German>[TAB]Die Alligatoren sind eine Familie der Krokodile. In ihr sind die Echten Alligatoren und die Kaimane zusammengefasst. Ihr Leben und ihr Stoffwechsel verlaufen langsamer als bei ihren Verwandten, den Echten Krokodilen, und auch ihre restliche Entwicklung ist im Vergleich zu diesen stark verlangsamt. Durch diese ruhigere Lebensweise werden sie jedoch doppelt so alt wie ihre Verwandten. W&#228;hrend der China-Alligator maximal 2,2 Meter lang werden kann, betr&#228;gt die H&#246;chstl&#228;nge bei den Mississippi-Alligatoren bis zu 6 Meter. Bei den Alligatoren bei&#223;en die Unterkieferz&#228;hne im Gegensatz zu den Krokodilen nicht gegen die obere Zahnreihe, sie sind vielmehr einw&#228;rts gerichtet. Die Z&#228;hne des Oberkiefers liegen auf der Au&#223;enseite, und sind nur bei geschlossenem Maul sichtbar; der Krokodilkaiman und der Brillenkaiman sind diesbez&#252;glich offenbar Ausnahmen. Beide leben bevorzugt in S&#252;mpfen und Seen, aber auch in Fl&#252;ssen und fressen jedes Beutetier, dessen sie habhaft werden k&#246;nnen. </German>
 		<Italian>[TAB]An alligator is a crocodilian in the genus Alligator of the family Alligatoridae. There are two living alligator species: the American alligator and the Chinese alligator. In addition, several extinct species of alligator are known from fossil remains. Alligators first appeared during the Oligocene epoch about 37 million years ago.[PARAGRAPH:2]The name alligator is an anglicized form of 'el lagarto', the Spanish term for "lizard", which early Spanish explorers and settlers in Florida called the alligator.</Italian>
 		<Spanish>[TAB]An alligator is a crocodilian in the genus Alligator of the family Alligatoridae. There are two living alligator species: the American alligator and the Chinese alligator. In addition, several extinct species of alligator are known from fossil remains. Alligators first appeared during the Oligocene epoch about 37 million years ago.[PARAGRAPH:2]The name alligator is an anglicized form of 'el lagarto', the Spanish term for "lizard", which early Spanish explorers and settlers in Florida called the alligator.</Spanish>
@@ -3440,7 +3440,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEAR_BLACK_PEDIA</Tag>
 		<English>[TAB]The American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most widely distributed bear species. Black bears are omnivores with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is the world's most common bear species.</English>
-		<French>[TAB]The American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most widely distributed bear species. Black bears are omnivores with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is the world's most common bear species.</French>
+		<French>[TAB]Американский черный медведь (Ursus americanus) - медведь среднего размера, обитающий в Северной Америке. Это самый маленький и наиболее широко распространенный вид медведей на континенте. Черные медведи всеядны, их рацион сильно варьируется в зависимости от сезона и места обитания. Как правило, они живут в лесных массивах, но в поисках пищи выходят из лесов. Иногда их привлекают человеческие поселения из-за непосредственной доступности пищи. Американский черный медведь - самый распространенный вид медведей в мире.</French>
 		<German>[TAB]Der Amerikanische Schwarzb&#228;r (Ursus americanus), auch Baribal genannt, ist eine in Nordamerika lebende Raubtierart aus der Familie der B&#228;ren (Ursidae). In seiner Heimat wird er meistens als black bear bezeichnet oder als Baribal. Im Vergleich zum eher gef&#252;rchteten Grizzlyb&#228;r gilt der Schwarzb&#228;r als weniger gef&#228;hrlich. Amerikanische Schwarzb&#228;ren haben den typischen K&#246;rperbau der B&#228;ren. Der Rumpf ist massiv, die Gliedma&#223;en kr&#228;ftig. Die Pfoten haben je f&#252;nf starke Krallen, welche die B&#228;ren zum Rei&#223;en, Graben und Klettern einsetzen. Der Schwanz ist wie bei allen B&#228;ren nur ein kurzer Stummel. Der gro&#223;e Kopf ist durch die eher lange, unbehaarte Schnauze, die kleinen Augen und die runden, aufgerichteten Ohren charakterisiert. Mit einer Kopfrumpfl&#228;nge von 1,5 bis 1,8 Metern, einer Schulterh&#246;he von bis zu 91 Zentimetern und einem Gewicht von durchschnittlich etwa 100 Kilogramm ist der Schwarzb&#228;r deutlich kleiner und leichter als der Grizzly. Das Verbreitungsgebiet der Amerikanischen Schwarzb&#228;ren umfasst gro&#223;e Teile Nordamerikas. Sie leben in nahezu ganz Alaska und Kanada mit Ausnahme des &#228;u&#223;ersten Nordens, im Kerngebiet der Vereinigten Staaten (den 48 zusammenh&#228;ngenden Staaten) sind sie ebenfalls weit verbreitet und fehlten urspr&#252;nglich nur im s&#252;dwestlichen, trockenen Landesteil. In Mexiko kommen sie vor allem im Bereich der Gebirgsz&#252;ge Sierra Madre Oriental und Sierra Madre Occidental vor. Durch die Besiedlung des Kontinents durch die Wei&#223;en hat sich ihr Verbreitungsgebiet etwas ge&#228;ndert. Einerseits ist ihre Anzahl im dichtbesiedelten &#246;stlichen und s&#252;dlichen Teil der Vereinigten Staaten deutlich zur&#252;ckgegangen, dort gibt es oft nur noch Reliktpopulationen. Andererseits haben sie durch die gro&#223;fl&#228;chige Ausrottung des Grizzlyb&#228;ren, die dem Baribal &#252;berlegene Nahrungskonkurrenten und auch Fressfeinde waren, einen Vorteil errungen und sind in neue Lebensr&#228;ume eingewandert. Heute sind sie in allen Provinzen Kanadas, in 39 US-amerikanischen Bundesstaaten und in Mexiko verbreitet. Die American Bear Association sch&#228;tzt ihre heutige Population allein in den Vereinigten Staaten auf 286.600 bis 328.000 und im gesamten Nordamerika auf &#252;ber 600.000 Tiere.</German>
 		<Italian>[TAB]The American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most widely distributed bear species. Black bears are omnivores with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is the world's most common bear species.</Italian>
 		<Spanish>[TAB]The American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most widely distributed bear species. Black bears are omnivores with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is the world's most common bear species.</Spanish>
@@ -3473,7 +3473,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_CORN_CHAMBER</Tag>
 		<English>Corn Chamber</English>
 		<French>
-			<Text>Corn Chamber</Text>
+			<Text>Кукурузная палата</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3497,7 +3497,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_GRANARY</Tag>
 		<English>Granary</English>
 		<French>
-			<Text>Granary</Text>
+			<Text>Зернохранилище</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3521,7 +3521,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_NATIVE_CORN_CHAMBER</Tag>
 		<English>Corn Hut</English>
 		<French>
-			<Text>Corn Hut</Text>
+			<Text>Кукурузная хижина</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3585,7 +3585,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_GREAT_BASTION</Tag>
 		<English>Great Bastion</English>
 		<French>
-			<Text>Great Bastion</Text>
+			<Text>Великий бастион</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3617,7 +3617,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_COLONIAL_CONGRESS</Tag>
 		<English>Colonial Congress</English>
 		<French>
-			<Text>Colonial Congress</Text>
+			<Text>Колониальный конгресс</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3713,7 +3713,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_MINSTER</Tag>
 		<English>Cathedral of the Archbishop</English>
 		<French>
-			<Text>Cathedral of the Archbishop</Text>
+			<Text>Собор архиепископа</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3737,7 +3737,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_IMPROVEMENT_FORT</Tag>
 		<English>Fort</English>
 		<French>
-			<Text>Fort</Text>
+			<Text>Форт</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3761,7 +3761,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_FORT</Tag>
 		<English>Large Fort</English>
 		<French>
-			<Text>Large Fort</Text>
+			<Text>Большой Форт</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3785,7 +3785,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_IMPROVEMENT_MONASTERY</Tag>
 		<English>Monastery</English>
 		<French>
-			<Text>Monastery</Text>
+			<Text>Монастырь</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3809,7 +3809,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_MONASTERY</Tag>
 		<English>Large Monastery</English>
 		<French>
-			<Text>Large Monastery</Text>
+			<Text>Большой Монастырь</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -3993,7 +3993,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_CUSTOM_OFFICE</Tag>
 		<English>Central Customs Authority</English>
 		<French>
-			<Text>Central Customs Authority</Text>
+			<Text>Центральное таможенное управление</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4017,7 +4017,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_HORSE_MARKET</Tag>
 		<English>Grand Horse and Cattle Market</English>
 		<French>
-			<Text>Grand Horse and Cattle Market</Text>
+			<Text>Большой рынок лошадей и крупного рогатого скота</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4045,7 +4045,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Pirate Frigate:Pirate Frigates</Text>
+			<Text>Пиратский фрегат:Пиратский фрегат</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -4073,7 +4073,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Mortar:Mortars</Text>
+			<Text>Мортира:Мортира</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -4112,7 +4112,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_HIRED_PIRATES</Tag>
 		<English>The pirates we have hired await your orders in %s1_city, Mylord.</English>
-		<French>The pirates we have hired await your orders in %s1_city, Mylord.</French>
+		<French>Нанятые вами пираты ожидают приказов в %s1_city, Милорд.</French>
 		<German>Die angeheuerten Piraten erwarten in %s1_city Eure Befehle, Mylord.</German>
 		<Italian>The pirates we have hired await your orders in %s1_city, Mylord.</Italian>
 		<Spanish>The pirates we have hired await your orders in %s1_city, Mylord.</Spanish>
@@ -4121,7 +4121,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_PUBLISHING</Tag>
 		<English>Colonial Publisher</English>
 		<French>
-			<Text>Colonial Publisher</Text>
+			<Text>Колониальное издательство</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4144,7 +4144,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_GOLD_BY_ENTERTAINMENT</Tag>
 		<English>The %s1_building of %s2_city has generated %d3[ICON_GOLD].</English>
-		<French>The %s1_building of %s2_city has generated %d3[ICON_GOLD].</French>
+		<French>Стараниями %s1_building в %s2_city казна была пополнена на %d3[ICON_GOLD].</French>
 		<German>Das Geb&#228;ude %s1_building von %s2_city hat %d3[ICON_GOLD] Gewinn erwirtschaftet.</German>
 		<Italian>The %s1_building of %s2_city has generated %d3[ICON_GOLD].</Italian>
 		<Spanish>The %s1_building of %s2_city has generated %d3[ICON_GOLD].</Spanish>
@@ -4152,7 +4152,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_ENTERTAINMENT_BUILDING</Tag>
 		<English>[ICON_BULLET]Generates [ICON_GOLD] from %F1_yield</English>
-		<French>[ICON_BULLET]Generates [ICON_GOLD] from %F1_yield</French>
+		<French>[ICON_BULLET] пополняет казну на [ICON_GOLD] from %F1_yield</French>
 		<German>[ICON_BULLET]Erwirtschaftet [ICON_GOLD] durch %F1_yield</German>
 		<Italian>[ICON_BULLET]Generates [ICON_GOLD] from %F1_yield</Italian>
 		<Spanish>[ICON_BULLET]Generates [ICON_GOLD] from %F1_yield</Spanish>
@@ -4169,7 +4169,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_SALOON</Tag>
 		<English>Saloon</English>
 		<French>
-			<Text>Saloon</Text>
+			<Text>Салон</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4201,7 +4201,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_THEATRE</Tag>
 		<English>Theatre</English>
 		<French>
-			<Text>Theatre</Text>
+			<Text>Театр</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4233,7 +4233,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_OPERA</Tag>
 		<English>Grand Opera</English>
 		<French>
-			<Text>Grand Opera</Text>
+			<Text>Гранд Опера</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4264,7 +4264,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONTINENTAL_GUARD</Tag>
 		<English>Continental Guard:Continental Guards</English>
-		<French>Continental Guard:Continental Guards</French>
+		<French>Континентальный страж:Континентальный страж</French>
 		<German>Kontinentalgarde:Kontinentalgarde</German>
 		<Italian>Continental Guard:Continental Guards</Italian>
 		<Spanish>Continental Guard:Continental Guards</Spanish>
@@ -4305,7 +4305,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_HUNTER1</Tag>
 		<English>Wild Animal Hunter I</English>
 		<French>
-			<Text>Wild Animal Hunter I</Text>
+			<Text>Охотник на диких животных I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4329,7 +4329,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_HUNTER2</Tag>
 		<English>Wild Animal Hunter II</English>
 		<French>
-			<Text>Wild Animal Hunter II</Text>
+			<Text>Охотник на диких животных II</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4353,7 +4353,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_SEEHUNTER1</Tag>
 		<English>High-Sea Fisherman I</English>
 		<French>
-			<Text>High-Sea Fisherman I</Text>
+			<Text>Рыбак открытого моря I</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4377,7 +4377,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_SEEHUNTER2</Tag>
 		<English>High-Sea Fisherman II</English>
 		<French>
-			<Text>High-Sea Fisherman II</Text>
+			<Text>Рыбак открытого моря II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4401,7 +4401,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_FEINT</Tag>
 		<English>Feint I</English>
 		<French>
-			<Text>Feint I</Text>
+			<Text>Финт I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4425,7 +4425,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_FEINT2</Tag>
 		<English>Feint II</English>
 		<French>
-			<Text>Feint II</Text>
+			<Text>Финт II</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4449,7 +4449,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_DRILL_SERGEANT</Tag>
 		<English>Drill Sergeant</English>
 		<French>
-			<Text>Drill Sergeant</Text>
+			<Text>Сержант караула</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4473,7 +4473,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_GUARD</Tag>
 		<English>Guard</English>
 		<French>
-			<Text>Guard</Text>
+			<Text>Страж</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4497,7 +4497,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD1</Tag>
 		<English>Homeland Guard I</English>
 		<French>
-			<Text>Homeland Guard I</Text>
+			<Text>Страж Родины I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4521,7 +4521,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD2</Tag>
 		<English>Homeland Guard II</English>
 		<French>
-			<Text>Homeland Guard II</Text>
+			<Text>Страж Родины II</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4545,7 +4545,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD3</Tag>
 		<English>Homeland Guard III</English>
 		<French>
-			<Text>Homeland Guard III</Text>
+			<Text>Страж Родины III</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4569,7 +4569,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_TOWN_MARKET</Tag>
 		<English>Town Market</English>
 		<French>
-			<Text>Town Market</Text>
+			<Text>Городской рынок</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -4593,7 +4593,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Tag>TXT_KEY_BUILDING_CENTRAL_CITY_MARKET</Tag>
 		<English>Regional Market</English>
 		<French>
-			<Text>Regional Market</Text>
+			<Text>Региональный рынок</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -4616,7 +4616,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING</Tag>
 		<English>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market.</English>
-		<French>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market.</French>
+		<French>[ICON_BULLET] пополнил казну на [ICON_GOLD] продажей товаров на внутреннем рынке.</French>
 		<German>[ICON_BULLET]Erwirtschaftet [ICON_GOLD] durch Verkauf von Waren an die Einwohner der Stadt</German>
 		<Italian>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market.</Italian>
 		<Spanish>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market.</Spanish>
@@ -4624,7 +4624,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED</Tag>
 		<English>[ICON_BULLET]Increases demand for goods on domestic market.</English>
-		<French>[ICON_BULLET]Increases demand for goods on domestic market.</French>
+		<French>[ICON_BULLET]Увеличивает спрос на товары на внутреннем рынке.</French>
 		<German>[ICON_BULLET]Erh&#246;ht die Nachfrage nach Waren in der Stadt</German>
 		<Italian>[ICON_BULLET]Increases demand for goods on domestic market.</Italian>
 		<Spanish>[ICON_BULLET]Increases demand for goods on domestic market.</Spanish>
@@ -4640,7 +4640,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_EXTRA_TRADE_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% better prices from Bargaining</English>
-		<French>[ICON_BULLET]%D1%% better prices from Bargaining</French>
+		<French>На [ICON_BULLET]%D1%% лучшие цены за счет торга</French>
 		<German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen</German>
 		<Italian>[ICON_BULLET]%D1%% better prices from Bargaining</Italian>
 		<Spanish>[ICON_BULLET]%D1%% better prices from Bargaining</Spanish>
@@ -4653,7 +4653,7 @@ Multiple repeating units is possible and an equal number will be trained of each
 			<Plural>0:1</Plural>
 		</English>
 		<French>
-			<Text>Settler Militia:Settler Militias</Text>
+			<Text>Поселенческое ополчение:Поселенческое ополчение</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -4814,7 +4814,7 @@ Turn import off at 100%</Spanish>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_AFRICA</Tag>
 		<English>Sail to Africa</English>
-		<French>Sail to Africa</French>
+		<French>Плыть в Африку</French>
 		<German>Nach Afrika segeln</German>
 		<Italian>Fai vela per l'Africa</Italian>
 		<Spanish>Navegar a Africa</Spanish>
@@ -4822,7 +4822,7 @@ Turn import off at 100%</Spanish>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_AFRICA_HELP</Tag>
 		<English>The ship sails off the map and can be accessed through the Africa Screen.</English>
-		<French>The ship sails off the map and can be accessed through the Africa Screen.</French>
+		<French>Корабль отплывает за карту и будет доступен на экране Африки</French>
 		<German>Das Schiff segelt &#252;ber die Karte hinaus und ist dann &#252;ber den Afrika-Bildschirm verf&#252;gbar.</German>
 		<Italian>La nave salpa al di fuori della mappa; puoi accedervi attraverso la schermata Africa.</Italian>
 		<Spanish>El barco navega hasta salir del mapa, pero se puede acceder a &#233;l mediante la pantalla de Africa.</Spanish>
@@ -4862,7 +4862,7 @@ Turn import off at 100%</Spanish>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL_HELP</Tag>
 		<English>The ship sails off the map and can be accessed through the Port Royal Screen.</English>
-		<French>The ship sails off the map and can be accessed through the Port Royal Screen.</French>
+		<French>Корабль отплывает за карту и будет доступен на экране Порт Ройал.</French>
 		<German>Das Schiff segelt &#252;ber die Karte hinaus und ist dann &#252;ber den Port Royal-Bildschirm verf&#252;gbar.</German>
 		<Italian>La nave salpa al di fuori della mappa; puoi accedervi attraverso la schermata Port Royal.</Italian>
 		<Spanish>El barco navega hasta salir del mapa, pero se puede acceder a &#233;l mediante la pantalla de Port Royal.</Spanish>

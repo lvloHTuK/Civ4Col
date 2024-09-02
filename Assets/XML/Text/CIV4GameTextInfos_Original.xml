@@ -2408,7 +2408,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_GAME_OPTIONS</Tag>
 		<English>Game Options</English>
-		<French>&#205;&#224;&#241;&#242;&#240;&#238;&#233;&#234;&#224; &#232;&#227;&#240;&#251;</French>
+		<French>Параметры</French>
 		<German>Spieloptionen</German>
 		<Italian>Opzioni di gioco</Italian>
 		<Spanish>Opciones de partida</Spanish>
@@ -3400,7 +3400,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WINS_VICTORY</Tag>
 		<English>%s1_PlyrName Wins by %s2_VctryName Victory!!!!</English>
-		<French>%s1_PlyrName &#238;&#228;&#229;&#240;&#230;&#232;&#226;&#224;&#229;&#242; %s2_VctryName &#239;&#238;&#225;&#229;&#228;&#243;!</French>
+		<French>%s1_PlyrName &#238;&#242;&#241;&#242;&#238;&#255;&#235; %s2_VctryName (&#207;&#238;&#225;&#229;&#228;&#224;)!</French>
 		<German>%s1_PlyrName tr&#228;gt den Sieg in der Kategorie %s2_VctryName davon!!!!</German>
 		<Italian>%s1_PlyrName conquista una vittoria %s2_VctryName!</Italian>
 		<Spanish>%s1_PlyrName ha obtenido una victoria %s2_VctryName</Spanish>
@@ -3952,7 +3952,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_OPTIONS</Tag>
 		<English>Options</English>
-		<French>&#205;&#224;&#241;&#242;&#240;&#238;&#233;&#234;&#224;</French>
+		<French>Параметры сессии</French>
 		<German>Optionen</German>
 		<Italian>Opzioni</Italian>
 		<Spanish>Opciones</Spanish>
@@ -5112,7 +5112,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_TURNS_LEFT</Tag>
 		<English>%d1 [NUM1:Turn:Turns] To Win!</English>
-		<French>%d1 [NUM1:&#245;&#238;&#228;:&#245;&#238;&#228;&#238;&#226;] &#228;&#238; &#239;&#238;&#225;&#229;&#228;&#251;</French>
+		<French>%d1 [NUM1:ход:ходов] до окончания игры</French>
 		<German>Noch %d1 [NUM1:Runde:Runden]!</German>
 		<Italian>%d1 [NUM1:turno rimasto:turni rimasti]!</Italian>
 		<Spanish>[NUM1:Queda:Quedan] %d1 [NUM1:turno:turnos]</Spanish>
@@ -5744,7 +5744,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_NUMPAD_HELP_HELP</Tag>
 		<English>Show NUM-PAD help for unit movement</English>
-		<French>&#207;&#238;&#234;&#224;&#231;&#224;&#242;&#252; &#239;&#238;&#236;&#238;&#249;&#252; &#205;&#211;&#204;&#207;&#192;&#196;&#192; &#228;&#235;&#255; &#239;&#229;&#240;&#229;&#236;&#229;&#249;&#229;&#237;&#232;&#255; &#254;&#237;&#232;&#242;&#224;</French>
+		<French>&#207;&#238;&#234;&#224;&#231;&#224;&#242;&#252; &#239;&#238;&#236;&#238;&#249;&#252; &#246;&#232;&#244;&#240;&#238;&#226;&#238;&#233; &#234;&#235;&#224;&#226;&#232;&#224;&#242;&#243;&#240;&#251; &#228;&#235;&#255; &#239;&#229;&#240;&#229;&#236;&#229;&#249;&#229;&#237;&#232;&#255; &#254;&#237;&#232;&#242;&#224;</French>
 		<German>Ziffernblock-Hilfe f&#252;r Fortbewegung der Einheiten einblenden</German>
 		<Italian>Mostra l'aiuto TAST-NUM per il movimento delle unit&#224;</Italian>
 		<Spanish>Muestra la ayuda del teclado num&#233;rico para el movimiento de las unidades.</Spanish>
