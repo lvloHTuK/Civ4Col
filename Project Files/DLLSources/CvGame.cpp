@@ -6390,7 +6390,11 @@ void CvGame::testVictory()
 					}
 					else
 					{
-						setGameState(GAMESTATE_OVER);
+						for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+						{
+							CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+							kPlayer.setAlive(false);
+						}
 					}
 				}
 			}
