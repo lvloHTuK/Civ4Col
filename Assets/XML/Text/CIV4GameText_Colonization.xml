@@ -608,7 +608,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_NEW_IMMIGRANT_AVAILABLE_SHORT</Tag>
 		<English>A %s2 is waiting in Europe.</English>
-		<French>A %s2 is waiting in Europe.</French>
+		<French>%s2 ждет в Европе.</French>
 		<German>Ein %s2 w&#252;nscht, in die Kolonien auszuwandern.</German>
 		<Italian>%s2 attende in Europa.</Italian>
 		<Spanish>[NUM2:Un:Una] %s2 aguarda en Europa.</Spanish>
@@ -888,7 +888,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CONQUEROR_SHORT</Tag>
 		<English>Con</English>
-		<French>Con</French>
+		<French>Завоев.</French>
 		<German>Erob</German>
 		<Italian>Con</Italian>
 		<Spanish>Con.</Spanish>
@@ -904,7 +904,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CITYBUILDER_SHORT</Tag>
 		<English>Cit</English>
-		<French>Cit</French>
+		<French>Градостр.</French>
 		<German>Sb</German>
 		<Italian>Pro</Italian>
 		<Spanish>Pr&#243;.</Spanish>
@@ -912,7 +912,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PUPIL_SHORT</Tag>
 		<English>Pup</English>
-		<French>Pup</French>
+		<French>Ученик</French>
 		<German>Z&#246;g</German>
 		<Italian>Imp</Italian>
 		<Spanish>Imp.</Spanish>
@@ -920,7 +920,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TRADER_SHORT</Tag>
 		<English>Tra</English>
-		<French>Tra</French>
+		<French>Торг</French>
 		<German>H&#228;n</German>
 		<Italian>Imp</Italian>
 		<Spanish>Imp.</Spanish>
@@ -928,7 +928,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CLIMBER_SHORT</Tag>
 		<English>Cli</English>
-		<French>Cli</French>
+		<French>Альпинист</French>
 		<German>FeKl</German>
 		<Italian>Ind</Italian>
 		<Spanish>Ind.</Spanish>
@@ -944,7 +944,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FORESTWARRIORS_SHORT</Tag>
 		<English>For</English>
-		<French>For</French>
+		<French>Лесн. воин</French>
 		<German>Wakr</German>
 		<Italian>Ben</Italian>
 		<Spanish>Cor.</Spanish>
@@ -952,7 +952,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FARMERS_SHORT</Tag>
 		<English>Farm</English>
-		<French>Farm</French>
+		<French>Ферм.</French>
 		<German>Bau</German>
 		<Italian>Pro</Italian>
 		<Spanish>Pr&#243;.</Spanish>
@@ -960,7 +960,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NOMADS_SHORT</Tag>
 		<English>Nom</English>
-		<French>Nom</French>
+		<French>Кочевн.</French>
 		<German>Nom</German>
 		<Italian>Pro</Italian>
 		<Spanish>Pr&#243;.</Spanish>
@@ -968,7 +968,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_HUNTERS_SHORT</Tag>
 		<English>Hun</English>
-		<French>Hun</French>
+		<French>Охотн.</French>
 		<German>Hun</German>
 		<Italian>Hun</Italian>
 		<Spanish>Hun</Spanish>
@@ -976,7 +976,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_RAIDERS_SHORT</Tag>
 		<English>Rai</English>
-		<French>Rai</French>
+		<French>Рейд.</French>
 		<German>R&#228;u</German>
 		<Italian>Pro</Italian>
 		<Spanish>Pr&#243;.</Spanish>
@@ -984,7 +984,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COASTALWARRIORS_SHORT</Tag>
 		<English>CoWa</English>
-		<French>CoWa</French>
+		<French>Берегов. воин</French>
 		<German>K&#252;kr</German>
 		<Italian>Pro</Italian>
 		<Spanish>Pr&#243;.</Spanish>
@@ -1008,7 +1008,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_TAX_RATE</Tag>
 		<English>Tax Rate: %d1%% (max. %d2%%) </English>
-		<French>Tax Rate: %d1%% (max. %d2%%) </French>
+		<French>Налоговая ставка: %d1%% (макс. %d2%%) </French>
 		<German>Steuersatz: %d1%% (max. %d2%%)</German>
 		<Italian>Percentuale tasse: %d1%% (%d2%%)</Italian>
 		<Spanish>Carga impositiva: %d1%% (%d2%%)</Spanish>
@@ -1624,7 +1624,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES</Tag>
 		<English>Assign Transport Routes (Automate)</English>
-		<French>Assign Transport Routes (Automate)</French>
+		<French>Назначить пути поставки (Автоматически)</French>
 		<German>Transportrouten zuweisen</German>
 		<Italian>Assegna rotte commerciali (automaticamente)</Italian>
 		<Spanish>Asignar rutas comerciales (automatizar)</Spanish>
@@ -1648,7 +1648,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES_HELP</Tag>
 		<English>Automate this transport by selecting the transport routes it should follow</English>
-		<French>Automate this transport by selecting the transport routes it should follow</French>
+		<French> Автоматизируйте данный транспорт назначив пути поставки по которым он будет передвигаться</French>
 		<German>Routenverwaltung aufrufen, um Transportrouten einzurichten und zuzuweisen</German>
 		<Italian>Automatizza questo trasporto scegliendo le rotte commerciali che dovrebbe seguire</Italian>
 		<Spanish>Automatizar este transporte seleccionando las rutas comerciales que debe seguir.</Spanish>
@@ -2400,7 +2400,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUY_AND_SELL_YIELD</Tag>
 		<English>Europe - Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</English>
-		<French>Europe - Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</French>
+		<French>Европа - Продать:%d1_Price[ICON_GOLD] / Купить: %d2_Price[ICON_GOLD]</French>
 		<German>Europa - Verkaufen: %d1_Price[ICON_GOLD] / Kaufen: %d2_Price[ICON_GOLD]</German>
 		<Italian>Europe - Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
 		<Spanish>Europe - Vender: %d1_Price [ICON_GOLD]/ Comprar: %d2_Price [ICON_GOLD]</Spanish>
@@ -2408,7 +2408,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUY_AND_SELL_YIELD_AFRICA</Tag>
 		<English>Africa - Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</English>
-		<French>Africa - Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</French>
+		<French>Африка - Продать:%d1_Price[ICON_GOLD] / Купить: %d2_Price[ICON_GOLD]</French>
 		<German>Afrika - Verkaufen: %d1_Price[ICON_GOLD] / Kaufen: %d2_Price[ICON_GOLD]</German>
 		<Italian>Africa - Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
 		<Spanish>Africa - Vender: %d1_Price [ICON_GOLD]/ Comprar: %d2_Price [ICON_GOLD]</Spanish>
@@ -2416,7 +2416,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUY_AND_SELL_YIELD_PORT_ROYAL</Tag>
 		<English>P.Royal - Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</English>
-		<French>P.Royal - Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</French>
+		<French>П.Ройал-Продать:%d1_Price[ICON_GOLD]/Купить:%d2_Price[ICON_GOLD]</French>
 		<German>P.Royal - Verkaufen: %d1_Price[ICON_GOLD] / Kaufen: %d2_Price[ICON_GOLD]</German>
 		<Italian>P.Royal - Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
 		<Spanish>P.Royal - Vender: %d1_Price [ICON_GOLD]/ Comprar: %d2_Price [ICON_GOLD]</Spanish>
@@ -3152,7 +3152,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_MARATHON_HELP</Tag>
 		<English>Extremely long game speed</English>
-		<French>Extremely long game speed</French>
+		<French>Чрезвычайно высокая скорость игры</French>
 		<German>Sehr langsames Produktionstempo</German>
 		<Italian>Velocit&#224; di gioco incredibilmente lunga</Italian>
 		<Spanish>Velocidad prolongada</Spanish>
@@ -3576,7 +3576,7 @@
 		<TEXT>
 		<Tag>TXT_KEY_FATHER_GROWTH_THRESHOLD_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% %F2_symbol needed for Population Growth</English>
-		<French>[ICON_BULLET]%D1%% %F2_symbol needed for Population Growth</French>
+		<French>[ICON_BULLET]%D1%% %F2_symbol необходимо для роста населения</French>
 		<German>[ICON_BULLET]%D1%% %F2_symbol notwendig f&#252;r Bev&#246;lkerungswachstum</German>
 		<Italian>[ICON_BULLET]%D1%% %F2_symbol needed for Population Growth</Italian>
 		<Spanish>[ICON_BULLET]%D1%% %F2_symbol needed for Population Growth</Spanish>

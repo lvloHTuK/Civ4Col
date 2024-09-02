@@ -49,7 +49,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Willem Barentsz</Text>
+			<Text>Виллем Баренцц</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -93,7 +93,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Jacques Cartier</Text>
+			<Text>Жак Картье</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -137,7 +137,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Gabriel de Clieu</Text>
+			<Text>Габриэль де Клие</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -181,7 +181,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Paul Revere</Text>
+			<Text>Пол Ревер</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -225,7 +225,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Jose de San Martin</Text>
+			<Text>Хосе де Сан-Мартин</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -269,7 +269,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Blackbeard</Text>
+			<Text>Пират Чернобород</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -292,7 +292,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_BLACKBEARD_PEDIA</Tag>
 		<English>[H1]Blackbeard[\H1][NEWLINE][BOLD]Lived: [\BOLD]1680-1718[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Edward Teach (also Edward Thatch, c.1680-22 November 1718), better known as Blackbeard, was a notorious English pirate who operated around the West Indies and the eastern coast of the American colonies. Although little is known about his early life, he was probably born in Bristol, England. He may have been a sailor on privateer ships during Queen Anne's War before settling on the Bahamian island of New Providence, a base for Captain Benjamin Hornigold, whose crew Teach joined sometime around 1716. Hornigold placed him in command of a sloop he had captured, and the two engaged in numerous acts of piracy. Their numbers were boosted by the addition to their fleet of two more ships, one of which was commanded by Stede Bonnet, but toward the end of 1717 Hornigold retired from piracy, taking two vessels with him. Teach captured a French merchant vessel, renamed her Queen Anne's Revenge, and equipped her with 40 guns. He became a renowned pirate, his cognomen derived from his thick black beard and fearsome appearance; he was reported to have tied lit fuses under his hat to frighten his enemies. [NEWLINE] [NEWLINE]He formed an alliance of pirates and blockaded the port of Charleston, South Carolina. After successfully ransoming its inhabitants, he ran Queen Anne's Revenge aground on a sandbar near Beaufort, North Carolina. He parted company with Bonnet and settled in Bath Town, where he accepted a royal pardon. But he was soon back at sea, where he attracted the attention of Alexander Spotswood, the Governor of Virginia. Spotswood arranged for a party of soldiers and sailors to try to capture the pirate, which they did on 22 November 1718. During a ferocious battle, Teach and several of his crew were killed by a small force of sailors led by Lieutenant Robert Maynard. A shrewd and calculating leader, Teach spurned the use of force, relying instead on his fearsome image to elicit the response he desired from those he robbed. Contrary to the modern-day picture of the traditional tyrannical pirate, he commanded his vessels with the permission of their crews and there is no known account of his ever having harmed or murdered those he held captive. [NEWLINE] [NEWLINE]He was romanticised after his death and became the inspiration for a number of pirate-themed works of fiction across a range of genres. Little is known about Blackbeard's early life. It is commonly believed that at the time of his death he was between 35 and 40 years old and thus born in about 1680. In contemporary records his name is most often given as Blackbeard, Edward Thatch or Edward Teach; the latter is most often used today. However, several spellings of his surname exist-Thatch, Thach, Thache, Thack, Tack, Thatche and Theach. One early source claims that his surname was Drummond, but the lack of any supporting documentation makes this unlikely. Pirates habitually used fictitious surnames while engaged in the business of piracy, so as not to tarnish the family name, and this makes it unlikely that Teach's real name will ever be known. [NEWLINE] [NEWLINE]The 17th-century rise of Britain's American colonies and the rapid 18th-century expansion of the Atlantic slave trade had made Bristol an important international sea port, and Teach was most likely raised in what was the second-largest city in England. He could almost certainly read and write; he communicated with merchants and when killed had in his possession a letter addressed to him by the Chief Justice and Secretary of the Province of Carolina, Tobias Knight. The author Robert Lee speculated that Teach may therefore have been born into a respectable, wealthy family. He may have arrived in the Caribbean in the last years of the 17th century, on a merchant vessel (possibly a slave ship). The 18th-century author Charles Johnson claimed that Teach was for some time a sailor operating from Jamaica on privateer ships during Queen Anne's War, and that "he had often distinguished himself for his uncommon boldness and personal courage". At what point during the war Teach joined the fighting is, in keeping with the record of most of his life before he became a pirate, unknown.</English>
-		<French>[H1]Blackbeard[\H1][NEWLINE][BOLD]Lived: [\BOLD]1680-1718[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Edward Teach (also Edward Thatch, c.1680-22 November 1718), better known as Blackbeard, was a notorious English pirate who operated around the West Indies and the eastern coast of the American colonies. Although little is known about his early life, he was probably born in Bristol, England. He may have been a sailor on privateer ships during Queen Anne's War before settling on the Bahamian island of New Providence, a base for Captain Benjamin Hornigold, whose crew Teach joined sometime around 1716. Hornigold placed him in command of a sloop he had captured, and the two engaged in numerous acts of piracy. Their numbers were boosted by the addition to their fleet of two more ships, one of which was commanded by Stede Bonnet, but toward the end of 1717 Hornigold retired from piracy, taking two vessels with him. Teach captured a French merchant vessel, renamed her Queen Anne's Revenge, and equipped her with 40 guns. He became a renowned pirate, his cognomen derived from his thick black beard and fearsome appearance; he was reported to have tied lit fuses under his hat to frighten his enemies. [NEWLINE] [NEWLINE]He formed an alliance of pirates and blockaded the port of Charleston, South Carolina. After successfully ransoming its inhabitants, he ran Queen Anne's Revenge aground on a sandbar near Beaufort, North Carolina. He parted company with Bonnet and settled in Bath Town, where he accepted a royal pardon. But he was soon back at sea, where he attracted the attention of Alexander Spotswood, the Governor of Virginia. Spotswood arranged for a party of soldiers and sailors to try to capture the pirate, which they did on 22 November 1718. During a ferocious battle, Teach and several of his crew were killed by a small force of sailors led by Lieutenant Robert Maynard. A shrewd and calculating leader, Teach spurned the use of force, relying instead on his fearsome image to elicit the response he desired from those he robbed. Contrary to the modern-day picture of the traditional tyrannical pirate, he commanded his vessels with the permission of their crews and there is no known account of his ever having harmed or murdered those he held captive. [NEWLINE] [NEWLINE]He was romanticised after his death and became the inspiration for a number of pirate-themed works of fiction across a range of genres. Little is known about Blackbeard's early life. It is commonly believed that at the time of his death he was between 35 and 40 years old and thus born in about 1680. In contemporary records his name is most often given as Blackbeard, Edward Thatch or Edward Teach; the latter is most often used today. However, several spellings of his surname exist-Thatch, Thach, Thache, Thack, Tack, Thatche and Theach. One early source claims that his surname was Drummond, but the lack of any supporting documentation makes this unlikely. Pirates habitually used fictitious surnames while engaged in the business of piracy, so as not to tarnish the family name, and this makes it unlikely that Teach's real name will ever be known. [NEWLINE] [NEWLINE]The 17th-century rise of Britain's American colonies and the rapid 18th-century expansion of the Atlantic slave trade had made Bristol an important international sea port, and Teach was most likely raised in what was the second-largest city in England. He could almost certainly read and write; he communicated with merchants and when killed had in his possession a letter addressed to him by the Chief Justice and Secretary of the Province of Carolina, Tobias Knight. The author Robert Lee speculated that Teach may therefore have been born into a respectable, wealthy family. He may have arrived in the Caribbean in the last years of the 17th century, on a merchant vessel (possibly a slave ship). The 18th-century author Charles Johnson claimed that Teach was for some time a sailor operating from Jamaica on privateer ships during Queen Anne's War, and that "he had often distinguished himself for his uncommon boldness and personal courage". At what point during the war Teach joined the fighting is, in keeping with the record of most of his life before he became a pirate, unknown.</French>
+		<French>[H1]Чернобород[\H1][NEWLINE][BOLD]Жил: [\BOLD]1680-1718[PARAGRAPH:2:1][BOLD]История:[\BOLD][NEWLINE][TAB]Эдвард Тич (также Эдвард Тэтч, ок. 1680-22 ноября 1718), более известный как Чернобород, был печально известным английским пиратом, орудовавшим в Вест-Индии и на восточном побережье американских колоний. Хотя о его ранней жизни мало что известно, он, вероятно, родился в Бристоле, Англия. Возможно, он был матросом на каперских судах во время войны королевы Анны, а затем поселился на багамском острове Нью-Провиденс, где базировался капитан Бенджамин Хорниголд, в команду которого Тич вступил примерно в 1716 году. Хорниголд назначил его командиром захваченного им шлюпа, и они вдвоем участвовали в многочисленных пиратских актах. К их флоту добавилось еще два корабля, одним из которых командовал Стеде Бонне, но в конце 1717 года Хорниголд отошел от пиратства, забрав с собой два судна. Тич захватил французское торговое судно, переименовал его в "Месть королевы Анны" и оснастил 40 пушками. Он стал известным пиратом, его прозвище произошло от густой черной бороды и устрашающей внешности; По слухам, он привязывал под шляпу зажженные фитили, чтобы напугать своих врагов. [NEWLINE][NEWLINE]Он создал союз пиратов и блокировал порт Чарльстон, Южная Каролина. Успешно выкупив его жителей, он посадил "Месть королевы Анны" на мель на песчаной отмели возле Бофорта, Северная Каролина. Он расстался с Бонне и поселился в городе Бат, где принял королевское помилование. Но вскоре он снова оказался в море, где привлек внимание Александра Спотсвуда, губернатора Виргинии. Спотсвуд организовал отряд солдат и моряков, чтобы попытаться захватить пирата, что и было сделано 22 ноября 1718 года. В ходе ожесточенной схватки Тич и несколько членов его команды были убиты небольшим отрядом моряков под командованием лейтенанта Роберта Мейнарда. Проницательный и расчетливый лидер, Тич отказался от применения силы, полагаясь на свой устрашающий образ, чтобы вызвать желаемую реакцию у тех, кого он грабил. В отличие от современного образа традиционного пирата-тирана, он управлял своими кораблями с разрешения их экипажей, и нет ни одного известного случая, когда бы он причинил вред или убил тех, кого держал в плену. [После смерти он был романтизирован и стал источником вдохновения для целого ряда художественных произведений на пиратскую тематику в самых разных жанрах. О ранней жизни Черной Бороды известно немного. Принято считать, что на момент смерти ему было 35-40 лет, и, следовательно, он родился примерно в 1680 году. В современных записях его имя чаще всего встречается как Чернобород, Эдвард Тэтч или Эдвард Тич; последний вариант наиболее часто используется сегодня. Однако существует несколько вариантов написания его фамилии - Тэтч, Тач, Таче, Тэк, Тэк, Тэк, Тэтче и Тэч. Один из ранних источников утверждает, что его фамилия была Драммонд, но отсутствие каких-либо подтверждающих документов делает это маловероятным. Пираты обычно использовали вымышленные фамилии, когда занимались пиратством, чтобы не запятнать семейное имя, и это делает маловероятным, что настоящее имя Тича когда-либо будет известно. [NEWLINE][NEWLINE]Возникновение американских колоний Британии в XVII веке и стремительное развитие работорговли в Атлантике в XVIII веке превратили Бристоль в важный международный морской порт, и Тич, скорее всего, вырос во втором по величине городе Англии. Он почти наверняка умел читать и писать; он общался с купцами, а когда его убили, у него в руках было письмо, адресованное ему главным судьей и секретарем провинции Каролина Тобиасом Найтом. Автор Роберт Ли предположил, что Тич мог родиться в респектабельной, богатой семье. Возможно, он прибыл в Карибский бассейн в последние годы XVII века на торговом судне (возможно, работорговом). Автор XVIII века Чарльз Джонсон утверждал, что Тич в течение нескольких время был моряком, работавшим с Ямайки на каперских судах во время войны королевы Анны, и что "он часто отличался необычайной смелостью и личной храбростью". В какой момент войны Тич присоединился к боевым действиям, неизвестно, как и о большей части его жизни до того, как он стал пиратом.</French>
 		<German>[H1]Blackbeard[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1680-1718[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Unter dem Namen Blackbeard ist einer der bekanntesten englischen Piraten des Nordwestatlantik im Bereich der Amerikanischen Ostkьste und der Bahamas bekannt. Sein bьrgerlicher Name lautete Edward Thatch und nicht Edward Teach, wie die einzige damalige Tageszeitung der Englischen Kolonien in Nordamerika, die Bostoner News-Letters, fдlschlicherweise wiederholt behauptete. Blackbeard war laut Aussage seines Gefangenen Henry Bostock "ein hochgewachsener schlanker Mann mit einem sehr schwarzen Bart, den er sehr lang wachsen lieЯ". [NEWLINE] [NEWLINE]Im Gegensatz zu seinem martialischen Auftreten beim Entern und der offiziellen britischen Propaganda ist kein Fall bekannt, wo tatsдchlich Seeleute aufgebrachter Schiffe umgekommen wдren, sieht man einmal von seinem letzten Gefecht gegen die Royal Navy ab. Ьber sein frьhes Leben ist wenig bekannt. Er wird schriftlich August 1717 zum ersten Mal namentlich erwдhnt. Vermutlich wurde er 1680 in Bristol (England) geboren. Seine Karriere begann er als Matrose auf Schiffen, die wдhrend des spanischen Erbfolgekrieges (1701-1714) von Jamaika aus in See stachen. Die Kapitдne dieser Schiffe besaЯen offizielle Kaperbriefe, die sie dazu berechtigten, im Namen der britischen Krone feindliche Schiffe zu kapern und Beute zu machen. Viele Freibeuter machten nach 1714 jedoch mit ihrem eintrдglichen Geschдft weiter, ohne Genehmigung der Krone. Blackbeard diente in dieser Zeit an Bord eines jamaikanischen Schiffs unter dem Befehl des Piraten Benjamin Hornigold. Im August 1717 ьbernahm er erstmals das Kommando ьber die Sloop Revenge, die zuvor von Stede Bonnet, dem 29-jдhrigen Sohn eines reichen Zuckerrohr-Pflanzers aus Barbados, befehligt worden war. Stede Bonnet hatte diese Sloop bauen und 126 Mann Besatzung anheuern lassen, um ein Leben als Pirat zu fьhren, geriet jedoch bald an ein spanisches Kriegsschiff, dem er nur unter viel Glьck entkam, wobei er ein Drittel seiner Besatzung verlor und selber schwer verwundet wurde. In den ersten drei Wochen des Oktobers 1717 griff er die Chesapeake Bay, Philadelphia und New York an, wobei er sich nie lдnger als zwei Tage an einem Ort aufhielt. Wдhrend dieser Zeit erbeutete er mindestens 15 Schiffe, womit er schlagartig zum gefьrchtetsten Piraten der Amerikanischen Ostkьste wurde. Als sich die militдrischen Behцrden zur Suche nach ihm aufmachten, war er schon mit seinem Schiff Revenge und zwei aufgebrachten Prisenschiffen unterwegs in die цstliche Karibik. Dort brachte er am 17. November 1717 das 250 Tonnen schwere franzцsische Sklaventransportschiff La Concorde unter Kapitдn Pierre Dosset auf. Dieses war nicht in der Lage sich zu verteidigen, da zuvor 16 Mann der Besatzung an Skorbut und blutigem Ausfluss (durch Skorbut) gestorben und der Rest der Besatzung sehr geschwдcht war. AuЯerdem waren von den 40 Stellplдtzen fьr Kanonen viele unbesetzt, um mehr Platz fьr die 516 angeketteten Sklaven zu machen. Von den 455 zum Zeitpunkt der Aufbringung noch lebenden Sklaven behielt Blackbeard 61, die restlichen 394 ьberliess er Kapitдn Pierre Dosset, die dieser anschlieЯend auf Martinique verkaufen lieЯ. Blackbeard ьbernahm die La Concorde, baute sie fьr seine Zwecke um und benannte sie in Queen Ann's Revenge. Sklaventransportschiffe waren als Piratenschiffe gut geeignet, da sie groЯ, schnell und gut bewaffnet waren. Blackbeard hatte seine Hauptquartiere auf den Bahamas und dem Gebiet der britischen Kolonie Carolina. Der Gouverneur von North Carolina, Charles Eden, nahm Beute von Blackbeard an; im Gegenzug gewдhrte er ihm inoffiziellen Schutz und eine amtliche Begnadigung. Schon nach einigen Wochen kehrte Blackbeard jedoch zur Piraterie zurьck. Umstritten ist, ob er sein Vermцgen verprasst hatte und seine Finanzlage wieder aufbessern wollte, oder ob ihn, nach vielen Jahren auf See, das Leben an Land schlicht langweilte. Die Ьberfдlle hдuften sich in der Folgezeit. Den Namen "Blackbeard" erhielt er wegen seines dichten schwarzen Bartes. Blackbeard, der sich mit mehreren Klingen, Messern und Pistolen behдngt zeigte, wurde besonders wegen der brennenden Lunten bekannt, die er vor einer Schlacht in seinen langen Bart zu binden pflegte. Diese "teuflische" Erscheinung, die er selbst kultivierte, hat ihn zum Inbegriff des unerschrockenen Freibeuters werden lassen. Dass sein ДuЯeres auch seinen Ruf als besonders grausamer Seerдuber begrьndete, hat so manchen Kapitдn eines Handelsschiffs dazu gebracht, ohne Gegenwehr zu kapitulieren. Obwohl Blackbeard durch seine дuЯere Erscheinung und sein Auftreten dafьr sorgte, dass er gefьrchtet wurde, ging es ihm nicht nur um Gewalt. Vor allem kleinere Schiffe kaperte er gerne, ohne auch nur eine Kanone abzufeuern. Diese Gewohnheit wurde ihm letztendlich zum Verhдngnis.</German>
 		<Italian>[H1]Jose de San Martin[\H1][NEWLINE][BOLD]Lived: [\BOLD]1778-1850[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Edward Teach (also Edward Thatch, c.1680-22 November 1718), better known as Blackbeard, was a notorious English pirate who operated around the West Indies and the eastern coast of the American colonies. Although little is known about his early life, he was probably born in Bristol, England. He may have been a sailor on privateer ships during Queen Anne's War before settling on the Bahamian island of New Providence, a base for Captain Benjamin Hornigold, whose crew Teach joined sometime around 1716. Hornigold placed him in command of a sloop he had captured, and the two engaged in numerous acts of piracy. Their numbers were boosted by the addition to their fleet of two more ships, one of which was commanded by Stede Bonnet, but toward the end of 1717 Hornigold retired from piracy, taking two vessels with him. Teach captured a French merchant vessel, renamed her Queen Anne's Revenge, and equipped her with 40 guns. He became a renowned pirate, his cognomen derived from his thick black beard and fearsome appearance; he was reported to have tied lit fuses under his hat to frighten his enemies. [NEWLINE] [NEWLINE]He formed an alliance of pirates and blockaded the port of Charleston, South Carolina. After successfully ransoming its inhabitants, he ran Queen Anne's Revenge aground on a sandbar near Beaufort, North Carolina. He parted company with Bonnet and settled in Bath Town, where he accepted a royal pardon. But he was soon back at sea, where he attracted the attention of Alexander Spotswood, the Governor of Virginia. Spotswood arranged for a party of soldiers and sailors to try to capture the pirate, which they did on 22 November 1718. During a ferocious battle, Teach and several of his crew were killed by a small force of sailors led by Lieutenant Robert Maynard. A shrewd and calculating leader, Teach spurned the use of force, relying instead on his fearsome image to elicit the response he desired from those he robbed. Contrary to the modern-day picture of the traditional tyrannical pirate, he commanded his vessels with the permission of their crews and there is no known account of his ever having harmed or murdered those he held captive. [NEWLINE] [NEWLINE]He was romanticised after his death and became the inspiration for a number of pirate-themed works of fiction across a range of genres. Little is known about Blackbeard's early life. It is commonly believed that at the time of his death he was between 35 and 40 years old and thus born in about 1680. In contemporary records his name is most often given as Blackbeard, Edward Thatch or Edward Teach; the latter is most often used today. However, several spellings of his surname exist-Thatch, Thach, Thache, Thack, Tack, Thatche and Theach. One early source claims that his surname was Drummond, but the lack of any supporting documentation makes this unlikely. Pirates habitually used fictitious surnames while engaged in the business of piracy, so as not to tarnish the family name, and this makes it unlikely that Teach's real name will ever be known. [NEWLINE] [NEWLINE]The 17th-century rise of Britain's American colonies and the rapid 18th-century expansion of the Atlantic slave trade had made Bristol an important international sea port, and Teach was most likely raised in what was the second-largest city in England. He could almost certainly read and write; he communicated with merchants and when killed had in his possession a letter addressed to him by the Chief Justice and Secretary of the Province of Carolina, Tobias Knight. The author Robert Lee speculated that Teach may therefore have been born into a respectable, wealthy family. He may have arrived in the Caribbean in the last years of the 17th century, on a merchant vessel (possibly a slave ship). The 18th-century author Charles Johnson claimed that Teach was for some time a sailor operating from Jamaica on privateer ships during Queen Anne's War, and that "he had often distinguished himself for his uncommon boldness and personal courage". At what point during the war Teach joined the fighting is, in keeping with the record of most of his life before he became a pirate, unknown.</Italian>
 		<Spanish>[H1]Jose de San Martin[\H1][NEWLINE][BOLD]Lived: [\BOLD]1778-1850[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Edward Teach (also Edward Thatch, c.1680-22 November 1718), better known as Blackbeard, was a notorious English pirate who operated around the West Indies and the eastern coast of the American colonies. Although little is known about his early life, he was probably born in Bristol, England. He may have been a sailor on privateer ships during Queen Anne's War before settling on the Bahamian island of New Providence, a base for Captain Benjamin Hornigold, whose crew Teach joined sometime around 1716. Hornigold placed him in command of a sloop he had captured, and the two engaged in numerous acts of piracy. Their numbers were boosted by the addition to their fleet of two more ships, one of which was commanded by Stede Bonnet, but toward the end of 1717 Hornigold retired from piracy, taking two vessels with him. Teach captured a French merchant vessel, renamed her Queen Anne's Revenge, and equipped her with 40 guns. He became a renowned pirate, his cognomen derived from his thick black beard and fearsome appearance; he was reported to have tied lit fuses under his hat to frighten his enemies. [NEWLINE] [NEWLINE]He formed an alliance of pirates and blockaded the port of Charleston, South Carolina. After successfully ransoming its inhabitants, he ran Queen Anne's Revenge aground on a sandbar near Beaufort, North Carolina. He parted company with Bonnet and settled in Bath Town, where he accepted a royal pardon. But he was soon back at sea, where he attracted the attention of Alexander Spotswood, the Governor of Virginia. Spotswood arranged for a party of soldiers and sailors to try to capture the pirate, which they did on 22 November 1718. During a ferocious battle, Teach and several of his crew were killed by a small force of sailors led by Lieutenant Robert Maynard. A shrewd and calculating leader, Teach spurned the use of force, relying instead on his fearsome image to elicit the response he desired from those he robbed. Contrary to the modern-day picture of the traditional tyrannical pirate, he commanded his vessels with the permission of their crews and there is no known account of his ever having harmed or murdered those he held captive. [NEWLINE] [NEWLINE]He was romanticised after his death and became the inspiration for a number of pirate-themed works of fiction across a range of genres. Little is known about Blackbeard's early life. It is commonly believed that at the time of his death he was between 35 and 40 years old and thus born in about 1680. In contemporary records his name is most often given as Blackbeard, Edward Thatch or Edward Teach; the latter is most often used today. However, several spellings of his surname exist-Thatch, Thach, Thache, Thack, Tack, Thatche and Theach. One early source claims that his surname was Drummond, but the lack of any supporting documentation makes this unlikely. Pirates habitually used fictitious surnames while engaged in the business of piracy, so as not to tarnish the family name, and this makes it unlikely that Teach's real name will ever be known. [NEWLINE] [NEWLINE]The 17th-century rise of Britain's American colonies and the rapid 18th-century expansion of the Atlantic slave trade had made Bristol an important international sea port, and Teach was most likely raised in what was the second-largest city in England. He could almost certainly read and write; he communicated with merchants and when killed had in his possession a letter addressed to him by the Chief Justice and Secretary of the Province of Carolina, Tobias Knight. The author Robert Lee speculated that Teach may therefore have been born into a respectable, wealthy family. He may have arrived in the Caribbean in the last years of the 17th century, on a merchant vessel (possibly a slave ship). The 18th-century author Charles Johnson claimed that Teach was for some time a sailor operating from Jamaica on privateer ships during Queen Anne's War, and that "he had often distinguished himself for his uncommon boldness and personal courage". At what point during the war Teach joined the fighting is, in keeping with the record of most of his life before he became a pirate, unknown.</Spanish>
@@ -313,7 +313,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Jakob Fugger</Text>
+			<Text>Якоб Фуггер</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -357,7 +357,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Charles Carroll</Text>
+			<Text>Чарльз Кэрролл</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -401,7 +401,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Pedro de Valdivia</Text>
+			<Text>Педро де Вальдивия</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -445,7 +445,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Junipero Serra</Text>
+			<Text>Джуниперо Серра</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -489,7 +489,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>James Wilson</Text>
+			<Text>Джеймс Уилсон</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -533,7 +533,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Robert Morris</Text>
+			<Text>Роберт Моррис</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -577,7 +577,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Francisco de Orellana</Text>
+			<Text>Франциско де Орельяна</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -621,7 +621,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Friedrich Wilhelm von Steuben</Text>
+			<Text>Фридрих Вильгельм фон Штойбен</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -665,7 +665,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Benjamin Lincoln</Text>
+			<Text>Бенджамин Линкольн</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -709,7 +709,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Charles Gravier, Comte de Vergennes</Text>
+			<Text>Шарль Гравье, граф Вергеннский</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -753,7 +753,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Thomas Jefferson</Text>
+			<Text>Томас Джефферсон</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -797,7 +797,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Samuel Blommaert</Text>
+			<Text>Самуэль Бломмаерт</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -841,7 +841,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Jean Talon</Text>
+			<Text>Жан Талон</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -885,7 +885,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>John August Sutter</Text>
+			<Text>Джон Август Саттер</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -929,7 +929,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Piet Heyn</Text>
+			<Text>Пит Хейн</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -973,7 +973,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Ferdinand Magellan</Text>
+			<Text>Фердинанд Магеллан</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1017,7 +1017,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Tom&#233; de Sousa</Text>
+			<Text>Том де Соуза</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1061,7 +1061,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>George Fox</Text>
+			<Text>Джордж Фокс</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1105,7 +1105,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Nicolas de Villegagnon</Text>
+			<Text>Николя де Виллеганьон</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1149,7 +1149,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Miguel Hidalgo</Text>
+			<Text>Мигель Идальго</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1193,7 +1193,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Pedro Menendez de Aviles</Text>
+			<Text>Педро Менендес де Авилес</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1237,7 +1237,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Jean de Brebeuf</Text>
+			<Text>Жан де Бребеф</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1281,7 +1281,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Walter Raleigh</Text>
+			<Text>Уолтер Рэли</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1325,7 +1325,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Michiel de Ruyter</Text>
+			<Text>Мишель де Рюйтер</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1369,7 +1369,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Benjamin Rush</Text>
+			<Text>Бенджамин Раш</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1413,7 +1413,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Nicolas Monardes</Text>
+			<Text>Николя Монардес</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>

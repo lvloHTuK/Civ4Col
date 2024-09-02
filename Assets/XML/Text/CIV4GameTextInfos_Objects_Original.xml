@@ -1057,7 +1057,7 @@
 		<Tag>TXT_KEY_GAMESPEED_TAC_MARATHON</Tag>
 		<English>Marathon</English>
 		<French>
-			<Text>Marathon</Text>
+			<Text>Марафон</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -1525,7 +1525,7 @@
 		<Tag>TXT_KEY_LEADER_WASHINGTON</Tag>
 		<English>George Washington</English>
 		<French>
-			<Text>&#196;&#230;&#238;&#240;&#228;&#230; &#194;&#224;&#248;&#232;&#237;&#227;&#242;&#238;&#237;</Text>
+			<Text>Джордж Вашингтон</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
