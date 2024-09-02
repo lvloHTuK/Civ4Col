@@ -2408,7 +2408,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_GAME_OPTIONS</Tag>
 		<English>Game Options</English>
-		<French>Параметры</French>
+		<French>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</French>
 		<German>Spieloptionen</German>
 		<Italian>Opzioni di gioco</Italian>
 		<Spanish>Opciones de partida</Spanish>
@@ -3952,7 +3952,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_OPTIONS</Tag>
 		<English>Options</English>
-		<French>Параметры сессии</French>
+		<French>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</French>
 		<German>Optionen</German>
 		<Italian>Opzioni</Italian>
 		<Spanish>Opciones</Spanish>
@@ -5112,7 +5112,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_TURNS_LEFT</Tag>
 		<English>%d1 [NUM1:Turn:Turns] To Win!</English>
-		<French>%d1 [NUM1:ход:ходов] до окончания игры</French>
+		<French>%d1 [NUM1:пїЅпїЅпїЅ:пїЅпїЅпїЅпїЅпїЅ] пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ</French>
 		<German>Noch %d1 [NUM1:Runde:Runden]!</German>
 		<Italian>%d1 [NUM1:turno rimasto:turni rimasti]!</Italian>
 		<Spanish>[NUM1:Queda:Quedan] %d1 [NUM1:turno:turnos]</Spanish>
@@ -8703,7 +8703,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ADVANCED</Tag>
-		<English>ADVANCED(T1.0)</English>
+		<English>ADVANCED(T1.1)</English>
 		<French>&#196;&#206;&#207;&#206;&#203;&#205;&#200;&#210;&#197;&#203;&#220;&#205;&#206;(T1.0)</French>
 		<German>ERWEITERT</German>
 		<Italian>IMPOSTAZIONI AVANZATE</Italian>
