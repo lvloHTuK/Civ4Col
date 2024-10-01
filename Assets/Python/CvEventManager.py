@@ -274,7 +274,7 @@ class CvEventManager:
 
 # Dale - AoD: AoDCheatMenu START
 	# TAC - Multiplayer - koma13
-			if( theKey == int(InputTypes.KB_Z) and self.bShift and self.bCtrl ) :
+			if( theKey == int(InputTypes.KB_LBRACKET) and self.bShift and self.bCtrl and self.bAlt) :
 				self.beginEvent(CvUtil.EventAoDCheatMenu)
 # Dale - AoD: AoDCheatMenu END
 
