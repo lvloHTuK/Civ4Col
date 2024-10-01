@@ -273,9 +273,9 @@ class CvEventManager:
 			CvCameraControls.g_CameraControls.handleInput( theKey )
 
 # Dale - AoD: AoDCheatMenu START
-			if (self.bAllowCheats):		# TAC - Multiplayer - koma13
-				if( theKey == int(InputTypes.KB_Z) and self.bShift and self.bCtrl ) :
-					self.beginEvent(CvUtil.EventAoDCheatMenu)
+	# TAC - Multiplayer - koma13
+			if( theKey == int(InputTypes.KB_LBRACKET) and self.bShift and self.bCtrl and self.bAlt) :
+				self.beginEvent(CvUtil.EventAoDCheatMenu)
 # Dale - AoD: AoDCheatMenu END
 
 # Achievements START
