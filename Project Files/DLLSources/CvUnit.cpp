@@ -2584,7 +2584,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		case COMMAND_YIELD_TRADE:
             for (CvUnit* pLoopUnit = kOwner.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kOwner.nextUnit(&iLoop))
             {
-                if (pLoopUnit != this && timeNow - pLoopUnit->getLastUpdateMyTimer() < 2)
+                if (timeNow - pLoopUnit->getLastUpdateMyTimer() < 2)
                 {
                     isCanTrade = false;
                 }
