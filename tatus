@@ -1,0 +1,658 @@
+[33mcommit 29f7debb1b838e9c04e03eac2c36bfdd5759a3d1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/final/TURNIR[m[33m)[m
+Merge: 7002abf5 4b7b2df9
+Author: lvloHTuK <sibmag2645@gmail.com>
+Date:   Mon Dec 23 10:40:21 2024 +0300
+
+    Merge branch 'master' into final/TURNIR
+
+[33mcommit 4b7b2df95b13e88d177a92016a228328d37c210d[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: lvloHTuK <sibmag2645@gmail.com>
+Date:   Mon Dec 23 10:27:11 2024 +0300
+
+    delete change origin
+
+[33mcommit 7002abf58a604bf2e299c55b3a27f0b94ea5aee5[m
+Merge: 269d6ba8 a373863f
+Author: lvloHTuK <sibmag2645@gmail.com>
+Date:   Mon Dec 23 10:08:38 2024 +0300
+
+    Merge branch 'master' into final/Turnir
+    Q.
+
+[33mcommit a373863f29300c092839d02b2af7c581077a4701[m
+Author: lvloHTuK <sibmag2645@gmail.com>
+Date:   Mon Dec 23 09:44:37 2024 +0300
+
+    Change git origin
+
+[33mcommit 269d6ba85705a8ed841fd1f9d4bac0e730c3e3a4[m[33m ([m[1;32mfinal/TURNIR[m[33m)[m
+Author: Ath3risHispida <andriannuriev@gmail.com>
+Date:   Tue Oct 22 13:14:53 2024 +0300
+
+    ё
+
+[33mcommit 0e7f99b4e1edb6d1618c633b2ea90f93c2216149[m
+Merge: ddcc2240 8a62b2c9
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Oct 21 13:32:55 2024 +0300
+
+    Merge branch 'master' into final/TURNIR
+
+[33mcommit 8a62b2c91ec7cc58ac900b62e782223d111ea4b7[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Oct 21 13:25:20 2024 +0300
+
+    Попытка фикса модалки индейцев
+
+[33mcommit ddcc224026af0a43715c554f3ffff77a349747df[m
+Merge: a0c48a06 ed58d448
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Oct 18 13:22:58 2024 +0300
+
+    Merge branch 'master' into final/TURNIR
+
+[33mcommit ed58d448cfb87ab0d76840eaa371bbf435f177b9[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Oct 18 13:21:59 2024 +0300
+
+    Фикс модалки индейцев(увеличен таймер)
+
+[33mcommit a0c48a0689f0b5a8815a46b431f82a51dac0d52b[m
+Author: Ath3risHispida <andriannuriev@gmail.com>
+Date:   Fri Oct 18 09:10:32 2024 +0300
+
+    Концов до конца игры + рассинхрон
+
+[33mcommit c23a20f57178426be821617c6f46af30206dfd08[m
+Author: Ath3risHispida <andriannuriev@gmail.com>
+Date:   Fri Oct 18 08:45:55 2024 +0300
+
+    Осталось ходов + рассинхрон
+
+[33mcommit 74de1a5c0fc9d3b4b30ef81ee8eac93b21013bb9[m
+Merge: 721860ea a5449602
+Author: XetPy <84150957+XetPy1030@users.noreply.github.com>
+Date:   Wed Oct 2 12:35:25 2024 +0300
+
+    Merge pull request #4 from XetPy1030/revert-1-master
+    
+    Revert "fix bugs"
+
+[33mcommit a5449602504b4cf3c1465590efd5f495f9bac06e[m[33m ([m[1;31morigin/revert-1-master[m[33m)[m
+Author: XetPy <84150957+XetPy1030@users.noreply.github.com>
+Date:   Wed Oct 2 12:35:14 2024 +0300
+
+    Revert "fix bugs"
+
+[33mcommit 721860ea8f7b28ce7112476b7720344fdb56849b[m
+Merge: c789407b f5f74af1
+Author: XetPy <84150957+XetPy1030@users.noreply.github.com>
+Date:   Tue Oct 1 16:35:24 2024 +0300
+
+    Merge pull request #1 from XetPy1030/master
+    
+    fix bugs
+
+[33mcommit f5f74af1167ade27d54ac8f28f6f1efeb9439980[m
+Author: AISamigullin <samigullinamirhan486@gmail.com>
+Date:   Tue Oct 1 16:26:14 2024 +0300
+
+    fix bugs
+
+[33mcommit ead14da776f493031ee46a342654c0e8b73fcabb[m
+Author: AISamigullin <samigullinamirhan486@gmail.com>
+Date:   Tue Oct 1 15:55:53 2024 +0300
+
+    fix bugs
+
+[33mcommit c789407bda7d8496676b230266a946351b702a66[m
+Merge: 5c8e3266 9aa38e00
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Tue Sep 17 08:13:51 2024 +0300
+
+    Merge branch 'master' into final/TURNIR
+
+[33mcommit 9aa38e0036d0570d42584312fa3e5735cf560e0c[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Tue Sep 17 08:12:10 2024 +0300
+
+    fixes
+
+[33mcommit 5c8e326672fd78569b67ff464e88ed6e4b723780[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:58:48 2024 +0300
+
+    new fixes
+
+[33mcommit fbd0a8b527eaea6480b0f43058a73ac5069ca19e[m
+Merge: d6455f51 dc3f5647
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:45:43 2024 +0300
+
+    Merge branch 'master' into final/TURNIR
+    
+    # Conflicts:
+    #       Assets/XML/Text/CIV4GameTextInfos_Original.xml
+
+[33mcommit dc3f56476e03889df214c582e9441181f2b21e76[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:44:05 2024 +0300
+
+    Revert "Revert "new fixes""
+    
+    This reverts commit c26605536c184a08a02baecc2fae65550f477812.
+
+[33mcommit aece20fdff645cf3ac0f6512cfbea357828e66d1[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:43:51 2024 +0300
+
+    Revert "new fixes"
+    
+    This reverts commit e8351b6530a30cc2068e9af3af35fe680ee57c79.
+
+[33mcommit c26605536c184a08a02baecc2fae65550f477812[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:43:51 2024 +0300
+
+    Revert "new fixes"
+    
+    This reverts commit 4c7c0b49dd7515f4557476724c617659c8e26603.
+
+[33mcommit 10b96344bb10e8f440202b73f33b38aab3aa6ece[m
+Merge: 66b5a2d5 f69ca0da
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:41:55 2024 +0300
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 66b5a2d5bd3b6eb5aaaa0b95371c8203919d3930[m
+Merge: 44af89ba 4c7c0b49
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:41:37 2024 +0300
+
+    Merge branch 'dev'
+
+[33mcommit 4c7c0b49dd7515f4557476724c617659c8e26603[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:41:16 2024 +0300
+
+    new fixes
+
+[33mcommit f69ca0dac412da7030dded93c4d935c4d657b328[m
+Merge: 44af89ba e8351b65
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:29:47 2024 +0300
+
+    Merge branch 'dev'
+    
+    # Conflicts:
+    #       Assets/XML/Text/CIV4GameTextInfos_Original.xml
+
+[33mcommit e8351b6530a30cc2068e9af3af35fe680ee57c79[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 16:29:03 2024 +0300
+
+    new fixes
+
+[33mcommit d6455f51da7af88527c01336f18cea7ebba44ff3[m
+Author: XetPy <84150957+XetPy1030@users.noreply.github.com>
+Date:   Mon Sep 2 15:41:31 2024 +0300
+
+    Update CIV4GameTextInfos_Original.xml
+
+[33mcommit 4251d8460038d69dd9bd02690ba66a5c612801ba[m
+Merge: 19285d77 44af89ba
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 15:14:08 2024 +0300
+
+    Merge branch 'master' into final/TURNIR
+
+[33mcommit 19285d77e5409296b1afaf9ac39ec0d7dec03f88[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 15:11:22 2024 +0300
+
+    release 1.1
+
+[33mcommit 1d0941e818cc69cdebc16211db67a3a8e6f0de24[m
+Merge: 99b3451f 461b9ff0
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 15:10:27 2024 +0300
+
+    Merge branch 'dev' into final/TURNIR
+
+[33mcommit 44af89ba52b6a77c1ce5ec3333862ec9575f23cb[m
+Merge: bceafb0e 461b9ff0
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 15:09:54 2024 +0300
+
+    Merge remote-tracking branch 'origin/dev'
+
+[33mcommit 461b9ff077dd74ceb3018fba3c1fe6f82d52d0ef[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 15:09:35 2024 +0300
+
+    Revert "awd"
+    
+    This reverts commit 91b901648957f484f80a1cda6de2f20bbe1bb9f6.
+
+[33mcommit 19d4df07a175f88a09538102711b6b0a3626f835[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Sep 2 15:03:58 2024 +0300
+
+    translate
+
+[33mcommit bceafb0ea67a03e24557f41543cf2dea41d69c2b[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Aug 23 15:41:19 2024 +0300
+
+    Модалка при заканчивании таймера ходов
+
+[33mcommit 99b3451f648bc77de284f5f31ead8fa19dac4f49[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Tue Jul 16 13:15:36 2024 +0300
+
+    New logo
+
+[33mcommit c2d19a486cabd2b673d6eada23a253dd60474655[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jul 15 13:22:20 2024 +0300
+
+    release. check saves and updater
+
+[33mcommit 3d49fb272aad83d0b272efd8f50dade02421deec[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu May 23 15:14:27 2024 +0300
+
+    release. check saves and updater
+
+[33mcommit 90aadca32f4ceea75d18a1fabc7b88ff9d01cfeb[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Apr 25 12:41:57 2024 +0300
+
+    3 попытки для обновления
+
+[33mcommit 2ebcda3af858e7d02cd072728c38df08b67119e4[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Apr 18 06:26:36 2024 +0300
+
+    Version checker
+
+[33mcommit b75b29df2083f9f3016ce22673e13af512cd42b1[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Tue Mar 19 12:46:47 2024 +0300
+
+    Version checker
+
+[33mcommit bc9a03fc361613ff86c5b01f47825d52410b626f[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Feb 15 17:15:22 2024 +0300
+
+    Auto get changes
+
+[33mcommit 0d8d688892b552bc67d9ca4be36731f4402f35ea[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Feb 15 17:14:21 2024 +0300
+
+    Auto get changes
+
+[33mcommit bc3c0058ee44ddb674eeb5a1d1c7960766bdbdcf[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Feb 15 17:01:55 2024 +0300
+
+    Auto get changes
+
+[33mcommit 24b2b65a4015b265608980b06243b88166e213d6[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Feb 8 15:25:16 2024 +0300
+
+    Gitignore
+
+[33mcommit 2f98e3c8f47ae943b3d8bcc5faa5dba4d0b93c73[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Feb 8 15:20:44 2024 +0300
+
+    Gitignore
+
+[33mcommit bcf53f6f00d3bdaf981c75d984997c4e0b856878[m[33m ([m[1;31morigin/releases/release-1.6[m[33m)[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Feb 7 08:27:52 2024 +0300
+
+    Фикс бага несколько юнитов одновременно трейдинг, компиляция
+
+[33mcommit fef646cb65b3c789715ef81878d6d2db931cfde5[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Feb 7 11:09:15 2024 +0300
+
+    Фикс бага несколько юнитов одновременно трейдинг
+
+[33mcommit b1705462b6ffe984805ddb4f5ceb77b7ac4788f8[m[33m ([m[1;31morigin/releases/release-1.5[m[33m)[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:42:36 2024 +0300
+
+    Revert "Рассинхрон на центр экрана"
+    
+    This reverts commit 172c7ca82705de1ff8e17ba867b89c9ffc8e9751.
+
+[33mcommit 6b850d9b0e7f4e8531fa02e6f39ae3fa68de225d[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:42:35 2024 +0300
+
+    Revert "Рассинхрон на центр экрана"
+    
+    This reverts commit bfd144fcdc92465ad5c22a1545ef4fe8cb040bb0.
+
+[33mcommit 981c92a5e8f501d77b77286ae5611a19255c139f[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:42:35 2024 +0300
+
+    Revert "Рассинхрон на центр экрана"
+    
+    This reverts commit 36fbef63dc11aa96cc9337bf35b01cb6a605d2b0.
+
+[33mcommit 353e934d7ffc54f80984bfe51608bb1633c66d13[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:42:34 2024 +0300
+
+    Revert "Рассинхрон на центр экрана"
+    
+    This reverts commit 74ca47273ff82f2dafaad80fd7543bf6d0077978.
+
+[33mcommit cfc053022f58b1b86806c520484bd451aa80919e[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:42:33 2024 +0300
+
+    Revert "Рассинхрон на центр экрана"
+    
+    This reverts commit 8e95c7618d676dc41b972ece6f2ac4cec6649c0c.
+
+[33mcommit a0166ce958e4f688a56782d0776b0d0f6cf24b95[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:42:33 2024 +0300
+
+    Revert "Рассинхрон на центр экрана"
+    
+    This reverts commit ceaa2df548c808408f3dc5e0fd2172d9c036f824.
+
+[33mcommit b7771d7663494c710722215f25de68ea31f867bb[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:42:32 2024 +0300
+
+    Revert "Рассинхрон на центр экрана"
+    
+    This reverts commit 375c5880100ea2f179e35d7cf9f2660ff20c9f91.
+
+[33mcommit 5e294ba9d19ad243e0bf4d4bf13da9407d815b58[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:41:18 2024 +0300
+
+    Event manager
+
+[33mcommit 5e7fa7e69f203955a9b035ced505b5a51ee6c7db[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:37:44 2024 +0300
+
+    Смена перевода "Удваивает скорость постройки"
+
+[33mcommit 544ea3ec8ead59e82ea42f0588f22b00828353d2[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Jan 24 15:37:16 2024 +0300
+
+    Смена перевода "Удваивает скорость постройки"
+
+[33mcommit 375c5880100ea2f179e35d7cf9f2660ff20c9f91[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jan 22 09:43:32 2024 +0300
+
+    Рассинхрон на центр экрана
+
+[33mcommit ceaa2df548c808408f3dc5e0fd2172d9c036f824[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jan 22 09:36:49 2024 +0300
+
+    Рассинхрон на центр экрана
+
+[33mcommit 8e95c7618d676dc41b972ece6f2ac4cec6649c0c[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jan 22 09:26:43 2024 +0300
+
+    Рассинхрон на центр экрана
+
+[33mcommit 74ca47273ff82f2dafaad80fd7543bf6d0077978[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jan 22 09:20:01 2024 +0300
+
+    Рассинхрон на центр экрана
+
+[33mcommit 36fbef63dc11aa96cc9337bf35b01cb6a605d2b0[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jan 22 09:19:48 2024 +0300
+
+    Рассинхрон на центр экрана
+
+[33mcommit bfd144fcdc92465ad5c22a1545ef4fe8cb040bb0[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jan 22 09:11:24 2024 +0300
+
+    Рассинхрон на центр экрана
+
+[33mcommit 172c7ca82705de1ff8e17ba867b89c9ffc8e9751[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jan 22 09:02:41 2024 +0300
+
+    Рассинхрон на центр экрана
+
+[33mcommit dcd7554e2e506806b7568078647d29c273e32082[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Mon Jan 22 07:11:58 2024 +0300
+
+    Теперь галлеон польностью торговый корабль
+
+[33mcommit 6acb180f00b4fd39bddf32357bae46d638983a21[m[33m ([m[1;31morigin/releases/release-1.4[m[33m)[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Dec 15 14:23:37 2023 +0300
+
+    event5managerfixbug
+
+[33mcommit 7a67aabd624a8eb999ca101f5a2f0ba72e280cb1[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Dec 15 14:20:43 2023 +0300
+
+    event4managerfixbug
+
+[33mcommit d814e31230e58a58de19f9e49f05b0f077d9a765[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Dec 15 13:58:36 2023 +0300
+
+    event3manager
+
+[33mcommit 0105bb6d8a530a6f6d7b105e8b49aace9b8a4d86[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Dec 15 13:50:24 2023 +0300
+
+    event2manager
+
+[33mcommit de83453a678f52a65a2e447fdc5b234bb8b5ce89[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Dec 14 18:00:33 2023 +0300
+
+    Фикс дебан инфы
+
+[33mcommit f1ff60ae4efd4abc791f917cae1c8756654dc768[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Dec 14 17:59:47 2023 +0300
+
+    event manager
+
+[33mcommit cc14659e3dcb9b0d6024d3f2611d9370d219b965[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Dec 14 13:33:26 2023 +0300
+
+    Добавление невозможности войны в первые ходы для дипломатии
+
+[33mcommit a2aeb5e613d24d9e617bed2d930f93533da38dba[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Thu Dec 14 13:05:10 2023 +0300
+
+    Добавление перевода для комментариев в коде
+
+[33mcommit 99bd66fd4581c48373eabcef0c5914fd4a3016ff[m[33m ([m[1;31morigin/releases/release-1.3[m[33m)[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Dec 6 04:14:02 2023 +0300
+
+    нельзя воевать первые 90 ходов
+
+[33mcommit c59733c26a3870831742b090dcf47f48df5a9f93[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Tue Dec 5 16:51:06 2023 +0300
+
+    исправление бесконечного сбора рыбы с одной клетки
+
+[33mcommit aa469e1534122a3f40abb902b8d988d10d32efcb[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Tue Dec 5 16:46:09 2023 +0300
+
+    добавлен конвертер текста в русский формат
+
+[33mcommit 610a391b2bd8b41c280b71a5a3ec30f079836009[m[33m ([m[1;31morigin/releases/release-1.2[m[33m)[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Sun Nov 19 22:27:41 2023 +0300
+
+    убрал возможность вылета, нельзя поменять у чужого города тип производства
+
+[33mcommit cf6b8e7a0efb00a030da6d96f5aa13850c05a3fe[m[33m ([m[1;31morigin/releases/release-1.1[m[33m)[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Nov 17 13:44:24 2023 +0300
+
+    awd
+
+[33mcommit 91b901648957f484f80a1cda6de2f20bbe1bb9f6[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Nov 17 13:03:03 2023 +0300
+
+    awd
+
+[33mcommit e39cb09e4fe1d93f66b680da669dff1fba71a563[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Nov 17 09:57:57 2023 +0300
+
+    фиг знает просто перекомпилил
+
+[33mcommit e0cd4ee52414552f26ac7f7545889d2fedbc7156[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Nov 17 07:27:32 2023 +0300
+
+    Fix нескольких модалок при торговле
+
+[33mcommit ef83719f296a311533253bca4ea16e40231b82e6[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Nov 17 00:33:16 2023 +0300
+
+    Fix ddos кнопки торговли с индейцами
+
+[33mcommit eca255ba901838b983c1e713129dcf5860ce492b[m[33m ([m[1;31morigin/releases/release-1.0[m[33m)[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 12:43:46 2023 +0300
+
+    фиг знает просто перекомпилил
+
+[33mcommit f7ce5bfb0efeb9c8bd2b3788e0ac912009f61d18[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 12:40:19 2023 +0300
+
+    X3 COLONIAL_FORCED_PEACE_TURNS
+
+[33mcommit cd77d529f52e112f49dfcf3312b1a604a4096eee[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 09:49:04 2023 +0300
+
+    fix civilization infos (england and others) units
+
+[33mcommit 0f5d97a66b34656ef69488dc78907914b3b56b6b[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 09:45:57 2023 +0300
+
+    fix oil threshold
+
+[33mcommit 6e8451384f7ddf30bc7395cd8f500303d1a55758[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 09:44:06 2023 +0300
+
+    fix скрин конца игры
+
+[33mcommit 7a7bb691a05e91c2ff5a7fbfa2744c6d96b6846f[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 09:15:17 2023 +0300
+
+    gitignore
+
+[33mcommit 91f0d2111057f001d72bdff1e76ca19cc8200f89[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 09:09:17 2023 +0300
+
+    add project files
+
+[33mcommit 1ccc83985acb61f260bfcd80b4faea647f5bcaee[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 09:03:54 2023 +0300
+
+    .gitignore fix
+
+[33mcommit 0e1c5b4657e3254ef446028022b56c27375fb1bb[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 09:03:31 2023 +0300
+
+    Fix network рассинхрон
+
+[33mcommit 5af04a8832a9bce4e5e6c0e88e0d2500fbd02397[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 08:58:40 2023 +0300
+
+    Configure project gitignore .idea
+
+[33mcommit 3791b9e1de442cd31aa34f07ff2ab54562741348[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 08:25:30 2023 +0300
+
+    Fix какойто скрин не помню уже с типом игры конец
+
+[33mcommit c1d890e1aa141a176529d59726793c0bd260d5ad[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 06:55:27 2023 +0300
+
+    Network fix рассинхрон более вероятно
+
+[33mcommit dabaf1bbb31e77444402584a169b7e6627319301[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Wed Sep 6 06:54:44 2023 +0300
+
+    Галлеон не может атаковать
+
+[33mcommit 134bef6037687c5e81458068e0854e74b2d13407[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Mar 24 14:34:58 2023 +0300
+
+    All project
+
+[33mcommit a71a7e0fc25a8a3a54201076742e90052169e769[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Fri Mar 24 13:32:55 2023 +0300
+
+    All project
+
+[33mcommit e8d2ec48f2af90dbc7bf0bf3cee2393ccdf6578e[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Sat Mar 18 03:14:03 2023 +0300
+
+    delete unit from city
+
+[33mcommit 80afde461c0f0bb04a9cd38c0ed0aac2163420e6[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Sat Mar 18 03:09:27 2023 +0300
+
+    erase delete unit
+
+[33mcommit 74e80d05a1429efb9d2c6d0008f8245e6e816a8c[m
+Author: XetPy1030 <xetpy1030@mail.ru>
+Date:   Sat Mar 18 03:08:00 2023 +0300
+
+    init
