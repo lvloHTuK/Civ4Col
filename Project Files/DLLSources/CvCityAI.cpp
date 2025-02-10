@@ -3051,6 +3051,8 @@ bool CvCityAI::AI_removeWorstPopulationUnit(bool bDelete)
 		{
 			if (removePopulationUnit(m_aPopulationUnits[i], bDelete, eEjectProfession))
 			{
+				m_aPopulationUnits[i]->kill(false);
+				this->setOccupationTimer(2);
 				return true;
 			}
 		}
