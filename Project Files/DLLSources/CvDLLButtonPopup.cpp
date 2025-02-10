@@ -2478,6 +2478,10 @@ bool CvDLLButtonPopup::launchEventPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
 	CvPlayer& kActivePlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
 	EventTriggeredData* pTriggeredData = kActivePlayer.getEventTriggered(info.getData1());
+	//int countEvents = kActivePlayer.getNumEventsTriggered();
+	//char* buf = new char[50];
+	//std::sprintf(buf,"%d",countEvents);
+	//FAssertMsg(false, buf);
 	if (NULL == pTriggeredData)
 	{
 		return false;
