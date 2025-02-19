@@ -692,7 +692,7 @@ void CvInitCore::resetPlayer(PlayerTypes eID, CvInitCore * pSource, bool bClear,
 		if (pSource)
 		{
 			// Civ details
-			setCivDescription(eID, pSource->getCivDescription(eID));
+			//setCivDescription(eID, pSource->getCivDescription(eID));
 			setCivShortDesc(eID, pSource->getCivShortDesc(eID));
 			setCivAdjective(eID, pSource->getCivAdjective(eID));
 
@@ -716,6 +716,7 @@ void CvInitCore::resetPlayer(PlayerTypes eID, CvInitCore * pSource, bool bClear,
 				// We don't wanna reset the slot data if we are loading a game
 				// from init - we want to keep the changes we made during init
 				setLeaderName(eID, pSource->getLeaderName(eID));
+				setCivDescription(eID, pSource->getLeaderName(eID));
 				setSlotStatus(eID, pSource->getSlotStatus(eID));
 				setSlotClaim(eID, pSource->getSlotClaim(eID));
 			}

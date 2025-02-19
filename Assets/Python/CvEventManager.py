@@ -18,6 +18,66 @@ import CvAdvisorUtils
 
 gc = CyGlobalContext()
 localText = CyTranslator()
+RES = ['food', 'Lumber','Stone','Hemp','Ore','Sheep','Cattle','Horses','Coca leaves','Cocoa Pods',
+	   'Coffee Berries','Tobacco ','Wool','Cotton','Indigo','Cowhides','Fur','Premium fur','Rock salt ',
+	   'Red Pepper','Barley','Sugar','Grapes','Whale fat','Valuable wood','Trade goods','Ropes','Sailcloth ',
+	   'Tools','Blades','Guns','Cannons','Silver','Gold','Gems','Cocoa','Coffee','Cigars','Wool Cloth','Cloth',
+	   'Coloured cloth','Leather','Coats','Premium coats','Salt','Spices','Beer','Rum','Wine','Train oil','Furniture',
+	   'Luxury goods']
+
+
+def get_dict(filename):
+	'Из файла получает словарь, ключ определяется по символам начала строки ", а значение по [], таким образом, ключ обязательно str, а значение list'
+
+	f = open(filename, 'r')
+	strings = f.readlines()
+	PLAYER_BUILD = dict()
+	list_keys = []
+	list_values = []
+	if len(strings) == 0: #Если файл пуст, то возвращаем пустой словарь
+		return dict()
+	for line in strings:
+		index = 0
+		while line.count("'") > 0:
+			key = ''
+
+			if index < len(line):
+				while line[index]!= "'": # ищет первый символ '
+					index+=1
+				line = line.replace("'", ' ', 1)
+				index +=1
+				while line[index] != "'": # записывает символы пока не встретит '
+					key+= line[index]
+					index+=1
+				line = line.replace("'", ' ', 1)
+				list_keys.append(key)
+				index +=1
+
+		while line.count("[") > 0: #аналогично выше
+			index = 0
+			value = ''
+			if index < len(line):
+				while line[index]!= "[":
+					index+=1
+				line = line.replace("[", ' ', 1)
+				index +=1
+				while line[index] != "]":
+					value+= line[index]
+					index+=1
+				line = line.replace("]", ' ', 1)
+				list_values.append(value)
+				index +=1
+
+	arr = []
+	for i in list_values: # i это строка вида '2321, 231211'
+		l = [int(x) for x in i.split(',')]
+		arr.append(l)
+
+	i = 0
+	for keys in list_keys:
+		PLAYER_BUILD[keys] = arr[i]
+		i+=1
+	return PLAYER_BUILD
 
 # globals
 ###################################################
@@ -37,8 +97,6 @@ class CvEventManager:
 		self.EventForward=5
 		self.EventKeyDown=6
 		self.EventKeyUp=7
-
-		self.isCommand = False
 
 		self.__LOG_MOVEMENT = 0
 		self.__LOG_BUILDING = 0
@@ -258,16 +316,6 @@ class CvEventManager:
 						CyCamera().SetBasePitch(0)
 						return 1
 
-			if (theKey == int(InputTypes.KB_M) and self.bShift and self.bCtrl):
-				self.isCommand = False
-				ePlayer = gc.getGame().getActivePlayer()
-				popupInfo = CyPopupInfo()
-				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
-				popupInfo.setText("Good")
-				popupInfo.addPythonButton("Good", "")
-				popupInfo.addPopup(ePlayer)
-
-
 			#End Custom Camera Controls
 
 			CvCameraControls.g_CameraControls.handleInput( theKey )
@@ -406,13 +454,17 @@ class CvEventManager:
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_DETAILS)
 					popupInfo.setOption1(true)
 					popupInfo.addPopup(iPlayer)
-		
-		
+
+		f = open(str(gc.getGame().getName()) + '.txt', 'w')  # создаем файл в режиме перезаписывания
+		f.write('Game start\n ----------------Начало хода 0----------------\n')
+
 		CyMap().calculateCanalAndChokePoints() # Super Forts
 
 	def onGameEnd(self, argsList):
 		'Called at the End of the game'
 		print("Game is ending")
+		f = open(str(gc.getGame().getName()) + '.txt', 'a')
+		f.write('\n --------------------------------End--------------------------------\n')
 		return
 
 	def onBeginGameTurn(self, argsList):
@@ -422,6 +474,8 @@ class CvEventManager:
 	def onEndGameTurn(self, argsList):
 		'Called at the end of the end of each turn'
 		iGameTurn = argsList[0]
+		f = open(str(gc.getGame().getName()) + '.txt', 'a')
+		f.write(' ----------------Начало хода %s----------------\n\n' % (str(iGameTurn + 1)))
 
 	def onBeginPlayerTurn(self, argsList):
 		'Called at the beginning of a players turn'
@@ -430,6 +484,80 @@ class CvEventManager:
 	def onEndPlayerTurn(self, argsList):
 		'Called at the end of a players turn'
 		iGameTurn, iPlayer = argsList
+		game = gc.getGame()
+		year = game.getGameTurnYear()  # Год в игре
+		gold = gc.getPlayer(iPlayer).getGold()  # Количество золота игрока
+
+		# юниты игрока
+		unit_names_str = str(gc.getPlayer(iPlayer).getNumUnits())
+
+		# # Молоточки (Продуктивность городов)
+		hammers = 0
+
+		if gc.getPlayer(iPlayer).isHuman():  # Если игрок не является ии / ход завершил человек
+			f = open(str(gc.getGame().getName()) + '.txt', 'a')
+			f.write('--Год:' + str(year) + '\n--Золото:' + str(gold) + '\n--Юниты:' + unit_names_str + '\n')
+
+			# f.write('\n'+str(gc.getPlayer(iPlayer).getRevolutionTimer() ) +'\n')
+			if gc.getPlayer(iPlayer).getNumCities() > 0:  # если у игрока есть города
+
+				PLAYER_CITY = get_dict(str(gc.getGame().getName()) + str(gc.getPlayer(iPlayer).getName()) + '_CITY.txt')
+				# получаем словарь из файла, название которого соотвествует этой переменной
+
+				for city_id in PLAYER_CITY[str(gc.getPlayer(
+						iPlayer).getName())]:  # в словаре сохраняются 'игрок' : [1231,231] цифры это id города
+
+					city = gc.getPlayer(iPlayer).getCity(city_id)  # получаем класс города
+
+					f.write('\n------Города------\n\n' + '----' + str(city.getName()) + '\n')
+					PLAYER_CITY_BUILD = get_dict(
+						str(gc.getGame().getName()) + str(gc.getPlayer(iPlayer).getName()) + '_CITY_BUILD.txt')
+					# словарь построек в городах, словарь вида {'название_города' : ['название постройки']}
+
+					if city.getName() in PLAYER_CITY_BUILD.keys():  # Если название города есть в словаре
+
+						last = open(
+							str(gc.getGame().getName()) + str(gc.getPlayer(iPlayer).getName()) + '_LAST_PROD.txt', 'a')
+						# файл отвечающий за продуктивность городов, молоточки
+						last.close()
+						last_production = get_dict(
+							str(gc.getGame().getName()) + str(gc.getPlayer(iPlayer).getName()) + '_LAST_PROD.txt')
+
+						if str(city.getName()) in last_production.keys():
+
+							final_production = int(city.getProduction()) - int(last_production[str(city.getName())][0])
+							# в игре продуктивность получается во время строительства зданий и накапливается в процессе, поэтому ее изменение является продуктивностью (+3 или что то другое)
+
+							last_production[str(city.getName())] = [int(city.getProduction())]
+						# обязательно сохраняется в списке (type = list) иначе функция get_dict сломается
+
+						else:
+							final_production = int(city.getProduction())
+							last_production[str(city.getName())] = [int(city.getProduction())]
+						last = open(
+							str(gc.getGame().getName()) + str(gc.getPlayer(iPlayer).getName()) + '_LAST_PROD.txt', 'w')
+						last.write(str(last_production))
+
+						hammers += final_production  # продуктивность со всех городов
+
+						f.write('Молоточки: ' + str(final_production) + '\n')
+
+						index = 0
+						while index < 52:  # цикл для проверки производимых в городе ресурсов
+							# ресуры имееют id от 0 до 52
+							res = city.getYieldRate(index)  # получаем значение ресурса
+
+							if res != 0:
+								f.write(RES[index] + ': +' + str(res) + '\n')
+							index += 1
+						f.write('--Постройки:\n')
+						for build in PLAYER_CITY_BUILD[str(city.getName())]:  # выводим список построек в городе
+							f.write('-' + str(gc.getBuildingInfo(build).getDescription()) + '\n')
+
+			f.write('\n---Общая продуктивность:' + str(hammers) + '\n')
+			f.write('----Прошло %s секунд(ы) с начала игры\n' % (str(gc.getPlayer(iPlayer).getTotalTimePlayed())))
+			f.write('\n---------конец хода %s Игрока %s ---------\n\n\n' % (
+			str(iGameTurn), str(gc.getPlayer(iPlayer).getName())))
 
 		CvAdvisorUtils.endTurnNags(iPlayer)
 		CvAdvisorUtils.endTurnFeats(iPlayer)
@@ -683,6 +811,10 @@ class CvEventManager:
 		bIsWar = argsList[0]
 		iTeam = argsList[1]
 		iRivalTeam = argsList[2]
+		f = open(str(gc.getGame().getName()) + '.txt', 'a')
+		f.write('ChangeWar\n')
+		f.write(str(gc.getPlayer(gc.getTeam(iTeam).getLeaderID()).getName()) + ' теперь враждует с ' + str(
+			gc.getPlayer(gc.getTeam(iRivalTeam).getLeaderID()).getName()) + '\n')
 		if not (bIsWar):
 			# TAC Baby Boom Event Start
 			pPlayer = gc.getPlayer(gc.getTeam(iTeam).getLeaderID())
@@ -720,6 +852,27 @@ class CvEventManager:
 		'City Built'
 		city = argsList[0]
 
+		if gc.getPlayer(city.getOwner()).isHuman(): # Если ходит человек
+			f = open(str(gc.getGame().getName()) + str(gc.getPlayer(city.getOwner()).getName()) + '_CITY.txt', 'a')
+			# создаётся файл для сохранения словаря для городов
+			f.close()
+			keys = str(gc.getPlayer(city.getOwner()).getName()) # имя игрока
+			PLAYER_CITY = get_dict(
+				str(gc.getGame().getName()) + str(gc.getPlayer(city.getOwner()).getName()) + '_CITY.txt')
+
+			if keys in PLAYER_CITY.keys(): # если имя игрока есть в словаре
+				LIST = []
+				for i in PLAYER_CITY[keys]: # перебираем id городов
+					LIST.append(i)
+				LIST.append(city.getID())
+				PLAYER_CITY[keys] = LIST
+				f = open(str(gc.getGame().getName()) + str(gc.getPlayer(city.getOwner()).getName()) + '_CITY.txt','w')
+				f.write(str(PLAYER_CITY)) # записываем итоговый словарь в файл
+			else:
+				PLAYER_CITY[keys] = [city.getID()]
+				f = open(str(gc.getGame().getName()) + str(gc.getPlayer(city.getOwner()).getName()) + '_CITY.txt','w')
+				f.write(str(PLAYER_CITY))
+
 # Dale - AoD: AI Autoplay START
 		if (city.getOwner() == gc.getGame().getActivePlayer() and gc.getGame().getAIAutoPlay() == 0 and gc.getPlayer(city.getOwner()).isHuman()):
 #		if (city.getOwner() == gc.getGame().getActivePlayer()):
@@ -752,6 +905,24 @@ class CvEventManager:
 		'City Lost'
 		city = argsList[0]
 		player = gc.getPlayer(city.getOwner())
+
+		if gc.getPlayer(city.getOwner()).isHuman(): # Если ходит человек
+			f = open(str(gc.getGame().getName()) + str(gc.getPlayer(city.getOwner()).getName()) + '_CITY.txt', 'a')
+			# создаётся файл для сохранения словаря для городов
+			f.close()
+			keys = str(gc.getPlayer(city.getOwner()).getName()) # имя игрока
+			PLAYER_CITY = get_dict(
+				str(gc.getGame().getName()) + str(gc.getPlayer(city.getOwner()).getName()) + '_CITY.txt')
+
+			if keys in PLAYER_CITY.keys():
+				new_list_city = []
+				for i in PLAYER_CITY[keys]:
+					if str(i) != str(city.getID()):
+						new_list_city.append(i)
+				PLAYER_CITY[keys] = new_list_city
+				f = open(str(gc.getGame().getName()) + str(gc.getPlayer(city.getOwner()).getName()) + '_CITY.txt', 'w')
+				f.write(str(PLAYER_CITY))
+
 		if (not self.__LOG_CITYLOST):
 			return
 		CvUtil.pyPrint('City %s was lost by Player %d Civilization %s'
@@ -788,6 +959,52 @@ class CvEventManager:
 		'City begins building a Building'
 		pCity = argsList[0]
 		iBuildingType = argsList[1]
+
+		build = iBuildingType
+		if gc.getPlayer(pCity.getOwner()).isHuman():  # ход человека
+			f = open(str(gc.getGame().getName()) + str(gc.getPlayer(pCity.getOwner()).getName()) + '_CITY_BUILD.txt',
+					 'a')
+			# создаем файл для сохранения словаря
+			f.close()
+
+			PLAYER_CITY_BUILD = get_dict(
+				str(gc.getGame().getName()) + str(gc.getPlayer(pCity.getOwner()).getName()) + '_CITY_BUILD.txt')
+			list_city = []
+
+			keys = str(gc.getPlayer(pCity.getOwner()).getName())
+
+			city_in_file = get_dict(
+				str(gc.getGame().getName()) + str(gc.getPlayer(pCity.getOwner()).getName()) + '_CITY.txt')
+
+			for city_id in city_in_file.values():
+				for i in city_id:
+					list_city.append(
+						str(gc.getPlayer(pCity.getOwner()).getCity(i).getName()))  # создаем список имен городов
+
+			if str(pCity.getName()) in list_city:  # если город есть в списке
+
+				keys = str(pCity.getName())
+
+				if keys in PLAYER_CITY_BUILD.keys():  # если у города уже есть постройки
+
+					list_build = []
+					for build_id in PLAYER_CITY_BUILD[keys]:
+						list_build.append(build_id)
+
+					list_build.append(build)
+					PLAYER_CITY_BUILD[keys] = list_build
+					f = open(
+						str(gc.getGame().getName()) + str(gc.getPlayer(pCity.getOwner()).getName()) + '_CITY_BUILD.txt',
+						'w')
+					f.write(str(PLAYER_CITY_BUILD))
+				else:
+
+					PLAYER_CITY_BUILD[keys] = [build]
+					f = open(
+						str(gc.getGame().getName()) + str(gc.getPlayer(pCity.getOwner()).getName()) + '_CITY_BUILD.txt',
+						'w')
+					f.write(str(PLAYER_CITY_BUILD))
+
 		if (not self.__LOG_CITYBUILDING):
 			return
 		CvUtil.pyPrint("%s has begun building a %s" %(pCity.getName(),gc.getBuildingInfo(iBuildingType).getDescription()))
@@ -894,7 +1111,7 @@ class CvEventManager:
 		popup.setHeaderString(localText.getText("TXT_KEY_NAME_CITY", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.setBodyString(localText.getText("TXT_KEY_SETTLE_NEW_CITY_NAME", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.createEditBox(city.getName(), 0)
-		popup.setEditBoxMaxCharCount( 64, 64, 0 )
+		popup.setEditBoxMaxCharCount( 15, 32, 0 )
 		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventEditCityNameApply(self, playerID, userData, popupReturn):
@@ -905,158 +1122,9 @@ class CvEventManager:
 		player = gc.getPlayer(playerID)
 		city = player.getCity(iCityID)
 		cityName = popupReturn.getEditBoxString(0)
-
-		result = self.__getCommandCity(cityName, player)
-		if result == "not":
-			return
-		if result:
-			process = result[0]
-			arg = result[1]
-			process(player, city, arg)
-			return
-
 		if (len(cityName) > 30):
 			cityName = cityName[:30]
 		city.setName(cityName, not bRename)
-
-	def __getCommandCity(self, command, player):
-		processes = {
-			"gld": self.__cmdProcessGld,
-			"yld": self.__cmdProcessCityYld,
-			"unt": self.__cmdProcessCityUnt,
-			"srs": self.__cmdProcessCitySrs,
-		}
-		if command[0] == "/":
-			if not self.__checkPlayerCmdUnit(player) and not self.isCommand:
-				return "not"
-			command = command[1:]
-			cmd_split = command.split(" ")
-			process = cmd_split[0]
-			arg = " ".join(cmd_split[1:]).strip()
-			if process in processes:
-				return [processes[process], arg]
-		return None
-
-	def __getCommandUnit(self, command, player):
-		processes = {
-			"gld": self.__cmdProcessGld,
-			"mvs": self.__cmdProcessMvs,
-			"xp": self.__cmdProcessXp,
-			"yld": self.__cmdProcessYld,
-			"pltf": self.__cmdProcessUnitPltf,
-		}
-		if command[0] == "/":
-			if not self.__checkPlayerCmdCity(player) and not self.isCommand:
-				return "not"
-			command = command[1:]
-			cmd_split = command.split(" ")
-			process = cmd_split[0]
-			arg = " ".join(cmd_split[1:]).strip()
-			if process in processes:
-				return [processes[process], arg]
-		return None
-
-	def __checkPlayerCmdUnit(self, player):
-		(unit, iter) = player.firstUnit()
-		isFind = False
-		while(unit):
-			if unit.getName().lower().startswith("admin"):
-				self.isCommand = True
-				isFind = True
-			(unit, iter) = player.nextUnit(iter)
-
-		return isFind
-
-	def __checkPlayerCmdCity(self, player):
-		(pCity, iter) = player.firstCity(false)
-		isFind = False
-		while (pCity):
-			if pCity.getName().lower().startswith("alabuga"):
-				self.isCommand = True
-				isFind = True
-			(pCity, iter) = player.nextCity(iter, false)
-
-		return isFind
-
-	def __cmdProcessGld(self, player, city, arg):
-		try:
-			gold = int(arg)
-		except ValueError:
-			return
-		player.setGold(gold)
-
-	def __cmdProcessCitySrs(self, player, city, arg):
-		try:
-			pr = int(arg)
-		except ValueError:
-			return
-		city.setRebelSentiment(pr)
-
-	def __cmdProcessCityYld(self, player, city, arg):
-		try:
-			yieldTypeName, yieldNum = arg.split(" ")
-			yieldNum = int(yieldNum)
-			yieldTypeName = "YIELD_" + yieldTypeName.upper()
-			yieldType = -1
-			for i in range(YieldTypes.NUM_YIELD_TYPES):
-				if gc.getYieldInfo(i).getType() == yieldTypeName:
-					yieldType = i
-					break
-
-		except Exception:
-			return
-
-		city.setYieldStored(yieldType, yieldNum)
-
-	def __cmdProcessUnitPltf(self, player, unit, arg):
-		plot = unit.plot()
-		try:
-			bonusTypeName = "BONUS_" + arg.strip().upper()
-			bonusTypeName = bonusTypeName.encode('utf-8')
-			bonusType = CvUtil.findInfoTypeNum(bonusTypeName)
-		except Exception:
-			return
-
-		plot.setBonusType(bonusType)
-
-	def __cmdProcessCityUnt(self, player, city, arg):
-		try:
-			unitTypeName = arg
-			unitTypeName = "UNIT_" + unitTypeName.upper()
-			unitType = -1
-			for i in range(gc.getNumUnitInfos()):
-				if gc.getUnitInfo(i).getType() == unitTypeName:
-					unitType = i
-					break
-
-		except Exception:
-			return
-
-		player.initEuropeUnit(unitType, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-
-		player.initUnit(unitType, ProfessionTypes.NO_PROFESSION, city.getX(), city.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH, 0)
-
-
-	def __cmdProcessMvs(self, player, unit, arg):
-		try:
-			moves = int(arg)
-		except ValueError:
-			return
-		unit.setMoves(moves)
-
-	def __cmdProcessXp(self, player, unit, arg):
-		try:
-			xp = int(arg)
-		except ValueError:
-			return
-		unit.setExperience(xp, -1)
-
-	def __cmdProcessYld(self, player, unit, arg):
-		try:
-			yieldStored = int(arg)
-		except ValueError:
-			return
-		unit.setYieldStored(yieldStored)
 
 	def __eventCreateTradeRouteBegin(self, PlayerID):
 		popup = CyPopup(CvUtil.EventCreateTradeRoute, EventContextTypes.EVENTCONTEXT_ALL, 1)
@@ -1231,19 +1299,8 @@ class CvEventManager:
 
 		'Edit Unit Name Event'
 		iUnitID = userData[0]
-		player = gc.getPlayer(playerID)
-		unit = player.getUnit(iUnitID)
+		unit = gc.getPlayer(playerID).getUnit(iUnitID)
 		newName = popupReturn.getEditBoxString(0)
-
-		result = self.__getCommandUnit(newName, player)
-		if result == "not":
-			return
-		if result:
-			process = result[0]
-			arg = result[1]
-			process(player, unit, arg)
-			return
-
 		if (len(newName) > 25):
 			newName = newName[:25]
 		unit.setName(newName)

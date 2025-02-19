@@ -3,7 +3,7 @@ setlocal
 set /a "count=0"
 
 :retry
-git reset --hard && git pull && start C:\Games\Civ4Col\Colonization.exe
+git -C C:\Games\Civ4Col reset --hard && git -C C:\Games\Civ4Col pull && start C:\Games\Civ4Col\Colonization.exe
 
 if %errorlevel% neq 0 (
     echo Error: could not start game. Please check the log for details.
