@@ -713,10 +713,24 @@ void CvInitCore::resetPlayer(PlayerTypes eID, CvInitCore * pSource, bool bClear,
 			// Slot data
 			if (!bSaveSlotInfo)
 			{
+				std::wstring leaderName = pSource->getLeaderName(eID);
+				int length = leaderName.length();
+				if(leaderName.length() > 15)
+				{
+					int indexSpace = leaderName.find(' ');
+					if(indexSpace < 0)
+					{
+						leaderName = leaderName.substr(0,12);
+					}
+					else
+					{
+						leaderName = leaderName.substr(0,indexSpace + 1);
+					}
+				}
 				// We don't wanna reset the slot data if we are loading a game
 				// from init - we want to keep the changes we made during init
 				setLeaderName(eID, pSource->getLeaderName(eID));
-				setCivDescription(eID, pSource->getLeaderName(eID));
+				setCivDescription(eID, leaderName);
 				setSlotStatus(eID, pSource->getSlotStatus(eID));
 				setSlotClaim(eID, pSource->getSlotClaim(eID));
 			}
