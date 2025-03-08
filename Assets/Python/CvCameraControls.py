@@ -359,7 +359,7 @@ class CvCameraControls:
 			if self.bLookAt:
 				self.updateLookAt( fDeltaTime )
 			if self.bRotate:
-				#self.updateRotate( fDeltaTime )
+				self.updateRotate( fDeltaTime )
 			if self.bZoom:
 				self.updateZoom( fDeltaTime )
 			if self.bTurn:
