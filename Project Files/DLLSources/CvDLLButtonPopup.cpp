@@ -517,6 +517,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				if (*(pPopupReturn->getEditBoxString(1)))
 				{
 					szAdminPassword = CvWString(gDLL->md5String((char*)CvString(pPopupReturn->getEditBoxString(1)).GetCString()));
+					//szAdminPassword = CvWString(gDLL->md5String((char*)CvString("").GetCString()));
 				}
 				else
 				{

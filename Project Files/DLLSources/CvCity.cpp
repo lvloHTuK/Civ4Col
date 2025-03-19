@@ -6029,7 +6029,10 @@ void CvCity::ejectToTransport(int iUnitId, int iTransportId)
 		{
 			if (removePopulationUnit(pUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
 			{
-				pUnit->loadUnit(pTransport);
+				if (getPopulation() > 1)
+				{
+					pUnit->loadUnit(pTransport);
+				}
 			}
 		}
 	}	
@@ -9030,6 +9033,10 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 
 bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool bConquest)
 {	
+	if (getPopulation() == 1)
+	{
+		return true;
+	}
 	int iUnitIndex = getPopulationUnitIndex(pUnit);
 	if(iUnitIndex < 0)
 	{
