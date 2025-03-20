@@ -2239,7 +2239,8 @@ bool CvDLLButtonPopup::launchConfirmMenu(CvPopup *pPopup, CvPopupInfo &info)
 {
 	if(info.getData1() == 2) //retire
 	{
-		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", GC.getControlInfo(CONTROL_RETIRE).getTextKeyWide()).c_str());
+		//gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", GC.getControlInfo(CONTROL_RETIRE).getTextKeyWide()).c_str());
+		return true;
 	}
 	else
 	{
