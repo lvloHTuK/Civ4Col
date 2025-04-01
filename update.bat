@@ -2,6 +2,12 @@
 setlocal
 set /a "count=0"
 
+del "%USERPROFILE%\Documents\My Games\Civ4ColKLT\CivilizationIV.ini"
+del "%USERPROFILE%\Documents\My Games\Civ4ColKLT\CivilizationIV.ini.bak"
+del "C:\Games\Civ4ColKLT\.git\index.lock"
+
+move "C:\Games\Civ4ColKLT\CivilizationIV.ini" "%USERPROFILE%\Documents\My Games\Civ4ColKLT"
+
 :retry
 git -C C:\Games\Civ4ColKLT reset --hard && git -C C:\Games\Civ4ColKLT pull && start C:\Games\Civ4ColKLT\Colonization.exe
 
