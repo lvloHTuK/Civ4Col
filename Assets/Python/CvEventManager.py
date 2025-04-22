@@ -16,8 +16,251 @@ import sys
 import CvWorldBuilderScreen
 import CvAdvisorUtils
 
+
+encoded_chars = {
+    # Латиница (заглавные)
+    65: 'A', 66: 'B', 67: 'C', 68: 'D', 69: 'E', 70: 'F', 71: 'G', 72: 'H', 73: 'I',
+    74: 'J', 75: 'K', 76: 'L', 77: 'M', 78: 'N', 79: 'O', 80: 'P', 81: 'Q', 82: 'R',
+    83: 'S', 84: 'T', 85: 'U', 86: 'V', 87: 'W', 88: 'X', 89: 'Y', 90: 'Z',
+    
+    # Латиница (строчные)
+    97: 'a', 98: 'b', 99: 'c', 100: 'd', 101: 'e', 102: 'f', 103: 'g', 104: 'h', 105: 'i',
+    106: 'j', 107: 'k', 108: 'l', 109: 'm', 110: 'n', 111: 'o', 112: 'p', 113: 'q', 114: 'r',
+    115: 's', 116: 't', 117: 'u', 118: 'v', 119: 'w', 120: 'x', 121: 'y', 122: 'z',
+    
+    # Кириллица (заглавные)
+    1040: 'А', 1041: 'Б', 1042: 'В', 1043: 'Г', 1044: 'Д', 1045: 'Е', 1025: 'Ё', 1046: 'Ж',
+    1047: 'З', 1048: 'И', 1049: 'Й', 1050: 'К', 1051: 'Л', 1052: 'М', 1053: 'Н', 1054: 'О',
+    1055: 'П', 1056: 'Р', 1057: 'С', 1058: 'Т', 1059: 'У', 1060: 'Ф', 1061: 'Х', 1062: 'Ц',
+    1063: 'Ч', 1064: 'Ш', 1065: 'Щ', 1066: 'Ъ', 1067: 'Ы', 1068: 'Ь', 1069: 'Э', 1070: 'Ю',
+    1071: 'Я',
+    
+    # Кириллица (строчные)
+    1072: 'а', 1073: 'б', 1074: 'в', 1075: 'г', 1076: 'д', 1077: 'е', 1105: 'ё', 1078: 'ж',
+    1079: 'з', 1080: 'и', 1081: 'й', 1082: 'к', 1083: 'л', 1084: 'м', 1085: 'н', 1086: 'о',
+    1087: 'п', 1088: 'р', 1089: 'с', 1090: 'т', 1091: 'у', 1092: 'ф', 1093: 'х', 1094: 'ц',
+    1095: 'ч', 1096: 'ш', 1097: 'щ', 1098: 'ъ', 1099: 'ы', 1100: 'ь', 1101: 'э', 1102: 'ю',
+    1103: 'я',
+    
+    # Цифры
+    48: '0', 49: '1', 50: '2', 51: '3', 52: '4', 53: '5', 54: '6', 55: '7', 56: '8', 57: '9',
+    
+    # Основная пунктуация и символы
+    32: ' ',  33: '!',  34: '"',  35: '#',  36: '$',  37: '%',  38: '&',  39: "'",  40: '(',  
+    41: ')',  42: '*',  43: '+',  44: ',',  45: '-',  46: '.',  47: '/',  58: ':',  59: ';',  
+    60: '<',  61: '=',  62: '>',  63: '?',  64: '@',  91: '[',  92: '\\', 93: ']',  94: '^',  
+    95: '_',  96: '`',  123: '{', 124: '|', 125: '}', 126: '~',
+    
+    # Дополнительные спецсимволы
+    171: '«', 187: '»', 8230: '…', 8212: '—', 8216: '‘', 8217: '’', 8220: '“', 8221: '”',
+    8364: '€', 8470: '№', 8592: '←', 8593: '↑', 8594: '→', 8595: '↓'
+}
+
+
+def decode(encoded_name):
+    # Удаляем квадратные скобки с начала и конца строки
+    if not encoded_name.startswith('[') or not encoded_name.endswith(']'):
+        raise ValueError("Некорректный формат входной строки")
+    
+    # Извлекаем содержимое между скобками
+    content = encoded_name[1:-1]
+    
+    # Разделяем строку по символу '_'
+    codes = content.split('_')
+    
+    # Декодируем числовые коды в символы
+    decoded_name = ""
+    for code in codes:
+        try:
+            # Преобразуем строку в число
+            num = int(code)
+            # Получаем символ из словаря
+            if num in encoded_chars:
+                decoded_name += encoded_chars[num]
+            else:
+                # Если кода нет в словаре, добавляем символ '?'
+                decoded_name += '?'
+        except ValueError:
+            # Если не удалось преобразовать в число, добавляем символ '?'
+            decoded_name += '?'
+    
+    return decoded_name
+
+def encode(name):
+    data = []
+    for char in name:
+        data.append(str(ord(char))) 
+     # Преобразуем каждый символ в его числовой код
+    return '[%s]' % '_'.join(data)  # Преобразуем список чисел в строку, заключая в квадратные скобки
+	
+
+
+def transliterate(text):
+    """
+    Простая функция для транслитерации кириллицы в латиницу.
+    """
+    cyrillic_to_latin = {
+        'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'yo',
+        'ж': 'zh', 'з': 'z', 'и': 'i', 'й': 'y', 'к': 'k', 'л': 'l', 'м': 'm',  
+        'н': 'n', 'о': 'o', 'п': 'p', 'р': 'r', 'с': 's', 'т': 't', 'у': 'u',
+        'ф': 'f', 'х': 'h', 'ц': 'ts', 'ч': 'ch', 'ш': 'sh', 'щ': 'sch', 'ъ': '',
+        'ы': 'y', 'ь': '', 'э': 'e', 'ю': 'yu', 'я': 'ya',
+        'А': 'A', 'Б': 'B', 'В': 'V', 'Г': 'G', 'Д': 'D', 'Е': 'E', 'Ё': 'Yo',
+        'Ж': 'Zh', 'З': 'Z', 'И': 'I', 'Й': 'Y', 'К': 'K', 'Л': 'L', 'М': 'M',
+        'Н': 'N', 'О': 'O', 'П': 'P', 'Р': 'R', 'С': 'S', 'Т': 'T', 'У': 'U',
+        'Ф': 'F', 'Х': 'H', 'Ц': 'Ts', 'Ч': 'Ch', 'Ш': 'Sh', 'Щ': 'Sch', 'Ъ': '',
+        'Ы': 'Y', 'Ь': '', 'Э': 'E', 'Ю': 'Yu', 'Я': 'Ya'
+    }
+    return ''.join(cyrillic_to_latin.get(char, char) for char in text)
+
+
+
 gc = CyGlobalContext()
 localText = CyTranslator()
+RES = ['food', 'Lumber','Stone','Hemp','Ore','Sheep','Cattle','Horses','Coca leaves','Cocoa Pods',
+	   'Coffee Berries','Tobacco ','Wool','Cotton','Indigo','Cowhides','Fur','Premium fur','Rock salt ',
+	   'Red Pepper','Barley','Sugar','Grapes','Whale fat','Valuable wood','Trade goods','Ropes','Sailcloth ',
+	   'Tools','Blades','Guns','Cannons','Silver','Gold','Gems','Cocoa','Coffee','Cigars','Wool Cloth','Cloth',
+	   'Coloured cloth','Leather','Coats','Premium coats','Salt','Spices','Beer','Rum','Wine','Train oil','Furniture',
+	   'Luxury goods']
+
+
+# Проработать список юнитов в игре id 3 = 'Indentured Servant' id 4 = 'Expert Ore Miner'
+UNITS = [
+    'Colonist',           # Базовый колонист
+    'Expert Farmer',      # Эксперт-фермер
+	'Indentured Servant',  # Кабальный слуга
+	'Expert Ore Miner',   # Эксперт-шахтёр (руда)
+    'Expert Tobacco Planter',  # Эксперт по выращиванию табака
+    'Expert Cotton Planter',  # Эксперт по выращиванию хлопка
+    'Expert Fur Trapper',  # Эксперт-охотник на пушнину
+    'Expert Lumberjack',  # Эксперт-лесоруб
+    'Expert Silver Miner',  # Эксперт-шахтёр (серебро)
+    'Expert Fisherman',   # Эксперт-рыбак
+    'Expert Distiller',   # Эксперт-винокур
+    'Expert Weaver',      # Эксперт-ткач
+    'Expert Tobacconist',  # Эксперт-табачник
+    'Expert Fur Trader',  # Эксперт-торговец пушниной
+    'Expert Carpenter',   # Эксперт-плотник
+    'Expert Blacksmith',  # Эксперт-кузнец
+    'Expert Gunsmith',    # Эксперт-оружейник
+    'Expert Brewmaster',  # Эксперт-пивовар
+    'Expert Potter',      # Эксперт-гончар
+    'Expert Tanner',      # Эксперт-кожевник
+    'Expert Furrier',     # Эксперт-меховщик
+    'Expert Rancher',     # Эксперт-скотовод
+    'Expert Hunter',      # Эксперт-охотник
+    'Expert Scout',       # Эксперт-разведчик
+    'Expert Pioneer',     # Эксперт-первопроходец
+    'Expert Soldier',     # Эксперт-солдат
+    'Expert Dragoon',     # Эксперт-драгун
+    'Expert Artillery',   # Эксперт-артиллерист
+    'Expert Missionary',  # Эксперт-миссионер
+    'Free Colonist',      # Свободный колонист
+    'Petty Criminal',     # Мелкий преступник
+    'Converted Native',   # Обращённый туземец
+    'Veteran Soldier',    # Ветеран-солдат
+    'Seasoned Scout',     # Опытный разведчик
+    'Hardy Pioneer',      # Выносливый первопроходец
+    'Jesuit Missionary',  # Иезуитский миссионер
+    'Firebrand Preacher',  # Пылкий проповедник
+    'Pioneer',            # Первопроходец
+	'Expert Sugar Planter',  # Эксперт по выращиванию сахара
+    'Soldier',            # Солдат
+    'Dragoon',            # Драгун
+    'Artillery',          # Артиллерия
+    'Missionary',         # Миссионер
+    'Statesman',          # Государственный деятель
+    'Scout',              # Разведчик
+    'Treasure Transport',  # Транспорт с сокровищами
+    'Galleon',            # Галеон
+    'Privateer',          # Капер
+    'Frigate',            # Фрегат
+    'Man-O-War',          # Линейный корабль
+    'Ship of the Line',   # Корабль линии
+    'Merchantman',        # Торговое судно
+    'Wagon Train',        # Обоз
+    'Caravel',            # Каравелла
+    'Treasure Fleet',     # Флот с сокровищами
+    'Native Scout',       # Туземный разведчик
+    'Native Warrior',     # Туземный воин
+    'Native Archer',      # Туземный лучник
+    'Native Brave',       # Туземный воин (храбрец)
+    'Native Chief',       # Туземный вождь
+    'Native Convert',     # Обращённый туземец
+    'Native Missionary',  # Туземный миссионер
+    'Native Settler',     # Туземный поселенец
+    'Native Trader',      # Туземный торговец
+    'Native Fisherman',   # Туземный рыбак
+    'Native Hunter',      # Туземный охотник
+    'Native Farmer',      # Туземный фермер
+    'Native Miner',       # Туземный шахтёр
+    'Native Lumberjack',  # Туземный лесоруб
+    'Native Trapper',     # Туземный охотник на пушнину
+    'Native Weaver',      # Туземный ткач
+    'Native Distiller',   # Туземный винокур
+    'Native Blacksmith',  # Туземный кузнец
+    'Native Gunsmith',    # Туземный оружейник
+    'Native Carpenter',   # Туземный плотник
+    'Native Rancher',     # Туземный скотовод
+    'Native Potter',      # Туземный гончар
+    'Native Tanner',      # Туземный кожевник
+    'Native Furrier',     # Туземный меховщик
+    'Native Brewmaster',  # Туземный пивовар
+    'Native Tobacconist',  # Туземный табачник
+    'Native Sugar Planter',  # Туземный плантатор сахара
+    'Native Cotton Planter',  # Туземный плантатор хлопка
+    'Native Silver Miner',  # Туземный шахтёр (серебро)
+    'Native Ore Miner',   # Туземный шахтёр (руда)
+    'Native Fisherman',   # Туземный рыбак
+    'Native Hunter',      # Туземный охотник
+    'Native Scout',       # Туземный разведчик
+    'Native Warrior',     # Туземный воин
+    'Native Archer',      # Туземный лучник
+    'Native Brave',       # Туземный воин (храбрец)
+    'Native Chief',       # Туземный вождь
+    'Native Convert',     # Обращённый туземец
+    'Native Missionary',  # Туземный миссионер
+    'Native Settler',     # Туземный поселенец
+    'Native Trader',      # Туземный торговец
+    'Native Fisherman',   # Туземный рыбак
+    'Native Hunter',      # Туземный охотник
+    'Native Farmer',      # Туземный фермер
+    'Native Miner',       # Туземный шахтёр
+    'Native Lumberjack',  # Туземный лесоруб
+    'Native Trapper',     # Туземный охотник на пушнину
+    'Native Weaver',      # Туземный ткач
+    'Native Distiller',   # Туземный винокур
+    'Native Blacksmith',  # Туземный кузнец
+    'Native Gunsmith',    # Туземный оружейник
+    'Native Carpenter',   # Туземный плотник
+    'Native Rancher',     # Туземный скотовод
+    'Native Potter',      # Туземный гончар
+    'Native Tanner',      # Туземный кожевник
+    'Native Furrier',     # Туземный меховщик
+    'Native Brewmaster',  # Туземный пивовар
+    'Native Tobacconist',  # Туземный табачник
+    'Native Sugar Planter',  # Туземный плантатор сахара
+    'Native Cotton Planter',  # Туземный плантатор хлопка
+    'Native Silver Miner',  # Туземный шахтёр (серебро)
+    'Native Ore Miner',   # Туземный шахтёр (руда)
+]
+
+
+def get_dict(filename):
+    """
+    Из файла получает словарь, ключ определяется по символам начала строки ", а значение по [].
+    """
+    PLAYER_BUILD = {}
+    try:
+        f = open(filename, 'r')
+        content = f.read()
+        if content:
+            PLAYER_BUILD = eval(content)  # Преобразуем строку в словарь
+        f.close()
+    except Exception, e:
+        print "Ошибка чтения файла %s: %s" % (filename, str(e))
+    return PLAYER_BUILD
 
 # globals
 ###################################################
@@ -38,11 +281,9 @@ class CvEventManager:
 		self.EventKeyDown=6
 		self.EventKeyUp=7
 
-		self.isCommand = False
-
 		self.__LOG_MOVEMENT = 0
 		self.__LOG_BUILDING = 0
-		self.__LOG_COMBAT = 0
+		self.__LOG_COMBAT = 1
 		self.__LOG_CONTACT = 0
 		self.__LOG_IMPROVEMENT =0
 		self.__LOG_CITYBUILT = 0	# TAC - koma13
@@ -134,6 +375,10 @@ class CvEventManager:
 			'windowActivation'		: self.onWindowActivation,
 			'cityScreenOpen'		: self.onCityScreenOpen,
 			'gameUpdate'			: self.onGameUpdate,		# sample generic event
+			'DiplomacyEvent'        : self.onDiplomacyEvent,
+			'logHiredUnit'			: self.logHiredUnit,
+			'getAllAttitudes'		: self.getAllAttitudes,
+
 		}
 
 		################## Events List ###############################
@@ -257,16 +502,6 @@ class CvEventManager:
 						CyCamera().SetBaseTurn(0)
 						CyCamera().SetBasePitch(0)
 						return 1
-
-			if (theKey == int(InputTypes.KB_M) and self.bShift and self.bCtrl):
-				self.isCommand = False
-				ePlayer = gc.getGame().getActivePlayer()
-				popupInfo = CyPopupInfo()
-				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
-				popupInfo.setText("Good")
-				popupInfo.addPythonButton("Good", "")
-				popupInfo.addPopup(ePlayer)
-
 
 			#End Custom Camera Controls
 
@@ -406,13 +641,17 @@ class CvEventManager:
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_DETAILS)
 					popupInfo.setOption1(true)
 					popupInfo.addPopup(iPlayer)
-		
-		
+
+		f = open(str(gc.getGame().getName()) + '.txt', 'w')  # создаем файл в режиме перезаписывания
+		f.write('Game start\n ----------------StartTurn 0----------------\n')
+
 		CyMap().calculateCanalAndChokePoints() # Super Forts
 
 	def onGameEnd(self, argsList):
 		'Called at the End of the game'
 		print("Game is ending")
+		f = open(str(gc.getGame().getName()) + '.txt', 'a')
+		f.write('\n --------------------------------End--------------------------------\n')
 		return
 
 	def onBeginGameTurn(self, argsList):
@@ -422,14 +661,207 @@ class CvEventManager:
 	def onEndGameTurn(self, argsList):
 		'Called at the end of the end of each turn'
 		iGameTurn = argsList[0]
+		f = open(str(gc.getGame().getName()) + '.txt', 'a')
+		f.write(' ----------------StartTurn %s----------------\n\n' % (str(iGameTurn + 1)))
 
 	def onBeginPlayerTurn(self, argsList):
 		'Called at the beginning of a players turn'
 		iGameTurn, iPlayer = argsList
+		
 
 	def onEndPlayerTurn(self, argsList):
 		'Called at the end of a players turn'
 		iGameTurn, iPlayer = argsList
+		game = gc.getGame()
+		year = game.getGameTurnYear()  # Год в игре
+		gold = gc.getPlayer(iPlayer).getGold()  # Количество золота игрока
+		# Получаем список всех отношений
+		allAttitudes = self.getAllAttitudes(iPlayer)
+
+		# Логирование налогов и доходов
+		try:
+			f = open(str(gc.getGame().getName()) + '_economy_log.txt', 'a')  # Открываем файл в режиме добавления
+			f.write("Turn %d: Player %s ended turn with %d gold.\n" % (gc.getGame().getGameTurn(), encode(player.getName()), gold))
+			
+			# Логирование налоговых поступлений
+			taxRate = player.getTaxRate()
+			totalTaxIncome = player.calculateTaxRateIncome(taxRate)
+			f.write("Tax Rate: %d%%, Tax Income: %d\n" % (taxRate, totalTaxIncome))
+			
+			# Логирование других источников дохода (например, торговля, производство)
+			totalTradeIncome = player.calculateTotalCommerce(CommerceTypes.COMMERCE_GOLD)
+			f.write("Trade Income: %d\n" % (totalTradeIncome))
+			
+			# Логирование расходов (например, содержание армии)
+			unitMaintenance = player.calculateUnitCost()
+			buildingMaintenance = player.calculateBuildingCost()
+			f.write("Unit Maintenance: %d, Building Maintenance: %d\n" % (unitMaintenance, buildingMaintenance))
+			
+			# Логирование общего баланса
+			totalIncome = totalTaxIncome + totalTradeIncome
+			totalExpenses = unitMaintenance + buildingMaintenance
+			balance = totalIncome - totalExpenses
+			f.write("Total Income: %d, Total Expenses: %d, Balance: %d\n" % (totalIncome, totalExpenses, balance))
+			
+			f.close()
+		except Exception, e:
+			CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
+		# юниты игрока
+		unit_count = 0
+
+		# Получаем объект игрока
+		player = gc.getPlayer(iPlayer)
+
+		# Считаем юниты на карте
+		unit_count += player.getNumUnits()
+
+		# Считаем население в городах (как альтернативу юнитам в городах)
+		(pCity, iter) = player.firstCity(False)
+		while (pCity):
+			# Добавляем население города к общему количеству "юнитов"
+			unit_count += pCity.getPopulation()
+			(pCity, iter) = player.nextCity(iter, False)
+
+		# Получаем столицу игрока (если нужно)
+		capital_city = player.getCapitalCity()
+		if capital_city:
+			# Можно добавить дополнительную логику для столицы, если нужно
+			pass
+
+		# Преобразуем количество юнитов в строку
+		unit_names_str = str(unit_count)
+
+		# Молоточки (Продуктивность городов)
+		hammers = 0
+
+		if gc.getPlayer(iPlayer).isHuman():  # Если игрок не является ии / ход завершил человек
+			f = open(str(gc.getGame().getName()) + '.txt', 'a')
+			f.write('-- Year:' + str(year) + '\n-- Golg:' + str(gold) + '\n-- Units:' + unit_names_str + '\n\n')
+
+			# Добавляем данные о торговле с Европой из _trade_log.txt
+			try:
+				trade_log_file = open(str(gc.getGame().getName()) + '_trade_log.txt', 'r')
+				trade_log_lines = trade_log_file.readlines()
+				trade_log_file.close()
+
+				if trade_log_lines:
+					f.write('\n------Trade with Europe------\n')
+					for line in trade_log_lines:
+						f.write(line)
+					f.write('\n')
+
+				# Очищаем файл _trade_log.txt после добавления данных
+				trade_log_file = open(str(gc.getGame().getName()) + '_trade_log.txt', 'w')
+				trade_log_file.close()
+			except Exception, e:
+				CvUtil.pyPrint("Ошибка чтения/очистки файла _trade_log.txt: %s" % str(e))
+
+			# # Добавляем данные о найме юнитов из _hired_units_log.txt
+			# try:
+			# 	hired_units_log_file = open(str(gc.getGame().getName()) + '_hired_units_log.txt', 'r')
+			# 	hired_units_log_lines = hired_units_log_file.readlines()
+			# 	hired_units_log_file.close()
+
+			# 	if hired_units_log_lines:
+			# 		f.write('\n------Hired Units------\n')
+			# 		for line in hired_units_log_lines:
+			# 			f.write(line)
+			# 		f.write('\n')
+
+			# 	# Очищаем файл _hired_units_log.txt после добавления данных
+			# 	hired_units_log_file = open(str(gc.getGame().getName()) + '_hired_units_log.txt', 'w')
+			# 	hired_units_log_file.close()
+			# except Exception, e:
+			# 	CvUtil.pyPrint("Ошибка чтения/очистки файла _hired_units_log.txt: %s" % str(e))
+
+			# Добавляем данные о дипломатических событиях из _diplomacy_log.txt
+			try:
+				diplomacy_log_file = open(str(gc.getGame().getName()) + '_diplomacy_log.txt', 'r')
+				diplomacy_log_lines = diplomacy_log_file.readlines()
+				diplomacy_log_file.close()
+
+				if diplomacy_log_lines:
+					f.write('\n------Diplomatic Events------\n')
+					for line in diplomacy_log_lines:
+						f.write(line)
+					f.write('\n')
+
+				# Очищаем файл _diplomacy_log.txt после добавления данных
+				diplomacy_log_file = open(str(gc.getGame().getName()) + '_diplomacy_log.txt', 'w')
+				diplomacy_log_file.close()
+			except Exception, e:
+				CvUtil.pyPrint("Ошибка чтения/очистки файла _diplomacy_log.txt: %s" % str(e))
+
+			# Добавляем данные о юнитах из _unit_death_log.txt
+			try:
+				unit_death_log_file = open(str(gc.getGame().getName()) + '_unit_death_log.txt', 'r')
+				unit_death_log_lines = unit_death_log_file.readlines()
+				unit_death_log_file.close()
+
+				if unit_death_log_lines:
+					f.write('\n------Incidents with units------\n')
+					for line in unit_death_log_lines:
+						f.write(line)
+					f.write('\n')
+
+				# Очищаем файл _unit_death_log.txt после добавления данных
+				unit_death_log_file = open(str(gc.getGame().getName()) + '_unit_death_log.txt', 'w')
+				unit_death_log_file.close()
+			except Exception, e:
+				CvUtil.pyPrint("Ошибка чтения/очистки файла _unit_death_log.txt: %s" % str(e))
+
+			if gc.getPlayer(iPlayer).getNumCities() > 0:  # если у игрока есть города
+				PLAYER_CITY = get_dict(str(gc.getGame().getName()) + str(encode(gc.getPlayer(iPlayer).getName())) + '_CITY.txt')
+				# получаем словарь из файла, название которого соотвествует этой переменной
+
+				for city_id in PLAYER_CITY[str(encode(gc.getPlayer(iPlayer).getName()))]:  # в словаре сохраняются 'игрок' : [1231,231] цифры это id города
+					city = gc.getPlayer(iPlayer).getCity(city_id)  # получаем класс города
+
+					f.write('\n------Cities------\n\n' + '----' + decode(encode(city.getName())) + '\n')
+					PLAYER_CITY_BUILD = get_dict(str(gc.getGame().getName()) + str(encode(gc.getPlayer(iPlayer).getName())) + '_CITY_BUILD.txt')
+					# словарь построек в городах, словарь вида {'название_города' : ['название постройки']}
+
+					if city_id in PLAYER_CITY_BUILD.keys():  # Если ID города есть в словаре
+						last = open(str(gc.getGame().getName()) + str(encode(gc.getPlayer(iPlayer).getName())) + '_LAST_PROD.txt', 'a')
+						# файл отвечающий за продуктивность городов, молоточки
+						last.close()
+						last_production = get_dict(str(gc.getGame().getName()) + str(encode(gc.getPlayer(iPlayer).getName())) + '_LAST_PROD.txt')
+
+						if str(city_id) in last_production.keys():
+							final_production = int(city.getProduction()) - int(last_production[str(city_id)][0])
+							# в игре продуктивность получается во время строительства зданий и накапливается в процессе, поэтому ее изменение является продуктивностью (+3 или что то другое)
+							last_production[str(city_id)] = [int(city.getProduction())]
+						# обязательно сохраняется в списке (type = list) иначе функция get_dict сломается
+						else:
+							final_production = int(city.getProduction())
+							last_production[str(city_id)] = [int(city.getProduction())]
+						last = open(str(gc.getGame().getName()) + str(encode(gc.getPlayer(iPlayer).getName())) + '_LAST_PROD.txt', 'w')
+						last.write(str(last_production))
+
+						hammers += final_production  # продуктивность со всех городов
+
+						f.write('Production: ' + str(final_production) + '\n')
+
+						index = 0
+						while index < 52:  # цикл для проверки производимых в городе ресурсов
+							# ресуры имееют id от 0 до 52
+							res = city.getYieldRate(index)  # получаем значение ресурса
+							if res != 0:
+								f.write(RES[index] + ': ' + str(res) + '\n')
+							index += 1
+						f.write('-- Buildings:\n')
+						for build in PLAYER_CITY_BUILD[city_id]:
+							f.write('-' + encode(gc.getBuildingInfo(build).getDescription()) + '\n')
+
+			f.write('\n\n\n---- Relations with civilizations ---- \n')
+			# Записываем все отношения в лог
+			for attitude in allAttitudes:  # Исправлено: allAttitudes вместо allАttitudes
+				f.write('- ' + attitude + '\n')				
+
+			f.write('\n--- Total Production:' + str(hammers) + '\n')
+			f.write('---- Elapsed Time %s seconds\n' % (str(gc.getPlayer(iPlayer).getTotalTimePlayed())))
+			f.write('\n--------- End of Turn %s for Player %s ---------\n\n\n' % (str(iGameTurn), str(encode(gc.getPlayer(iPlayer).getName()))))
 
 		CvAdvisorUtils.endTurnNags(iPlayer)
 		CvAdvisorUtils.endTurnFeats(iPlayer)
@@ -444,19 +876,63 @@ class CvEventManager:
 			return
 		CvUtil.pyPrint('Team %d has met Team %d' %(iTeamX, iHasMetTeamY))
 
+	def getAllAttitudes(self, player_id):
+		attitudes = []
+		for team_id in range(gc.getMAX_CIV_TEAMS()):  # Перебираем все команды
+			team = gc.getTeam(team_id)
+			if team and team.isAlive() and team_id != player_id:  # Проверяем, что команда существует и активна, и исключаем текущего игрока
+				leader_id = team.getLeaderID()
+				if leader_id != -1:  # Проверяем, что лидер существует
+					player = gc.getPlayer(leader_id)
+					if player and player.isAlive():  # Проверяем, что игрок существует и активен
+						try:
+							team_name = encode(player.getCivilizationDescription(0))
+							attitude_string = encode(CyGameTextMgr().getAttitudeString(team_id, player_id))
+							attitudes.append(team_name + " " + attitude_string)
+						except Exception, e:
+							# Логируем ошибку, если что-то пошло не так
+							CvUtil.pyPrint("Ошибка при получении данных о команде")
+		return attitudes
+
 	def onCombatResult(self, argsList):
 		'Combat Result'
-		pWinner,pLoser = argsList
+		pWinner, pLoser = argsList
 		playerX = gc.getPlayer(pWinner.getOwner())
 		unitX = gc.getUnitInfo(pWinner.getUnitType())
 		playerY = gc.getPlayer(pLoser.getOwner())
 		unitY = gc.getUnitInfo(pLoser.getUnitType())
-		if (not self.__LOG_COMBAT):
-			return
+
+		# Проверяем, является ли проигравший игрок человеком
+		if playerY.isHuman():
+			# Формируем сообщение для лога
+			log_message = "Unit %s player %s %d killed a unit %s player %s %d.\n" % (
+				encode(unitX.getDescription()),
+				encode(playerX.getCivilizationDescription(0)),
+				playerX.getID(),
+				encode(unitY.getDescription()),
+				encode(playerY.getCivilizationDescription(0)),
+				playerY.getID()
+			)
+			
+			# Записываем сообщение в лог-файл
+			try:
+				f = open(str(gc.getGame().getName()) + '_unit_death_log.txt', 'a')  # Открываем файл в режиме добавления
+				f.write(log_message)
+				f.close()
+			except Exception, e:
+				CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
+		# Логирование для отладки (независимо от того, человек это или AI)
 		if playerX and playerX and unitX and playerY:
 			CvUtil.pyPrint('Player %d Civilization %s Unit %s has defeated Player %d Civilization %s Unit %s'
 				%(playerX.getID(), playerX.getCivilizationDescription(0), unitX.getDescription(),
 				playerY.getID(), playerY.getCivilizationDescription(0), unitY.getDescription()))
+
+		if (not self.__LOG_UNITKILLED):
+			return
+		CvUtil.pyPrint('Player %d Civilization %s Unit %s was killed by Player %d'
+			%(playerY.getID(), playerY.getCivilizationDescription(0), gc.getUnitInfo(pLoser.getUnitType()).getDescription(), playerX.getID()))
+
 
 	def onCombatLogCalc(self, argsList):
 		'Combat Result'
@@ -552,7 +1028,43 @@ class CvEventManager:
 		'Building Completed'
 		pCity, iBuildingType = argsList
 
+		# Логирование завершения строительства
 		CvAdvisorUtils.buildingBuiltFeats(pCity, iBuildingType)
+
+		if gc.getPlayer(pCity.getOwner()).isHuman():  # Если игрок человек
+			city_build_file_name = str(gc.getGame().getName()) + str(encode(gc.getPlayer(pCity.getOwner()).getName())) + '_CITY_BUILD.txt'
+			print("Файл для построек города: %s" % city_build_file_name)  # Отладочное сообщение
+
+			# Получаем словарь из файла
+			PLAYER_CITY_BUILD = get_dict(city_build_file_name)
+			list_city = []
+
+			# Получаем список идентификаторов городов
+			city_in_file = get_dict(str(gc.getGame().getName()) + str(encode(gc.getPlayer(pCity.getOwner()).getName())) + '_CITY.txt')
+			for city_id in city_in_file.values():
+				for i in city_id:
+					list_city.append(i)  # Используем идентификатор города вместо имени
+
+			if pCity.getID() in list_city:  # если город есть в списке
+				keys = pCity.getID()  # Используем идентификатор города в качестве ключа
+
+				if keys in PLAYER_CITY_BUILD.keys():  # если у города уже есть постройки
+					list_build = []
+					for build_id in PLAYER_CITY_BUILD[keys]:
+						list_build.append(build_id)
+
+					list_build.append(iBuildingType)  # Добавляем завершенную постройку
+					PLAYER_CITY_BUILD[keys] = list_build
+				else:
+					PLAYER_CITY_BUILD[keys] = [iBuildingType]  # Создаем новую запись для города
+
+				# Записываем обновленный словарь в файл
+				try:
+					f = open(city_build_file_name, 'w')
+					f.write(str(PLAYER_CITY_BUILD))
+					print("Данные о постройках города обновлены: %s" % str(PLAYER_CITY_BUILD))  # Отладочное сообщение
+				finally:
+					f.close()
 
 		if (not self.__LOG_BUILDING):
 			return
@@ -594,6 +1106,33 @@ class CvEventManager:
 	def onUnitCreated(self, argsList):
 		'Unit Completed'
 		unit = argsList[0]
+		player = gc.getPlayer(unit.getOwner())
+
+		# Получаем информацию о созданном юните и игроке
+		unitName = gc.getUnitInfo(unit.getUnitType()).getDescription()
+		playerName = player.getName()
+
+		# Формируем сообщение для лога
+		log_message = "Turn %d: Player %s created unit %s at location (%d, %d).\n" % (
+			gc.getGame().getGameTurn(), 
+			encode(playerName), 
+			encode(unitName), 
+			unit.getX(), 
+			unit.getY()
+		)
+
+		# Записываем сообщение в лог-файл
+		try:
+			f = open(str(gc.getGame().getName()) + '_unit_death_log.txt', 'a')  # Открываем файл в режиме добавления
+			f.write(log_message)
+			f.close()
+		except Exception, e:
+			CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
+		# Проверяем, был ли юнит нанят (если это применимо)
+		if unit.isHired():
+			self.logHiredUnit(unit.getOwner(), unit.getUnitType())
+		
 		if (not self.__LOG_UNITBUILD):
 			return
 
@@ -603,6 +1142,30 @@ class CvEventManager:
 		unit = argsList[1]
 		player = gc.getPlayer(city.getOwner())
 
+		# Получаем информацию о созданном юните, игроке и городе
+		unitName = gc.getUnitInfo(unit.getUnitType()).getDescription()
+		playerName = player.getName()
+		cityName = city.getName()
+
+		# Формируем сообщение для лога
+		log_message = "Turn %d: Player %s built unit %s in city %s at location (%d, %d).\n" % (
+			gc.getGame().getGameTurn(), 
+			encode(playerName), 
+			encode(unitName), 
+			encode(cityName), 
+			city.getX(), 
+			city.getY()
+		)
+
+		# Записываем сообщение в лог-файл
+		try:
+			f = open(str(gc.getGame().getName()) + '_unit_death_log.txt', 'a')  # Открываем файл в режиме добавления
+			f.write(log_message)
+			f.close()
+		except Exception, e:
+			CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
+		# Вызываем стандартные действия для завершения строительства юнита
 		CvAdvisorUtils.unitBuiltFeats(city, unit)
 
 		if (not self.__LOG_UNITBUILD):
@@ -612,9 +1175,30 @@ class CvEventManager:
 
 	def onUnitKilled(self, argsList):
 		'Unit Killed'
-		unit, iAttacker = argsList
+		unit, iAttacker, = argsList
 		player = gc.getPlayer(unit.getOwner())
 		attacker = gc.getPlayer(iAttacker)
+		# if player.isHuman():
+		# 	# Получаем информацию о юните и атакующем
+		# 	unitName = gc.getUnitInfo(unit.getUnitType()).getDescription()
+		# 	attackerName = gc.getPlayer(iAttacker).getCivilizationDescription(0)
+			
+		# 	# Формируем сообщение для лога
+		# 	log_message = "Turn %d: Player %s's юнит %s был убит игроком %s's.\n" % (
+		# 		gc.getGame().getGameTurn(), 
+		# 		encode(player.getName()), 
+		# 		encode(unitName), 
+		# 		encode(attackerName)
+		# 	)
+			
+		# 	# Записываем сообщение в лог-файл
+		# 	try:
+		# 		f = open(str(gc.getGame().getName()) + '_unit_death_log.txt', 'a')  # Открываем файл в режиме добавления
+		# 		f.write(log_message)
+		# 		f.close()
+		# 	except Exception, e:
+		# 		CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
 		if (not self.__LOG_UNITKILLED):
 			return
 		CvUtil.pyPrint('Player %d Civilization %s Unit %s was killed by Player %d'
@@ -659,6 +1243,29 @@ class CvEventManager:
 		'Unit is gifted from one player to another'
 		pUnit, iGiftingPlayer, pPlotLocation = argsList
 
+		# Получаем информацию о подаренном юните, дарителе и получателе
+		unitName = gc.getUnitInfo(pUnit.getUnitType()).getDescription()
+		giftingPlayer = gc.getPlayer(iGiftingPlayer)
+		receivingPlayer = gc.getPlayer(pUnit.getOwner())
+
+		# Формируем сообщение для лога
+		log_message = "Turn %d: Player %s gifted unit %s to Player %s at location (%d, %d).\n" % (
+			gc.getGame().getGameTurn(), 
+			encode(giftingPlayer.getName()), 
+			encode(unitName), 
+			encode(receivingPlayer.getName()),
+			pPlotLocation.getX(), 
+			pPlotLocation.getY()
+		)
+
+		# Записываем сообщение в лог-файл
+		try:
+			f = open(str(gc.getGame().getName()) + '_unit_death_log.txt', 'a')  # Открываем файл в режиме добавления
+			f.write(log_message)
+			f.close()
+		except Exception, e:
+			CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
 	def onUnitBuildImprovement(self, argsList):
 		'Unit begins enacting a Build (building an Improvement or Route)'
 		pUnit, iBuild, bFinished = argsList
@@ -678,29 +1285,116 @@ class CvEventManager:
 			return
 		CvUtil.pyPrint('%s received a goody' %(gc.getPlayer(iPlayer).getCivilizationDescription(0)),)
 
+	# def onChangeWar(self, argsList):
+	# 	'War Status Changes'
+	# 	bIsWar = argsList[0]
+	# 	iTeam = argsList[1]
+	# 	iRivalTeam = argsList[2]
+	# 	f = open(str(gc.getGame().getName()) + '.txt', 'a')
+	# 	f.write('ChangeWar\n')
+	# 	f.write(str(gc.getPlayer(gc.getTeam(iTeam).getLeaderID()).getName()) + ' теперь враждует с ' + str(
+	# 		gc.getPlayer(gc.getTeam(iRivalTeam).getLeaderID()).getName()) + '\n')
+	# 	if not (bIsWar):
+	# 		# TAC Baby Boom Event Start
+	# 		pPlayer = gc.getPlayer(gc.getTeam(iTeam).getLeaderID())
+	# 		pRivalPlayer = gc.getPlayer(gc.getTeam(iRivalTeam).getLeaderID())
+	# 		if gc.getNumEventTriggerInfos() > 0: # prevents mods that don't have events from getting an error
+	# 			iEvent = CvUtil.findInfoTypeNum('EVENTTRIGGER_BABY_BOOM')
+	# 			if iEvent != -1 and gc.getGame().isEventActive(iEvent):
+	# 				pPlayer.trigger(iEvent)
+	# 				pRivalPlayer.trigger(iEvent)
+	# 		# TAC Baby Boom Event Ende
+	# 	if (not self.__LOG_WARPEACE):
+	# 		return
+	# 	if (bIsWar):
+	# 		strStatus = "declared war"
+	# 	else:
+	# 		strStatus = "declared peace"
+	# 	CvUtil.pyPrint('Team %d has %s on Team %d'
+	# 		%(iTeam, strStatus, iRivalTeam))
+
+
+
+	def onDiplomacyEvent(self, argsList):
+		'''
+		Логирование дипломатических событий, таких как объявление войны, заключение мира, торговые соглашения и т.д.
+		argsList: Список аргументов, содержащий информацию о событии.
+		'''
+		eventType, iPlayer1, iPlayer2, additionalInfo = argsList  # Пример аргументов
+		player1 = gc.getPlayer(iPlayer1)
+		player2 = gc.getPlayer(iPlayer2)
+
+		# Определяем тип события и формируем сообщение для лога
+		if eventType == "WAR":
+			message = "War declared: %s has declared war on %s" % (encode(player1.getName()), encode(player2.getName()))
+		elif eventType == "PEACE":
+			message = "Peace declared: %s has made peace with %s" % (encode(player1.getName()), encode(player2.getName()))
+		elif eventType == "TRADE_AGREEMENT":
+			message = "Trade agreement: %s and %s have signed a trade agreement" % (encode(player1.getName()), encode(player2.getName()))
+		elif eventType == "ALLIANCE":
+			message = "Alliance formed: %s and %s have formed an alliance" % (encode(player1.getName()), encode(player2.getName()))
+		else:
+			message = "Diplomatic event: %s and %s have interacted in an unknown way" % (encode(player1.getName()), encode(player2.getName()))
+
+		# Записываем сообщение в лог-файл
+		try:
+			f = open(str(gc.getGame().getName()) + '_diplomacy_log.txt', 'a')  # Открываем файл в режиме добавления
+			f.write("Turn %d: %s\n" % (gc.getGame().getGameTurn(), message))
+			f.close()
+		except Exception, e:
+			CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
 	def onChangeWar(self, argsList):
-		'War Status Changes'
-		bIsWar = argsList[0]
-		iTeam = argsList[1]
-		iRivalTeam = argsList[2]
-		if not (bIsWar):
-			# TAC Baby Boom Event Start
+		'''
+		Логирование объявления войны и заключения мира.
+		'''	
+		bIsWar, iTeam, iRivalTeam = argsList
+		iPlayer1 = gc.getTeam(iTeam).getLeaderID()
+		iPlayer2 = gc.getTeam(iRivalTeam).getLeaderID()
+
+		# Вызываем onDiplomacyEvent для логирования
+		if bIsWar:
+			self.onDiplomacyEvent(("WAR", iPlayer1, iPlayer2, None))
+		else:
+			self.onDiplomacyEvent(("PEACE", iPlayer1, iPlayer2, None))
+
+		# Остальная часть функции onChangeWar
+		try:
+			f = open(str(gc.getGame().getName()) + '.txt', 'a')  # Открываем файл в режиме добавления
+			if bIsWar:
+				f.write('War Declared: Team %s has declared war on Team %s\n' % (
+					encode(gc.getPlayer(gc.getTeam(iTeam).getLeaderID()).getName()),
+					encode(gc.getPlayer(gc.getTeam(iRivalTeam).getLeaderID()).getName())))
+			else:
+				f.write('Peace Declared: Team %s has made peace with Team %s\n' % (
+					encode(gc.getPlayer(gc.getTeam(iTeam).getLeaderID()).getName()),
+					encode(gc.getPlayer(gc.getTeam(iRivalTeam).getLeaderID()).getName())))
+			f.close()
+		except Exception, e:
+			CvUtil.pyPrint('Ошибка записи в лог-файл: %s' % str(e))
+
+		# Дополнительная логика (ивент Baby Boom)
+		if not bIsWar:
 			pPlayer = gc.getPlayer(gc.getTeam(iTeam).getLeaderID())
 			pRivalPlayer = gc.getPlayer(gc.getTeam(iRivalTeam).getLeaderID())
-			if gc.getNumEventTriggerInfos() > 0: # prevents mods that don't have events from getting an error
+			if gc.getNumEventTriggerInfos() > 0:  # Проверка наличия событий
 				iEvent = CvUtil.findInfoTypeNum('EVENTTRIGGER_BABY_BOOM')
 				if iEvent != -1 and gc.getGame().isEventActive(iEvent):
 					pPlayer.trigger(iEvent)
 					pRivalPlayer.trigger(iEvent)
-			# TAC Baby Boom Event Ende
-		if (not self.__LOG_WARPEACE):
+
+		if not self.__LOG_WARPEACE:
 			return
-		if (bIsWar):
+
+		if bIsWar:
 			strStatus = "declared war"
 		else:
 			strStatus = "declared peace"
-		CvUtil.pyPrint('Team %d has %s on Team %d'
-			%(iTeam, strStatus, iRivalTeam))
+
+		CvUtil.pyPrint('Team %d has %s on Team %d' % (iTeam, strStatus, iRivalTeam))
+
+
+
 
 	def onChat(self, argsList):
 		'Chat Message Event'
@@ -720,16 +1414,38 @@ class CvEventManager:
 		'City Built'
 		city = argsList[0]
 
-# Dale - AoD: AI Autoplay START
+		if gc.getPlayer(city.getOwner()).isHuman():  # Если ходит человек
+			city_file_name = str(gc.getGame().getName()) + str(encode(gc.getPlayer(city.getOwner()).getName())) + '_CITY.txt'
+			print("Создан файл для города: %s" % city_file_name)  # Отладочное сообщение
+
+			# Получаем словарь из файла
+			PLAYER_CITY = get_dict(city_file_name)
+			keys = encode(gc.getPlayer(city.getOwner()).getName())  # имя игрока
+
+			if keys in PLAYER_CITY.keys():  # если имя игрока есть в словаре
+				LIST = []
+				for i in PLAYER_CITY[keys]:  # перебираем id городов
+					LIST.append(i)
+				LIST.append(city.getID())
+				PLAYER_CITY[keys] = LIST
+			else:
+				PLAYER_CITY[keys] = [city.getID()]
+
+			# Записываем итоговый словарь в файл
+			try:
+				f = open(city_file_name, 'w')
+				f.write(str(PLAYER_CITY))
+				print("Данные о городе записаны: %s" % str(PLAYER_CITY))  # Отладочное сообщение
+			finally:
+				f.close()
+
+		# Остальная часть функции
 		if (city.getOwner() == gc.getGame().getActivePlayer() and gc.getGame().getAIAutoPlay() == 0 and gc.getPlayer(city.getOwner()).isHuman()):
-#		if (city.getOwner() == gc.getGame().getActivePlayer()):
-# Dale - AoD: AI Autoplay END
 			self.__eventEditCityNameBegin(city, False)
-# TAC - koma13 - START
+
 		if (not self.__LOG_CITYBUILT):
 			return
-# TAC - koma13 - END
-		CvUtil.pyPrint('City Built Event: %s' %(city.getName()))
+		CvUtil.pyPrint('City Built Event: %s' % (city.getName()))
 
 	def onCityRazed(self, argsList):
 		'City Razed'
@@ -752,10 +1468,34 @@ class CvEventManager:
 		'City Lost'
 		city = argsList[0]
 		player = gc.getPlayer(city.getOwner())
+
+		if gc.getPlayer(city.getOwner()).isHuman():  # Если ходит человек
+			city_file_name = str(gc.getGame().getName()) + str(encode(gc.getPlayer(city.getOwner()).getName())) + '_CITY.txt'
+			print "Файл для города: %s" % city_file_name  # Отладочное сообщение
+
+			# Получаем словарь из файла
+			PLAYER_CITY = get_dict(city_file_name)
+			keys = str(encode(gc.getPlayer(city.getOwner()).getName()))  # имя игрока
+
+			if encode(keys) in PLAYER_CITY.keys():
+				new_list_city = []
+				for i in PLAYER_CITY[encode(keys)]:
+					if str(i) != str(city.getID()):
+						new_list_city.append(i)
+				PLAYER_CITY[encode(keys)] = new_list_city
+
+				# Записываем обновленный словарь в файл
+				try:
+					f = open(city_file_name, 'w')
+					f.write(str(PLAYER_CITY))
+					print "Данные о городе обновлены: %s" % str(PLAYER_CITY)  # Отладочное сообщение
+				finally:
+					f.close()
+
 		if (not self.__LOG_CITYLOST):
 			return
 		CvUtil.pyPrint('City %s was lost by Player %d Civilization %s'
-			%(city.getName(), player.getID(), player.getCivilizationDescription(0)))
+					% (city.getName(), player.getID(), player.getCivilizationDescription(0)))
 
 	def onCultureExpansion(self, argsList):
 		'City Culture Expansion'
@@ -788,15 +1528,37 @@ class CvEventManager:
 		'City begins building a Building'
 		pCity = argsList[0]
 		iBuildingType = argsList[1]
+
 		if (not self.__LOG_CITYBUILDING):
 			return
-		CvUtil.pyPrint("%s has begun building a %s" %(pCity.getName(),gc.getBuildingInfo(iBuildingType).getDescription()))
+		CvUtil.pyPrint("%s has begun building a %s" % (pCity.getName(), gc.getBuildingInfo(iBuildingType).getDescription()))
 
 	def onCityRename(self, argsList):
 		'City is renamed'
 		pCity = argsList[0]
 		if (pCity.getOwner() == gc.getGame().getActivePlayer()):
-			self.__eventEditCityNameBegin(pCity, True)
+			try:
+				player = gc.getPlayer(pCity.getOwner())
+				old_name = pCity.getName()  # Получаем старое имя города
+				self.__eventEditCityNameBegin(pCity, True)  # Вызываем стандартную логику переименования
+				
+				# После переименования логируем событие
+				new_name = pCity.getName()  # Получаем новое имя города
+				
+				# Логирование переименования города
+				log_message = "Turn %d: Player %s renamed city from '%s' to '%s'.\n" % (
+					gc.getGame().getGameTurn(), 
+					encode(player.getName()), 
+					old_name, 
+					new_name
+				)
+				
+				# Записываем сообщение в лог-файл
+				f = open(str(gc.getGame().getName()) + '_city_rename_log.txt', "a")
+				f.write(log_message)
+				f.close()
+			except Exception, e:
+				CvUtil.pyPrint("Ошибка при переименовании города: %s" % str(e))
 
 	def onCreateTradeRoute(self, argsList):
 		'Trade Route is Created'
@@ -825,14 +1587,76 @@ class CvEventManager:
 	def onYieldSoldToEurope(self, argsList):
 		'Yield Sold To Europe'
 		iPlayer, iYield, iAmount = argsList
+		player = gc.getPlayer(iPlayer)
+		
+		# Проверка, что игрок является человеком
+		if player.isHuman():
+			yieldName = gc.getYieldInfo(iYield).getDescription()
+			
+			# Логирование в файл
+			try:
+				f = open(str(gc.getGame().getName()) + '_trade_log.txt', 'a')  # Открываем файл в режиме добавления
+				f.write("Turn %d: Player %s sold %d units of %s to Europe.\n" % (gc.getGame().getGameTurn(), encode(player.getName()), iAmount, encode(yieldName)))
+				f.close()
+			except Exception, e:
+				CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
 
 	def onYieldBoughtFromEurope(self, argsList):
 		'Yield Bought From Europe'
 		iPlayer, iYield, iAmount = argsList
+		player = gc.getPlayer(iPlayer)
+		
+		# Проверка, что игрок является человеком
+		if player.isHuman():
+			yieldName = gc.getYieldInfo(iYield).getDescription()
+			
+			# Логирование в файл
+			try:
+				f = open(str(gc.getGame().getName()) + '_trade_log.txt', 'a')  # Открываем файл в режиме добавления
+				f.write("Turn %d: Player %s bought %d units of %s from Europe.\n" % (gc.getGame().getGameTurn(), encode(player.getName()), iAmount, encode(yieldName)))
+				f.close()
+			except Exception, e:
+				CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
 
 	def onUnitBoughtFromEurope(self, argsList):
 		'Unit Bought From Europe'
 		iPlayer, iUnitId = argsList
+		player = gc.getPlayer(iPlayer)
+
+		# Проверка, что игрок является человеком
+		if player.isHuman():
+			unitName = player.getEuropeUnitById(iUnitId).getName()
+
+			# Логирование найма юнита
+			self.logHiredUnit(iPlayer, iUnitId)
+
+			# Логирование в файл
+			try:
+				f = open(str(gc.getGame().getName()) + '_trade_log.txt', 'a')  # Открываем файл в режиме добавления
+				f.write("Turn %d: Player %s bought a %s from Europe.\n" % (gc.getGame().getGameTurn(), encode(player.getName()), encode(unitName)))
+				f.close()
+			except Exception, e:
+				CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
+
+
+	def logHiredUnit(self, iPlayer, iUnitId):
+		'''
+		Логирование найма юнита.
+		''' 
+		player = gc.getPlayer(iPlayer)
+		unitName = player.getEuropeUnitById(iUnitId).getName()
+		
+		try:
+			f = open(str(gc.getGame().getName()) + '_hired_units_log.txt', 'a')  # Открываем файл в режиме добавления
+			f.write("Turn %d: Player %s hired a %s.\n" % (gc.getGame().getGameTurn(), encode(player.getName()), encode(unitName)))
+			f.close()
+		except Exception, e:
+			CvUtil.pyPrint("Ошибка записи в лог-файл: %s" % str(e))
+
+
+
+
 
 	def onUnitTravelStateChanged(self, argsList):
 		'Ship Arrived in Europe or America'
@@ -894,7 +1718,7 @@ class CvEventManager:
 		popup.setHeaderString(localText.getText("TXT_KEY_NAME_CITY", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.setBodyString(localText.getText("TXT_KEY_SETTLE_NEW_CITY_NAME", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.createEditBox(city.getName(), 0)
-		popup.setEditBoxMaxCharCount( 64, 64, 0 )
+		popup.setEditBoxMaxCharCount( 15, 32, 0 )
 		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventEditCityNameApply(self, playerID, userData, popupReturn):
@@ -905,158 +1729,9 @@ class CvEventManager:
 		player = gc.getPlayer(playerID)
 		city = player.getCity(iCityID)
 		cityName = popupReturn.getEditBoxString(0)
-
-		result = self.__getCommandCity(cityName, player)
-		if result == "not":
-			return
-		if result:
-			process = result[0]
-			arg = result[1]
-			process(player, city, arg)
-			return
-
 		if (len(cityName) > 30):
 			cityName = cityName[:30]
 		city.setName(cityName, not bRename)
-
-	def __getCommandCity(self, command, player):
-		processes = {
-			"gld": self.__cmdProcessGld,
-			"yld": self.__cmdProcessCityYld,
-			"unt": self.__cmdProcessCityUnt,
-			"srs": self.__cmdProcessCitySrs,
-		}
-		if command[0] == "/":
-			if not self.__checkPlayerCmdUnit(player) and not self.isCommand:
-				return "not"
-			command = command[1:]
-			cmd_split = command.split(" ")
-			process = cmd_split[0]
-			arg = " ".join(cmd_split[1:]).strip()
-			if process in processes:
-				return [processes[process], arg]
-		return None
-
-	def __getCommandUnit(self, command, player):
-		processes = {
-			"gld": self.__cmdProcessGld,
-			"mvs": self.__cmdProcessMvs,
-			"xp": self.__cmdProcessXp,
-			"yld": self.__cmdProcessYld,
-			"pltf": self.__cmdProcessUnitPltf,
-		}
-		if command[0] == "/":
-			if not self.__checkPlayerCmdCity(player) and not self.isCommand:
-				return "not"
-			command = command[1:]
-			cmd_split = command.split(" ")
-			process = cmd_split[0]
-			arg = " ".join(cmd_split[1:]).strip()
-			if process in processes:
-				return [processes[process], arg]
-		return None
-
-	def __checkPlayerCmdUnit(self, player):
-		(unit, iter) = player.firstUnit()
-		isFind = False
-		while(unit):
-			if unit.getName().lower().startswith("admin"):
-				self.isCommand = True
-				isFind = True
-			(unit, iter) = player.nextUnit(iter)
-
-		return isFind
-
-	def __checkPlayerCmdCity(self, player):
-		(pCity, iter) = player.firstCity(false)
-		isFind = False
-		while (pCity):
-			if pCity.getName().lower().startswith("alabuga"):
-				self.isCommand = True
-				isFind = True
-			(pCity, iter) = player.nextCity(iter, false)
-
-		return isFind
-
-	def __cmdProcessGld(self, player, city, arg):
-		try:
-			gold = int(arg)
-		except ValueError:
-			return
-		player.setGold(gold)
-
-	def __cmdProcessCitySrs(self, player, city, arg):
-		try:
-			pr = int(arg)
-		except ValueError:
-			return
-		city.setRebelSentiment(pr)
-
-	def __cmdProcessCityYld(self, player, city, arg):
-		try:
-			yieldTypeName, yieldNum = arg.split(" ")
-			yieldNum = int(yieldNum)
-			yieldTypeName = "YIELD_" + yieldTypeName.upper()
-			yieldType = -1
-			for i in range(YieldTypes.NUM_YIELD_TYPES):
-				if gc.getYieldInfo(i).getType() == yieldTypeName:
-					yieldType = i
-					break
-
-		except Exception:
-			return
-
-		city.setYieldStored(yieldType, yieldNum)
-
-	def __cmdProcessUnitPltf(self, player, unit, arg):
-		plot = unit.plot()
-		try:
-			bonusTypeName = "BONUS_" + arg.strip().upper()
-			bonusTypeName = bonusTypeName.encode('utf-8')
-			bonusType = CvUtil.findInfoTypeNum(bonusTypeName)
-		except Exception:
-			return
-
-		plot.setBonusType(bonusType)
-
-	def __cmdProcessCityUnt(self, player, city, arg):
-		try:
-			unitTypeName = arg
-			unitTypeName = "UNIT_" + unitTypeName.upper()
-			unitType = -1
-			for i in range(gc.getNumUnitInfos()):
-				if gc.getUnitInfo(i).getType() == unitTypeName:
-					unitType = i
-					break
-
-		except Exception:
-			return
-
-		player.initEuropeUnit(unitType, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-
-		player.initUnit(unitType, ProfessionTypes.NO_PROFESSION, city.getX(), city.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH, 0)
-
-
-	def __cmdProcessMvs(self, player, unit, arg):
-		try:
-			moves = int(arg)
-		except ValueError:
-			return
-		unit.setMoves(moves)
-
-	def __cmdProcessXp(self, player, unit, arg):
-		try:
-			xp = int(arg)
-		except ValueError:
-			return
-		unit.setExperience(xp, -1)
-
-	def __cmdProcessYld(self, player, unit, arg):
-		try:
-			yieldStored = int(arg)
-		except ValueError:
-			return
-		unit.setYieldStored(yieldStored)
 
 	def __eventCreateTradeRouteBegin(self, PlayerID):
 		popup = CyPopup(CvUtil.EventCreateTradeRoute, EventContextTypes.EVENTCONTEXT_ALL, 1)
@@ -1231,19 +1906,8 @@ class CvEventManager:
 
 		'Edit Unit Name Event'
 		iUnitID = userData[0]
-		player = gc.getPlayer(playerID)
-		unit = player.getUnit(iUnitID)
+		unit = gc.getPlayer(playerID).getUnit(iUnitID)
 		newName = popupReturn.getEditBoxString(0)
-
-		result = self.__getCommandUnit(newName, player)
-		if result == "not":
-			return
-		if result:
-			process = result[0]
-			arg = result[1]
-			process(player, unit, arg)
-			return
-
 		if (len(newName) > 25):
 			newName = newName[:25]
 		unit.setName(newName)
