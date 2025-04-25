@@ -1269,9 +1269,13 @@ class CvMainInterface:
 					screen.setEndTurnState("EndTurnText", acOutput )
 					bShow = True
 				elif ( CyInterface().shouldDisplayWaitingYou() ):
-					acOutput = localText.getText("SYSTEM_WAITING_FOR_YOU", ())
-					screen.setEndTurnState("EndTurnText", acOutput )
-					bShow = True
+					if(gc.getPlayer(gc.getGame().getActivePlayer()).isInfinityModalBug()):
+											screen.setEndTurnState("EndTurnText", "BUG BUG Infinity Modal BUG BUG Obratites k administratory" )
+											bShow = True
+					else:
+						acOutput = localText.getText("SYSTEM_WAITING_FOR_YOU", ())
+						screen.setEndTurnState("EndTurnText", acOutput )
+						bShow = True
 
 		if ( bShow ):
 			screen.showEndTurn("EndTurnText")
@@ -3375,8 +3379,10 @@ class CvMainInterface:
 									if (CyGame().isNetworkMultiPlayer()):
 										szBuffer = szBuffer + CyGameTextMgr().getNetStats(ePlayer)
 
-									if (gc.getPlayer(ePlayer).isHuman() and CyInterface().isOOSVisible()):
+									if ((gc.getPlayer(ePlayer).isHuman() and CyInterface().isOOSVisible()) or gc.getPlayer(ePlayer).isInfinityModalBug()):
 										szTempBuffer = u" <color=255,0,0>* %s *</color>" %(CyGameTextMgr().getOOSSeeds(ePlayer))
+										if(gc.getPlayer(ePlayer).isInfinityModalBug()):
+											szTempBuffer = u" <color=255,0,0>* BUG BUG Infinity Modal BUG BUG *</color>"
 										szBuffer = szBuffer + szTempBuffer
 
 									szBuffer = szBuffer + "</font>"
