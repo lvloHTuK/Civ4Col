@@ -5224,6 +5224,11 @@ void CvGame::addDestroyedCityName(const CvWString& szName)
 	m_aszDestroyedCities.push_back(szName);
 }
 
+std::vector<CvWString> CvGame::getDestroyedCitysName()
+{
+	return m_aszDestroyedCities;
+}
+
 bool CvGame::isGreatGeneralBorn(CvWString& szName) const
 {
 	std::vector<CvWString>::const_iterator it;

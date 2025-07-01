@@ -570,6 +570,7 @@ public:
 	DllExport CvUnitInfo &getUnitInfo() const;
 	UnitClassTypes getUnitClassType() const;
 
+
 	DllExport UnitTypes getLeaderUnitType() const;
 	void setLeaderUnitType(UnitTypes leaderUnitType);
 
@@ -622,6 +623,7 @@ public:
 	void setHasRealPromotion(PromotionTypes eIndex, bool bValue);
 	void changeFreePromotionCount(PromotionTypes eIndex, int iChange);
 	void setFreePromotionCount(PromotionTypes eIndex, int iValue);
+
 	int getFreePromotionCount(PromotionTypes eIndex) const;
 
 	int getSubUnitCount() const;

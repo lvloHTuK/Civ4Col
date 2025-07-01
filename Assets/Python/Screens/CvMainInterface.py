@@ -3379,10 +3379,10 @@ class CvMainInterface:
 									if (CyGame().isNetworkMultiPlayer()):
 										szBuffer = szBuffer + CyGameTextMgr().getNetStats(ePlayer)
 
-									if ((gc.getPlayer(ePlayer).isHuman() and CyInterface().isOOSVisible()) or (gc.getPlayer(ePlayer).isHuman() and gc.getPlayer(ePlayer).isInfinityModalBug())):
+									if ((gc.getPlayer(ePlayer).isHuman() and CyInterface().isOOSVisible()) or ((gc.getPlayer(ePlayer).isHuman() and gc.getPlayer(ePlayer).isInfinityModalBug())) and ePlayer == gc.getGame().getActivePlayer()):
 										szTempBuffer = u" <color=255,0,0>* %s *</color>" %(CyGameTextMgr().getOOSSeeds(ePlayer))
-										if(gc.getPlayer(ePlayer).isInfinityModalBug()):
-											szTempBuffer = u" <color=255,0,0>* BUG BUG Infinity Modal BUG BUG *</color>"
+										if(gc.getPlayer(ePlayer).isInfinityModalBug() and ePlayer == gc.getGame().getActivePlayer()):
+											szTempBuffer = u" <color=255,0,0>* Infinity Modal Pozovite admina *</color>"
 										szBuffer = szBuffer + szTempBuffer
 
 									szBuffer = szBuffer + "</font>"

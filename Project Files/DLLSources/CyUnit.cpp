@@ -999,6 +999,7 @@ void CyUnit::changeFreePromotionCount(int /*PromotionTypes*/ eIndex, int iChange
 	if (m_pUnit)
 		m_pUnit->changeFreePromotionCount((PromotionTypes) eIndex, iChange);
 }
+
 void CyUnit::setHasRealPromotion(int /*PromotionTypes*/ eIndex, bool bValue)
 {
 	if (m_pUnit)
@@ -1061,6 +1062,7 @@ void CyUnit::setUnitTravelTimer(int iValue)
 	if (m_pUnit)
 		m_pUnit->setUnitTravelTimer(iValue);
 }
+
 int /*UnitTravelStates*/ CyUnit::getUnitTravelState()
 {
 	return m_pUnit ? m_pUnit->getUnitTravelState() : NO_UNIT_TRAVEL_STATE;

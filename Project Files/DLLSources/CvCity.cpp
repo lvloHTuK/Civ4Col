@@ -6027,13 +6027,12 @@ void CvCity::ejectToTransport(int iUnitId, int iTransportId)
 	{
 		if (pUnit->canLoadUnit(pTransport, pUnit->plot(), true))
 		{
-			if (removePopulationUnit(pUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
+			if (getPopulation() > 1)
 			{
-				pUnit->loadUnit(pTransport);
-				//if (getPopulation() > 1)
-				//{
-				//	pUnit->loadUnit(pTransport);
-				//}
+				if (removePopulationUnit(pUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
+				{
+					pUnit->loadUnit(pTransport);
+				}
 			}
 		}
 	}	

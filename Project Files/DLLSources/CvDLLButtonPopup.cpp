@@ -524,6 +524,8 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 					szAdminPassword = L"";
 				}
 			}
+			//gDLL->getEngineIFace()->PushFogOfWar(FOGOFWARMODE_OFF);
+			//gDLL->getEngineIFace()->setFogOfWarFromStack();
 			if (!GC.getGameINLINE().isGameMultiPlayer())
 			{
 				if (pPopupReturn->getCheckboxBitfield(2) > 0)

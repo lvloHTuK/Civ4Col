@@ -567,6 +567,7 @@ public:
 	EventTriggeredData* getEventTriggered(int iID) const;
 	EventTriggeredData* addEventTriggered();
 	void deleteEventTriggered(int iID);
+	void deleteAllEventTriggered();
 	EventTriggeredData* initTriggeredData(EventTriggerTypes eEventTrigger, bool bFire = false, int iCityId = -1, int iPlotX = INVALID_PLOT_COORD, int iPlotY = INVALID_PLOT_COORD, PlayerTypes eOtherPlayer = NO_PLAYER, int iOtherPlayerCityId = -1, int iUnitId = -1, BuildingTypes eBuilding = NO_BUILDING);
 	int getEventTriggerWeight(EventTriggerTypes eTrigger) const;
 	DllExport void addMessage(const CvTalkingHeadMessage& message);
@@ -947,6 +948,10 @@ protected:
 	int m_iTimeNoTrade;
 	// R&R, ray, Bargaining - END
 
+	// Infinity Modal Bug
+	bool m_infinityModalBug;
+	// Infinity Modal Bug
+
 	// R&R, ray, Timers Diplo Events - START
 	int m_iTimerNativeMerc;
 	int m_iTimerEuropeanWars;
@@ -1081,6 +1086,10 @@ protected:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 	void doUpdateCacheOnTurn();
+
+	// Infinity Modal Bug
+	public: bool isInfinityModalBug();
+	// Infinity Modal Bug
 
 	// transport feeder - start - Nightinggale
 public:

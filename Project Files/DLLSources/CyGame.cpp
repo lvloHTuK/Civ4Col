@@ -204,6 +204,13 @@ void CyGame::setMaxCityElimination(int iNewValue)
 		m_pGame->setMaxCityElimination(iNewValue);
 	}
 }
+std::wstring CyGame::getDestroyedCitiesName()
+{
+	std::vector<CvWString> nullVector = std::vector<CvWString>();
+	std::vector<CvWString> destroyedCities = NULL != m_pGame ? m_pGame->getDestroyedCitysName() : nullVector;
+	std::wstring* arr = &destroyedCities[0];
+	return arr[0];
+}
 int CyGame::getNumAdvancedStartPoints() const
 {
 	return (NULL != m_pGame ? m_pGame->getNumAdvancedStartPoints() : -1);

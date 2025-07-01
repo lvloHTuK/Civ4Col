@@ -281,6 +281,7 @@ public:
 
 	bool isDestroyedCityName(const CvWString& szName) const;
 	void addDestroyedCityName(const CvWString& szName);
+	std::vector<CvWString> getDestroyedCitysName();
 	
 	bool isGreatGeneralBorn(CvWString& szName) const;
 	void addGreatGeneralBornName(const CvWString& szName);

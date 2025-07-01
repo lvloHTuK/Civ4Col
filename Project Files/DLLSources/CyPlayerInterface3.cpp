@@ -105,6 +105,7 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		// R&R, Robert Surcouf, No More Variables Hidden game option START
         .def("getYieldTradedTotal", &CyPlayer::getYieldTradedTotal, "int (YieldTypes eIndex)")
 		.def("getYieldTradedTotalINT", &CyPlayer::getYieldTradedTotalINT, "int (int /*YieldTypes*/ eIndex)")
+		.def("isInfinityModalBug", &CyPlayer::isInfinityModalBug, "bool ()")
 		.def("getMissionaryPoints", &CyPlayer::getMissionaryPoints, "int (int /*PlayerTypes*/ ePlayer)") 
 		.def("missionaryThreshold", &CyPlayer::missionaryThreshold, "int (int /*PlayerTypes*/ ePlayer)") 
 		.def("getMissionaryRateModifier", &CyPlayer::getMissionaryRateModifier, "int (int /*PlayerTypes*/ ePlayer)") 

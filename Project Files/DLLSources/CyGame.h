@@ -71,6 +71,7 @@ public:
 	void changeMaxTurns(int iChange);
 	int getMaxCityElimination() const;
 	void setMaxCityElimination(int iNewValue);
+	std::wstring getDestroyedCitiesName();
 	int getNumAdvancedStartPoints() const;
 	void setNumAdvancedStartPoints(int iNewValue);
 	int getStartTurn() const;

@@ -600,6 +600,14 @@ int CyPlayer::getYieldTradedTotalINT(int /*YieldTypes*/ eIndex)
 	return m_pPlayer ? m_pPlayer->getYieldTradedTotal((YieldTypes)eIndex) : -1;
 }
 // R&R, Robert Surcouf, No More Variables Hidden game option END
+
+//Infinity Modal Bug
+bool CyPlayer::isInfinityModalBug()
+{
+	return m_pPlayer ? m_pPlayer->isInfinityModalBug() : false;
+}
+//Infinity Modal Bug
+
 // R&R, vetiarvind, Price dependent tax rate change - START
 int CyPlayer::getYieldScoreTotalINT(int /*YieldTypes*/ eIndex)
 {
@@ -837,6 +845,7 @@ int CyPlayer::getNumUnits()
 }
 CyUnit* CyPlayer::getUnit(int iID)
 {
+
 	return m_pPlayer ? new CyUnit(m_pPlayer->getUnit(iID)) : NULL;
 }
 int CyPlayer::getNumEuropeUnits()

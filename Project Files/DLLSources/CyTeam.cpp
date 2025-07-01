@@ -111,6 +111,12 @@ int CyTeam::getBuildingClassCountPlusMaking(int /*BuildingClassTypes*/ eBuilding
 {
 	return m_pTeam ? m_pTeam->getBuildingClassCountPlusMaking((BuildingClassTypes)eBuildingClass) : -1;
 }
+
+int CyTeam::getUnitsPurchasedHistory(int /*UnitClassTypes*/ eUnitClass)
+{
+	return m_pTeam ? m_pTeam->getUnitsPurchasedHistory((UnitClassTypes)eUnitClass) : -1;
+}
+
 int CyTeam::countTotalCulture()
 {
 	return m_pTeam ? m_pTeam->countTotalCulture() : -1;

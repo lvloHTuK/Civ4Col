@@ -85,6 +85,8 @@ public:
 	bool isPermanentAllianceTrading();
 	void changePermanentAllianceTradingCount(int iChange);
 
+	int getUnitsPurchasedHistory(int /*UnitClassTypes*/ eUnitClass);
+
 	bool isMapCentering();
 	void setMapCentering(bool bNewValue);
 	int getID();

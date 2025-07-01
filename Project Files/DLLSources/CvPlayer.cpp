@@ -81,6 +81,10 @@ CvPlayer::CvPlayer()
 	m_iTimeNoTrade = 0;
 	// R&R, ray, Bargaining - END
 
+	// Infinity Modal Bug
+	m_infinityModalBug = false;
+	// Infinity Modal Bug
+
 	// R&R, ray, Timers Diplo Events - START
 	m_iTimerNativeMerc = 0;
 	m_iTimerEuropeanWars = 0;
@@ -2325,6 +2329,42 @@ const TCHAR* CvPlayer::getUnitButton(UnitTypes eUnit) const
 void CvPlayer::doTurn()
 {
 	PROFILE_FUNC();
+
+	if(isHuman){
+		int ping = gDLL->GetLastPing(getNetID());
+
+		int countEventsTriggered = getNumEventsTriggered();
+		if(countEventsTriggered > 15 && ping < 1){
+			int iLoop;
+			for(EventTriggeredData* pLoopEvent = firstEventTriggered(&iLoop); pLoopEvent != NULL; pLoopEvent = nextEventTriggered(&iLoop))
+			{
+				trigger(*pLoopEvent);
+				deleteEventTriggered(iLoop);
+			}
+			deleteAllEventTriggered();
+		}
+		//CvString countEvents = GC.getInitCore().getSmtpHost(getID());
+		//char* buf = new char[50];
+		//std::sprintf(buf,"%d",countEvents);
+		//FAssertMsg(false, buf);
+
+		int numPopups = m_listPopups.size();
+		if(numPopups > 5 && ping < 1){
+			m_infinityModalBug = true;
+		} else if(numPopups == 0)
+		{
+			m_infinityModalBug = false;
+		}
+		//int ping = gDLL->GetLastPing(getNetID());
+		//int countEvents = getNumEventsTriggered();
+		//char* buf = new char[150];
+		//std::sprintf(buf,"%d", ping);
+		//FAssertMsg(false, buf);
+		//std::sprintf(buf,"%d",numPopups);
+		//FAssertMsg(false, buf);
+	}
+	
+
 
 	CvCity* pLoopCity;
 	int iLoop;
@@ -9846,6 +9886,10 @@ void CvPlayer::deleteEventTriggered(int iID)
 	m_eventsTriggered.removeAt(iID);
 }
 
+void CvPlayer::deleteAllEventTriggered()
+{
+	m_eventsTriggered.removeAll();
+}
 
 void CvPlayer::addMessage(const CvTalkingHeadMessage& message)
 {
@@ -15638,6 +15682,11 @@ void CvPlayer::doUpdateCacheOnTurn()
 {
 	// add this back, after testing without it
 	// invalidateYieldRankCache();
+}
+
+bool CvPlayer::isInfinityModalBug()
+{
+	return m_infinityModalBug;
 }
 
 void CvPlayer::doEra()

@@ -178,6 +178,9 @@ public:
 	int getYieldTradedTotal(YieldTypes eIndex);
 	int getYieldTradedTotalINT(int /*YieldTypes*/ eIndex);
     // R&R, Robert Surcouf, No More Variables Hidden game option END
+	//Infinity Modal Bug
+	bool isInfinityModalBug();
+	//Infinity Modal Bug
 	int getYieldScoreTotalINT(int /*YieldTypes*/ eIndex); // R&R, vetiarvind, Price dependent tax rate change
 	int getYieldRate(YieldTypes eIndex);
 	int getYieldRateModifier(YieldTypes eIndex);
