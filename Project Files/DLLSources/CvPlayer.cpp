@@ -2333,16 +2333,6 @@ void CvPlayer::doTurn()
 	if(isHuman){
 		int ping = gDLL->GetLastPing(getNetID());
 
-		int countEventsTriggered = getNumEventsTriggered();
-		if(countEventsTriggered > 15 && ping < 1){
-			int iLoop;
-			for(EventTriggeredData* pLoopEvent = firstEventTriggered(&iLoop); pLoopEvent != NULL; pLoopEvent = nextEventTriggered(&iLoop))
-			{
-				trigger(*pLoopEvent);
-				deleteEventTriggered(iLoop);
-			}
-			deleteAllEventTriggered();
-		}
 		//CvString countEvents = GC.getInitCore().getSmtpHost(getID());
 		//char* buf = new char[50];
 		//std::sprintf(buf,"%d",countEvents);
