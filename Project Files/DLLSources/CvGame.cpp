@@ -259,7 +259,107 @@ void CvGame::init(HandicapTypes eHandicap)
 	AI_init();
 
 	doUpdateCacheOnTurn();
+
+	//LOGGING
+	if (GC.getLogging())
+	{
+		char* buffer2 = new char[5000];
+		sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+		TCHAR szOut[1024];
+		sprintf(szOut, "Название игры: %ls \n", GC.getInitCore().getGameName().GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		sprintf(szOut, "Название карты: %ls \n", GC.getInitCore().getMapScriptName().GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		CvWString buff;
+		GC.getInitCore().getWorldSizeKey(buff);
+		sprintf(szOut, "Размер мира: %ls \n", buff.GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		GC.getInitCore().getClimateKey(buff);
+		sprintf(szOut, "Климат: %ls \n", buff.GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		GC.getInitCore().getEraKey(buff);
+		sprintf(szOut, "Эра: %ls \n", buff.GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		GC.getInitCore().getGameSpeedKey(buff);
+		sprintf(szOut, "Скорость игры: %ls \n", buff.GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		GC.getInitCore().getTurnTimerKey(buff);
+		sprintf(szOut, "Таймер: %ls \n", buff.GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		GC.getInitCore().getCalendarKey(buff);
+		sprintf(szOut, "Календарь: %ls \n", buff.GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		GC.getInitCore().getTurnTimerKey(buff);
+		sprintf(szOut, "Таймер: %ls \n", buff.GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		sprintf(szOut, "Победы: ");
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		for(int i = 0; i < GC.getInitCore().getNumVictories(); i++)
+		{
+			sprintf(szOut, "%d", GC.getInitCore().getVictory((VictoryTypes)i));
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		}
+		sprintf(szOut, "\n");
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		sprintf(szOut, "Настройки: ");
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		for(int i = 0; i < NUM_GAMEOPTION_TYPES; i++)
+		{
+			sprintf(szOut, "%d", GC.getInitCore().getOption((GameOptionTypes)i));
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		}
+		sprintf(szOut, "\n");
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		sprintf(szOut, "Мультиплеерные настройки: ");
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		for(int i = 0; i < NUM_MPOPTION_TYPES; i++)
+		{
+			sprintf(szOut, "%d", GC.getInitCore().getMPOption((MultiplayerOptionTypes)i));
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		}
+		sprintf(szOut, "\n");
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+		sprintf(szOut, "\nИгроки\n");
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+	}
+	//
 }
+//
 
 //
 // Set initial items (units, techs, etc...)
@@ -4740,6 +4840,21 @@ bool CvGame::isPaused()
 
 void CvGame::setPausePlayer(PlayerTypes eNewValue)
 {
+	//LOGGING
+	if(GC.getLogging())
+	{
+		CvPlayer& player = GET_PLAYER(eNewValue);
+		if(player.isHuman())
+		{
+			char* buffer2 = new char[5000];
+			sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+			TCHAR szOut[1024];
+			sprintf(szOut, "##  PAUSE FROM %ls  ##\n", player.getName());
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		}
+	}
+	//
 	m_ePausePlayer = eNewValue;
 }
 
@@ -7010,6 +7125,18 @@ void CvGame::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iNumCultureVictoryCities);
 	pStream->Read(&m_eCultureVictoryCultureLevel);
+
+	//LOGGING
+	if (GC.getLogging())
+	{
+		char* buffer2 = new char[5000];
+		sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+		TCHAR szOut[1024];
+		sprintf(szOut, "Название игры: %ls \n", GC.getInitCore().getGameName().GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+	}
+	//
 }
 
 

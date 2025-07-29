@@ -20,6 +20,7 @@
 #include "CvDLLPythonIFaceBase.h"
 #include "CyArgsList.h"
 #include "FProfiler.h"
+#include "CvInitCore.h"
 
 // Public Functions...
 
@@ -712,6 +713,18 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 		FAssertMsg(eTeam != getID(), "eTeam is not expected to be equal with getID()");
 		setAtWar(eTeam, true);
 		GET_TEAM(eTeam).setAtWar(getID(), true);
+
+		//LOGGING
+		if (GC.getLogging())
+		{
+			char* buffer2 = new char[5000];
+sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+			TCHAR szOut[1024];
+			sprintf(szOut, "\n### DECLARE WAR ### TEAM Number %d - %ls DECLARED WAR TEAM Number %d - %ls \n\n", getID(), GET_PLAYER(getLeaderID()).getName(), GET_TEAM(eTeam).getID(), GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getName());
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		}
+		//
 
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
 		{
@@ -2812,6 +2825,33 @@ void CvTeam::doRevolution()
 				kTeamPlayer.setYieldEuropeTradableAll();
 				kTeamPlayer.doEra();
 				kTeamPlayer.validateTradeRoutes();
+
+				//LOGGING
+				if (GC.getLogging())
+				{
+					char* buffer2 = new char[5000];
+					sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+					TCHAR szOut[1024];
+					sprintf(szOut, "###  REVOLUTION  ###: The player %ls started a revolution against %ls \n", kTeamPlayer.getName(), GET_PLAYER(kTeamPlayer.getParent()).getName());
+					gDLL->messageControlLog(szOut);
+					gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+					int iLoop;
+					CvCity* pLoopCity;
+					for (pLoopCity = kTeamPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kTeamPlayer.nextCity(&iLoop))
+					{
+						sprintf(szOut, "--- CITY --- City: %ls \n\tYield Production:\n", pLoopCity->getName().GetCString());
+						gDLL->messageControlLog(szOut);
+						gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+						for(int i = 0; i < GC.getNUM_YIELD_TYPES(); i++)
+						{
+							sprintf(szOut, "\t\t %ls: %d \n", GC.getYieldInfo((YieldTypes)i).getDescription() , pLoopCity->getYieldRate((YieldTypes)i));
+							gDLL->messageControlLog(szOut);
+							gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+						}
+					}
+				}
+				//
 			}
 		}
 	}

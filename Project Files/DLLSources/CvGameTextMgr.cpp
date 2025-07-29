@@ -30,6 +30,7 @@
 #include "FProfiler.h"
 #include "CyArgsList.h"
 #include "CvDLLPythonIFaceBase.h"
+#include "CvInitCore.h"
 
 int shortenID(int iId)
 {
@@ -8470,6 +8471,18 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 				szBuffer.append(tempString);
 				done = false;
 			}
+		}
+	}
+	//LOGGING
+	if (GC.getLogging())
+	{
+		if(GET_PLAYER((PlayerTypes)ePlayer).isHuman())
+		{
+			char* buffer2 = new char[5000];
+			sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+			TCHAR szOut[1024];
+			sprintf(szOut, "\t%ls\n", szBuffer.getCString());
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
 		}
 	}
 }

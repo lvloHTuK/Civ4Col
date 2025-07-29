@@ -22,6 +22,7 @@
 #include "CvGameCoreUtils.h"
 #include "CvDLLEngineIFaceBase.h"
 #include "CvDLLEventReporterIFaceBase.h"
+#include <cstring>
 
 // Public Functions...
 
@@ -181,6 +182,18 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		}
 		else if (pPopupReturn->getButtonClicked() == 5)
 		{	// save game
+			char* buffer2 = new char[1000];
+			sprintf(buffer2, "%ls", GC.getInitCore().getGameName().GetCString());
+			const char* foundPtr = strchr(buffer2, '_');
+			if (foundPtr != NULL)
+			{
+				int index = foundPtr - buffer2;
+				buffer2[index] = '\0';
+			}
+			char* buffer1 = new char[1000];
+			int gameTurn = GC.getGameINLINE().getGameTurn();
+			sprintf(buffer1, "%s_%d", buffer2, gameTurn);
+			GC.getInitCore().setGameName(buffer1);
 			GC.getGameINLINE().doControl(CONTROL_SAVE_NORMAL);
 		}
 		else if (pPopupReturn->getButtonClicked() == 6)
@@ -524,8 +537,10 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 					szAdminPassword = L"";
 				}
 			}
+			//FOG
 			//gDLL->getEngineIFace()->PushFogOfWar(FOGOFWARMODE_OFF);
 			//gDLL->getEngineIFace()->setFogOfWarFromStack();
+			//
 			if (!GC.getGameINLINE().isGameMultiPlayer())
 			{
 				if (pPopupReturn->getCheckboxBitfield(2) > 0)
@@ -763,6 +778,29 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		else
 		{
 			gDLL->sendPlayerAction(GC.getGameINLINE().getActivePlayer(), PLAYER_ACTION_CONVINCE_FATHER, info.getData1(), pPopupReturn->getButtonClicked(), -1);
+			//LOGGING
+			if (GC.getLogging())
+			{
+				char* buffer2 = new char[5000];
+				sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+				int gameTurn = GC.getGameINLINE().getGameTurn();
+				TCHAR szOut[1024];
+				CvWString szYearStr;
+				GAMETEXT.setTimeStr(szYearStr, GC.getGameINLINE().getGameTurn(), true);
+				if(pPopupReturn->getButtonClicked() == 1)
+				{
+					sprintf(szOut, "Year: %ls - Player: %ls - Received the Founding Father: %ls \n", szYearStr.GetCString(), GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getName(), GC.getFatherInfo((FatherTypes)info.getData1()).getDescription());
+					gDLL->messageControlLog(szOut);
+					gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+				}
+				else
+				{
+					sprintf(szOut, "Year: %ls - Player: %ls - Rejected the Founding Father: %ls \n", szYearStr.GetCString(), GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getName(), GC.getFatherInfo((FatherTypes)info.getData1()).getDescription());
+					gDLL->messageControlLog(szOut);
+					gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+				}
+			}
+			//
 		}
 		break;
 
@@ -2486,6 +2524,7 @@ bool CvDLLButtonPopup::launchEventPopup(CvPopup* pPopup, CvPopupInfo &info)
 	//char* buf = new char[50];
 	//std::sprintf(buf,"%d",countEvents);
 	//FAssertMsg(false, buf);
+
 	if (NULL == pTriggeredData)
 	{
 		return false;
@@ -2508,6 +2547,21 @@ bool CvDLLButtonPopup::launchEventPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, pTriggeredData->m_szText);
 
+	//LOGGING
+	if (GC.getLogging())
+	{
+		if(kActivePlayer.isHuman())
+		{
+			char* buffer2 = new char[5000];
+			sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+			TCHAR szOut[1024];
+			sprintf(szOut, "### EVENT ### Player: %ls - EVENT %ls \n\n", kActivePlayer.getName(), pTriggeredData->m_szText.GetCString());
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		}
+	}
+	//
+
 	bool bEventAvailable = false;
 	for (int i = 0; i < kTrigger.getNumEvents(); i++)
 	{
@@ -2515,6 +2569,20 @@ bool CvDLLButtonPopup::launchEventPopup(CvPopup* pPopup, CvPopupInfo &info)
 		{
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, GC.getEventInfo((EventTypes)kTrigger.getEvent(i)).getDescription(), GC.getEventInfo((EventTypes)kTrigger.getEvent(i)).getButton(), kTrigger.getEvent(i), WIDGET_CHOOSE_EVENT, kTrigger.getEvent(i), info.getData1());
 			bEventAvailable = true;
+			//LOGGING
+			if (GC.getLogging())
+			{
+				if(kActivePlayer.isHuman())
+				{
+					char* buffer2 = new char[5000];
+					sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+					TCHAR szOut[1024];
+					sprintf(szOut, "\t### BUTTON EVENT ### EVENT %ls \n\n", GC.getEventInfo((EventTypes)kTrigger.getEvent(i)).getDescription());
+					gDLL->messageControlLog(szOut);
+					gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+				}
+			}
+			//
 		}
 		else
 		{

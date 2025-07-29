@@ -28,6 +28,7 @@
 #include "CvArtFileMgr.h"
 #include "CvDiploParameters.h"
 #include "CvTradeRoute.h"
+#include "CvInitCore.h"
 
 #include <stdio.h>
 #include <time.h>
@@ -9385,12 +9386,15 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 	// OOS!! Temporary for Out-of-Sync madness debugging...
 	if (GC.getLogging())
 	{
+		/*
+		gDLL->setChtLvl(1);
 		if (gDLL->getChtLvl() > 0)
 		{
 			char szOut[1024];
 			sprintf(szOut, "Player %d Unit %d (%S's %S) moving from %d:%d to %d:%d\n", getOwnerINLINE(), getID(), GET_PLAYER(getOwnerINLINE()).getNameKey(), getName().GetCString(), getX_INLINE(), getY_INLINE(), iX, iY);
 			gDLL->messageControlLog(szOut);
 		}
+		*/
 	}
 
 	FAssert(!at(iX, iY) || (iX == INVALID_PLOT_COORD) || (iY == INVALID_PLOT_COORD));
@@ -11382,17 +11386,18 @@ void CvUnit::setCombatUnit(CvUnit* pCombatUnit, bool bAttacking)
 	{
 		if (bAttacking)
 		{
+			//LOGGING
 			if (GC.getLogging())
 			{
-				if (gDLL->getChtLvl() > 0)
-				{
-					// Log info about this combat...
-					char szOut[1024];
-					sprintf( szOut, "*** KOMBAT!\n     ATTACKER: Player %d Unit %d (%S's %S), CombatStrength=%d\n     DEFENDER: Player %d Unit %d (%S's %S), CombatStrength=%d\n",
-						getOwnerINLINE(), getID(), GET_PLAYER(getOwnerINLINE()).getName(), getName().GetCString(), currCombatStr(NULL, NULL),
-						pCombatUnit->getOwnerINLINE(), pCombatUnit->getID(), GET_PLAYER(pCombatUnit->getOwnerINLINE()).getName(), pCombatUnit->getName().GetCString(), pCombatUnit->currCombatStr(pCombatUnit->plot(), this));
-					gDLL->messageControlLog(szOut);
-				}
+				char* buffer2 = new char[5000];
+				sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+				// Log info about this combat...
+				char szOut[1024];
+				sprintf( szOut, "*** KOMBAT!\n     ATTACKER: Player %d Unit %d (%ls's %ls), CombatStrength=%d\n     DEFENDER: Player %d Unit %d (%ls's %ls), CombatStrength=%d\n",
+					getOwnerINLINE(), getID(), GET_PLAYER(getOwnerINLINE()).getName(), getName().GetCString(), currCombatStr(NULL, NULL),
+					pCombatUnit->getOwnerINLINE(), pCombatUnit->getID(), GET_PLAYER(pCombatUnit->getOwnerINLINE()).getName(), pCombatUnit->getName().GetCString(), pCombatUnit->currCombatStr(pCombatUnit->plot(), this));
+				gDLL->messageControlLog(szOut);
+				gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
 			}
 		}
 

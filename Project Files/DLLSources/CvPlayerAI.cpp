@@ -3649,7 +3649,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				int oldPrice = pNode->m_data.m_iData1;
 				/// random network fix - start - XetPy
 				int randomPriceChange = std::rand() % priceIncreaseMax;
-				// int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceDecreaseMax, "Natives Price Change Sell");
+				//int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceIncreaseMax, "Natives Price Change Sell");
 				if (randomPriceChange < priceIncreaseMax / 3)
 				{
 					randomPriceChange = priceIncreaseMax / 3;
@@ -3671,6 +3671,22 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				CLLNode<TradeData>* newNode = pNode;
 				newNode->m_data.m_iData1 = newPrice;
 				pOurCounter->insertAtEnd(newNode->m_data);
+
+				//LOGGING
+				if(GC.getLogging())
+				{
+					CvPlayer& player = GET_PLAYER(ePlayer);
+					if(player.isHuman())
+					{
+						char* buffer2 = new char[5000];
+						sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+						TCHAR szOut[1024];
+						sprintf(szOut, "\t\tNEW PRICE - ##TRADE WITH THE INDIANS## %ls with %ls - Price: %d\n", player.getName(), GET_PLAYER(getID()).getName(), newPrice);
+						gDLL->messageControlLog(szOut);
+						gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+					}
+				}
+				//
 			}
 		}
 
@@ -3683,7 +3699,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				int oldPrice = pNode->m_data.m_iData1;
 				/// random network fix - start - XetPy
 				int randomPriceChange = std::rand() % priceDecreaseMax;
-				// int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceDecreaseMax, "Natives Price Change Buy");
+				//int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceDecreaseMax, "Natives Price Change Buy");
 				if (randomPriceChange < priceDecreaseMax / 3)
 				{
 					randomPriceChange = priceDecreaseMax / 3;
@@ -3698,6 +3714,22 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 				CLLNode<TradeData>* newNode = pNode;
 				newNode->m_data.m_iData1 = newPrice;
 				pTheirCounter->insertAtEnd(newNode->m_data);
+
+				//LOGGING
+				if(GC.getLogging())
+				{
+					CvPlayer& player = GET_PLAYER(ePlayer);
+					if(player.isHuman())
+					{
+						char* buffer2 = new char[5000];
+						sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+						TCHAR szOut[1024];
+						sprintf(szOut, "\t\tNEW PRICE - ##TRADE WITH THE INDIANS## %ls with %ls - Price: %d\n", player.getName(), GET_PLAYER(getID()).getName(), newPrice);
+						gDLL->messageControlLog(szOut);
+						gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+					}
+				}
+				//
 			}
 		}
 
@@ -4009,6 +4041,25 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 			}
 		}
 	}
+
+	//LOGGING
+	if(GC.getLogging())
+	{
+		CvPlayer& player = GET_PLAYER(ePlayer);
+		if(player.isHuman())
+		{
+			if(iAIDealWeight <= iHumanDealWeight)
+			{
+				char* buffer2 = new char[5000];
+				sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+				TCHAR szOut[1024];
+				sprintf(szOut, "##TRADE WITH THE INDIANS## %ls with %ls - Price: %d\n", player.getName(), GET_PLAYER(getID()).getName(), iAIDealWeight);
+				gDLL->messageControlLog(szOut);
+				gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+			}
+		}
+	}
+	//
 
 	return ((iAIDealWeight <= iHumanDealWeight) && ((pOurList->getLength() > 0) || (pOurCounter->getLength() > 0) || (pTheirCounter->getLength() > 0)));
 }

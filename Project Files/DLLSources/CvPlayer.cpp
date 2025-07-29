@@ -3,6 +3,7 @@
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
 #include "CvArea.h"
+#include "CvGame.h"
 #include "CvGameAI.h"
 #include "CvMap.h"
 #include "CvPlot.h"
@@ -291,7 +292,6 @@ void CvPlayer::init(PlayerTypes eID)
 
 
 	gDLL->getInterfaceIFace()->addTutorialMessage(getID(), CvWString("2.7.1"));
-
 }
 
 
@@ -2328,9 +2328,55 @@ const TCHAR* CvPlayer::getUnitButton(UnitTypes eUnit) const
 
 void CvPlayer::doTurn()
 {
+	//LOGGING
+	if (GC.getLogging())
+	{
+		char* buffer2 = new char[5000];
+		sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+		int gameTurn = GC.getGameINLINE().getGameTurn();
+		TCHAR szOut[1024];
+		if(gameTurn == 1)
+		{
+			sprintf(szOut, "\t%ls | %ls | Difficulty: %ls\n", getName(), getCivilizationShortDescription(), GC.getHandicapInfo(getHandicapType()).getDescription());
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		} else
+		{
+			if(isHuman())
+			{
+				CvWString szYearStr;
+				GAMETEXT.setTimeStr(szYearStr, GC.getGameINLINE().getGameTurn(), true);
+				sprintf(szOut, "------- YEAR: %ls - %ls - Gold: %d \n", szYearStr.GetCString(), getName(), getGold());
+				gDLL->messageControlLog(szOut);
+				gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+
+				for(int i = 0; i < getNumCities(); i++)
+				{
+					CvCity* pCity = getCity(i);
+					sprintf(szOut, "\tCity: %ls - Population: %d - Production: %ls - TurnsLeft: %d \n\t\tBuildings:\n", pCity->getName().GetCString(), pCity->getPopulation(), pCity->getProductionName(), pCity->getProductionTurnsLeft());
+					gDLL->messageControlLog(szOut);
+					gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+					for(int i = 0; i < GC.getNumBuildingInfos(); i++)
+					{
+						if(pCity->isHasBuilding((BuildingTypes)i))
+						{
+							sprintf(szOut, "\t\t%ls\n", GC.getBuildingInfo((BuildingTypes)i).getDescription());
+							gDLL->messageControlLog(szOut);
+							gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+						}
+					}
+				}
+				sprintf(szOut, "---------------------------------------------------CHANGE TURN---------------------------------------------------\n");
+				gDLL->messageControlLog(szOut);
+				gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+			}
+		}
+	}
+	//
+
 	PROFILE_FUNC();
 
-	if(isHuman){
+	if(isHuman()){
 		int ping = gDLL->GetLastPing(getNetID());
 
 		//CvString countEvents = GC.getInitCore().getSmtpHost(getID());
@@ -7940,12 +7986,14 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 		{
 			if (GC.getLogging())
 			{
+				/*
 				if (gDLL->getChtLvl() > 0)
 				{
 					TCHAR szOut[1024];
 					sprintf(szOut, "Player %d Turn ON\n", getID());
 					gDLL->messageControlLog(szOut);
 				}
+				*/
 			}
 
 			FAssertMsg(isAlive(), "isAlive is expected to be true");
@@ -8022,12 +8070,14 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 		{
 			if (GC.getLogging())
 			{
+				/*
 				if (gDLL->getChtLvl() > 0)
 				{
 					TCHAR szOut[1024];
 					sprintf(szOut, "Player %d Turn OFF\n", getID());
 					gDLL->messageControlLog(szOut);
 				}
+				*/
 			}
 
 			if (getID() == GC.getGameINLINE().getActivePlayer())
@@ -14262,7 +14312,6 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 	{
 		trigger(*pTriggerData);
 	}
-
 	return pTriggerData;
 }
 
@@ -16165,6 +16214,21 @@ void CvPlayer::sellYieldUnitToEurope(CvUnit* pUnit, int iAmount, int iCommission
 				gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
 
 				gDLL->getEventReporterIFace()->yieldSoldToEurope(getID(), eYield, iAmount);
+
+				//LOGGING
+				if (GC.getLogging())
+				{
+					if(isHuman())
+					{
+						char* buffer2 = new char[5000];
+						sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+						TCHAR szOut[1024];
+						sprintf(szOut, "###  SELL IN EUROPE  ###: Player %ls sold %ls PRICE: %d AMOUNT: %d\n", getName(), GC.getYieldInfo(pUnit->getYield()).getDescription(), iProfit, iAmount);
+						gDLL->messageControlLog(szOut);
+						gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+					}
+				}
+				//
 			}
 		}
 		else if (pUnit->getUnitInfo().isTreasure())
@@ -16297,6 +16361,21 @@ CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit*
 	// PatchMod: Check Europe prices after each trade START
 	GET_PLAYER(getParent()).doPrices();
 	// PatchMod: Check Europe prices after each trade END
+
+	//LOGGING
+	if (GC.getLogging())
+	{
+		if(isHuman())
+		{
+			char* buffer2 = new char[5000];
+			sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+			TCHAR szOut[1024];
+			sprintf(szOut, "###  BUY IN EUROPE  ###: Player %ls buy %ls PRICE: %d AMOUNT: %d\n", getName(), GC.getYieldInfo(eYield).getDescription(), iPrice, iAmount);
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		}
+	}
+	//
 
 	return pUnit;
 }
@@ -17331,6 +17410,18 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier)
 		gDLL->getEventReporterIFace()->unitBoughtFromEurope(getID(), pUnit->getID());
 	}
 
+	//LOGGING
+	if (GC.getLogging())
+	{
+		char* buffer2 = new char[5000];
+		sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+		TCHAR szOut[1024];
+		sprintf(szOut, "###  BUY EUROPE UNIT  ###: The player %ls buy unit %ls PRICE: %d \n", getName(), GC.getUnitInfo(eUnit).getDescription(), iPrice);
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+	}
+	//
+
 	return pUnit;
 }
 
@@ -18059,6 +18150,29 @@ bool CvPlayer::checkIndependence() const
 			}
 		}
 	}
+
+	//LOGGING
+	if (GC.getLogging())
+	{
+		char* buffer2 = new char[5000];
+		sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+		int gameTurn = GC.getGameINLINE().getGameTurn();
+		CvWString szYearStr;
+		GAMETEXT.setTimeStr(szYearStr, GC.getGameINLINE().getGameTurn(), true);
+
+		TCHAR szOut[1024];
+		sprintf(szOut, " ### INDEPENDENCE CHECK ### Player: %ls YEAR: %ls \n", getName(), szYearStr.GetCString());
+		gDLL->messageControlLog(szOut);
+		gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		for(int i = 0; i < getNumCities(); i++)
+		{
+			CvCity* pCity = getCity(i);
+			sprintf(szOut, "\t ### INDEPENDENCE CHECK ### City: %ls - Population: %d - Production: %ls - TurnsLeft: %d \n", pCity->getName().GetCString(), pCity->getPopulation(), pCity->getProductionName(), pCity->getProductionTurnsLeft());
+			gDLL->messageControlLog(szOut);
+			gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+		}
+	}
+	//
 
 	return true;
 }
@@ -18823,6 +18937,20 @@ void CvPlayer::doImmigrant(int iIndex, bool shortmessage)
 			gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_INFO, GC.getUnitInfo(eBestUnit).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"));
 
 			gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
+
+			//LOGGING
+			if (GC.getLogging())
+			{
+				if(isHuman())
+				{
+					char* buffer2 = new char[5000];
+					sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+					TCHAR szOut[1024];
+					sprintf(szOut, "### EUROPE IMMIGRANT ###: Player: %ls Unit: %ls \n", getName(), pUnit->getName().GetCString());
+					gDLL->messageControlLog(szOut);
+					gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+				}
+			}
 
 			FAssert(pUnit != NULL);
 			if(pUnit != NULL)
@@ -21884,17 +22012,47 @@ bool CvPlayer::tryGetNewBargainPriceSell()
 	//case bargaining fails
 	if (randomValue < chanceToFail)
 	{
-		// int randomAngry = GC.getGameINLINE().getSorenRandNum(timeNativesAngryMax, "Natives Angry Buy");
+		//int randomAngry = GC.getGameINLINE().getSorenRandNum(timeNativesAngryMax, "Natives Angry Buy");
 		int randomAngry = std::rand() % timeNativesAngryMax;
 		GET_PLAYER(bargainPartner).setTimeNoTrade(randomAngry*gamespeedMod/100);
 		GET_PLAYER(bargainPartner).AI_changeAttitudeExtra(getID(), -1);
 		GET_PLAYER(bargainPartner).setWillingToBargain(false);
+
+		//LOGGING
+		if(GC.getLogging())
+		{
+			if(isHuman())
+			{
+				char* buffer2 = new char[5000];
+				sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+				TCHAR szOut[1024];
+				sprintf(szOut, "\tFAIL - ##PRICE INCREASE BARGAIN SELL## %ls\n", getName());
+				gDLL->messageControlLog(szOut);
+				gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+			}
+		}
+		//
+
 		return false;
 	}
 
 	//case bargaining successfull
 	else
 	{
+		//LOGGING
+		if(GC.getLogging())
+		{
+			if(isHuman())
+			{
+				char* buffer2 = new char[5000];
+				sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+				TCHAR szOut[1024];
+				sprintf(szOut, "\tSUCCESS - ##PRICE INCREASE BARGAIN SELL## %ls\n", getName());
+				gDLL->messageControlLog(szOut);
+				gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+			}
+		}
+		//
 		GET_PLAYER(bargainPartner).setWillingToBargain(true);
 		return true;
 	}
@@ -21920,17 +22078,47 @@ bool CvPlayer::tryGetNewBargainPriceBuy()
 	//case bargaining fails
 	if (randomValue < chanceToFail)
 	{
-		// int randomAngry = GC.getGameINLINE().getSorenRandNum(timeNativesAngryMax*gamespeedMod/100, "Natives Angry Buy");
+		//int randomAngry = GC.getGameINLINE().getSorenRandNum(timeNativesAngryMax*gamespeedMod/100, "Natives Angry Buy");
 		int randomAngry = std::rand() % timeNativesAngryMax*gamespeedMod/100;
 		GET_PLAYER(bargainPartner).setTimeNoTrade(randomAngry);
 		GET_PLAYER(bargainPartner).AI_changeAttitudeExtra(getID(), -1);
 		GET_PLAYER(bargainPartner).setWillingToBargain(false);
+
+		//LOGGING
+		if(GC.getLogging())
+		{
+			if(isHuman())
+			{
+				char* buffer2 = new char[5000];
+				sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+				TCHAR szOut[1024];
+				sprintf(szOut, "\tFAIL - ##PRICE DECREASE BARGAIN SELL## %ls\n", getName());
+				gDLL->messageControlLog(szOut);
+				gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+			}
+		}
+		//
+
 		return false;
 	}
 
 	//case bargaining successfull
 	else
 	{
+		//LOGGING
+		if(GC.getLogging())
+		{
+			if(isHuman())
+			{
+				char* buffer2 = new char[5000];
+				sprintf(buffer2, "%ls.txt", GC.getInitCore().getGameName().GetCString());
+				TCHAR szOut[1024];
+				sprintf(szOut, "\tSUCCESS - ##PRICE DECREASE BARGAIN SELL## %ls\n", getName());
+				gDLL->messageControlLog(szOut);
+				gDLL->logMsg((TCHAR*)buffer2,szOut, false, false);
+			}
+		}
+		//
 		GET_PLAYER(bargainPartner).setWillingToBargain(true);
 		return true;
 	}
